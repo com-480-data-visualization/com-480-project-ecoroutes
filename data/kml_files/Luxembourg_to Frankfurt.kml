@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=2t.0191371.1711480006&input=Luxembourg &#x0028;Luxembourg&#x0029;!&start=yes&">Luxembourg &#x0028;Luxembourg&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=2t.0191371.1711480006&input=FRANKFURT&#x0028;MAIN&#x0029; &#x0028;Germany&#x0029;!&start=yes&">FRANKFURT&#x0028;MAIN&#x0029; &#x0028;Germany&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>Luxembourg (Luxembourg) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/188433/381534/150788/12583/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=2t.0191371.1711480006&">FB 82114</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=2t.0191371.1711480006&input=SAARBRUECKEN HBF (Germany)!&start=yes&">SAARBRUECKEN HBF (Germany)</a>
+arr 06:25]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>6.134167</longitude>
+<latitude>49.599996</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.134167,49.599996,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SAARBRUECKEN HBF (Germany) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/443748/287331/134874/80479/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=2t.0191371.1711480006&">RE 29507</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=2t.0191371.1711480006&input=FRANKFURT-NIEDERRAD (Germany)!&start=yes&">FRANKFURT-NIEDERRAD (Germany)</a>
+arr 09:42]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>6.991109</longitude>
+<latitude>49.241111</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.991109,49.241111,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>NEUNKIRCHEN(SAAR)HBF (Germany) dep 07:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.176664</longitude>
+<latitude>49.353332</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.176664,49.353332,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OTTWEILER(SAAR) (Germany) dep 07:16</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.166111</longitude>
+<latitude>49.402224</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.166111,49.402224,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ST WENDEL (Germany) dep 07:23</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.165275</longitude>
+<latitude>49.466947</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.165275,49.466947,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TUERKISMUEHLE (Germany) dep 07:33</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.114719</longitude>
+<latitude>49.580274</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.114719,49.580274,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NEUBRUECKE(NAHE) (Germany) dep 07:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.172781</longitude>
+<latitude>49.606109</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.172781,49.606109,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>IDAR-OBERSTEIN (Germany) dep 07:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.321112</longitude>
+<latitude>49.699444</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.321112,49.699444,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KIRN (Germany) dep 08:06</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.464723</longitude>
+<latitude>49.785830</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.464723,49.785830,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BAD SOBERNHEIM (Germany) dep 08:16</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.649721</longitude>
+<latitude>49.782774</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.649721,49.782774,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>STAUDERNHEIM (Germany) dep 08:19</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.693058</longitude>
+<latitude>49.780553</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.693058,49.780553,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BAD MUENSTER A STEIN (Germany) dep 08:32</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.846945</longitude>
+<latitude>49.813337</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.846945,49.813337,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BAD KREUZNACH (Germany) dep 08:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.866388</longitude>
+<latitude>49.842498</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.866388,49.842498,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>INGELHEIM (Germany) dep 08:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.053607</longitude>
+<latitude>49.976392</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.053607,49.976392,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MAINZ HBF (Germany) dep 09:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.258615</longitude>
+<latitude>50.001113</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.258615,50.001113,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MAINZ ROEMISCHES THEATER (Germany) dep 09:14</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.277501</longitude>
+<latitude>49.993337</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.277501,49.993337,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MAINZ-BISCHOFSHEIM (Germany) dep 09:19</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.357496</longitude>
+<latitude>49.993337</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.357496,49.993337,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RUESSELSHEIM (Germany) dep 09:23</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.413607</longitude>
+<latitude>49.991665</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.413607,49.991665,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FRANKFURT(M) FLUGHAFEN REGIONALBF (Germany) dep 09:35</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.571385</longitude>
+<latitude>50.051111</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.571385,50.051111,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>FRANKFURT-NIEDERRAD (Germany) arr 09:42</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>8.636944</longitude>
+<latitude>50.081386</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.636944,50.081386,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+Luxembourg (Luxembourg)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+05:10
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="2" valign="top" style="white-space:nowrap;">
+FB 82114
+</td>
+<td rowspan="2" valign="top">
+FernBus
+Direction: SAARBRUECKEN HBF (Germany)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td>
+SAARBRUECKEN HBF (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+06:25
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+SAARBRUECKEN HBF (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+06:51
+</td>
+<td>
+1
+</td>
+<td rowspan="19" valign="top" style="white-space:nowrap;">
+RE 29507
+</td>
+<td rowspan="19" valign="top">
+Regional
+Direction: FRANKFURT(MAIN)HBF (Germany)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+NEUNKIRCHEN(SAAR)HBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:08
+</td>
+<td class="result" >
+07:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+OTTWEILER(SAAR) (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:16
+</td>
+<td class="result" >
+07:16
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ST WENDEL (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:22
+</td>
+<td class="result" >
+07:23
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+TUERKISMUEHLE (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:33
+</td>
+<td class="result" >
+07:33
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+NEUBRUECKE(NAHE) (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:38
+</td>
+<td class="result" >
+07:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+IDAR-OBERSTEIN (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:53
+</td>
+<td class="result" >
+07:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KIRN (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:05
+</td>
+<td class="result" >
+08:06
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BAD SOBERNHEIM (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:15
+</td>
+<td class="result" >
+08:16
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+STAUDERNHEIM (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:18
+</td>
+<td class="result" >
+08:19
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BAD MUENSTER A STEIN (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:30
+</td>
+<td class="result" >
+08:32
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BAD KREUZNACH (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:37
+</td>
+<td class="result" >
+08:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+INGELHEIM (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:53
+</td>
+<td class="result" >
+08:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MAINZ HBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:06
+</td>
+<td class="result" >
+09:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MAINZ ROEMISCHES THEATER (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:13
+</td>
+<td class="result" >
+09:14
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MAINZ-BISCHOFSHEIM (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:18
+</td>
+<td class="result" >
+09:19
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+RUESSELSHEIM (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:22
+</td>
+<td class="result" >
+09:23
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+FRANKFURT(M) FLUGHAFEN REGIONALBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:33
+</td>
+<td class="result" >
+09:35
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+FRANKFURT-NIEDERRAD (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+09:42
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+2
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 4:32;
+runs
+daily
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>6.991109</longitude>
+<latitude>49.241111</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+6.134167,49.599996,0 6.991109,49.241111,0 7.176664,49.353332,0 7.166111,49.402224,0 7.165275,49.466947,0 7.114719,49.580274,0 7.172781,49.606109,0 7.321112,49.699444,0 7.464723,49.785830,0 7.649721,49.782774,0 7.693058,49.780553,0 7.846945,49.813337,0 7.866388,49.842498,0 8.053607,49.976392,0 8.258615,50.001113,0 8.277501,49.993337,0 8.357496,49.993337,0 8.413607,49.991665,0 8.571385,50.051111,0 8.636944,50.081386,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>FB 82114 from Luxembourg (Luxembourg) to SAARBRUECKEN HBF (Germany)</name>
+<styleUrl>#idStylePT_FB 82114</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>6.134167</longitude>
+<latitude>49.599996</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+6.134167,49.599996,0 6.991109,49.241111,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE 29507 from SAARBRUECKEN HBF (Germany) to FRANKFURT-NIEDERRAD (Germany)</name>
+<styleUrl>#idStylePT_RE 29507</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>6.991109</longitude>
+<latitude>49.241111</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+6.991109,49.241111,0 7.176664,49.353332,0 7.166111,49.402224,0 7.165275,49.466947,0 7.114719,49.580274,0 7.172781,49.606109,0 7.321112,49.699444,0 7.464723,49.785830,0 7.649721,49.782774,0 7.693058,49.780553,0 7.846945,49.813337,0 7.866388,49.842498,0 8.053607,49.976392,0 8.258615,50.001113,0 8.277501,49.993337,0 8.357496,49.993337,0 8.413607,49.991665,0 8.571385,50.051111,0 8.636944,50.081386,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

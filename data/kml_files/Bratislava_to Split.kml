@@ -1,0 +1,2768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=23.0137731.1711479901&input=BRATISLAVA &#x0028;Slovakia&#x0029;!&start=yes&">BRATISLAVA &#x0028;Slovakia&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=23.0137731.1711479901&input=SPLIT &#x0028;Croatia&#x0029;!&start=yes&">SPLIT &#x0028;Croatia&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>BRATISLAVA-PETRZALKA (Slovakia) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/99678/337621/611702/272625/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=23.0137731.1711479901&">7736</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=23.0137731.1711479901&input=PARNDORF (Austria)!&start=yes&">PARNDORF (Austria)</a>
+arr 13:38]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>17.098885</longitude>
+<latitude>48.120830</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.098885,48.120830,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>KITTSEE GR. (Slovakia) dep 13:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.071064</longitude>
+<latitude>48.080828</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.071064,48.080828,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KITTSEE(GR) (Austria) dep 13:19</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.084170</longitude>
+<latitude>48.102780</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.084170,48.102780,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KITTSEE (Austria) dep 13:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.071387</longitude>
+<latitude>48.081385</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.071387,48.081385,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PAMA (Austria) dep 13:25</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.041390</longitude>
+<latitude>48.041941</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.041390,48.041941,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GATTENDORF (Austria) dep 13:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.980830</longitude>
+<latitude>48.010559</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.980830,48.010559,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NEUDORF B.PARNDORF (Austria) dep 13:33</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.938329</longitude>
+<latitude>48.008887</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.938329,48.008887,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>PARNDORF (Austria) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/86517/381529/231710/87017/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=23.0137731.1711479901&">RE  9413</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=23.0137731.1711479901&input=HEGYESHALOM (Hungary)!&start=yes&">HEGYESHALOM (Hungary)</a>
+arr 14:15]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>16.871386</longitude>
+<latitude>47.986945</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.871386,47.986945,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>ZURNDORF (Austria) dep 14:06</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.024167</longitude>
+<latitude>47.968058</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.024167,47.968058,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NICKELSDORF (Austria) dep 14:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.086112</longitude>
+<latitude>47.942781</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.086112,47.942781,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NICKELSDORF GRENZE (Austria) dep 14:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.743614</longitude>
+<latitude>48.053330</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.743614,48.053330,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HEGYESHALOM GR. (Hungary) dep 14:15</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.095829</longitude>
+<latitude>47.938331</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.095829,47.938331,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>HEGYESHALOM (Hungary) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/745584/514325/498734/839/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=23.0137731.1711479901&">RJX   63</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=23.0137731.1711479901&input=GYOER (Hungary)!&start=yes&">GYOER (Hungary)</a>
+arr 14:54]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>17.145557</longitude>
+<latitude>47.913889</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.145557,47.913889,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>MOSONMAGYAROVAR (Hungary) dep 14:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.267226</longitude>
+<latitude>47.849724</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.267226,47.849724,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>GYOER (Hungary) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/737697/602377/783064/145633/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=23.0137731.1711479901&">IR  9603</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=23.0137731.1711479901&input=BALATONSZENTGYOERGY (Hungary)!&start=yes&">BALATONSZENTGYOERGY (Hungary)</a>
+arr 17:59]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>17.634723</longitude>
+<latitude>47.681941</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.634723,47.681941,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>GYOER-GYARVAROS (Hungary) dep 15:14</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.663893</longitude>
+<latitude>47.684440</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.663893,47.684440,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GYOERSZABADHEGY (Hungary) dep 15:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.648054</longitude>
+<latitude>47.663054</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.648054,47.663054,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GYOEMOERE-TET (Hungary) dep 15:37</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.559448</longitude>
+<latitude>47.499442</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.559448,47.499442,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SZERECSENY (Hungary) dep 15:42</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.547501</longitude>
+<latitude>47.469166</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.547501,47.469166,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VASZAR (Hungary) dep 15:50</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.496388</longitude>
+<latitude>47.402502</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.496388,47.402502,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PAPA (Hungary) dep 16:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.458885</longitude>
+<latitude>47.340557</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.458885,47.340557,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CELLDOEMOELK (Hungary) dep 16:33</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.151940</longitude>
+<latitude>47.261389</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.151940,47.261389,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>JANOSHAZA (Hungary) dep 16:46</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.171671</longitude>
+<latitude>47.115836</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.171671,47.115836,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SUEMEG (Hungary) dep 17:01</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.270831</longitude>
+<latitude>46.981115</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.270831,46.981115,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TAPOLCA (Hungary) dep 17:19</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.428610</longitude>
+<latitude>46.877775</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.428610,46.877775,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BALATONEDERICS (Hungary) dep 17:28</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.385003</longitude>
+<latitude>46.802499</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.385003,46.802499,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BALATONGYOEROEK (Hungary) dep 17:34</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.354440</longitude>
+<latitude>46.751944</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.354440,46.751944,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VONYARCVASHEGY (Hungary) dep 17:38</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.318330</longitude>
+<latitude>46.755279</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.318330,46.755279,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GYENESDIAS (Hungary) dep 17:41</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.292774</longitude>
+<latitude>46.763333</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.292774,46.763333,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KESZTHELY (Hungary) dep 17:48</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.248052</longitude>
+<latitude>46.758335</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.248052,46.758335,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>BALATONSZENTGYOERGY (Hungary) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/294705/188985/285150/44340/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=23.0137731.1711479901&">IC   204</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=23.0137731.1711479901&input=ZAGREB GLAVNI KOL. (Croatia)!&start=yes&">ZAGREB GLAVNI KOL. (Croatia)</a>
+arr 21:59]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>17.288890</longitude>
+<latitude>46.692777</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.288890,46.692777,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>VOERS (Hungary) dep 18:06</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.260278</longitude>
+<latitude>46.663607</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.260278,46.663607,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZALAKOMAR (Hungary) dep 18:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.188058</longitude>
+<latitude>46.530279</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.188058,46.530279,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZALASZENTJAKAB (Hungary) dep 18:27</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.135274</longitude>
+<latitude>46.491670</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.135274,46.491670,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NAGYKANIZSA (Hungary) dep 19:08</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.986664</longitude>
+<latitude>46.440836</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.986664,46.440836,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GYEKENYES (Hungary) dep 19:57</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.956388</longitude>
+<latitude>46.249168</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.956388,46.249168,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KOPRIVNICA GR. (Hungary) dep 19:58</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.943893</longitude>
+<latitude>46.246948</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.943893,46.246948,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KOPRIVNICA GR. (Croatia) dep 19:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.945350</longitude>
+<latitude>46.239855</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.945350,46.239855,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KOPRIVNICA (Croatia) dep 20:19</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.816948</longitude>
+<latitude>46.165559</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.816948,46.165559,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MUCNA REKA (Croatia) dep 20:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.760558</longitude>
+<latitude>46.123058</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.760558,46.123058,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SOKOLOVAC (Croatia) dep 20:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.711945</longitude>
+<latitude>46.101107</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.711945,46.101107,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LEPAVINA (Croatia) dep 20:35</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.685004</longitude>
+<latitude>46.098059</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.685004,46.098059,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CAREVDAR (Croatia) dep 20:40</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.647222</longitude>
+<latitude>46.065554</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.647222,46.065554,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VOJAKOVACKI KLOSTAR (Croatia) dep 20:43</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.621109</longitude>
+<latitude>46.049167</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.621109,46.049167,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MAJUREC (Croatia) dep 20:46</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.590276</longitude>
+<latitude>46.026667</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.590276,46.026667,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KRIZEVCI (Croatia) dep 20:53</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.543334</longitude>
+<latitude>46.006387</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.543334,46.006387,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>REPINEC (Croatia) dep 20:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.505274</longitude>
+<latitude>45.949719</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.505274,45.949719,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GRADEC (Croatia) dep 21:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.484724</longitude>
+<latitude>45.914446</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.484724,45.914446,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VRBOVEC (Croatia) dep 21:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.410276</longitude>
+<latitude>45.873608</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.410276,45.873608,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BOZJAKOVINA (Croatia) dep 21:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.307223</longitude>
+<latitude>45.822225</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.307223,45.822225,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DUGO SELO (Croatia) dep 21:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.234725</longitude>
+<latitude>45.801388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.234725,45.801388,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SESVETSKI KRALJEVEC (Croatia) dep 21:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.168888</longitude>
+<latitude>45.810836</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.168888,45.810836,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SESVETE (Croatia) dep 21:42</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.110000</longitude>
+<latitude>45.824724</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.110000,45.824724,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SESVETSKA SOPNICA (Croatia) dep 21:45</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.086808</longitude>
+<latitude>45.822774</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.086808,45.822774,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CULINEC (Croatia) dep 21:47</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.063607</longitude>
+<latitude>45.820832</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.063607,45.820832,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TRNAVA (Croatia) dep 21:49</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.049440</longitude>
+<latitude>45.818333</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.049440,45.818333,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MAKSIMIR (Croatia) dep 21:52</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.023614</longitude>
+<latitude>45.814171</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.023614,45.814171,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>ZAGREB GLAVNI KOL. (Croatia) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/477222/232808/812944/247398/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=23.0137731.1711479901&">1821</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=23.0137731.1711479901&input=SPLIT (Croatia)!&start=yes&">SPLIT (Croatia)</a>
+arr 07:01]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>15.978892</longitude>
+<latitude>45.804445</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.978892,45.804445,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>KARLOVAC (Croatia) dep 23:25</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.545001</longitude>
+<latitude>45.499998</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.545001,45.499998,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OGULIN (Croatia) dep 00:34</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.231385</longitude>
+<latitude>45.266108</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.231385,45.266108,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PLASKI (Croatia) dep 01:00</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.368057</longitude>
+<latitude>45.078332</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.368057,45.078332,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VRHOVINE (Croatia) dep 01:57</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.426946</longitude>
+<latitude>44.848891</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.426946,44.848891,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LICKO LESCE (Croatia) dep 02:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.358610</longitude>
+<latitude>44.773058</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.358610,44.773058,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GOSPIC (Croatia) dep 02:43</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.393614</longitude>
+<latitude>44.536112</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.393614,44.536112,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LOVINAC (Croatia) dep 03:09</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.663892</longitude>
+<latitude>44.376113</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.663892,44.376113,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GRACAC (Croatia) dep 03:24</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.822219</longitude>
+<latitude>44.300280</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.822219,44.300280,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KNIN (Croatia) dep 04:40</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.198337</longitude>
+<latitude>44.036671</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.198337,44.036671,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DRNIS (Croatia) dep 05:04</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.181941</longitude>
+<latitude>43.863611</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.181941,43.863611,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>UNESIC (Croatia) dep 05:25</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.181392</longitude>
+<latitude>43.741393</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.181392,43.741393,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PERKOVIC (Croatia) dep 05:42</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.117776</longitude>
+<latitude>43.675556</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.117776,43.675556,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PRIMORSKI DOLAC (Croatia) dep 05:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.158892</longitude>
+<latitude>43.636669</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.158892,43.636669,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KASTEL STARI (Croatia) dep 06:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.344726</longitude>
+<latitude>43.567497</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.344726,43.567497,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KASTEL SUCURAC (Croatia) dep 06:42</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.430555</longitude>
+<latitude>43.548889</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.430555,43.548889,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SPLIT PREDGRADE (Croatia) dep 06:56</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.455276</longitude>
+<latitude>43.522218</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.455276,43.522218,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>SPLIT (Croatia) arr 07:01</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>16.443059</longitude>
+<latitude>43.504725</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.443059,43.504725,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+BRATISLAVA-PETRZALKA (Slovakia)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+13:16
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="8" valign="top" style="white-space:nowrap;">
+7736
+</td>
+<td rowspan="8" valign="top">
+Euregio
+Direction: DEUTSCHKREUTZ (Austria)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KITTSEE GR. (Slovakia)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:18
+</td>
+<td class="result" >
+13:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KITTSEE(GR) (Austria)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:19
+</td>
+<td class="result" >
+13:19
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KITTSEE (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:20
+</td>
+<td class="result" >
+13:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PAMA (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:25
+</td>
+<td class="result" >
+13:25
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GATTENDORF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:29
+</td>
+<td class="result" >
+13:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+NEUDORF B.PARNDORF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:33
+</td>
+<td class="result" >
+13:33
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+PARNDORF (Austria)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+13:38
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+PARNDORF (Austria)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+13:58
+</td>
+<td>
+3
+</td>
+<td rowspan="6" valign="top" style="white-space:nowrap;">
+RE  9413
+</td>
+<td rowspan="6" valign="top">
+Regional
+Direction: GYOER (Hungary)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ZURNDORF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:05
+</td>
+<td class="result" >
+14:06
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+NICKELSDORF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:09
+</td>
+<td class="result" >
+14:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+NICKELSDORF GRENZE (Austria)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:12
+</td>
+<td class="result" >
+14:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+HEGYESHALOM GR. (Hungary)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:15
+</td>
+<td class="result" >
+14:15
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+HEGYESHALOM (Hungary)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+14:15
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+HEGYESHALOM (Hungary)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+14:28
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="3" valign="top" style="white-space:nowrap;">
+RJX   63
+</td>
+<td rowspan="3" valign="top">
+RJX railjet xpress
+Direction: BUDAPEST-KELETI (Hungary)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MOSONMAGYAROVAR (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:35
+</td>
+<td class="result" >
+14:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+GYOER (Hungary)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+14:54
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+GYOER (Hungary)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+15:11
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="17" valign="top" style="white-space:nowrap;">
+IR  9603
+</td>
+<td rowspan="17" valign="top">
+Interregional
+Direction: PECS (Hungary)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+GYOER-GYARVAROS (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:14
+</td>
+<td class="result" >
+15:14
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+GYOERSZABADHEGY (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:17
+</td>
+<td class="result" >
+15:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+GYOEMOERE-TET (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:37
+</td>
+<td class="result" >
+15:37
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SZERECSENY (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:42
+</td>
+<td class="result" >
+15:42
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VASZAR (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:50
+</td>
+<td class="result" >
+15:50
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PAPA (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:58
+</td>
+<td class="result" >
+16:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+CELLDOEMOELK (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:25
+</td>
+<td class="result" >
+16:33
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+JANOSHAZA (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:46
+</td>
+<td class="result" >
+16:46
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SUEMEG (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:00
+</td>
+<td class="result" >
+17:01
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+TAPOLCA (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:18
+</td>
+<td class="result" >
+17:19
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BALATONEDERICS (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:27
+</td>
+<td class="result" >
+17:28
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BALATONGYOEROEK (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:34
+</td>
+<td class="result" >
+17:34
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VONYARCVASHEGY (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:37
+</td>
+<td class="result" >
+17:38
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+GYENESDIAS (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:41
+</td>
+<td class="result" >
+17:41
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KESZTHELY (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:47
+</td>
+<td class="result" >
+17:48
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+BALATONSZENTGYOERGY (Hungary)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+17:59
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+BALATONSZENTGYOERGY (Hungary)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+18:01
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="28" valign="top" style="white-space:nowrap;">
+IC   204
+</td>
+<td rowspan="28" valign="top">
+Intercity
+Direction: ZAGREB GLAVNI KOL. (Croatia)
+<br />
+Reservation compulsory on part of journey,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VOERS (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:06
+</td>
+<td class="result" >
+18:06
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ZALAKOMAR (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:21
+</td>
+<td class="result" >
+18:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ZALASZENTJAKAB (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:27
+</td>
+<td class="result" >
+18:27
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+NAGYKANIZSA (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:44
+</td>
+<td class="result" >
+19:08
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GYEKENYES (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:33
+</td>
+<td class="result" >
+19:57
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KOPRIVNICA GR. (Hungary)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:58
+</td>
+<td class="result" >
+19:58
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KOPRIVNICA GR. (Croatia)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:59
+</td>
+<td class="result" >
+19:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KOPRIVNICA (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:11
+</td>
+<td class="result" >
+20:19
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MUCNA REKA (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:26
+</td>
+<td class="result" >
+20:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SOKOLOVAC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:30
+</td>
+<td class="result" >
+20:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LEPAVINA (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:34
+</td>
+<td class="result" >
+20:35
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CAREVDAR (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:40
+</td>
+<td class="result" >
+20:40
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VOJAKOVACKI KLOSTAR (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:43
+</td>
+<td class="result" >
+20:43
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MAJUREC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:46
+</td>
+<td class="result" >
+20:46
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KRIZEVCI (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:52
+</td>
+<td class="result" >
+20:53
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+REPINEC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:59
+</td>
+<td class="result" >
+20:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GRADEC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:02
+</td>
+<td class="result" >
+21:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VRBOVEC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:09
+</td>
+<td class="result" >
+21:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BOZJAKOVINA (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:20
+</td>
+<td class="result" >
+21:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DUGO SELO (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:29
+</td>
+<td class="result" >
+21:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SESVETSKI KRALJEVEC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:36
+</td>
+<td class="result" >
+21:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SESVETE (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:41
+</td>
+<td class="result" >
+21:42
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SESVETSKA SOPNICA (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:45
+</td>
+<td class="result" >
+21:45
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CULINEC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:47
+</td>
+<td class="result" >
+21:47
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+TRNAVA (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:49
+</td>
+<td class="result" >
+21:49
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MAKSIMIR (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:52
+</td>
+<td class="result" >
+21:52
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+ZAGREB GLAVNI KOL. (Croatia)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+21:59
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+ZAGREB GLAVNI KOL. (Croatia)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+22:30
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="18" valign="top" style="white-space:nowrap;">
+1821
+</td>
+<td rowspan="18" valign="top">
+Night train
+Direction: SPLIT (Croatia)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KARLOVAC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:24
+</td>
+<td class="result" >
+23:25
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+OGULIN (Croatia)
+</td>
+<td align="center">Sa,02.03.24</td>
+<td class="result" >
+00:24
+</td>
+<td class="result" >
+00:34
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PLASKI (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+00:59
+</td>
+<td class="result" >
+01:00
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VRHOVINE (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:56
+</td>
+<td class="result" >
+01:57
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LICKO LESCE (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+02:11
+</td>
+<td class="result" >
+02:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+GOSPIC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+02:40
+</td>
+<td class="result" >
+02:43
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LOVINAC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+03:08
+</td>
+<td class="result" >
+03:09
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+GRACAC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+03:23
+</td>
+<td class="result" >
+03:24
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KNIN (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:29
+</td>
+<td class="result" >
+04:40
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DRNIS (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:03
+</td>
+<td class="result" >
+05:04
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+UNESIC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:24
+</td>
+<td class="result" >
+05:25
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PERKOVIC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:37
+</td>
+<td class="result" >
+05:42
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PRIMORSKI DOLAC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:53
+</td>
+<td class="result" >
+05:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KASTEL STARI (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:29
+</td>
+<td class="result" >
+06:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KASTEL SUCURAC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:41
+</td>
+<td class="result" >
+06:42
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SPLIT PREDGRADE (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:55
+</td>
+<td class="result" >
+06:56
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+SPLIT (Croatia)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+07:01
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 17:45;
+runs
+not every day, runs not every day
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>15.978892</longitude>
+<latitude>45.804445</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+17.098885,48.120830,0 17.071064,48.080828,0 17.084170,48.102780,0 17.071387,48.081385,0 17.041390,48.041941,0 16.980830,48.010559,0 16.938329,48.008887,0 16.871386,47.986945,0 17.024167,47.968058,0 17.086112,47.942781,0 16.743614,48.053330,0 17.095829,47.938331,0 17.145557,47.913889,0 17.267226,47.849724,0 17.634723,47.681941,0 17.663893,47.684440,0 17.648054,47.663054,0 17.559448,47.499442,0 17.547501,47.469166,0 17.496388,47.402502,0 17.458885,47.340557,0 17.151940,47.261389,0 17.171671,47.115836,0 17.270831,46.981115,0 17.428610,46.877775,0 17.385003,46.802499,0 17.354440,46.751944,0 17.318330,46.755279,0 17.292774,46.763333,0 17.248052,46.758335,0 17.288890,46.692777,0 17.260278,46.663607,0 17.188058,46.530279,0 17.135274,46.491670,0 16.986664,46.440836,0 16.956388,46.249168,0 16.943893,46.246948,0 16.945350,46.239855,0 16.816948,46.165559,0 16.760558,46.123058,0 16.711945,46.101107,0 16.685004,46.098059,0 16.647222,46.065554,0 16.621109,46.049167,0 16.590276,46.026667,0 16.543334,46.006387,0 16.505274,45.949719,0 16.484724,45.914446,0 16.410276,45.873608,0 16.307223,45.822225,0 16.234725,45.801388,0 16.168888,45.810836,0 16.110000,45.824724,0 16.086808,45.822774,0 16.063607,45.820832,0 16.049440,45.818333,0 16.023614,45.814171,0 15.978892,45.804445,0 15.545001,45.499998,0 15.231385,45.266108,0 15.368057,45.078332,0 15.426946,44.848891,0 15.358610,44.773058,0 15.393614,44.536112,0 15.663892,44.376113,0 15.822219,44.300280,0 16.198337,44.036671,0 16.181941,43.863611,0 16.181392,43.741393,0 16.117776,43.675556,0 16.158892,43.636669,0 16.344726,43.567497,0 16.430555,43.548889,0 16.455276,43.522218,0 16.443059,43.504725,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>7736 from BRATISLAVA-PETRZALKA (Slovakia) to PARNDORF (Austria)</name>
+<styleUrl>#idStylePT_7736</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>17.098885</longitude>
+<latitude>48.120830</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+17.098885,48.120830,0 17.071064,48.080828,0 17.084170,48.102780,0 17.071387,48.081385,0 17.041390,48.041941,0 16.980830,48.010559,0 16.938329,48.008887,0 16.871386,47.986945,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE  9413 from PARNDORF (Austria) to HEGYESHALOM (Hungary)</name>
+<styleUrl>#idStylePT_RE  9413</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>16.871386</longitude>
+<latitude>47.986945</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+16.871386,47.986945,0 17.024167,47.968058,0 17.086112,47.942781,0 16.743614,48.053330,0 17.095829,47.938331,0 17.145557,47.913889,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RJX   63 from HEGYESHALOM (Hungary) to GYOER (Hungary)</name>
+<styleUrl>#idStylePT_RJX   63</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>17.145557</longitude>
+<latitude>47.913889</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+17.145557,47.913889,0 17.267226,47.849724,0 17.634723,47.681941,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IR  9603 from GYOER (Hungary) to BALATONSZENTGYOERGY (Hungary)</name>
+<styleUrl>#idStylePT_IR  9603</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>17.634723</longitude>
+<latitude>47.681941</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+17.634723,47.681941,0 17.663893,47.684440,0 17.648054,47.663054,0 17.559448,47.499442,0 17.547501,47.469166,0 17.496388,47.402502,0 17.458885,47.340557,0 17.151940,47.261389,0 17.171671,47.115836,0 17.270831,46.981115,0 17.428610,46.877775,0 17.385003,46.802499,0 17.354440,46.751944,0 17.318330,46.755279,0 17.292774,46.763333,0 17.248052,46.758335,0 17.288890,46.692777,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC   204 from BALATONSZENTGYOERGY (Hungary) to ZAGREB GLAVNI KOL. (Croatia)</name>
+<styleUrl>#idStylePT_IC   204</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>17.288890</longitude>
+<latitude>46.692777</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+17.288890,46.692777,0 17.260278,46.663607,0 17.188058,46.530279,0 17.135274,46.491670,0 16.986664,46.440836,0 16.956388,46.249168,0 16.943893,46.246948,0 16.945350,46.239855,0 16.816948,46.165559,0 16.760558,46.123058,0 16.711945,46.101107,0 16.685004,46.098059,0 16.647222,46.065554,0 16.621109,46.049167,0 16.590276,46.026667,0 16.543334,46.006387,0 16.505274,45.949719,0 16.484724,45.914446,0 16.410276,45.873608,0 16.307223,45.822225,0 16.234725,45.801388,0 16.168888,45.810836,0 16.110000,45.824724,0 16.086808,45.822774,0 16.063607,45.820832,0 16.049440,45.818333,0 16.023614,45.814171,0 15.978892,45.804445,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>1821 from ZAGREB GLAVNI KOL. (Croatia) to SPLIT (Croatia)</name>
+<styleUrl>#idStylePT_1821</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>15.978892</longitude>
+<latitude>45.804445</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+15.978892,45.804445,0 15.545001,45.499998,0 15.231385,45.266108,0 15.368057,45.078332,0 15.426946,44.848891,0 15.358610,44.773058,0 15.393614,44.536112,0 15.663892,44.376113,0 15.822219,44.300280,0 16.198337,44.036671,0 16.181941,43.863611,0 16.181392,43.741393,0 16.117776,43.675556,0 16.158892,43.636669,0 16.344726,43.567497,0 16.430555,43.548889,0 16.455276,43.522218,0 16.443059,43.504725,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

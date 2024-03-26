@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0g.029941.1711479665&input=WARSZAWA &#x0028;Poland&#x0029;!&start=yes&">WARSZAWA &#x0028;Poland&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0g.029941.1711479665&input=WROCLAW GLOWNY &#x0028;Poland&#x0029;!&start=yes&">WROCLAW GLOWNY &#x0028;Poland&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>WARSZAWA CENTRALNA (Poland) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/127389/101633/346428/130751/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0g.029941.1711479665&">IC  1620</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0g.029941.1711479665&input=WROCLAW GLOWNY (Poland)!&start=yes&">WROCLAW GLOWNY (Poland)</a>
+arr 09:25]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>21.002775</longitude>
+<latitude>52.228613</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.002775,52.228613,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>WARSZAWA ZACHODNIA (Poland) dep 04:37</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>20.965281</longitude>
+<latitude>52.220001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>20.965281,52.220001,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GRODZISK MAZOWIECKI (Poland) dep 04:50</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>20.622504</longitude>
+<latitude>52.110000</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>20.622504,52.110000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZYRARDOW (Poland) dep 05:00</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>20.448059</longitude>
+<latitude>52.051948</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>20.448059,52.051948,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SKIERNIEWICE (Poland) dep 05:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>20.150004</longitude>
+<latitude>51.967224</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>20.150004,51.967224,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KOLUSZKI (Poland) dep 05:32</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>19.819444</longitude>
+<latitude>51.745281</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>19.819444,51.745281,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LODZ WIDZEW (Poland) dep 05:48</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>19.543331</longitude>
+<latitude>51.763052</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>19.543331,51.763052,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LODZ CHOJNY (Poland) dep 06:00</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>19.484443</longitude>
+<latitude>51.726385</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>19.484443,51.726385,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LODZ RETKINIA (Poland) dep 06:08</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>19.406111</longitude>
+<latitude>51.740274</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>19.406111,51.740274,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PABIANICE (Poland) dep 06:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>19.325001</longitude>
+<latitude>51.660836</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>19.325001,51.660836,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LASK (Poland) dep 06:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>19.111948</longitude>
+<latitude>51.603889</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>19.111948,51.603889,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZDUNSKA WOLA (Poland) dep 06:40</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.946942</longitude>
+<latitude>51.611386</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.946942,51.611386,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SIERADZ (Poland) dep 06:53</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.714723</longitude>
+<latitude>51.597777</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.714723,51.597777,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KALISZ (Poland) dep 07:25</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.071392</longitude>
+<latitude>51.742782</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.071392,51.742782,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OSTROW WIELKOPOLSKI (Poland) dep 07:43</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.805276</longitude>
+<latitude>51.649168</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.805276,51.649168,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KROTOSZYN (Poland) dep 08:07</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.426947</longitude>
+<latitude>51.702501</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.426947,51.702501,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MILICZ (Poland) dep 08:28</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.295003</longitude>
+<latitude>51.527220</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.295003,51.527220,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GRABOWNO WIELKIE (Poland) dep 08:42</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.403332</longitude>
+<latitude>51.343337</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.403332,51.343337,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OLESNICA RATAJE (Poland) dep 08:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.364445</longitude>
+<latitude>51.216113</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.364445,51.216113,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WROCLAW NADODRZE (Poland) dep 09:14</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.032779</longitude>
+<latitude>51.125834</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.032779,51.125834,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WROCLAW MIKOLAJOW (Poland) dep 09:19</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.998053</longitude>
+<latitude>51.114723</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.998053,51.114723,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>WROCLAW GLOWNY (Poland) arr 09:25</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>17.036392</longitude>
+<latitude>51.098057</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.036392,51.098057,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+WARSZAWA CENTRALNA (Poland)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+04:32
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="22" valign="top" style="white-space:nowrap;">
+IC  1620
+</td>
+<td rowspan="22" valign="top">
+Intercity
+Direction: WROCLAW GLOWNY (Poland)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+WARSZAWA ZACHODNIA (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:36
+</td>
+<td class="result" >
+04:37
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GRODZISK MAZOWIECKI (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:49
+</td>
+<td class="result" >
+04:50
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ZYRARDOW (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:59
+</td>
+<td class="result" >
+05:00
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SKIERNIEWICE (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:11
+</td>
+<td class="result" >
+05:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KOLUSZKI (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:31
+</td>
+<td class="result" >
+05:32
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LODZ WIDZEW (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:45
+</td>
+<td class="result" >
+05:48
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LODZ CHOJNY (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:57
+</td>
+<td class="result" >
+06:00
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LODZ RETKINIA (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:08
+</td>
+<td class="result" >
+06:08
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PABIANICE (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:16
+</td>
+<td class="result" >
+06:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LASK (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:28
+</td>
+<td class="result" >
+06:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ZDUNSKA WOLA (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:38
+</td>
+<td class="result" >
+06:40
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SIERADZ (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:51
+</td>
+<td class="result" >
+06:53
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KALISZ (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:23
+</td>
+<td class="result" >
+07:25
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+OSTROW WIELKOPOLSKI (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:41
+</td>
+<td class="result" >
+07:43
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KROTOSZYN (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:05
+</td>
+<td class="result" >
+08:07
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MILICZ (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:27
+</td>
+<td class="result" >
+08:28
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GRABOWNO WIELKIE (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:42
+</td>
+<td class="result" >
+08:42
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+OLESNICA RATAJE (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:52
+</td>
+<td class="result" >
+08:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+WROCLAW NADODRZE (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:13
+</td>
+<td class="result" >
+09:14
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+WROCLAW MIKOLAJOW (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:18
+</td>
+<td class="result" >
+09:19
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+WROCLAW GLOWNY (Poland)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+09:25
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 4:53;
+runs
+not every day, 1. until 9. Mar 2024
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>21.002775</longitude>
+<latitude>52.228613</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+21.002775,52.228613,0 20.965281,52.220001,0 20.622504,52.110000,0 20.448059,52.051948,0 20.150004,51.967224,0 19.819444,51.745281,0 19.543331,51.763052,0 19.484443,51.726385,0 19.406111,51.740274,0 19.325001,51.660836,0 19.111948,51.603889,0 18.946942,51.611386,0 18.714723,51.597777,0 18.071392,51.742782,0 17.805276,51.649168,0 17.426947,51.702501,0 17.295003,51.527220,0 17.403332,51.343337,0 17.364445,51.216113,0 17.032779,51.125834,0 16.998053,51.114723,0 17.036392,51.098057,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC  1620 from WARSZAWA CENTRALNA (Poland) to WROCLAW GLOWNY (Poland)</name>
+<styleUrl>#idStylePT_IC  1620</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>21.002775</longitude>
+<latitude>52.228613</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+21.002775,52.228613,0 20.965281,52.220001,0 20.622504,52.110000,0 20.448059,52.051948,0 20.150004,51.967224,0 19.819444,51.745281,0 19.543331,51.763052,0 19.484443,51.726385,0 19.406111,51.740274,0 19.325001,51.660836,0 19.111948,51.603889,0 18.946942,51.611386,0 18.714723,51.597777,0 18.071392,51.742782,0 17.805276,51.649168,0 17.426947,51.702501,0 17.295003,51.527220,0 17.403332,51.343337,0 17.364445,51.216113,0 17.032779,51.125834,0 16.998053,51.114723,0 17.036392,51.098057,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

@@ -1,0 +1,2736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0f.029241.1711479662&input=WARSZAWA &#x0028;Poland&#x0029;!&start=yes&">WARSZAWA &#x0028;Poland&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0f.029241.1711479662&input=VERONA PORTA NUOVA &#x0028;Italy&#x0029;!&start=yes&">VERONA PORTA NUOVA &#x0028;Italy&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>WARSZAWA CENTRALNA (Poland) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/439536/152259/681842/194409/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0f.029241.1711479662&">IC   105</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0f.029241.1711479662&input=WIEN HBF (Austria)!&start=yes&">WIEN HBF (Austria)</a>
+arr 13:49]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>21.002775</longitude>
+<latitude>52.228613</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.002775,52.228613,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>WARSZAWA ZACHODNIA (Poland) dep 06:22</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>20.965281</longitude>
+<latitude>52.220001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>20.965281,52.220001,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>IDZIKOWICE (Poland) dep 07:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>20.307486</longitude>
+<latitude>51.444250</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>20.307486,51.444250,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZAWIERCIE (Poland) dep 08:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>19.423055</longitude>
+<latitude>50.481110</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>19.423055,50.481110,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DABROWA GORNICZA (Poland) dep 08:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>19.185282</longitude>
+<latitude>50.330280</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>19.185282,50.330280,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SOSNOWIEC GLOWNY (Poland) dep 08:48</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>19.126115</longitude>
+<latitude>50.278888</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>19.126115,50.278888,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KATOWICE (Poland) dep 09:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>19.017219</longitude>
+<latitude>50.257503</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>19.017219,50.257503,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RYBNIK (Poland) dep 09:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.547497</longitude>
+<latitude>50.088892</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.547497,50.088892,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SUMINA (Poland) dep 09:55</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.402501</longitude>
+<latitude>50.136670</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.402501,50.136670,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RACIBORZ (Poland) dep 10:09</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.226115</longitude>
+<latitude>50.089998</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.226115,50.089998,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KRZYZANOWICE (Poland) dep 10:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.276113</longitude>
+<latitude>49.989166</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.276113,49.989166,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CHALUPKI (Poland) dep 10:24</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.311386</longitude>
+<latitude>49.925558</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.311386,49.925558,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CHALUPKI (GR) (Poland) dep 10:25</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.322497</longitude>
+<latitude>49.916389</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.322497,49.916389,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BOHUMIN ST.HR. (Czech Republic) dep 10:29</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.365915</longitude>
+<latitude>49.903481</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.365915,49.903481,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BOHUMIN (Czech Republic) dep 10:42</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.356944</longitude>
+<latitude>49.899166</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.356944,49.899166,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OSTRAVA HLAVNI NADRAZI (Czech Republic) dep 10:51</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.266108</longitude>
+<latitude>49.851388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.266108,49.851388,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OSTRAVA-SVINOV (Czech Republic) dep 10:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.208334</longitude>
+<latitude>49.818056</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.208334,49.818056,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>STUDENKA (Czech Republic) dep 11:08</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.066385</longitude>
+<latitude>49.707498</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.066385,49.707498,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SUCHDOL NAD ODROU (Czech Republic) dep 11:15</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.939170</longitude>
+<latitude>49.642218</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.939170,49.642218,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HRANICE NA MORAVE (Czech Republic) dep 11:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.738890</longitude>
+<latitude>49.564165</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.738890,49.564165,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PREROV (Czech Republic) dep 11:49</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.448332</longitude>
+<latitude>49.444447</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.448332,49.444447,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HULIN (Czech Republic) dep 11:58</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.478886</longitude>
+<latitude>49.311946</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.478886,49.311946,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OTROKOVICE (Czech Republic) dep 12:08</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.529999</longitude>
+<latitude>49.204165</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.529999,49.204165,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>STARE MESTO U UHERSKEHO HRADISTE (Czech Republic) dep 12:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.422776</longitude>
+<latitude>49.076114</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.422776,49.076114,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MORAVSKY PISEK (Czech Republic) dep 12:28</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.315004</longitude>
+<latitude>48.977781</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.315004,48.977781,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ROHATEC (Czech Republic) dep 12:34</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.198890</longitude>
+<latitude>48.892779</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.198890,48.892779,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HODONIN (Czech Republic) dep 12:38</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.123057</longitude>
+<latitude>48.856669</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.123057,48.856669,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRECLAV (Czech Republic) dep 12:55</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.896943</longitude>
+<latitude>48.758057</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.896943,48.758057,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRECLAV ST.HR. (Czech Republic) dep 12:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.868330</longitude>
+<latitude>48.712500</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.868330,48.712500,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BERNHARDSTHAL GRENZE (Austria) dep 12:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.868123</longitude>
+<latitude>48.712257</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.868123,48.712257,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>WIEN HBF (Austria) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/369540/356041/449768/101704/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0f.029241.1711479662&">RJ   539</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0f.029241.1711479662&input=VILLACH HBF (Austria)!&start=yes&">VILLACH HBF (Austria)</a>
+arr 18:46]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>16.377222</longitude>
+<latitude>48.185004</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.377222,48.185004,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>WIEN MEIDLING (Austria) dep 14:31</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.333058</longitude>
+<latitude>48.174442</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.333058,48.174442,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WIENER NEUSTADT HBF (Austria) dep 14:56</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.233053</longitude>
+<latitude>47.810558</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.233053,47.810558,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRUCK/MUR (Austria) dep 16:15</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.279442</longitude>
+<latitude>47.413891</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.279442,47.413891,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LEOBEN HBF (Austria) dep 16:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.089724</longitude>
+<latitude>47.386663</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.089724,47.386663,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KNITTELFELD (Austria) dep 16:47</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.837775</longitude>
+<latitude>47.215275</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.837775,47.215275,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>JUDENBURG (Austria) dep 16:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.662503</longitude>
+<latitude>47.175003</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.662503,47.175003,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>UNZMARKT (Austria) dep 17:13</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.441944</longitude>
+<latitude>47.200829</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.441944,47.200829,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TREIBACH-ALTHOFEN (Austria) dep 17:51</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.465558</longitude>
+<latitude>46.868336</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.465558,46.868336,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ST.VEIT/GLAN (Austria) dep 18:08</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.367225</longitude>
+<latitude>46.770560</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.367225,46.770560,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KLAGENFURT HBF (Austria) dep 18:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.313614</longitude>
+<latitude>46.615559</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.313614,46.615559,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VELDEN AM WOERTHER SEE (Austria) dep 18:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.044719</longitude>
+<latitude>46.620000</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.044719,46.620000,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>VILLACH HBF (Austria) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/268365/163419/589588/205339/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0f.029241.1711479662&">RE  1823</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0f.029241.1711479662&input=UDINE (Italy)!&start=yes&">UDINE (Italy)</a>
+arr 21:13]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>13.848611</longitude>
+<latitude>46.618607</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.848611,46.618607,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>VILLACH WESTBF (Austria) dep 19:33</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.840556</longitude>
+<latitude>46.609447</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.840556,46.609447,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VILLACH WARMBAD (Austria) dep 19:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.828610</longitude>
+<latitude>46.588888</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.828610,46.588888,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FUERNITZ (Austria) dep 19:41</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.813337</longitude>
+<latitude>46.563332</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.813337,46.563332,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ARNOLDSTEIN (Austria) dep 19:48</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.707498</longitude>
+<latitude>46.551385</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.707498,46.551385,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>THOERL-MAGLERN (Austria) dep 19:53</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.648052</longitude>
+<latitude>46.540275</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.648052,46.540275,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TARVISIO BOSCOVERDE (Italy) dep 20:05</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.607781</longitude>
+<latitude>46.505558</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.607781,46.505558,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>UGOVIZZA-VALBRUNA (Italy) dep 20:14</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.494723</longitude>
+<latitude>46.502781</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.494723,46.502781,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PONTEBBA (Italy) dep 20:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.311388</longitude>
+<latitude>46.508057</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.311388,46.508057,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CARNIA (Italy) dep 20:42</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.132782</longitude>
+<latitude>46.373336</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.132782,46.373336,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VENZONE (Italy) dep 20:47</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.135281</longitude>
+<latitude>46.331671</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.135281,46.331671,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GEMONA DEL FRIULI (Italy) dep 20:53</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.127775</longitude>
+<latitude>46.274167</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.127775,46.274167,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>UDINE (Italy) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/813309/328840/559388/8591/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0f.029241.1711479662&">RE 16022</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0f.029241.1711479662&input=VENEZIA MESTRE (Italy)!&start=yes&">VENEZIA MESTRE (Italy)</a>
+arr 23:46]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>13.241668</longitude>
+<latitude>46.055558</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.241668,46.055558,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>CODROIPO (Italy) dep 22:24</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.976387</longitude>
+<latitude>45.965280</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.976387,45.965280,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CASARSA (Italy) dep 22:32</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.840282</longitude>
+<latitude>45.952776</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.840282,45.952776,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PORDENONE (Italy) dep 22:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.653890</longitude>
+<latitude>45.956389</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.653890,45.956389,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SACILE (Italy) dep 22:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.498332</longitude>
+<latitude>45.948056</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.498332,45.948056,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CONEGLIANO (Italy) dep 23:07</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.298888</longitude>
+<latitude>45.884440</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.298888,45.884440,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SUSEGANA (Italy) dep 23:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.258059</longitude>
+<latitude>45.820832</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.258059,45.820832,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SPRESIANO (Italy) dep 23:15</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.266671</longitude>
+<latitude>45.777504</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.266671,45.777504,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TREVISO CENTRALE (Italy) dep 23:27</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.245834</longitude>
+<latitude>45.659440</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.245834,45.659440,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MOGLIANO VENETO (Italy) dep 23:38</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.233060</longitude>
+<latitude>45.561943</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.233060,45.561943,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>VENEZIA MESTRE (Italy) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/891942/355084/474216/60206/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0f.029241.1711479662&">RE 16028</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0f.029241.1711479662&input=VERONA PORTA NUOVA (Italy)!&start=yes&">VERONA PORTA NUOVA (Italy)</a>
+arr 02:12]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>12.231667</longitude>
+<latitude>45.481948</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.231667,45.481948,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>MIRA-MIRANO (Italy) dep 00:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.118888</longitude>
+<latitude>45.462774</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.118888,45.462774,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DOLO (Italy) dep 00:58</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.071389</longitude>
+<latitude>45.453056</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.071389,45.453056,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VIGONZA-PIANIGA (Italy) dep 01:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.017778</longitude>
+<latitude>45.442782</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.017778,45.442782,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Busa di Vigonza (Italy) dep 01:08</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.950835</longitude>
+<latitude>45.429999</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.950835,45.429999,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PADOVA (Italy) dep 01:15</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.880557</longitude>
+<latitude>45.417774</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.880557,45.417774,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GRISIGNANO DI ZOCCO (Italy) dep 01:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.710553</longitude>
+<latitude>45.486388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.710553,45.486388,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VICENZA (Italy) dep 01:37</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.540558</longitude>
+<latitude>45.540836</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.540558,45.540836,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LONIGO (Italy) dep 01:47</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.344998</longitude>
+<latitude>45.413054</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.344998,45.413054,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>S. BONIFACIO (Italy) dep 01:52</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.273893</longitude>
+<latitude>45.402780</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.273893,45.402780,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VERONA PORTA VESCOVO (Italy) dep 02:05</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.018887</longitude>
+<latitude>45.435276</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.018887,45.435276,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>VERONA PORTA NUOVA (Italy) arr 02:12</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>10.982220</longitude>
+<latitude>45.428336</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.982220,45.428336,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+WARSZAWA CENTRALNA (Poland)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+06:17
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="31" valign="top" style="white-space:nowrap;">
+IC   105
+</td>
+<td rowspan="31" valign="top">
+Intercity
+Direction: WIEN HBF (Austria)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+WARSZAWA ZACHODNIA (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:20
+</td>
+<td class="result" >
+06:22
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+IDZIKOWICE (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:11
+</td>
+<td class="result" >
+07:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ZAWIERCIE (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:13
+</td>
+<td class="result" >
+08:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DABROWA GORNICZA (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:34
+</td>
+<td class="result" >
+08:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SOSNOWIEC GLOWNY (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:47
+</td>
+<td class="result" >
+08:48
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KATOWICE (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:57
+</td>
+<td class="result" >
+09:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+RYBNIK (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:43
+</td>
+<td class="result" >
+09:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SUMINA (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:55
+</td>
+<td class="result" >
+09:55
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+RACIBORZ (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:08
+</td>
+<td class="result" >
+10:09
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KRZYZANOWICE (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:18
+</td>
+<td class="result" >
+10:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CHALUPKI (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:23
+</td>
+<td class="result" >
+10:24
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CHALUPKI (GR) (Poland)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:25
+</td>
+<td class="result" >
+10:25
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BOHUMIN ST.HR. (Czech Republic)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:29
+</td>
+<td class="result" >
+10:29
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BOHUMIN (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:30
+</td>
+<td class="result" >
+10:42
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+OSTRAVA HLAVNI NADRAZI (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:49
+</td>
+<td class="result" >
+10:51
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+OSTRAVA-SVINOV (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:57
+</td>
+<td class="result" >
+10:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+STUDENKA (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:08
+</td>
+<td class="result" >
+11:08
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SUCHDOL NAD ODROU (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:15
+</td>
+<td class="result" >
+11:15
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+HRANICE NA MORAVE (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:24
+</td>
+<td class="result" >
+11:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PREROV (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:46
+</td>
+<td class="result" >
+11:49
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+HULIN (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:58
+</td>
+<td class="result" >
+11:58
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+OTROKOVICE (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:06
+</td>
+<td class="result" >
+12:08
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+STARE MESTO U UHERSKEHO HRADISTE (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:20
+</td>
+<td class="result" >
+12:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MORAVSKY PISEK (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:28
+</td>
+<td class="result" >
+12:28
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ROHATEC (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:34
+</td>
+<td class="result" >
+12:34
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+HODONIN (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:37
+</td>
+<td class="result" >
+12:38
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BRECLAV (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:49
+</td>
+<td class="result" >
+12:55
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BRECLAV ST.HR. (Czech Republic)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:59
+</td>
+<td class="result" >
+12:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BERNHARDSTHAL GRENZE (Austria)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:59
+</td>
+<td class="result" >
+12:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+WIEN HBF (Austria)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+13:49
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+7C-E
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+WIEN HBF (Austria)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+14:24
+</td>
+<td>
+7A-B
+</td>
+<td rowspan="13" valign="top" style="white-space:nowrap;">
+RJ   539
+</td>
+<td rowspan="13" valign="top">
+Rail Jet
+Direction: VILLACH HBF (Austria)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+WIEN MEIDLING (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:29
+</td>
+<td class="result" >
+14:31
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+WIENER NEUSTADT HBF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:54
+</td>
+<td class="result" >
+14:56
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BRUCK/MUR (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:13
+</td>
+<td class="result" >
+16:15
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LEOBEN HBF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:24
+</td>
+<td class="result" >
+16:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KNITTELFELD (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:45
+</td>
+<td class="result" >
+16:47
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+JUDENBURG (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:58
+</td>
+<td class="result" >
+16:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+UNZMARKT (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:12
+</td>
+<td class="result" >
+17:13
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+TREIBACH-ALTHOFEN (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:49
+</td>
+<td class="result" >
+17:51
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ST.VEIT/GLAN (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:06
+</td>
+<td class="result" >
+18:08
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KLAGENFURT HBF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:19
+</td>
+<td class="result" >
+18:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VELDEN AM WOERTHER SEE (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:34
+</td>
+<td class="result" >
+18:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+VILLACH HBF (Austria)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+18:46
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+4
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+VILLACH HBF (Austria)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+19:29
+</td>
+<td>
+5
+</td>
+<td rowspan="13" valign="top" style="white-space:nowrap;">
+RE  1823
+</td>
+<td rowspan="13" valign="top">
+Regional
+Direction: UDINE (Italy)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VILLACH WESTBF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:32
+</td>
+<td class="result" >
+19:33
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VILLACH WARMBAD (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:36
+</td>
+<td class="result" >
+19:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+FUERNITZ (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:41
+</td>
+<td class="result" >
+19:41
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ARNOLDSTEIN (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:47
+</td>
+<td class="result" >
+19:48
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+THOERL-MAGLERN (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:52
+</td>
+<td class="result" >
+19:53
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+TARVISIO BOSCOVERDE (Italy)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:59
+</td>
+<td class="result" >
+20:05
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+UGOVIZZA-VALBRUNA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:13
+</td>
+<td class="result" >
+20:14
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PONTEBBA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:25
+</td>
+<td class="result" >
+20:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CARNIA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:41
+</td>
+<td class="result" >
+20:42
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VENZONE (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:46
+</td>
+<td class="result" >
+20:47
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GEMONA DEL FRIULI (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:52
+</td>
+<td class="result" >
+20:53
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+UDINE (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+21:13
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+UDINE (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+22:09
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="11" valign="top" style="white-space:nowrap;">
+RE 16022
+</td>
+<td rowspan="11" valign="top">
+Regional
+Direction: VENEZIA S. LUCIA (Italy)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+CODROIPO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:23
+</td>
+<td class="result" >
+22:24
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+CASARSA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:31
+</td>
+<td class="result" >
+22:32
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PORDENONE (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:42
+</td>
+<td class="result" >
+22:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SACILE (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:53
+</td>
+<td class="result" >
+22:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+CONEGLIANO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:06
+</td>
+<td class="result" >
+23:07
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SUSEGANA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:12
+</td>
+<td class="result" >
+23:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SPRESIANO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:15
+</td>
+<td class="result" >
+23:15
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+TREVISO CENTRALE (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:25
+</td>
+<td class="result" >
+23:27
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MOGLIANO VENETO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:37
+</td>
+<td class="result" >
+23:38
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+VENEZIA MESTRE (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+23:46
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+VENEZIA MESTRE (Italy)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+00:47
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="12" valign="top" style="white-space:nowrap;">
+RE 16028
+</td>
+<td rowspan="12" valign="top">
+Regional
+Direction: VERONA PORTA NUOVA (Italy)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MIRA-MIRANO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+00:53
+</td>
+<td class="result" >
+00:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DOLO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+00:57
+</td>
+<td class="result" >
+00:58
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VIGONZA-PIANIGA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:02
+</td>
+<td class="result" >
+01:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Busa di Vigonza (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:07
+</td>
+<td class="result" >
+01:08
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PADOVA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:13
+</td>
+<td class="result" >
+01:15
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GRISIGNANO DI ZOCCO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:25
+</td>
+<td class="result" >
+01:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VICENZA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:35
+</td>
+<td class="result" >
+01:37
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LONIGO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:47
+</td>
+<td class="result" >
+01:47
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+S. BONIFACIO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:51
+</td>
+<td class="result" >
+01:52
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VERONA PORTA VESCOVO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+02:04
+</td>
+<td class="result" >
+02:05
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+VERONA PORTA NUOVA (Italy)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+02:12
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 19:55;
+runs
+not every day, 1., 2. Mar
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>12.231667</longitude>
+<latitude>45.481948</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+21.002775,52.228613,0 20.965281,52.220001,0 20.307486,51.444250,0 19.423055,50.481110,0 19.185282,50.330280,0 19.126115,50.278888,0 19.017219,50.257503,0 18.547497,50.088892,0 18.402501,50.136670,0 18.226115,50.089998,0 18.276113,49.989166,0 18.311386,49.925558,0 18.322497,49.916389,0 18.365915,49.903481,0 18.356944,49.899166,0 18.266108,49.851388,0 18.208334,49.818056,0 18.066385,49.707498,0 17.939170,49.642218,0 17.738890,49.564165,0 17.448332,49.444447,0 17.478886,49.311946,0 17.529999,49.204165,0 17.422776,49.076114,0 17.315004,48.977781,0 17.198890,48.892779,0 17.123057,48.856669,0 16.896943,48.758057,0 16.868330,48.712500,0 16.868123,48.712257,0 16.377222,48.185004,0 16.333058,48.174442,0 16.233053,47.810558,0 15.279442,47.413891,0 15.089724,47.386663,0 14.837775,47.215275,0 14.662503,47.175003,0 14.441944,47.200829,0 14.465558,46.868336,0 14.367225,46.770560,0 14.313614,46.615559,0 14.044719,46.620000,0 13.848611,46.618607,0 13.840556,46.609447,0 13.828610,46.588888,0 13.813337,46.563332,0 13.707498,46.551385,0 13.648052,46.540275,0 13.607781,46.505558,0 13.494723,46.502781,0 13.311388,46.508057,0 13.132782,46.373336,0 13.135281,46.331671,0 13.127775,46.274167,0 13.241668,46.055558,0 12.976387,45.965280,0 12.840282,45.952776,0 12.653890,45.956389,0 12.498332,45.948056,0 12.298888,45.884440,0 12.258059,45.820832,0 12.266671,45.777504,0 12.245834,45.659440,0 12.233060,45.561943,0 12.231667,45.481948,0 12.118888,45.462774,0 12.071389,45.453056,0 12.017778,45.442782,0 11.950835,45.429999,0 11.880557,45.417774,0 11.710553,45.486388,0 11.540558,45.540836,0 11.344998,45.413054,0 11.273893,45.402780,0 11.018887,45.435276,0 10.982220,45.428336,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC   105 from WARSZAWA CENTRALNA (Poland) to WIEN HBF (Austria)</name>
+<styleUrl>#idStylePT_IC   105</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>21.002775</longitude>
+<latitude>52.228613</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+21.002775,52.228613,0 20.965281,52.220001,0 20.307486,51.444250,0 19.423055,50.481110,0 19.185282,50.330280,0 19.126115,50.278888,0 19.017219,50.257503,0 18.547497,50.088892,0 18.402501,50.136670,0 18.226115,50.089998,0 18.276113,49.989166,0 18.311386,49.925558,0 18.322497,49.916389,0 18.365915,49.903481,0 18.356944,49.899166,0 18.266108,49.851388,0 18.208334,49.818056,0 18.066385,49.707498,0 17.939170,49.642218,0 17.738890,49.564165,0 17.448332,49.444447,0 17.478886,49.311946,0 17.529999,49.204165,0 17.422776,49.076114,0 17.315004,48.977781,0 17.198890,48.892779,0 17.123057,48.856669,0 16.896943,48.758057,0 16.868330,48.712500,0 16.868123,48.712257,0 16.377222,48.185004,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RJ   539 from WIEN HBF (Austria) to VILLACH HBF (Austria)</name>
+<styleUrl>#idStylePT_RJ   539</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>16.377222</longitude>
+<latitude>48.185004</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+16.377222,48.185004,0 16.333058,48.174442,0 16.233053,47.810558,0 15.279442,47.413891,0 15.089724,47.386663,0 14.837775,47.215275,0 14.662503,47.175003,0 14.441944,47.200829,0 14.465558,46.868336,0 14.367225,46.770560,0 14.313614,46.615559,0 14.044719,46.620000,0 13.848611,46.618607,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE  1823 from VILLACH HBF (Austria) to UDINE (Italy)</name>
+<styleUrl>#idStylePT_RE  1823</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>13.848611</longitude>
+<latitude>46.618607</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+13.848611,46.618607,0 13.840556,46.609447,0 13.828610,46.588888,0 13.813337,46.563332,0 13.707498,46.551385,0 13.648052,46.540275,0 13.607781,46.505558,0 13.494723,46.502781,0 13.311388,46.508057,0 13.132782,46.373336,0 13.135281,46.331671,0 13.127775,46.274167,0 13.241668,46.055558,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE 16022 from UDINE (Italy) to VENEZIA MESTRE (Italy)</name>
+<styleUrl>#idStylePT_RE 16022</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>13.241668</longitude>
+<latitude>46.055558</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+13.241668,46.055558,0 12.976387,45.965280,0 12.840282,45.952776,0 12.653890,45.956389,0 12.498332,45.948056,0 12.298888,45.884440,0 12.258059,45.820832,0 12.266671,45.777504,0 12.245834,45.659440,0 12.233060,45.561943,0 12.231667,45.481948,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE 16028 from VENEZIA MESTRE (Italy) to VERONA PORTA NUOVA (Italy)</name>
+<styleUrl>#idStylePT_RE 16028</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>12.231667</longitude>
+<latitude>45.481948</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+12.231667,45.481948,0 12.118888,45.462774,0 12.071389,45.453056,0 12.017778,45.442782,0 11.950835,45.429999,0 11.880557,45.417774,0 11.710553,45.486388,0 11.540558,45.540836,0 11.344998,45.413054,0 11.273893,45.402780,0 11.018887,45.435276,0 10.982220,45.428336,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

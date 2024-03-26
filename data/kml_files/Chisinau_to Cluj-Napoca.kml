@@ -1,0 +1,2585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=3i.0233051.1711480107&input=CHISINEU CRIS &#x0028;Romania&#x0029;!&start=yes&">CHISINEU CRIS &#x0028;Romania&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=3i.0233051.1711480107&input=CLUJ NAPOCA &#x0028;Romania&#x0029;!&start=yes&">CLUJ NAPOCA &#x0028;Romania&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>CHISINEU CRIS (Romania) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/487359/310972/652948/164021/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=3i.0233051.1711480107&">RE  3112</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=3i.0233051.1711480107&input=ARAD (Romania)!&start=yes&">ARAD (Romania)</a>
+arr 07:26]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>21.530558</longitude>
+<latitude>46.523887</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.530558,46.523887,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>NADAB (Romania) dep 06:40</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.503609</longitude>
+<latitude>46.477503</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.503609,46.477503,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SIMAND (Romania) dep 06:47</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.472973</longitude>
+<latitude>46.427999</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.472973,46.427999,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>COMLAUS (Romania) dep 06:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.527520</longitude>
+<latitude>46.366001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.527520,46.366001,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SANTANA (Romania) dep 06:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.508013</longitude>
+<latitude>46.335473</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.508013,46.335473,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZIMANDU NOU (Romania) dep 07:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.403289</longitude>
+<latitude>46.287552</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.403289,46.287552,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>UTVINIS (Romania) dep 07:14</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.373876</longitude>
+<latitude>46.272989</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.373876,46.272989,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>UTVINISU NOU (Romania) dep 07:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.365292</longitude>
+<latitude>46.248611</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.365292,46.248611,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>ARAD (Romania) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/812943/384920/52526/244718/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=3i.0233051.1711480107&">RE  2372</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=3i.0233051.1711480107&input=SIMERIA (Romania)!&start=yes&">SIMERIA (Romania)</a>
+arr 11:27]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>21.324166</longitude>
+<latitude>46.188886</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.324166,46.188886,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>GLOGOVAT (Romania) dep 08:01</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.419488</longitude>
+<latitude>46.175187</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.419488,46.175187,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GHIOROC (Romania) dep 08:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.583900</longitude>
+<latitude>46.150907</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.583900,46.150907,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PAULIS HALTA (Romania) dep 08:16</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.591568</longitude>
+<latitude>46.120029</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.591568,46.120029,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PAULIS (Romania) dep 08:20</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.617097</longitude>
+<latitude>46.107795</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.617097,46.107795,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RADNA (Romania) dep 08:27</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.696391</longitude>
+<latitude>46.094724</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.696391,46.094724,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MILOVA (Romania) dep 08:35</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.801161</longitude>
+<latitude>46.090221</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.801161,46.090221,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CONOP (Romania) dep 08:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.904033</longitude>
+<latitude>46.098149</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.904033,46.098149,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BARZAVA NOUA (Romania) dep 08:50</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.973052</longitude>
+<latitude>46.103893</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.973052,46.103893,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BARZAVA (Romania) dep 08:55</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.996541</longitude>
+<latitude>46.102698</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.996541,46.102698,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CAPRUTA (Romania) dep 09:01</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.035635</longitude>
+<latitude>46.075317</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.035635,46.075317,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BATUTA (Romania) dep 09:08</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.046647</longitude>
+<latitude>46.055990</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.046647,46.055990,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VALEA MURESULUI (Romania) dep 09:16</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.089022</longitude>
+<latitude>46.030991</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.089022,46.030991,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VARADIA (Romania) dep 09:23</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.157439</longitude>
+<latitude>46.002297</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.157439,46.002297,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VARADIA HALTA (Romania) dep 09:27</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.164469</longitude>
+<latitude>46.003556</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.164469,46.003556,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SAVIRSIN (Romania) dep 09:33</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.232499</longitude>
+<latitude>46.007781</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.232499,46.007781,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ILTEU (Romania) dep 09:42</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.357467</longitude>
+<latitude>46.006001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.357467,46.006001,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PETRIS PE MURES (Romania) dep 09:49</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.396381</longitude>
+<latitude>46.010585</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.396381,46.010585,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZAM (Romania) dep 09:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.440689</longitude>
+<latitude>46.000607</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.440689,46.000607,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BURJUC (Romania) dep 10:13</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.488521</longitude>
+<latitude>45.949162</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.488521,45.949162,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CAMPURI SURDUC (Romania) dep 10:20</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.542492</longitude>
+<latitude>45.939660</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.542492,45.939660,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GURASADA (Romania) dep 10:29</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.534456</longitude>
+<latitude>45.937377</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.534456,45.937377,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ILIA (Romania) dep 10:37</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.657221</longitude>
+<latitude>45.939723</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.657221,45.939723,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRETEA MURESANA (Romania) dep 10:45</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.721395</longitude>
+<latitude>45.931471</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.721395,45.931471,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRANISCA (Romania) dep 10:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.773182</longitude>
+<latitude>45.918221</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.773182,45.918221,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VETEL (Romania) dep 11:00</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.800842</longitude>
+<latitude>45.909133</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.800842,45.909133,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MINTIA HALTA (Romania) dep 11:05</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.827477</longitude>
+<latitude>45.921529</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.827477,45.921529,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MINTIA (Romania) dep 11:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.850301</longitude>
+<latitude>45.920720</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.850301,45.920720,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DEVA (Romania) dep 11:17</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.909441</longitude>
+<latitude>45.883891</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.909441,45.883891,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SAULESTI (Romania) dep 11:23</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.997895</longitude>
+<latitude>45.858515</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.997895,45.858515,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>SIMERIA (Romania) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/727911/333086/32232/226521/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=3i.0233051.1711480107&">RE  2036</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=3i.0233051.1711480107&input=CLUJ NAPOCA (Romania)!&start=yes&">CLUJ NAPOCA (Romania)</a>
+arr 18:38]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>23.014444</longitude>
+<latitude>45.846388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.014444,45.846388,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>TURDAS (Romania) dep 14:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.133344</longitude>
+<latitude>45.847063</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.133344,45.847063,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PRICAZ (Romania) dep 14:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.203496</longitude>
+<latitude>45.865410</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.203496,45.865410,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ORASTIE (Romania) dep 14:27</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.210004</longitude>
+<latitude>45.861391</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.210004,45.861391,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GEOAGIU (Romania) dep 14:34</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.248604</longitude>
+<latitude>45.884188</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.248604,45.884188,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>AUREL VLAICU (Romania) dep 14:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.274915</longitude>
+<latitude>45.902014</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.274915,45.902014,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SIBOT (Romania) dep 14:49</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.326666</longitude>
+<latitude>45.928334</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.326666,45.928334,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BALOMIRU DE CAMP (Romania) dep 14:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.389986</longitude>
+<latitude>45.944128</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.389986,45.944128,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TARTARIA (Romania) dep 15:00</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.432676</longitude>
+<latitude>45.965370</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.432676,45.965370,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BLANDIANA (Romania) dep 15:05</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.461846</longitude>
+<latitude>45.982116</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.461846,45.982116,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VINTU DE JOS (Romania) dep 15:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.499996</longitude>
+<latitude>45.983060</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.499996,45.983060,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ALBA IULIA (Romania) dep 15:25</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.576386</longitude>
+<latitude>46.056107</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.576386,46.056107,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BARABANT (Romania) dep 15:31</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.601619</longitude>
+<latitude>46.080782</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.601619,46.080782,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SANTIMBRU (Romania) dep 15:37</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.615975</longitude>
+<latitude>46.107147</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.615975,46.107147,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SANTIMBRU HALTA (Romania) dep 15:41</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.626519</longitude>
+<latitude>46.119687</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.626519,46.119687,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>COSLARIU (Romania) dep 15:47</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.683052</longitude>
+<latitude>46.183052</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.683052,46.183052,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TEIUS (Romania) dep 16:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.690837</longitude>
+<latitude>46.202775</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.690837,46.202775,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>AIUD (Romania) dep 16:22</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.735001</longitude>
+<latitude>46.312497</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.735001,46.312497,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MIRASLAU (Romania) dep 16:32</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.712950</longitude>
+<latitude>46.350099</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.712950,46.350099,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DECEA (Romania) dep 16:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.766140</longitude>
+<latitude>46.378208</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.766140,46.378208,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>UNIREA (Romania) dep 16:46</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.839959</longitude>
+<latitude>46.399270</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.839959,46.399270,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>UNIREA HALTA (Romania) dep 16:52</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.825334</longitude>
+<latitude>46.397014</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.825334,46.397014,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RAZBOIENI (Romania) dep 17:06</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.881390</longitude>
+<latitude>46.411666</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.881390,46.411666,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GRINDENI (Romania) dep 17:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.902048</longitude>
+<latitude>46.434229</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.902048,46.434229,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CALARASI TURDA (Romania) dep 17:17</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.892510</longitude>
+<latitude>46.478833</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.892510,46.478833,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CAMPIA TURZII (Romania) dep 17:25</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.879170</longitude>
+<latitude>46.546945</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.879170,46.546945,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CANEPISTI (Romania) dep 17:32</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.847159</longitude>
+<latitude>46.612917</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.847159,46.612917,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PLOSCOS (Romania) dep 17:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.859987</longitude>
+<latitude>46.665234</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.859987,46.665234,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VALEA FLORILOR (Romania) dep 17:41</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.860976</longitude>
+<latitude>46.660775</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.860976,46.660775,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BOJU (Romania) dep 17:55</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.833055</longitude>
+<latitude>46.700004</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.833055,46.700004,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TUNEL (Romania) dep 18:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.824363</longitude>
+<latitude>46.726819</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.824363,46.726819,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>COJOCNA (Romania) dep 18:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.783057</longitude>
+<latitude>46.766668</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.783057,46.766668,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>APAHIDA (Romania) dep 18:19</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.742498</longitude>
+<latitude>46.791946</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.742498,46.791946,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DEZMIR (Romania) dep 18:24</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.722839</longitude>
+<latitude>46.778705</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.722839,46.778705,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CLUJ NAPOCA EST (Romania) dep 18:28</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.669964</longitude>
+<latitude>46.779478</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.669964,46.779478,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CLUJANA (Romania) dep 18:33</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.642889</longitude>
+<latitude>46.780673</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.642889,46.780673,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>CLUJ NAPOCA (Romania) arr 18:38</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>23.587218</longitude>
+<latitude>46.784997</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.587218,46.784997,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+CHISINEU CRIS (Romania)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+06:35
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="9" valign="top" style="white-space:nowrap;">
+RE  3112
+</td>
+<td rowspan="9" valign="top">
+Regional
+Direction: TIMISOARA NORD (Romania)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+NADAB (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:39
+</td>
+<td class="result" >
+06:40
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SIMAND (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:46
+</td>
+<td class="result" >
+06:47
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+COMLAUS (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:53
+</td>
+<td class="result" >
+06:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SANTANA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:58
+</td>
+<td class="result" >
+06:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ZIMANDU NOU (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:09
+</td>
+<td class="result" >
+07:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+UTVINIS (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:13
+</td>
+<td class="result" >
+07:14
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+UTVINISU NOU (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:17
+</td>
+<td class="result" >
+07:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+ARAD (Romania)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+07:26
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+ARAD (Romania)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+07:54
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="31" valign="top" style="white-space:nowrap;">
+RE  2372
+</td>
+<td rowspan="31" valign="top">
+Regional
+Direction: SIMERIA (Romania)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+GLOGOVAT (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:00
+</td>
+<td class="result" >
+08:01
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+GHIOROC (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:11
+</td>
+<td class="result" >
+08:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PAULIS HALTA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:15
+</td>
+<td class="result" >
+08:16
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PAULIS (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:19
+</td>
+<td class="result" >
+08:20
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+RADNA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:26
+</td>
+<td class="result" >
+08:27
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MILOVA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:34
+</td>
+<td class="result" >
+08:35
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+CONOP (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:43
+</td>
+<td class="result" >
+08:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BARZAVA NOUA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:49
+</td>
+<td class="result" >
+08:50
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BARZAVA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:54
+</td>
+<td class="result" >
+08:55
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+CAPRUTA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:00
+</td>
+<td class="result" >
+09:01
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BATUTA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:07
+</td>
+<td class="result" >
+09:08
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VALEA MURESULUI (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:15
+</td>
+<td class="result" >
+09:16
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VARADIA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:22
+</td>
+<td class="result" >
+09:23
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VARADIA HALTA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:26
+</td>
+<td class="result" >
+09:27
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SAVIRSIN (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:32
+</td>
+<td class="result" >
+09:33
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ILTEU (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:41
+</td>
+<td class="result" >
+09:42
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PETRIS PE MURES (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:48
+</td>
+<td class="result" >
+09:49
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ZAM (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:55
+</td>
+<td class="result" >
+09:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BURJUC (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:12
+</td>
+<td class="result" >
+10:13
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+CAMPURI SURDUC (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:19
+</td>
+<td class="result" >
+10:20
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+GURASADA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:28
+</td>
+<td class="result" >
+10:29
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ILIA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:36
+</td>
+<td class="result" >
+10:37
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BRETEA MURESANA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:44
+</td>
+<td class="result" >
+10:45
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BRANISCA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:53
+</td>
+<td class="result" >
+10:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VETEL (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:59
+</td>
+<td class="result" >
+11:00
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MINTIA HALTA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:04
+</td>
+<td class="result" >
+11:05
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MINTIA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:09
+</td>
+<td class="result" >
+11:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DEVA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:16
+</td>
+<td class="result" >
+11:17
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SAULESTI (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:22
+</td>
+<td class="result" >
+11:23
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+SIMERIA (Romania)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+11:27
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+SIMERIA (Romania)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+14:00
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="37" valign="top" style="white-space:nowrap;">
+RE  2036
+</td>
+<td rowspan="37" valign="top">
+Regional
+Direction: CLUJ NAPOCA (Romania)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+TURDAS (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:11
+</td>
+<td class="result" >
+14:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PRICAZ (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:20
+</td>
+<td class="result" >
+14:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ORASTIE (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:26
+</td>
+<td class="result" >
+14:27
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GEOAGIU (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:33
+</td>
+<td class="result" >
+14:34
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+AUREL VLAICU (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:38
+</td>
+<td class="result" >
+14:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SIBOT (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:48
+</td>
+<td class="result" >
+14:49
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BALOMIRU DE CAMP (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:53
+</td>
+<td class="result" >
+14:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+TARTARIA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:59
+</td>
+<td class="result" >
+15:00
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BLANDIANA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:04
+</td>
+<td class="result" >
+15:05
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VINTU DE JOS (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:10
+</td>
+<td class="result" >
+15:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ALBA IULIA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:19
+</td>
+<td class="result" >
+15:25
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BARABANT (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:30
+</td>
+<td class="result" >
+15:31
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SANTIMBRU (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:36
+</td>
+<td class="result" >
+15:37
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SANTIMBRU HALTA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:40
+</td>
+<td class="result" >
+15:41
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+COSLARIU (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:46
+</td>
+<td class="result" >
+15:47
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+TEIUS (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:54
+</td>
+<td class="result" >
+16:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+AIUD (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:21
+</td>
+<td class="result" >
+16:22
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MIRASLAU (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:31
+</td>
+<td class="result" >
+16:32
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DECEA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:38
+</td>
+<td class="result" >
+16:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+UNIREA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:45
+</td>
+<td class="result" >
+16:46
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+UNIREA HALTA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:51
+</td>
+<td class="result" >
+16:52
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+RAZBOIENI (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:00
+</td>
+<td class="result" >
+17:06
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GRINDENI (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:09
+</td>
+<td class="result" >
+17:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CALARASI TURDA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:16
+</td>
+<td class="result" >
+17:17
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CAMPIA TURZII (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:24
+</td>
+<td class="result" >
+17:25
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CANEPISTI (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:31
+</td>
+<td class="result" >
+17:32
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PLOSCOS (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:35
+</td>
+<td class="result" >
+17:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VALEA FLORILOR (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:40
+</td>
+<td class="result" >
+17:41
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BOJU (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:54
+</td>
+<td class="result" >
+17:55
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+TUNEL (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:02
+</td>
+<td class="result" >
+18:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+COJOCNA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:10
+</td>
+<td class="result" >
+18:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+APAHIDA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:18
+</td>
+<td class="result" >
+18:19
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DEZMIR (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:23
+</td>
+<td class="result" >
+18:24
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CLUJ NAPOCA EST (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:27
+</td>
+<td class="result" >
+18:28
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CLUJANA (Romania)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:32
+</td>
+<td class="result" >
+18:33
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+CLUJ NAPOCA (Romania)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+18:38
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 12:03;
+runs
+daily, not 5. May
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>23.014444</longitude>
+<latitude>45.846388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+21.530558,46.523887,0 21.503609,46.477503,0 21.472973,46.427999,0 21.527520,46.366001,0 21.508013,46.335473,0 21.403289,46.287552,0 21.373876,46.272989,0 21.365292,46.248611,0 21.324166,46.188886,0 21.419488,46.175187,0 21.583900,46.150907,0 21.591568,46.120029,0 21.617097,46.107795,0 21.696391,46.094724,0 21.801161,46.090221,0 21.904033,46.098149,0 21.973052,46.103893,0 21.996541,46.102698,0 22.035635,46.075317,0 22.046647,46.055990,0 22.089022,46.030991,0 22.157439,46.002297,0 22.164469,46.003556,0 22.232499,46.007781,0 22.357467,46.006001,0 22.396381,46.010585,0 22.440689,46.000607,0 22.488521,45.949162,0 22.542492,45.939660,0 22.534456,45.937377,0 22.657221,45.939723,0 22.721395,45.931471,0 22.773182,45.918221,0 22.800842,45.909133,0 22.827477,45.921529,0 22.850301,45.920720,0 22.909441,45.883891,0 22.997895,45.858515,0 23.014444,45.846388,0 23.133344,45.847063,0 23.203496,45.865410,0 23.210004,45.861391,0 23.248604,45.884188,0 23.274915,45.902014,0 23.326666,45.928334,0 23.389986,45.944128,0 23.432676,45.965370,0 23.461846,45.982116,0 23.499996,45.983060,0 23.576386,46.056107,0 23.601619,46.080782,0 23.615975,46.107147,0 23.626519,46.119687,0 23.683052,46.183052,0 23.690837,46.202775,0 23.735001,46.312497,0 23.712950,46.350099,0 23.766140,46.378208,0 23.839959,46.399270,0 23.825334,46.397014,0 23.881390,46.411666,0 23.902048,46.434229,0 23.892510,46.478833,0 23.879170,46.546945,0 23.847159,46.612917,0 23.859987,46.665234,0 23.860976,46.660775,0 23.833055,46.700004,0 23.824363,46.726819,0 23.783057,46.766668,0 23.742498,46.791946,0 23.722839,46.778705,0 23.669964,46.779478,0 23.642889,46.780673,0 23.587218,46.784997,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE  3112 from CHISINEU CRIS (Romania) to ARAD (Romania)</name>
+<styleUrl>#idStylePT_RE  3112</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>21.530558</longitude>
+<latitude>46.523887</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+21.530558,46.523887,0 21.503609,46.477503,0 21.472973,46.427999,0 21.527520,46.366001,0 21.508013,46.335473,0 21.403289,46.287552,0 21.373876,46.272989,0 21.365292,46.248611,0 21.324166,46.188886,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE  2372 from ARAD (Romania) to SIMERIA (Romania)</name>
+<styleUrl>#idStylePT_RE  2372</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>21.324166</longitude>
+<latitude>46.188886</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+21.324166,46.188886,0 21.419488,46.175187,0 21.583900,46.150907,0 21.591568,46.120029,0 21.617097,46.107795,0 21.696391,46.094724,0 21.801161,46.090221,0 21.904033,46.098149,0 21.973052,46.103893,0 21.996541,46.102698,0 22.035635,46.075317,0 22.046647,46.055990,0 22.089022,46.030991,0 22.157439,46.002297,0 22.164469,46.003556,0 22.232499,46.007781,0 22.357467,46.006001,0 22.396381,46.010585,0 22.440689,46.000607,0 22.488521,45.949162,0 22.542492,45.939660,0 22.534456,45.937377,0 22.657221,45.939723,0 22.721395,45.931471,0 22.773182,45.918221,0 22.800842,45.909133,0 22.827477,45.921529,0 22.850301,45.920720,0 22.909441,45.883891,0 22.997895,45.858515,0 23.014444,45.846388,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE  2036 from SIMERIA (Romania) to CLUJ NAPOCA (Romania)</name>
+<styleUrl>#idStylePT_RE  2036</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>23.014444</longitude>
+<latitude>45.846388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+23.014444,45.846388,0 23.133344,45.847063,0 23.203496,45.865410,0 23.210004,45.861391,0 23.248604,45.884188,0 23.274915,45.902014,0 23.326666,45.928334,0 23.389986,45.944128,0 23.432676,45.965370,0 23.461846,45.982116,0 23.499996,45.983060,0 23.576386,46.056107,0 23.601619,46.080782,0 23.615975,46.107147,0 23.626519,46.119687,0 23.683052,46.183052,0 23.690837,46.202775,0 23.735001,46.312497,0 23.712950,46.350099,0 23.766140,46.378208,0 23.839959,46.399270,0 23.825334,46.397014,0 23.881390,46.411666,0 23.902048,46.434229,0 23.892510,46.478833,0 23.879170,46.546945,0 23.847159,46.612917,0 23.859987,46.665234,0 23.860976,46.660775,0 23.833055,46.700004,0 23.824363,46.726819,0 23.783057,46.766668,0 23.742498,46.791946,0 23.722839,46.778705,0 23.669964,46.779478,0 23.642889,46.780673,0 23.587218,46.784997,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>
