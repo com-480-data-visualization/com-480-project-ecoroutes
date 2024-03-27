@@ -30,6 +30,8 @@ The final dataset can be found [here](https://github.com/com-480-data-visualizat
 > - What am I trying to show with my visualization?
 > - Think of an overview for the project, your motivation, and the target audience.
 
+Concern over CO2 emissions has grown over the past few decades, and travel is a major contributor to this issue. With environmental sustainability becoming more and more important, it's essential for people to understand the impact of their travel choices. Motivated from the importance of sustainable travel, our main goal is to make it easier for everyone to see how choosing one mode of transport over another can make a big difference in terms of pollution. Making meaningful data visualizations can be extremely helpful in order to better explain and emphasize the benefits of choosing more environmentally friendly transportation options. Using geographical details like departure and arrival countries, along with categorizing routes based on European regions, we aim to identify specific areas where improvements in railway policies can significantly reduce CO2 emissions.
+
 ### Exploratory Data Analysis
 
 > Pre-processing of the data set you chose
