@@ -1,0 +1,2385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=hx.049171.1711568582&input=OSIJEK &#x0028;Croatia&#x0029;!&start=yes&">OSIJEK &#x0028;Croatia&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=hx.049171.1711568582&input=MARIBOR &#x0028;Slovenia&#x0029;!&start=yes&">MARIBOR &#x0028;Slovenia&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>OSIJEK (Croatia) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/406350/402165/14406/128247/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=hx.049171.1711568582&">RE  6323</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=hx.049171.1711568582&input=STRIZIVOJNA-VRPOLJE (Croatia)!&start=yes&">STRIZIVOJNA-VRPOLJE (Croatia)</a>
+arr 12:15]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>18.683333</longitude>
+<latitude>45.552774</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.683333,45.552774,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>CEPIN (Croatia) dep 11:34</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.577782</longitude>
+<latitude>45.520556</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.577782,45.520556,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VLADISLAVCI (Croatia) dep 11:38</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.558608</longitude>
+<latitude>45.475556</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.558608,45.475556,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DOPSIN (Croatia) dep 11:40</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.550275</longitude>
+<latitude>45.463052</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.550275,45.463052,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HRASTOVAC VUCKI (Croatia) dep 11:43</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.540000</longitude>
+<latitude>45.443330</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.540000,45.443330,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LIPOVAC-KORITNA (Croatia) dep 11:46</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.523613</longitude>
+<latitude>45.421387</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.523613,45.421387,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VISKOVCI (Croatia) dep 11:55</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.426385</longitude>
+<latitude>45.346390</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.426385,45.346390,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DAKOVO (Croatia) dep 12:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.421666</longitude>
+<latitude>45.313607</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.421666,45.313607,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BUDROVCI (Croatia) dep 12:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.420830</longitude>
+<latitude>45.261110</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.420830,45.261110,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>STRIZIVOJNA-VRPOLJE (Croatia) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/463779/243295/464132/77473/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=hx.049171.1711568582&">RE  2018</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=hx.049171.1711568582&input=NOVSKA (Croatia)!&start=yes&">NOVSKA (Croatia)</a>
+arr 15:27]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>18.413612</longitude>
+<latitude>45.227220</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.413612,45.227220,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>PERKOVCI (Croatia) dep 13:27</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.349447</longitude>
+<latitude>45.208613</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.349447,45.208613,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ANDRIJEVCI (Croatia) dep 13:32</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.292779</longitude>
+<latitude>45.190832</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.292779,45.190832,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>STARO TOPOLJE (Croatia) dep 13:35</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.247221</longitude>
+<latitude>45.182778</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.247221,45.182778,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GARCIN (Croatia) dep 13:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.186113</longitude>
+<latitude>45.173609</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.186113,45.173609,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZADUBRAVLJE (Croatia) dep 13:41</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.153608</longitude>
+<latitude>45.168611</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.153608,45.168611,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DONJA VRBA (Croatia) dep 13:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.121390</longitude>
+<latitude>45.163613</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.121390,45.163613,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SLAVONSKI BROD (Croatia) dep 13:52</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.011111</longitude>
+<latitude>45.163613</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.011111,45.163613,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SLOBODNICA (Croatia) dep 13:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.927223</longitude>
+<latitude>45.176944</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.927223,45.176944,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SIBINJ (Croatia) dep 14:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.904445</longitude>
+<latitude>45.180836</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.904445,45.180836,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>STARI SLATNIK (Croatia) dep 14:09</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.841943</longitude>
+<latitude>45.170274</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.841943,45.170274,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KUTI (Croatia) dep 14:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.812782</longitude>
+<latitude>45.163613</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.812782,45.163613,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRODSKI STUPNIK (Croatia) dep 14:14</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.795280</longitude>
+<latitude>45.160556</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.795280,45.160556,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ORIOVAC (Croatia) dep 14:19</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.753615</longitude>
+<latitude>45.161392</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.753615,45.161392,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LUZANI-MALINO (Croatia) dep 14:23</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.716948</longitude>
+<latitude>45.170552</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.716948,45.170552,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NOVA KAPELA-BATRINA (Croatia) dep 14:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.650275</longitude>
+<latitude>45.189726</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.650275,45.189726,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VRBOVA (Croatia) dep 14:37</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.583053</longitude>
+<latitude>45.209718</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.583053,45.209718,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>STARO PETROVO SELO (Croatia) dep 14:43</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.525837</longitude>
+<latitude>45.222222</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.525837,45.222222,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZAPOLJE (Croatia) dep 14:49</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.462778</longitude>
+<latitude>45.235553</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.462778,45.235553,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NOVA GRADISKA (Croatia) dep 14:57</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.379169</longitude>
+<latitude>45.253334</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.379169,45.253334,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DRAGALIC (Croatia) dep 15:05</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.288333</longitude>
+<latitude>45.252498</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.288333,45.252498,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OKUCANI (Croatia) dep 15:13</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.206387</longitude>
+<latitude>45.252498</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.206387,45.252498,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RAJIC (Croatia) dep 15:19</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.102499</longitude>
+<latitude>45.296114</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.102499,45.296114,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>NOVSKA (Croatia) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/168573/408055/596522/242070/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=hx.049171.1711568582&">RE   940</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=hx.049171.1711568582&input=ZAGREB GLAVNI KOL. (Croatia)!&start=yes&">ZAGREB GLAVNI KOL. (Croatia)</a>
+arr 18:26]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>16.976668</longitude>
+<latitude>45.326947</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.976668,45.326947,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>LIPOVLJANI (Croatia) dep 16:23</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.882497</longitude>
+<latitude>45.386671</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.882497,45.386671,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BANOVA JARUGA (Croatia) dep 16:31</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.876115</longitude>
+<latitude>45.445829</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.876115,45.445829,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MOSLAVACKA GRACENICA (Croatia) dep 16:53</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.689166</longitude>
+<latitude>45.513886</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.689166,45.513886,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>POPOVACA (Croatia) dep 17:04</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.623608</longitude>
+<latitude>45.559165</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.623608,45.559165,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NOVOSELEC (Croatia) dep 17:24</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.530003</longitude>
+<latitude>45.649165</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.530003,45.649165,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>IVANIC GRAD (Croatia) dep 17:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.397781</longitude>
+<latitude>45.707226</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.397781,45.707226,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DUGO SELO (Croatia) dep 18:05</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.234725</longitude>
+<latitude>45.801388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.234725,45.801388,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>ZAGREB GLAVNI KOL. (Croatia) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/759990/447538/863552/178446/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=hx.049171.1711568582&">EN   414</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=hx.049171.1711568582&input=ZIDANI MOST (Slovenia)!&start=yes&">ZIDANI MOST (Slovenia)</a>
+arr 20:57]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>15.978892</longitude>
+<latitude>45.804445</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.978892,45.804445,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>ZAPRESIC (Croatia) dep 19:52</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.813059</longitude>
+<latitude>45.844447</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.813059,45.844447,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SAVSKI MAROF GR. (Croatia) dep 20:00</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.740004</longitude>
+<latitude>45.871945</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.740004,45.871945,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DOBOVA (GR) (Slovenia) dep 20:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.679983</longitude>
+<latitude>45.890714</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.679983,45.890714,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DOBOVA (Slovenia) dep 20:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.654723</longitude>
+<latitude>45.898337</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.654723,45.898337,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SEVNICA (Slovenia) dep 20:43</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.301393</longitude>
+<latitude>46.009722</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.301393,46.009722,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>ZIDANI MOST (Slovenia) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/442269/285668/488850/97003/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=hx.049171.1711568582&">RE  2928</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=hx.049171.1711568582&input=MARIBOR (Slovenia)!&start=yes&">MARIBOR (Slovenia)</a>
+arr 22:28]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>15.170555</longitude>
+<latitude>46.085555</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.170555,46.085555,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>RIMSKE TOPLICE (Slovenia) dep 21:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.203060</longitude>
+<latitude>46.123607</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.203060,46.123607,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LASKO (Slovenia) dep 21:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.232221</longitude>
+<latitude>46.154440</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.232221,46.154440,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CELJE (Slovenia) dep 21:28</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.267774</longitude>
+<latitude>46.228610</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.267774,46.228610,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>STORE (Slovenia) dep 21:32</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.321943</longitude>
+<latitude>46.221670</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.321943,46.221670,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SENTJUR (Slovenia) dep 21:37</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.396113</longitude>
+<latitude>46.213058</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.396113,46.213058,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GROBELNO (Slovenia) dep 21:40</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.439719</longitude>
+<latitude>46.213058</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.439719,46.213058,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PONIKVA (Slovenia) dep 21:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.430829</longitude>
+<latitude>46.247775</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.430829,46.247775,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OSTROZNO (Slovenia) dep 21:48</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.472782</longitude>
+<latitude>46.263892</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.472782,46.263892,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DOLGA GORA (Slovenia) dep 21:51</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.498059</longitude>
+<latitude>46.277502</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.498059,46.277502,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>POLJCANE (Slovenia) dep 21:58</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.576670</longitude>
+<latitude>46.313612</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.576670,46.313612,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SLOVENSKA BISTRICA (Slovenia) dep 22:05</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.598055</longitude>
+<latitude>46.363331</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.598055,46.363331,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PRAGERSKO (Slovenia) dep 22:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.661942</longitude>
+<latitude>46.395557</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.661942,46.395557,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RACE (Slovenia) dep 22:16</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.663892</longitude>
+<latitude>46.453610</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.663892,46.453610,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OREHOVA VAS (Slovenia) dep 22:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.663614</longitude>
+<latitude>46.473053</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.663614,46.473053,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HOCE (Slovenia) dep 22:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.663056</longitude>
+<latitude>46.501109</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.663056,46.501109,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MARIBOR TEZNO (Slovenia) dep 22:25</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.651388</longitude>
+<latitude>46.539169</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.651388,46.539169,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>MARIBOR (Slovenia) arr 22:28</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>15.657501</longitude>
+<latitude>46.561948</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.657501,46.561948,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+OSIJEK (Croatia)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+11:24
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="10" valign="top" style="white-space:nowrap;">
+RE  6323
+</td>
+<td rowspan="10" valign="top">
+Regional
+Direction: STRIZIVOJNA-VRPOLJE (Croatia)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CEPIN (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:34
+</td>
+<td class="result" >
+11:34
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VLADISLAVCI (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:38
+</td>
+<td class="result" >
+11:38
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DOPSIN (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:40
+</td>
+<td class="result" >
+11:40
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+HRASTOVAC VUCKI (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:43
+</td>
+<td class="result" >
+11:43
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LIPOVAC-KORITNA (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:46
+</td>
+<td class="result" >
+11:46
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VISKOVCI (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:55
+</td>
+<td class="result" >
+11:55
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DAKOVO (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:02
+</td>
+<td class="result" >
+12:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BUDROVCI (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:10
+</td>
+<td class="result" >
+12:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+STRIZIVOJNA-VRPOLJE (Croatia)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+12:15
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+STRIZIVOJNA-VRPOLJE (Croatia)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+13:23
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="24" valign="top" style="white-space:nowrap;">
+RE  2018
+</td>
+<td rowspan="24" valign="top">
+Regional
+Direction: NOVSKA (Croatia)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PERKOVCI (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:27
+</td>
+<td class="result" >
+13:27
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ANDRIJEVCI (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:31
+</td>
+<td class="result" >
+13:32
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+STARO TOPOLJE (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:35
+</td>
+<td class="result" >
+13:35
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+GARCIN (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:38
+</td>
+<td class="result" >
+13:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ZADUBRAVLJE (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:41
+</td>
+<td class="result" >
+13:41
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DONJA VRBA (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:44
+</td>
+<td class="result" >
+13:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SLAVONSKI BROD (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:50
+</td>
+<td class="result" >
+13:52
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SLOBODNICA (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:59
+</td>
+<td class="result" >
+13:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SIBINJ (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:02
+</td>
+<td class="result" >
+14:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+STARI SLATNIK (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:09
+</td>
+<td class="result" >
+14:09
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KUTI (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:12
+</td>
+<td class="result" >
+14:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BRODSKI STUPNIK (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:14
+</td>
+<td class="result" >
+14:14
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ORIOVAC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:18
+</td>
+<td class="result" >
+14:19
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LUZANI-MALINO (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:23
+</td>
+<td class="result" >
+14:23
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+NOVA KAPELA-BATRINA (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:29
+</td>
+<td class="result" >
+14:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VRBOVA (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:37
+</td>
+<td class="result" >
+14:37
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+STARO PETROVO SELO (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:42
+</td>
+<td class="result" >
+14:43
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ZAPOLJE (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:49
+</td>
+<td class="result" >
+14:49
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+NOVA GRADISKA (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:56
+</td>
+<td class="result" >
+14:57
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DRAGALIC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:05
+</td>
+<td class="result" >
+15:05
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+OKUCANI (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:12
+</td>
+<td class="result" >
+15:13
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+RAJIC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:19
+</td>
+<td class="result" >
+15:19
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+NOVSKA (Croatia)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+15:27
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+NOVSKA (Croatia)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+16:12
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="9" valign="top" style="white-space:nowrap;">
+RE   940
+</td>
+<td rowspan="9" valign="top">
+Regional
+Direction: ZAGREB GLAVNI KOL. (Croatia)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LIPOVLJANI (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:22
+</td>
+<td class="result" >
+16:23
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BANOVA JARUGA (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:30
+</td>
+<td class="result" >
+16:31
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MOSLAVACKA GRACENICA (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:49
+</td>
+<td class="result" >
+16:53
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+POPOVACA (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:04
+</td>
+<td class="result" >
+17:04
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+NOVOSELEC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:24
+</td>
+<td class="result" >
+17:24
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+IVANIC GRAD (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:44
+</td>
+<td class="result" >
+17:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DUGO SELO (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:03
+</td>
+<td class="result" >
+18:05
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+ZAGREB GLAVNI KOL. (Croatia)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+18:26
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+ZAGREB GLAVNI KOL. (Croatia)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+19:38
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="7" valign="top" style="white-space:nowrap;">
+EN   414
+</td>
+<td rowspan="7" valign="top">
+Euro Night
+Direction: STUTTGART HBF (Germany)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ZAPRESIC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:51
+</td>
+<td class="result" >
+19:52
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SAVSKI MAROF GR. (Croatia)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:00
+</td>
+<td class="result" >
+20:00
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DOBOVA (GR) (Slovenia)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:02
+</td>
+<td class="result" >
+20:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DOBOVA (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:03
+</td>
+<td class="result" >
+20:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SEVNICA (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:42
+</td>
+<td class="result" >
+20:43
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+ZIDANI MOST (Slovenia)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+20:57
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+ZIDANI MOST (Slovenia)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+21:03
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="18" valign="top" style="white-space:nowrap;">
+RE  2928
+</td>
+<td rowspan="18" valign="top">
+Regional
+Direction: MARIBOR (Slovenia)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+RIMSKE TOPLICE (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:10
+</td>
+<td class="result" >
+21:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LASKO (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:17
+</td>
+<td class="result" >
+21:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CELJE (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:26
+</td>
+<td class="result" >
+21:28
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+STORE (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:32
+</td>
+<td class="result" >
+21:32
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SENTJUR (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:36
+</td>
+<td class="result" >
+21:37
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GROBELNO (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:39
+</td>
+<td class="result" >
+21:40
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PONIKVA (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:43
+</td>
+<td class="result" >
+21:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+OSTROZNO (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:48
+</td>
+<td class="result" >
+21:48
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DOLGA GORA (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:51
+</td>
+<td class="result" >
+21:51
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+POLJCANE (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:57
+</td>
+<td class="result" >
+21:58
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SLOVENSKA BISTRICA (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:04
+</td>
+<td class="result" >
+22:05
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PRAGERSKO (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:09
+</td>
+<td class="result" >
+22:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+RACE (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:15
+</td>
+<td class="result" >
+22:16
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+OREHOVA VAS (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:18
+</td>
+<td class="result" >
+22:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+HOCE (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:20
+</td>
+<td class="result" >
+22:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MARIBOR TEZNO (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:24
+</td>
+<td class="result" >
+22:25
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+MARIBOR (Slovenia)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+22:28
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 11:04;
+runs
+not every day, runs not every day
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>15.170555</longitude>
+<latitude>46.085555</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+18.683333,45.552774,0 18.577782,45.520556,0 18.558608,45.475556,0 18.550275,45.463052,0 18.540000,45.443330,0 18.523613,45.421387,0 18.426385,45.346390,0 18.421666,45.313607,0 18.420830,45.261110,0 18.413612,45.227220,0 18.349447,45.208613,0 18.292779,45.190832,0 18.247221,45.182778,0 18.186113,45.173609,0 18.153608,45.168611,0 18.121390,45.163613,0 18.011111,45.163613,0 17.927223,45.176944,0 17.904445,45.180836,0 17.841943,45.170274,0 17.812782,45.163613,0 17.795280,45.160556,0 17.753615,45.161392,0 17.716948,45.170552,0 17.650275,45.189726,0 17.583053,45.209718,0 17.525837,45.222222,0 17.462778,45.235553,0 17.379169,45.253334,0 17.288333,45.252498,0 17.206387,45.252498,0 17.102499,45.296114,0 16.976668,45.326947,0 16.882497,45.386671,0 16.876115,45.445829,0 16.689166,45.513886,0 16.623608,45.559165,0 16.530003,45.649165,0 16.397781,45.707226,0 16.234725,45.801388,0 15.978892,45.804445,0 15.813059,45.844447,0 15.740004,45.871945,0 15.679983,45.890714,0 15.654723,45.898337,0 15.301393,46.009722,0 15.170555,46.085555,0 15.203060,46.123607,0 15.232221,46.154440,0 15.267774,46.228610,0 15.321943,46.221670,0 15.396113,46.213058,0 15.439719,46.213058,0 15.430829,46.247775,0 15.472782,46.263892,0 15.498059,46.277502,0 15.576670,46.313612,0 15.598055,46.363331,0 15.661942,46.395557,0 15.663892,46.453610,0 15.663614,46.473053,0 15.663056,46.501109,0 15.651388,46.539169,0 15.657501,46.561948,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE  6323 from OSIJEK (Croatia) to STRIZIVOJNA-VRPOLJE (Croatia)</name>
+<styleUrl>#idStylePT_RE  6323</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>18.683333</longitude>
+<latitude>45.552774</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+18.683333,45.552774,0 18.577782,45.520556,0 18.558608,45.475556,0 18.550275,45.463052,0 18.540000,45.443330,0 18.523613,45.421387,0 18.426385,45.346390,0 18.421666,45.313607,0 18.420830,45.261110,0 18.413612,45.227220,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE  2018 from STRIZIVOJNA-VRPOLJE (Croatia) to NOVSKA (Croatia)</name>
+<styleUrl>#idStylePT_RE  2018</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>18.413612</longitude>
+<latitude>45.227220</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+18.413612,45.227220,0 18.349447,45.208613,0 18.292779,45.190832,0 18.247221,45.182778,0 18.186113,45.173609,0 18.153608,45.168611,0 18.121390,45.163613,0 18.011111,45.163613,0 17.927223,45.176944,0 17.904445,45.180836,0 17.841943,45.170274,0 17.812782,45.163613,0 17.795280,45.160556,0 17.753615,45.161392,0 17.716948,45.170552,0 17.650275,45.189726,0 17.583053,45.209718,0 17.525837,45.222222,0 17.462778,45.235553,0 17.379169,45.253334,0 17.288333,45.252498,0 17.206387,45.252498,0 17.102499,45.296114,0 16.976668,45.326947,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE   940 from NOVSKA (Croatia) to ZAGREB GLAVNI KOL. (Croatia)</name>
+<styleUrl>#idStylePT_RE   940</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>16.976668</longitude>
+<latitude>45.326947</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+16.976668,45.326947,0 16.882497,45.386671,0 16.876115,45.445829,0 16.689166,45.513886,0 16.623608,45.559165,0 16.530003,45.649165,0 16.397781,45.707226,0 16.234725,45.801388,0 15.978892,45.804445,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>EN   414 from ZAGREB GLAVNI KOL. (Croatia) to ZIDANI MOST (Slovenia)</name>
+<styleUrl>#idStylePT_EN   414</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>15.978892</longitude>
+<latitude>45.804445</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+15.978892,45.804445,0 15.813059,45.844447,0 15.740004,45.871945,0 15.679983,45.890714,0 15.654723,45.898337,0 15.301393,46.009722,0 15.170555,46.085555,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE  2928 from ZIDANI MOST (Slovenia) to MARIBOR (Slovenia)</name>
+<styleUrl>#idStylePT_RE  2928</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>15.170555</longitude>
+<latitude>46.085555</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+15.170555,46.085555,0 15.203060,46.123607,0 15.232221,46.154440,0 15.267774,46.228610,0 15.321943,46.221670,0 15.396113,46.213058,0 15.439719,46.213058,0 15.430829,46.247775,0 15.472782,46.263892,0 15.498059,46.277502,0 15.576670,46.313612,0 15.598055,46.363331,0 15.661942,46.395557,0 15.663892,46.453610,0 15.663614,46.473053,0 15.663056,46.501109,0 15.651388,46.539169,0 15.657501,46.561948,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

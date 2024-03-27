@@ -4,7 +4,7 @@ import csv
 from itertools import combinations
 from tqdm import tqdm
 import math
-from concurrent.futures import ThreadPoolExecutor, as_completed
+import re
 
 cities = []
 with open("data/cities.txt", "r") as file:
@@ -113,7 +113,13 @@ def seconds_to_duration(seconds):
     return f"{hours:02}:{minutes:02}"
 
 
+def assign_data(data, key, elements, parse_func, index):
+    if index < len(elements):
+        data[key] = parse_func(elements[index].text)
+
+
 def calculate_co2_and_duration(dep, arr):
+
     dep_id, dep_value, dep_coords = get_station_info(dep)
     arr_id, arr_value, arr_coords = get_station_info(arr)
 
@@ -188,83 +194,57 @@ def calculate_co2_and_duration(dep, arr):
         product_text = div.find_next_sibling(string=True)
         if product_text:
             products.append(product_text.strip())
+
     # Save it as a list
-    data["train"]["products"] = products[0].split(", ")
-    data["car"]["products"] = products[1].split(", ")
-    data["flight"]["products"] = products[2].split(", ")
+    if len(products) > 0:
+        data["train"]["products"] = products[0].split(", ")
+    if len(products) > 1:
+        data["car"]["products"] = products[1].split(", ")
+    if len(products) > 2:
+        data["flight"]["products"] = products[2].split(", ")
 
     # Extract CO2 emissions data
-    rows = soup.findAll("tr", class_="lc_hide")
+    co2_tds = soup.find_all("tr", class_="lc_hide")[0].find_all(
+        lambda tag: tag.name == "td"
+        and (not tag.has_attr("style") or "bold" in tag.get("class", []))
+        and re.search(r"\d", tag.text)
+    )
+    assign_data(data["train"], "co2", co2_tds, parse_number, 0)
+    assign_data(data["car"], "co2", co2_tds, parse_number, 1)
+    assign_data(data["flight"], "co2", co2_tds, parse_number, 2)
 
-    for row in rows:
-        if "Carbon dioxide" in row.text:
-            # Each 'td' tag in this row contains the data we need
-            co2_data = row.findAll("td", class_="sepline nowrap right")
-            i = 0
-            # Order is train, car, total flight
-            if co2_data[0].get("style", "") == "color:#888;":
-                tot = row.findAll("td", class_="sepline nowrap right bold")
-                data["train"]["co2"] = parse_number(tot[0].text.strip())
-                i += 2
-            else:
-                data["train"]["co2"] = parse_number(co2_data[i].text.strip())
-                i += 1
-            data["car"]["co2"] = parse_number(co2_data[i].text.strip())
-            i += 1
-            # if co2_data[-1].text.strip()
+    # Extract Energy Resource Consumption data
+    energy_tds = soup.find_all("tr", class_="lc_hide")[1].find_all(
+        lambda tag: tag.name == "td"
+        and (not tag.has_attr("style") or "bold" in tag.get("class", []))
+        and re.search(r"\d", tag.text)
+    )
 
-            # print(co2_data)
-            if i == len(co2_data):
-                data["flight"]["co2"] = -1
-                data["flight"]["duration"] = -1
-            else:
-                data["flight"]["co2"] = parse_number(
-                    co2_data[i].text.strip()
-                ) + parse_number(co2_data[i + 1].text.strip())
-
-        if "Energy resource consumption" in row.text:
-            # Each 'td' tag in this row contains the data we need
-            erc_data = row.findAll("td", class_="sepline nowrap right")
-            i = 0
-            # Order is train, car, total flight
-            if erc_data[0].get("style", "") == "color:#888;":
-                tot = row.findAll("td", class_="sepline nowrap right bold")
-                data["train"]["energy resource consumption"] = parse_number(
-                    tot[0].text.strip()
-                )
-                i += 2
-            else:
-                data["train"]["energy resource consumption"] = parse_number(
-                    erc_data[i].text.strip()
-                )
-                i += 1
-            data["car"]["energy resource consumption"] = parse_number(
-                erc_data[i].text.strip()
-            )
-            i += 1
-
-            if i == len(erc_data):
-                data["flight"]["energy resource consumption"] = -1
-                data["flight"]["duration"] = -1
-            else:
-                data["flight"]["energy resource consumption"] = parse_number(
-                    erc_data[i].text.strip()
-                ) + parse_number(erc_data[i + 1].text.strip())
+    assign_data(
+        data["train"], "energy resource consumption", energy_tds, parse_number, 0
+    )
+    assign_data(data["car"], "energy resource consumption", energy_tds, parse_number, 1)
+    assign_data(
+        data["flight"], "energy resource consumption", energy_tds, parse_number, 2
+    )
 
     tds = soup.findAll("td", class_="sepline borderright top")
     i = 0
     for td in tds:
         if "Duration" in td.text:
-            duration = td.contents[-1].strip()
-            if i == 0:
-                data["train"]["duration"] = duration_to_seconds(duration)
-            if i == 1:
-                data["car"]["duration"] = duration_to_seconds(duration)
-            if i == 2:
-                data["flight"]["duration"] = duration_to_seconds(duration)
-            i += 1
+            duration_text = td.contents[-1].strip()
+            # Ensure there's a valid duration before setting it
+            if duration_text:
+                duration_seconds = duration_to_seconds(duration_text)
+                if i == 0:
+                    data["train"]["duration"] = duration_seconds
+                elif i == 1:
+                    data["car"]["duration"] = duration_seconds
+                elif i == 2:
+                    data["flight"]["duration"] = duration_seconds
+                i += 1
 
-    return (dep_coords, arr_coords, data)
+    return (dep_coords or "N/A", arr_coords or "N/A", data)
 
 
 def main():
@@ -302,35 +282,55 @@ def main():
         ):
             # formatted_day = day.strftime("%a, %d.%m.%y")
             try:
-                dep_coords, arr_coords, data = calculate_co2_and_duration(
-                    dep,
-                    arr,
+                dep_coords, arr_coords, data = calculate_co2_and_duration(dep, arr)
+                # Even if some data is missing, proceed to write the available data
+                writer.writerow(
+                    [
+                        data["ID"],
+                        dep,
+                        arr,
+                        dep_coords,
+                        arr_coords,
+                        data["train"]["co2"] or "N/A",
+                        data["train"]["energy resource consumption"] or "N/A",
+                        (
+                            ", ".join(data["train"]["products"])
+                            if data["train"]["products"]
+                            else "N/A"
+                        ),
+                        (
+                            seconds_to_duration(data["train"]["duration"])
+                            if data["train"]["duration"] is not None
+                            else "N/A"
+                        ),
+                        data["car"]["co2"] or "N/A",
+                        data["car"]["energy resource consumption"] or "N/A",
+                        (
+                            ", ".join(data["car"]["products"])
+                            if data["car"]["products"]
+                            else "N/A"
+                        ),
+                        (
+                            seconds_to_duration(data["car"]["duration"])
+                            if data["car"]["duration"] is not None
+                            else "N/A"
+                        ),
+                        data["flight"]["co2"] or "N/A",
+                        data["flight"]["energy resource consumption"] or "N/A",
+                        (
+                            ", ".join(data["flight"]["products"])
+                            if data["flight"]["products"]
+                            else "N/A"
+                        ),
+                        (
+                            seconds_to_duration(data["flight"]["duration"])
+                            if data["flight"]["duration"] is not None
+                            else "N/A"
+                        ),
+                    ]
                 )
-                if data and data["train"]["co2"] is not None:
-                    writer.writerow(
-                        [
-                            f"{dep} to {arr}",
-                            dep,
-                            arr,
-                            dep_coords,
-                            arr_coords,
-                            data["train"]["co2"],
-                            data["train"]["energy resource consumption"],
-                            data["train"]["products"],
-                            seconds_to_duration(data["train"]["duration"]),
-                            data["car"]["co2"],
-                            data["car"]["energy resource consumption"],
-                            data["car"]["products"],
-                            seconds_to_duration(data["car"]["duration"]),
-                            data["flight"]["co2"],
-                            data["flight"]["energy resource consumption"],
-                            data["flight"]["products"],
-                            seconds_to_duration(data["flight"]["duration"]),
-                        ]
-                    )
             except Exception as e:
                 print(f"Failed to process {dep} to {arr}: {e}")
-
     print("Data has been written to 'city_pairs_co2_duration.csv'")
 
 
