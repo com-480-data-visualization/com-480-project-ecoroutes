@@ -20,7 +20,7 @@ We selected a diverse set of 90 cities across Europe, guided by a principle to i
 
 Furthermore, we enriched our dataset with geographical information, more specifically each connection's departure and arrival country, which will be used to do country-level analyses. We further augmented this data by categorizing each connection based on the departure and arrival regions, as defined by the [divisions of Europe](https://en.wikipedia.org/wiki/Regions_of_Europe), in order to explore regional travel patterns and their environmental implications.
 
-Finally, for every city pair, we extracted its KML file, which will serve as a foundation for mapping the routes and will enhance our project by providing a visual representation of the travel networks across Europe.
+Finally, for every city pair, we extracted its train-route KML file, which will serve as a foundation for mapping the routes and will enhance our project by providing a visual representation of the travel networks across Europe.
 
 The final dataset can be found [here](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/tree/master/Milestone%201/data).
 
