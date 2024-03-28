@@ -30,8 +30,24 @@ Concern over CO2 emissions has grown over the past few decades, and travel is a 
 
 ### Exploratory Data Analysis
 
-> Pre-processing of the data set you chose
-> - Show some basic statistics and get insights about the data
+After scraping the data, our dataset comprises __ routes. Each route consists of the departure and arrival city, country, and region, as well as the train, car, and flight duration, CO2 emissions and energy resource consumption. Additionally, the dataset includes information on the ‘products’ for each type of travel connection, which represent the number of transfers a traveler must make during their journey. In the dataset, several routes didn’t have CO2 information, so we removed those from the dataset.
+
+`Distance, weighted average co2` ->  as additional features, we calculated … Andrea’s calculated features (cite the paper)
+
+The CO2 emission data for trains is right-skewed, meaning most train routes have lower emissions but a few have very high emissions. For cars, the CO2 emissions are normally distributed, while flight CO2 emissions show a bimodal distribution, indicating two distinct groups of flights based on their emissions. The average CO2 emissions for trains, cars, and flights are __, __, and __, respectively.
+
+*Figure 1* 
+
+In our regression analysis, we investigated how travel duration affects CO2 emissions across the three transportation modes. We found a positive correlation overall, meaning longer journeys tend to produce more CO2, which is expected. Specifically, the relationship between CO2 emissions from cars and their travel duration is almost a perfect straight line. This is because the calculations for car CO2 emissions are based on a single vehicle type (a mid-class, Diesel EURO 4 car) according to the EcoRoutes website.
+
+*Figure 2*
+
+Lastly, we used KML files to create a map highlighting the train route with the highest CO2 emissions.
+
+*Figure 3*
+
+In [`EDA.ipynb`](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/blob/master/Milestone%201/notebooks/EDA.ipynb) you will find the code for the data preprocessing and exploratory data analysis, as well as other visualizations we produced.
+
 
 ### Related work
 
