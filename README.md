@@ -28,6 +28,11 @@ The final dataset can be found [here](https://github.com/com-480-data-visualizat
 
 Concern over CO2 emissions has grown over the past few decades, and travel is a major contributor to this issue. With environmental sustainability becoming more and more important, it's essential for people to understand the impact of their travel choices. Motivated from the importance of sustainable travel, our main goal is to make it easier for everyone to see how choosing one mode of transport over another can make a big difference in terms of pollution. Making meaningful data visualizations can be extremely helpful in order to better explain and emphasize the benefits of choosing more environmentally friendly transportation options. Targeted at a broad audience ranging from everyday travelers to transport policy-makers, our project's goal is to promote a shift towards more sustainable travel practices. Using geographical details like departure and arrival countries, along with categorizing routes based on European regions, we aim to show specific areas where improvements in railway policies can significantly reduce CO2 emissions. 
 
+We plan to achieve our goal with several possible visualizations, including for example:
+- An interactive map that allows the user to easily compare the CO2 emissions of several routes, both from pre-curated lists and a set chosen by the user
+- A heatmap of the destinations reachable from a given source within a certain time travel bound with their relative emissions
+- Smaller visualizations providing insights on which regions and countries are the most successful in green transportation policies
+
 ### Exploratory Data Analysis
 
 After scraping the data, our dataset comprises 5153 routes. Each route consists of the departure and arrival city, country, and region, as well as the train, car, and flight duration, CO2 emissions and energy resource consumption. Additionally, the dataset includes information on the ‘products’ for each type of travel connection, which represent the number of transfers a traveler must make during their journey. In the dataset, several routes didn’t have CO2 information, so we removed those from the dataset.
@@ -61,11 +66,15 @@ In [`EDA.ipynb`](https://github.com/com-480-data-visualization/com-480-project-e
 
 ### Related work
 
+The data currently provived by EcoPassenger gives environmentally conscious users useful information when deciding which mean of transportation to use for a given route, but fails to provide a broader picture of the state of transport modes in different countries and regions in Europe. 
+So in our approach we are inspired from works like [OpenRitardi](https://github.com/giacomoorsi/OpenRitardi), which aims to democratize the access to data which is already available but not in an aggregated and easy to visualize form.
 
-> - What others have already done with the data?
+Another work that represents a source of inspiration is [Chronotrain](https://www.chronotrains.com/en), which provides a map of the destinations reachable by public transport from a given source and within a certain time travel bound, since it follows a goal similar to the previous one and and is interesting especially for the visualizations used.
+
+<!-- > - What others have already done with the data?
 > - Why is your approach original?
 > - What source of inspiration do you take? Visualizations that you found on other websites or magazines (might be unrelated to your data).
-> - In case you are using a dataset that you have already explored in another context (ML or ADA course, semester project...), you are required to share the report of that work to outline the differences with the submission for this class.
+> - In case you are using a dataset that you have already explored in another context (ML or ADA course, semester project...), you are required to share the report of that work to outline the differences with the submission for this class. -->
 
 ## Milestone 2 (26th April, 5pm)
 
