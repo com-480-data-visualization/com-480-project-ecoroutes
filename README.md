@@ -14,7 +14,7 @@
 
 ### Dataset
 
-For our project, we've constructed our own dataset by extracting data from the  EcoPassenger [website](https://ecopassenger.hafas.de/bin/query.exe/en?L=vs_uic), which provides calculations for emissions and travel times across different modes of transport between cities. The script used for scraping is available under [`src/scraper.py`](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/blob/master/Milestone%201/src/scraper.py).
+For our project, we've constructed our own dataset by extracting data from the  EcoPassenger [website](https://ecopassenger.hafas.de/bin/query.exe/en?L=vs_uic), which provides calculations for emissions and travel times across different modes of transport between cities. The script used for scraping is available under [`src/scraper.py`](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/blob/master/Milestone%201/src/scraper.py). EcoPassenger is developed by the International Railways Union and the methodology for calculating the emissions is well verified and [documented](https://ecopassenger.hafas.de/bin/help.exe/en?L=vs_uic&tpl=methodology).
 
 We selected a diverse set of 90 cities across Europe, guided by a principle to include at least one city from each country, alongside with others noted for their size and popularity. The city list was derived from the [Lists of cities in Europe](https://en.wikipedia.org/wiki/Lists_of_cities_in_Europe). For each possible city pair, we extracted the travel times and environmental impacts (the carbon dioxide emissions and energy consumption)  across different modes of transportation (cars, trains, and planes). Moreover, we detailed the 'products' of each travel connection, which denotes the required changes in flights or trains necessary to complete each journey.
 
@@ -30,11 +30,13 @@ Concern over CO2 emissions has grown over the past few decades, and travel is a 
 
 ### Exploratory Data Analysis
 
-After scraping the data, our dataset comprises __ routes. Each route consists of the departure and arrival city, country, and region, as well as the train, car, and flight duration, CO2 emissions and energy resource consumption. Additionally, the dataset includes information on the ‘products’ for each type of travel connection, which represent the number of transfers a traveler must make during their journey. In the dataset, several routes didn’t have CO2 information, so we removed those from the dataset.
+After scraping the data, our dataset comprises 5153 routes. Each route consists of the departure and arrival city, country, and region, as well as the train, car, and flight duration, CO2 emissions and energy resource consumption. Additionally, the dataset includes information on the ‘products’ for each type of travel connection, which represent the number of transfers a traveler must make during their journey. In the dataset, several routes didn’t have CO2 information, so we removed those from the dataset.
 
-`Distance, weighted average co2` ->  as additional features, we calculated … Andrea’s calculated features (cite the paper)
+Besides a naive average of the CO2 emissions and energy consumption of the three modes for a certain route, we calculated a weighted average that takes into account an extimation of the market shares of the train vs flight modes. We used the following regression, from [Xia, Wenyi, Anming Zhang](https://doi.org/10.1016/j.trb.2016.10.006):
 
-The CO2 emission data for trains is right-skewed, meaning most train routes have lower emissions but a few have very high emissions. For cars, the CO2 emissions are normally distributed, while flight CO2 emissions show a bimodal distribution, indicating two distinct groups of flights based on their emissions. The average CO2 emissions for trains, cars, and flights are __, __, and __, respectively.
+We also computed the "in-flight" distance between each pair of cities, using haversine distance.
+
+The CO2 emission data for trains is right-skewed, meaning most train routes have lower emissions but a few have very high emissions. For cars, the CO2 emissions are normally distributed, while flight CO2 emissions show a bimodal distribution, indicating two distinct groups of flights based on their emissions. The average CO2 emissions for trains, cars, and flights are 55.83, 128.06, and 180.09 Kg respectively.
 
 ![Distribution of CO2 Emissions by Transportation Mode](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/assets/58995762/161ecc15-4e4c-4b37-a12a-e86b0ab18290)
 
