@@ -1,0 +1,1833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0l.013371.1711634486&input=KOSICE &#x0028;Slovakia&#x0029;!&start=yes&">KOSICE &#x0028;Slovakia&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0l.013371.1711634486&input=LYON LOC &#x0028;France&#x0029;!&start=yes&">LYON LOC &#x0028;France&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>KOSICE (Slovakia) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/180696/262091/171704/25620/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0l.013371.1711634486&">IC    44</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0l.013371.1711634486&input=WIEN HBF (Austria)!&start=yes&">WIEN HBF (Austria)</a>
+arr 13:24]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>21.267498</longitude>
+<latitude>48.721669</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.267498,48.721669,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>KYSAK (Slovakia) dep 07:47</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.223891</longitude>
+<latitude>48.852777</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.223891,48.852777,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SPISSKA NOVA VES (Slovakia) dep 08:27</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>20.560559</longitude>
+<latitude>48.950004</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>20.560559,48.950004,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>POPRAD-TATRY (Slovakia) dep 08:52</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>20.295000</longitude>
+<latitude>49.059169</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>20.295000,49.059169,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LIPTOVSKY MIKULAS (Slovakia) dep 09:33</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>19.604997</longitude>
+<latitude>49.091665</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>19.604997,49.091665,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZILINA (Slovakia) dep 10:37</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.745556</longitude>
+<latitude>49.226665</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.745556,49.226665,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TRNAVA (Slovakia) dep 11:51</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.584168</longitude>
+<latitude>48.370281</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.584168,48.370281,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRATISLAVA PREDMESTIE (Slovakia) dep 12:13</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.133889</longitude>
+<latitude>48.184168</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.133889,48.184168,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRATISLAVA-NOVE MESTO (Slovakia) dep 12:17</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.146663</longitude>
+<latitude>48.171664</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.146663,48.171664,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRATISLAVA-PETRZALKA (Slovakia) dep 12:32</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.098885</longitude>
+<latitude>48.120830</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.098885,48.120830,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KITTSEE GR. (Slovakia) dep 12:34</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.071064</longitude>
+<latitude>48.080828</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.071064,48.080828,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KITTSEE(GR) (Austria) dep 12:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.084170</longitude>
+<latitude>48.102780</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.084170,48.102780,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>WIEN HBF (Austria) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/562635/249738/27194/173948/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0l.013371.1711634486&">RJX  166</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0l.013371.1711634486&input=ZUERICH HB (Switzerland)!&start=yes&">ZUERICH HB (Switzerland)</a>
+arr 21:20]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>16.377222</longitude>
+<latitude>48.185004</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.377222,48.185004,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>WIEN MEIDLING (Austria) dep 13:35</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.333058</longitude>
+<latitude>48.174442</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.333058,48.174442,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ST.POELTEN HBF (Austria) dep 13:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.624726</longitude>
+<latitude>48.208331</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.624726,48.208331,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LINZ HBF (Austria) dep 14:45</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.292219</longitude>
+<latitude>48.290277</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.292219,48.290277,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SALZBURG HBF (Austria) dep 15:56</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.045829</longitude>
+<latitude>47.813057</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.045829,47.813057,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KUFSTEIN (Austria) dep 17:09</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.165560</longitude>
+<latitude>47.583059</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.165560,47.583059,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WOERGL HBF (Austria) dep 17:19</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.060557</longitude>
+<latitude>47.491666</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.060557,47.491666,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>INNSBRUCK HBF (Austria) dep 17:47</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.400560</longitude>
+<latitude>47.263331</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.400560,47.263331,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OETZTAL (Austria) dep 18:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.859167</longitude>
+<latitude>47.238611</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.859167,47.238611,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LANDECK-ZAMS (Austria) dep 18:33</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.578335</longitude>
+<latitude>47.148332</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.578335,47.148332,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ST. ANTON AM ARLBERG (Austria) dep 18:57</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.266940</longitude>
+<latitude>47.127504</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.266940,47.127504,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BLUDENZ (Austria) dep 19:31</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.814441</longitude>
+<latitude>47.154723</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.814441,47.154723,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FELDKIRCH (Austria) dep 19:48</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.604165</longitude>
+<latitude>47.241110</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.604165,47.241110,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BUCHS (SG) (Austria) dep 19:57</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.541663</longitude>
+<latitude>47.204865</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.541663,47.204865,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BUCHS SG (Switzerland) dep 20:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.478613</longitude>
+<latitude>47.168333</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.478613,47.168333,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>ZUERICH HB (Switzerland) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/630612/263794/840212/209902/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0l.013371.1711634486&">IC  1538</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0l.013371.1711634486&input=LAUSANNE (Switzerland)!&start=yes&">LAUSANNE (Switzerland)</a>
+arr 23:46]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>8.540274</longitude>
+<latitude>47.378060</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.540274,47.378060,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>OLTEN (Switzerland) dep 22:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.907775</longitude>
+<latitude>47.351947</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.907775,47.351947,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OENSINGEN (Switzerland) dep 22:14</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.710003</longitude>
+<latitude>47.285004</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.710003,47.285004,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SOLOTHURN (Switzerland) dep 22:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.542777</longitude>
+<latitude>47.204164</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.542777,47.204164,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GRENCHEN SUED (Switzerland) dep 22:34</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.398059</longitude>
+<latitude>47.188891</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.398059,47.188891,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BIEL/BIENNE (Switzerland) dep 22:45</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.242780</longitude>
+<latitude>47.132781</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.242780,47.132781,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NEUCHATEL (Switzerland) dep 23:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.935834</longitude>
+<latitude>46.996666</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.935834,46.996666,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YVERDON-LES-BAINS (Switzerland) dep 23:23</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.640835</longitude>
+<latitude>46.781671</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.640835,46.781671,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>LAUSANNE (Switzerland) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/473691/233030/766366/225286/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0l.013371.1711634486&">1840</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0l.013371.1711634486&input=GENEVE (Switzerland)!&start=yes&">GENEVE (Switzerland)</a>
+arr 00:50]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>6.629167</longitude>
+<latitude>46.516669</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.629167,46.516669,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GENEVE (Switzerland) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/537588/536443/876368/258988/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0l.013371.1711634486&">TER96550</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=0l.013371.1711634486&input=LYON PART DIEU (France)!&start=yes&">LYON PART DIEU (France)</a>
+arr 07:22]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>6.142500</longitude>
+<latitude>46.210281</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.142500,46.210281,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>GENEVE VOYAGEURS (France) dep 05:14</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.142428</longitude>
+<latitude>46.209732</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.142428,46.209732,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BELLEGARDE (France) dep 05:55</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.825837</longitude>
+<latitude>46.110833</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.825837,46.110833,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SEYSSEL CORBONOD (France) dep 06:09</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.831671</longitude>
+<latitude>45.963059</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.831671,45.963059,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CULOZ (France) dep 06:20</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.778886</longitude>
+<latitude>45.843332</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.778886,45.843332,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VIRIEU LE GRAND BELLEY (France) dep 06:29</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.653613</longitude>
+<latitude>45.848330</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.653613,45.848330,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TENAY HAUTEVILLE (France) dep 06:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.501668</longitude>
+<latitude>45.922221</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.501668,45.922221,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>AMBERIEU EN BUGEY (France) dep 06:57</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.342226</longitude>
+<latitude>45.953890</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.342226,45.953890,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>LYON PART DIEU (France) arr 07:22</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>4.858885</longitude>
+<latitude>45.760281</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.858885,45.760281,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+KOSICE (Slovakia)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+07:34
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="13" valign="top" style="white-space:nowrap;">
+IC    44
+</td>
+<td rowspan="13" valign="top">
+Intercity
+Direction: WIEN HBF (Austria)
+<br />
+Reservation compulsory on part of journey,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KYSAK (Slovakia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:46
+</td>
+<td class="result" >
+07:47
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SPISSKA NOVA VES (Slovakia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:26
+</td>
+<td class="result" >
+08:27
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+POPRAD-TATRY (Slovakia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:51
+</td>
+<td class="result" >
+08:52
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LIPTOVSKY MIKULAS (Slovakia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:32
+</td>
+<td class="result" >
+09:33
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ZILINA (Slovakia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:35
+</td>
+<td class="result" >
+10:37
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+TRNAVA (Slovakia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:50
+</td>
+<td class="result" >
+11:51
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BRATISLAVA PREDMESTIE (Slovakia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:12
+</td>
+<td class="result" >
+12:13
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BRATISLAVA-NOVE MESTO (Slovakia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:16
+</td>
+<td class="result" >
+12:17
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BRATISLAVA-PETRZALKA (Slovakia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:30
+</td>
+<td class="result" >
+12:32
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KITTSEE GR. (Slovakia)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:34
+</td>
+<td class="result" >
+12:34
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KITTSEE(GR) (Austria)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:36
+</td>
+<td class="result" >
+12:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+WIEN HBF (Austria)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+13:24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+WIEN HBF (Austria)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+13:28
+</td>
+<td>
+8
+</td>
+<td rowspan="16" valign="top" style="white-space:nowrap;">
+RJX  166
+</td>
+<td rowspan="16" valign="top">
+RJX railjet xpress
+Direction: ZUERICH HB (Switzerland)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+WIEN MEIDLING (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:33
+</td>
+<td class="result" >
+13:35
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ST.POELTEN HBF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:57
+</td>
+<td class="result" >
+13:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LINZ HBF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:43
+</td>
+<td class="result" >
+14:45
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SALZBURG HBF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:53
+</td>
+<td class="result" >
+15:56
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KUFSTEIN (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:07
+</td>
+<td class="result" >
+17:09
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+WOERGL HBF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:17
+</td>
+<td class="result" >
+17:19
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+INNSBRUCK HBF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:44
+</td>
+<td class="result" >
+17:47
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+OETZTAL (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:10
+</td>
+<td class="result" >
+18:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LANDECK-ZAMS (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:31
+</td>
+<td class="result" >
+18:33
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ST. ANTON AM ARLBERG (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:55
+</td>
+<td class="result" >
+18:57
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BLUDENZ (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:29
+</td>
+<td class="result" >
+19:31
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+FELDKIRCH (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:42
+</td>
+<td class="result" >
+19:48
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BUCHS (SG) (Austria)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:57
+</td>
+<td class="result" >
+19:57
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BUCHS SG (Switzerland)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:06
+</td>
+<td class="result" >
+20:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+ZUERICH HB (Switzerland)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+21:20
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+7
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+ZUERICH HB (Switzerland)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+21:30
+</td>
+<td>
+11
+</td>
+<td rowspan="9" valign="top" style="white-space:nowrap;">
+IC  1538
+</td>
+<td rowspan="9" valign="top">
+Intercity
+Direction: LAUSANNE (Switzerland)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+OLTEN (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:00
+</td>
+<td class="result" >
+22:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+OENSINGEN (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:13
+</td>
+<td class="result" >
+22:14
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SOLOTHURN (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:24
+</td>
+<td class="result" >
+22:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GRENCHEN SUED (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:33
+</td>
+<td class="result" >
+22:34
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BIEL/BIENNE (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:43
+</td>
+<td class="result" >
+22:45
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+NEUCHATEL (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:01
+</td>
+<td class="result" >
+23:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+YVERDON-LES-BAINS (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:22
+</td>
+<td class="result" >
+23:23
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+LAUSANNE (Switzerland)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+23:46
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+5
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+LAUSANNE (Switzerland)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+00:12
+</td>
+<td>
+7
+</td>
+<td rowspan="2" valign="top" style="white-space:nowrap;">
+1840
+</td>
+<td rowspan="2" valign="top">
+TRN
+Direction: GENEVE (Switzerland)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td>
+GENEVE (Switzerland)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+00:50
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+4
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+GENEVE (Switzerland)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+05:14
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="9" valign="top" style="white-space:nowrap;">
+TER96550
+</td>
+<td rowspan="9" valign="top">
+Regional TER
+Direction: LYON PART DIEU (France)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GENEVE VOYAGEURS (France)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:14
+</td>
+<td class="result" >
+05:14
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BELLEGARDE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:46
+</td>
+<td class="result" >
+05:55
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SEYSSEL CORBONOD (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:08
+</td>
+<td class="result" >
+06:09
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CULOZ (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:19
+</td>
+<td class="result" >
+06:20
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VIRIEU LE GRAND BELLEY (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:27
+</td>
+<td class="result" >
+06:29
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+TENAY HAUTEVILLE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:42
+</td>
+<td class="result" >
+06:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+AMBERIEU EN BUGEY (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:55
+</td>
+<td class="result" >
+06:57
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+LYON PART DIEU (France)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+07:22
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 23:48;
+runs
+not every day, 1., 22., 29. Mar, 26. Apr, 3., 10. May
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>6.142500</longitude>
+<latitude>46.210281</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+21.267498,48.721669,0 21.223891,48.852777,0 20.560559,48.950004,0 20.295000,49.059169,0 19.604997,49.091665,0 18.745556,49.226665,0 17.584168,48.370281,0 17.133889,48.184168,0 17.146663,48.171664,0 17.098885,48.120830,0 17.071064,48.080828,0 17.084170,48.102780,0 16.377222,48.185004,0 16.333058,48.174442,0 15.624726,48.208331,0 14.292219,48.290277,0 13.045829,47.813057,0 12.165560,47.583059,0 12.060557,47.491666,0 11.400560,47.263331,0 10.859167,47.238611,0 10.578335,47.148332,0 10.266940,47.127504,0 9.814441,47.154723,0 9.604165,47.241110,0 9.541663,47.204865,0 9.478613,47.168333,0 8.540274,47.378060,0 7.907775,47.351947,0 7.710003,47.285004,0 7.542777,47.204164,0 7.398059,47.188891,0 7.242780,47.132781,0 6.935834,46.996666,0 6.640835,46.781671,0 6.629167,46.516669,0 6.142500,46.210281,0 6.142428,46.209732,0 5.825837,46.110833,0 5.831671,45.963059,0 5.778886,45.843332,0 5.653613,45.848330,0 5.501668,45.922221,0 5.342226,45.953890,0 4.858885,45.760281,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC    44 from KOSICE (Slovakia) to WIEN HBF (Austria)</name>
+<styleUrl>#idStylePT_IC    44</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>21.267498</longitude>
+<latitude>48.721669</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+21.267498,48.721669,0 21.223891,48.852777,0 20.560559,48.950004,0 20.295000,49.059169,0 19.604997,49.091665,0 18.745556,49.226665,0 17.584168,48.370281,0 17.133889,48.184168,0 17.146663,48.171664,0 17.098885,48.120830,0 17.071064,48.080828,0 17.084170,48.102780,0 16.377222,48.185004,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RJX  166 from WIEN HBF (Austria) to ZUERICH HB (Switzerland)</name>
+<styleUrl>#idStylePT_RJX  166</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>16.377222</longitude>
+<latitude>48.185004</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+16.377222,48.185004,0 16.333058,48.174442,0 15.624726,48.208331,0 14.292219,48.290277,0 13.045829,47.813057,0 12.165560,47.583059,0 12.060557,47.491666,0 11.400560,47.263331,0 10.859167,47.238611,0 10.578335,47.148332,0 10.266940,47.127504,0 9.814441,47.154723,0 9.604165,47.241110,0 9.541663,47.204865,0 9.478613,47.168333,0 8.540274,47.378060,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC  1538 from ZUERICH HB (Switzerland) to LAUSANNE (Switzerland)</name>
+<styleUrl>#idStylePT_IC  1538</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>8.540274</longitude>
+<latitude>47.378060</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+8.540274,47.378060,0 7.907775,47.351947,0 7.710003,47.285004,0 7.542777,47.204164,0 7.398059,47.188891,0 7.242780,47.132781,0 6.935834,46.996666,0 6.640835,46.781671,0 6.629167,46.516669,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>1840 from LAUSANNE (Switzerland) to GENEVE (Switzerland)</name>
+<styleUrl>#idStylePT_1840</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>6.629167</longitude>
+<latitude>46.516669</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+6.629167,46.516669,0 6.142500,46.210281,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>TER96550 from GENEVE (Switzerland) to LYON PART DIEU (France)</name>
+<styleUrl>#idStylePT_TER96550</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>6.142500</longitude>
+<latitude>46.210281</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+6.142500,46.210281,0 6.142428,46.209732,0 5.825837,46.110833,0 5.831671,45.963059,0 5.778886,45.843332,0 5.653613,45.848330,0 5.501668,45.922221,0 5.342226,45.953890,0 4.858885,45.760281,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

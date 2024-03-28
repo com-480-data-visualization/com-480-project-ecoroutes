@@ -1,0 +1,4221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&input=STOCKHOLM &#x0028;Sweden&#x0029;!&start=yes&">STOCKHOLM &#x0028;Sweden&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&input=BRNO HLAVNI NADRAZI &#x0028;Czech Republic&#x0029;!&start=yes&">BRNO HLAVNI NADRAZI &#x0028;Czech Republic&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>Stockholm Central (Sweden) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/57384/245727/766124/363934/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&">HST  521</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&input=KOEBENHAVN H (Denmark)!&start=yes&">KOEBENHAVN H (Denmark)</a>
+arr 11:33]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>18.058052</longitude>
+<latitude>59.330001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.058052,59.330001,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>Sodertalje Syd (Sweden) dep 06:34</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.645277</longitude>
+<latitude>59.162226</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.645277,59.162226,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Norrkoping C (Sweden) dep 07:33</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.183334</longitude>
+<latitude>58.596391</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.183334,58.596391,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Linkoping C (Sweden) dep 07:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.624726</longitude>
+<latitude>58.416391</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.624726,58.416391,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Mjolby (Sweden) dep 08:14</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.131947</longitude>
+<latitude>58.322778</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.131947,58.322778,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nassjo C (Sweden) dep 08:53</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.693893</longitude>
+<latitude>57.652218</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.693893,57.652218,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Alvesta (Sweden) dep 09:28</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.556107</longitude>
+<latitude>56.898608</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.556107,56.898608,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Hassleholm C (Sweden) dep 10:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.763060</longitude>
+<latitude>56.157501</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.763060,56.157501,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Lund C (Sweden) dep 10:41</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.186663</longitude>
+<latitude>55.708058</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.186663,55.708058,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Malmo C (Sweden) dep 10:55</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.000829</longitude>
+<latitude>55.609447</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.000829,55.609447,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Kastrup grans (Sweden) dep 11:06</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.828937</longitude>
+<latitude>55.574362</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.828937,55.574362,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KASTRUP GRAENSE (Denmark) dep 11:06</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.826366</longitude>
+<latitude>55.575485</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.826366,55.575485,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CPH LUFTHAVN (Denmark) dep 11:20</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.648892</longitude>
+<latitude>55.629169</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.648892,55.629169,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>KOEBENHAVN H (Denmark) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/246345/268666/147374/8428/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&">EC   397</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&input=HAMBURG HBF (Germany)!&start=yes&">HAMBURG HBF (Germany)</a>
+arr 18:22]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>12.565553</longitude>
+<latitude>55.673054</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.565553,55.673054,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>KOEBENHAVN SYD (Denmark) dep 13:29</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.516670</longitude>
+<latitude>55.652496</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.516670,55.652496,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KOEGE NORD (Denmark) dep 13:41</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.173893</longitude>
+<latitude>55.499167</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.173893,55.499167,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RINGSTED (Denmark) dep 13:53</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.786108</longitude>
+<latitude>55.438337</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.786108,55.438337,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SOROE (Denmark) dep 14:00</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.569171</longitude>
+<latitude>55.419163</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.569171,55.419163,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SLAGELSE (Denmark) dep 14:07</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.348890</longitude>
+<latitude>55.407225</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.348890,55.407225,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KORSOER (Denmark) dep 14:13</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.135280</longitude>
+<latitude>55.356670</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.135280,55.356670,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NYBORG (Denmark) dep 14:23</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.802499</longitude>
+<latitude>55.313890</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.802499,55.313890,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LANGESKOV (Denmark) dep 14:29</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.586111</longitude>
+<latitude>55.361668</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.586111,55.361668,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ODENSE (Denmark) dep 14:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.386667</longitude>
+<latitude>55.401670</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.386667,55.401670,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HOLMSTRUP (Denmark) dep 14:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.271947</longitude>
+<latitude>55.361947</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.271947,55.361947,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TOMMERUP (Denmark) dep 14:47</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.182504</longitude>
+<latitude>55.349164</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.182504,55.349164,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SKALBJERG (Denmark) dep 14:48</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.141109</longitude>
+<latitude>55.366109</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.141109,55.366109,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRED (Denmark) dep 14:50</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.105556</longitude>
+<latitude>55.373057</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.105556,55.373057,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>AARUP (Denmark) dep 14:51</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.051109</longitude>
+<latitude>55.382775</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.051109,55.382775,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GELSTED (Denmark) dep 14:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.974170</longitude>
+<latitude>55.395836</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.974170,55.395836,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>EJBY (Denmark) dep 14:56</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.929718</longitude>
+<latitude>55.428332</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.929718,55.428332,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NOERRE AABY (Denmark) dep 14:57</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.869724</longitude>
+<latitude>55.460001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.869724,55.460001,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KAUSLUNDE (Denmark) dep 14:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.810836</longitude>
+<latitude>55.475831</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.810836,55.475831,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MIDDELFART (Denmark) dep 15:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.733888</longitude>
+<latitude>55.501945</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.733888,55.501945,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TAULOV (Denmark) dep 15:09</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.615554</longitude>
+<latitude>55.545003</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.615554,55.545003,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KOLDING (Denmark) dep 15:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.480833</longitude>
+<latitude>55.490555</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.480833,55.490555,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LUNDERSKOV (Denmark) dep 15:24</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.303332</longitude>
+<latitude>55.479723</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.303332,55.479723,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VAMDRUP (Denmark) dep 15:27</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.286387</longitude>
+<latitude>55.428053</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.286387,55.428053,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VOJENS (Denmark) dep 15:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.305552</longitude>
+<latitude>55.248053</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.305552,55.248053,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ROEDEKRO (Denmark) dep 15:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.333329</longitude>
+<latitude>55.069168</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.333329,55.069168,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TINGLEV (Denmark) dep 15:50</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.257775</longitude>
+<latitude>54.936110</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.257775,54.936110,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PADBORG (Denmark) dep 16:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.359721</longitude>
+<latitude>54.822774</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.359721,54.822774,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PADBORG GRAENSE (Denmark) dep 16:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.361942</longitude>
+<latitude>54.816391</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.361942,54.816391,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FLENSBURG(GR) (Germany) dep 16:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.363335</longitude>
+<latitude>54.814719</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.363335,54.814719,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FLENSBURG-WEICHE (Germany) dep 16:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.398330</longitude>
+<latitude>54.758060</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.398330,54.758060,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SCHLESWIG (Germany) dep 16:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.538058</longitude>
+<latitude>54.499441</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.538058,54.499441,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>HAMBURG HBF (Germany) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/634482/269586/735380/156196/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&">ICE 1607</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&input=BERLIN HBF (Germany)!&start=yes&">BERLIN HBF (Germany)</a>
+arr 20:20]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>10.006945</longitude>
+<latitude>53.552778</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.006945,53.552778,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>BERLIN-SPANDAU (Germany) dep 20:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.196947</longitude>
+<latitude>52.534722</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.196947,52.534722,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>BERLIN HBF (Germany) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/890229/404352/103764/244861/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&">IC  2275</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&input=DRESDEN HBF (Germany)!&start=yes&">DRESDEN HBF (Germany)</a>
+arr 22:27]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>13.369441</longitude>
+<latitude>52.525553</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.369441,52.525553,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>BERLIN SUEDKREUZ (Germany) dep 20:33</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.365279</longitude>
+<latitude>52.474998</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.365279,52.474998,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FLUGHAFEN BER (Germany) dep 21:01</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.511947</longitude>
+<latitude>52.364718</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.511947,52.364718,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DOBERLUG-KIRCHHAIN (Germany) dep 21:45</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.564165</longitude>
+<latitude>51.620555</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.564165,51.620555,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ELSTERWERDA (Germany) dep 21:56</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.516387</longitude>
+<latitude>51.459720</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.516387,51.459720,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DRESDEN-NEUSTADT (Germany) dep 22:23</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.740830</longitude>
+<latitude>51.065831</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.740830,51.065831,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>DRESDEN HBF (Germany) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/294108/249882/55998/70037/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&">31775</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&input=BAD SCHANDAU (Germany)!&start=yes&">BAD SCHANDAU (Germany)</a>
+arr 23:43]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>13.731940</longitude>
+<latitude>51.040553</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.731940,51.040553,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>DRESDEN-STREHLEN (Germany) dep 23:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.761946</longitude>
+<latitude>51.030557</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.761946,51.030557,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DRESDEN-REICK (Germany) dep 23:04</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.790558</longitude>
+<latitude>51.021388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.790558,51.021388,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DRESDEN-DOBRITZ (Germany) dep 23:06</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.808609</longitude>
+<latitude>51.011671</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.808609,51.011671,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DRESDEN-NIEDERSEDLITZ (Germany) dep 23:09</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.828331</longitude>
+<latitude>50.999724</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.828331,50.999724,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DRESDEN-ZSCHACHWITZ (Germany) dep 23:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.844997</longitude>
+<latitude>50.989719</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.844997,50.989719,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HEIDENAU (Germany) dep 23:13</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.857780</longitude>
+<latitude>50.981944</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.857780,50.981944,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HEIDENAU SUED (Germany) dep 23:15</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.874724</longitude>
+<latitude>50.971669</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.874724,50.971669,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HEIDENAU-GROSSSEDLITZ (Germany) dep 23:17</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.895004</longitude>
+<latitude>50.960837</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.895004,50.960837,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PIRNA (Germany) dep 23:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.928893</longitude>
+<latitude>50.962500</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.928893,50.962500,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OBERVOGELGESANG (Germany) dep 23:25</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.990002</longitude>
+<latitude>50.949726</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.990002,50.949726,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>STADT WEHLEN(SACHS) (Germany) dep 23:29</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.032224</longitude>
+<latitude>50.953610</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.032224,50.953610,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KURORT RATHEN (Germany) dep 23:32</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.075274</longitude>
+<latitude>50.956945</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.075274,50.956945,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KOENIGSTEIN(SAECHS SCHW) (Germany) dep 23:38</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.078887</longitude>
+<latitude>50.919442</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.078887,50.919442,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>BAD SCHANDAU (Germany) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/770784/485879/795716/140930/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&">RB  5271</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&input=DECIN HLAVNI NADRAZI (Czech Republic)!&start=yes&">DECIN HLAVNI NADRAZI (Czech Republic)</a>
+arr 00:17]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>14.137497</longitude>
+<latitude>50.919163</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.137497,50.919163,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>KRIPPEN (Germany) dep 23:52</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.159997</longitude>
+<latitude>50.913059</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.159997,50.913059,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SCHMILKA-HIRSCHMUEHLE (Germany) dep 23:58</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.228333</longitude>
+<latitude>50.890002</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.228333,50.890002,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SCHOENA (Germany) dep 00:01</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.234724</longitude>
+<latitude>50.875835</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.234724,50.875835,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SCHOENA(GR) (Germany) dep 00:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.222220</longitude>
+<latitude>50.859996</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.222220,50.859996,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DECIN ST.HR.(SMER DECIN HL.N.) (Czech Republic) dep 00:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.211667</longitude>
+<latitude>50.817082</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.211667,50.817082,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DOLNI ZLEB (Czech Republic) dep 00:04</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.215002</longitude>
+<latitude>50.845281</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.215002,50.845281,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DOLNI ZLEB ZASTAVKA (Czech Republic) dep 00:06</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.223335</longitude>
+<latitude>50.837226</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.223335,50.837226,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DECIN-CERTOVA VODA (Czech Republic) dep 00:09</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.220836</longitude>
+<latitude>50.817774</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.220836,50.817774,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DECIN-PROSTREDNI ZLEB (Czech Republic) dep 00:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.229169</longitude>
+<latitude>50.792226</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.229169,50.792226,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DECIN-PRIPER (Czech Republic) dep 00:14</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.208889</longitude>
+<latitude>50.784442</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.208889,50.784442,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>DECIN HLAVNI NADRAZI (Czech Republic) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/646887/490563/482734/25738/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&">RE  6621</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&input=CESKA LIPA HLAVNI NADRAZI (Czech Republic)!&start=yes&">CESKA LIPA HLAVNI NADRAZI (Czech Republic)</a>
+arr 02:02]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>14.201392</longitude>
+<latitude>50.774167</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.201392,50.774167,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>DECIN VYCHOD (Czech Republic) dep 01:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.222778</longitude>
+<latitude>50.774724</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.222778,50.774724,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BREZINY U DECINA (Czech Republic) dep 01:29</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.241943</longitude>
+<latitude>50.760836</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.241943,50.760836,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MALA VELEN (Czech Republic) dep 01:32</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.268335</longitude>
+<latitude>50.742777</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.268335,50.742777,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BENESOV NAD PLOUCNICI (Czech Republic) dep 01:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.300274</longitude>
+<latitude>50.737221</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.300274,50.737221,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FRANTISKOV NAD PLOUCNICI (Czech Republic) dep 01:40</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.331664</longitude>
+<latitude>50.723333</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.331664,50.723333,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>STARY SACHOV (Czech Republic) dep 01:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.373886</longitude>
+<latitude>50.720277</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.373886,50.720277,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZANDOV (Czech Republic) dep 01:46</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.389168</longitude>
+<latitude>50.711944</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.389168,50.711944,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HORNI POLICE (Czech Republic) dep 01:49</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.401393</longitude>
+<latitude>50.705552</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.401393,50.705552,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>STRUZNICE (Czech Republic) dep 01:53</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.449998</longitude>
+<latitude>50.697777</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.449998,50.697777,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CESKA LIPA-HOLY VRCH (Czech Republic) dep 01:58</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.522226</longitude>
+<latitude>50.682225</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.522226,50.682225,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>CESKA LIPA HLAVNI NADRAZI (Czech Republic) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/966627/575574/388044/128187/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&">RE  6001</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&input=MLADA BOLESLAV HLAVNI NADRAZI (Czech Republic)!&start=yes&">MLADA BOLESLAV HLAVNI NADRAZI (Czech Republic)</a>
+arr 05:12]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>14.532780</longitude>
+<latitude>50.675277</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.532780,50.675277,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>JESTREBI (Czech Republic) dep 04:27</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.598329</longitude>
+<latitude>50.614447</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.598329,50.614447,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>STARE SPLAVY (Czech Republic) dep 04:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.628335</longitude>
+<latitude>50.588333</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.628335,50.588333,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DOKSY (Czech Republic) dep 04:33</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.647500</longitude>
+<latitude>50.572782</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.647500,50.572782,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OKNA (Czech Republic) dep 04:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.673892</longitude>
+<latitude>50.527782</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.673892,50.527782,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BEZDEZ (Czech Republic) dep 04:43</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.730830</longitude>
+<latitude>50.515278</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.730830,50.515278,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BELA POD BEZDEZEM (Czech Republic) dep 04:50</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.835833</longitude>
+<latitude>50.488058</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.835833,50.488058,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BELA POD BEZDEZEM ZASTAVKA (Czech Republic) dep 04:53</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.867502</longitude>
+<latitude>50.499996</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.867502,50.499996,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MALA BELA (Czech Republic) dep 04:58</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.921392</longitude>
+<latitude>50.487780</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.921392,50.487780,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BAKOV NAD JIZEROU (Czech Republic) dep 05:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.923334</longitude>
+<latitude>50.472777</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.923334,50.472777,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>MLADA BOLESLAV HLAVNI NADRAZI (Czech Republic) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/163176/109416/848372/369794/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&">1559</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&input=NYMBURK HLAVNI NADRAZI (Czech Republic)!&start=yes&">NYMBURK HLAVNI NADRAZI (Czech Republic)</a>
+arr 05:49]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>14.886946</longitude>
+<latitude>50.406940</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.886946,50.406940,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>CACHOVICE (Czech Republic) dep 05:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.948890</longitude>
+<latitude>50.270834</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.948890,50.270834,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VSEJANY (Czech Republic) dep 05:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.957781</longitude>
+<latitude>50.256667</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.957781,50.256667,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>NYMBURK HLAVNI NADRAZI (Czech Republic) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/66555/268760/514930/235280/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&">RE  5805</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&input=KOLIN (Czech Republic)!&start=yes&">KOLIN (Czech Republic)</a>
+arr 06:28]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>15.044724</longitude>
+<latitude>50.193059</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.044724,50.193059,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>VELKE ZBOZI (Czech Republic) dep 06:06</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.098893</longitude>
+<latitude>50.165274</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.098893,50.165274,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PODEBRADY (Czech Republic) dep 06:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.123056</longitude>
+<latitude>50.149444</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.123056,50.149444,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LIBICE NAD CIDLINOU (Czech Republic) dep 06:15</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.184165</longitude>
+<latitude>50.125829</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.184165,50.125829,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VELKY OSEK (Czech Republic) dep 06:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.193334</longitude>
+<latitude>50.101387</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.193334,50.101387,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VELTRUBY (Czech Republic) dep 06:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.199725</longitude>
+<latitude>50.072775</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.199725,50.072775,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KOLIN-ZALABI (Czech Republic) dep 06:25</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.208337</longitude>
+<latitude>50.040279</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.208337,50.040279,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>KOLIN (Czech Republic) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/511965/286502/401904/30297/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&">SC   241</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&input=PARDUBICE HLAVNI NADRAZI (Czech Republic)!&start=yes&">PARDUBICE HLAVNI NADRAZI (Czech Republic)</a>
+arr 06:58]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>15.215834</longitude>
+<latitude>50.024170</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.215834,50.024170,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PARDUBICE HLAVNI NADRAZI (Czech Republic) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/151389/54359/641000/270037/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&">IC  1031</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=m4.0148021.1711630387&input=BRNO HLAVNI NADRAZI (Czech Republic)!&start=yes&">BRNO HLAVNI NADRAZI (Czech Republic)</a>
+arr 08:46]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>15.759169</longitude>
+<latitude>50.031388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.759169,50.031388,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>BRNO-ZIDENICE (Czech Republic) dep 08:41</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.634997</longitude>
+<latitude>49.201666</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.634997,49.201666,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>BRNO HLAVNI NADRAZI (Czech Republic) arr 08:46</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>16.609719</longitude>
+<latitude>49.189171</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.609719,49.189171,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+Stockholm Central (Sweden)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+06:16
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="14" valign="top" style="white-space:nowrap;">
+HST  521
+</td>
+<td rowspan="14" valign="top">
+High-speed train
+Direction: KOEBENHAVN H (Denmark)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Sodertalje Syd (Sweden)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:33
+</td>
+<td class="result" >
+06:34
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Norrkoping C (Sweden)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:32
+</td>
+<td class="result" >
+07:33
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Linkoping C (Sweden)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:57
+</td>
+<td class="result" >
+07:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Mjolby (Sweden)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:13
+</td>
+<td class="result" >
+08:14
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Nassjo C (Sweden)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:52
+</td>
+<td class="result" >
+08:53
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Alvesta (Sweden)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:27
+</td>
+<td class="result" >
+09:28
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Hassleholm C (Sweden)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:10
+</td>
+<td class="result" >
+10:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Lund C (Sweden)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:40
+</td>
+<td class="result" >
+10:41
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Malmo C (Sweden)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:52
+</td>
+<td class="result" >
+10:55
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Kastrup grans (Sweden)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:06
+</td>
+<td class="result" >
+11:06
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KASTRUP GRAENSE (Denmark)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:06
+</td>
+<td class="result" >
+11:06
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CPH LUFTHAVN (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:18
+</td>
+<td class="result" >
+11:20
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+KOEBENHAVN H (Denmark)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+11:33
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+KOEBENHAVN H (Denmark)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+13:26
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="33" valign="top" style="white-space:nowrap;">
+EC   397
+</td>
+<td rowspan="33" valign="top">
+EuroCity
+Direction: HAMBURG HBF (Germany)
+<br />
+Reservation compulsory on part of journey,
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KOEBENHAVN SYD (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:29
+</td>
+<td class="result" >
+13:29
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KOEGE NORD (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:41
+</td>
+<td class="result" >
+13:41
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+RINGSTED (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:51
+</td>
+<td class="result" >
+13:53
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SOROE (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:00
+</td>
+<td class="result" >
+14:00
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SLAGELSE (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:07
+</td>
+<td class="result" >
+14:07
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KORSOER (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:13
+</td>
+<td class="result" >
+14:13
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+NYBORG (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:23
+</td>
+<td class="result" >
+14:23
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LANGESKOV (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:29
+</td>
+<td class="result" >
+14:29
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ODENSE (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:36
+</td>
+<td class="result" >
+14:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+HOLMSTRUP (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:44
+</td>
+<td class="result" >
+14:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+TOMMERUP (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:47
+</td>
+<td class="result" >
+14:47
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SKALBJERG (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:48
+</td>
+<td class="result" >
+14:48
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BRED (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:50
+</td>
+<td class="result" >
+14:50
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+AARUP (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:51
+</td>
+<td class="result" >
+14:51
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+GELSTED (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:54
+</td>
+<td class="result" >
+14:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+EJBY (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:56
+</td>
+<td class="result" >
+14:56
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+NOERRE AABY (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:57
+</td>
+<td class="result" >
+14:57
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KAUSLUNDE (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:59
+</td>
+<td class="result" >
+14:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MIDDELFART (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:02
+</td>
+<td class="result" >
+15:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+TAULOV (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:09
+</td>
+<td class="result" >
+15:09
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KOLDING (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:15
+</td>
+<td class="result" >
+15:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LUNDERSKOV (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:24
+</td>
+<td class="result" >
+15:24
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VAMDRUP (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:27
+</td>
+<td class="result" >
+15:27
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VOJENS (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:36
+</td>
+<td class="result" >
+15:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ROEDEKRO (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:44
+</td>
+<td class="result" >
+15:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+TINGLEV (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:50
+</td>
+<td class="result" >
+15:50
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PADBORG (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:59
+</td>
+<td class="result" >
+16:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PADBORG GRAENSE (Denmark)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:03
+</td>
+<td class="result" >
+16:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+FLENSBURG(GR) (Germany)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:03
+</td>
+<td class="result" >
+16:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+FLENSBURG-WEICHE (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:11
+</td>
+<td class="result" >
+16:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SCHLESWIG (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:28
+</td>
+<td class="result" >
+16:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+HAMBURG HBF (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+18:22
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+12A-B
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+HAMBURG HBF (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+18:35
+</td>
+<td>
+5
+</td>
+<td rowspan="3" valign="top" style="white-space:nowrap;">
+ICE 1607
+</td>
+<td rowspan="3" valign="top">
+ICE
+Direction: MUENCHEN HBF (Germany)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BERLIN-SPANDAU (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:08
+</td>
+<td class="result" >
+20:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+BERLIN HBF (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+20:20
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+2
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+BERLIN HBF (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+20:26
+</td>
+<td>
+1
+</td>
+<td rowspan="7" valign="top" style="white-space:nowrap;">
+IC  2275
+</td>
+<td rowspan="7" valign="top">
+Intercity
+Direction: DRESDEN HBF (Germany)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BERLIN SUEDKREUZ (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:31
+</td>
+<td class="result" >
+20:33
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+FLUGHAFEN BER (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:53
+</td>
+<td class="result" >
+21:01
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DOBERLUG-KIRCHHAIN (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:44
+</td>
+<td class="result" >
+21:45
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ELSTERWERDA (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:55
+</td>
+<td class="result" >
+21:56
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DRESDEN-NEUSTADT (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:21
+</td>
+<td class="result" >
+22:23
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+DRESDEN HBF (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+22:27
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+1
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+DRESDEN HBF (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+22:59
+</td>
+<td>
+13
+</td>
+<td rowspan="15" valign="top" style="white-space:nowrap;">
+31775
+</td>
+<td rowspan="15" valign="top">
+S-Bahn
+Direction: BAD SCHANDAU (Germany)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DRESDEN-STREHLEN (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:01
+</td>
+<td class="result" >
+23:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DRESDEN-REICK (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:04
+</td>
+<td class="result" >
+23:04
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DRESDEN-DOBRITZ (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:06
+</td>
+<td class="result" >
+23:06
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DRESDEN-NIEDERSEDLITZ (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:08
+</td>
+<td class="result" >
+23:09
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DRESDEN-ZSCHACHWITZ (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:10
+</td>
+<td class="result" >
+23:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+HEIDENAU (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:12
+</td>
+<td class="result" >
+23:13
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+HEIDENAU SUED (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:15
+</td>
+<td class="result" >
+23:15
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+HEIDENAU-GROSSSEDLITZ (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:17
+</td>
+<td class="result" >
+23:17
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PIRNA (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:20
+</td>
+<td class="result" >
+23:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+OBERVOGELGESANG (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:25
+</td>
+<td class="result" >
+23:25
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+STADT WEHLEN(SACHS) (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:29
+</td>
+<td class="result" >
+23:29
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KURORT RATHEN (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:32
+</td>
+<td class="result" >
+23:32
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KOENIGSTEIN(SAECHS SCHW) (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:37
+</td>
+<td class="result" >
+23:38
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+BAD SCHANDAU (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+23:43
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+4
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+BAD SCHANDAU (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+23:50
+</td>
+<td>
+3
+</td>
+<td rowspan="12" valign="top" style="white-space:nowrap;">
+RB  5271
+</td>
+<td rowspan="12" valign="top">
+Regionalbahn
+Direction: DECIN HLAVNI NADRAZI (Czech Republic)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KRIPPEN (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:52
+</td>
+<td class="result" >
+23:52
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SCHMILKA-HIRSCHMUEHLE (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:57
+</td>
+<td class="result" >
+23:58
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SCHOENA (Germany)
+</td>
+<td align="center">Sa,02.03.24</td>
+<td class="result" >
+00:00
+</td>
+<td class="result" >
+00:01
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SCHOENA(GR) (Germany)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+00:02
+</td>
+<td class="result" >
+00:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DECIN ST.HR.(SMER DECIN HL.N.) (Czech Republic)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+00:03
+</td>
+<td class="result" >
+00:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DOLNI ZLEB (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+00:04
+</td>
+<td class="result" >
+00:04
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DOLNI ZLEB ZASTAVKA (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+00:06
+</td>
+<td class="result" >
+00:06
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DECIN-CERTOVA VODA (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+00:09
+</td>
+<td class="result" >
+00:09
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DECIN-PROSTREDNI ZLEB (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+00:12
+</td>
+<td class="result" >
+00:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DECIN-PRIPER (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+00:14
+</td>
+<td class="result" >
+00:14
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+DECIN HLAVNI NADRAZI (Czech Republic)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+00:17
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+DECIN HLAVNI NADRAZI (Czech Republic)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+01:22
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="12" valign="top" style="white-space:nowrap;">
+RE  6621
+</td>
+<td rowspan="12" valign="top">
+Regional
+Direction: CESKA LIPA HLAVNI NADRAZI (Czech Republic)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DECIN VYCHOD (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:26
+</td>
+<td class="result" >
+01:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BREZINY U DECINA (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:29
+</td>
+<td class="result" >
+01:29
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MALA VELEN (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:32
+</td>
+<td class="result" >
+01:32
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BENESOV NAD PLOUCNICI (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:35
+</td>
+<td class="result" >
+01:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+FRANTISKOV NAD PLOUCNICI (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:39
+</td>
+<td class="result" >
+01:40
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+STARY SACHOV (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:44
+</td>
+<td class="result" >
+01:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ZANDOV (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:46
+</td>
+<td class="result" >
+01:46
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+HORNI POLICE (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:48
+</td>
+<td class="result" >
+01:49
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+STRUZNICE (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:53
+</td>
+<td class="result" >
+01:53
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CESKA LIPA-HOLY VRCH (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:58
+</td>
+<td class="result" >
+01:58
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+CESKA LIPA HLAVNI NADRAZI (Czech Republic)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+02:02
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+CESKA LIPA HLAVNI NADRAZI (Czech Republic)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+04:19
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="11" valign="top" style="white-space:nowrap;">
+RE  6001
+</td>
+<td rowspan="11" valign="top">
+Regional
+Direction: MLADA BOLESLAV HLAVNI NADRAZI (Czech Republic)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+JESTREBI (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:27
+</td>
+<td class="result" >
+04:27
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+STARE SPLAVY (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:30
+</td>
+<td class="result" >
+04:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DOKSY (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:33
+</td>
+<td class="result" >
+04:33
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+OKNA (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:39
+</td>
+<td class="result" >
+04:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BEZDEZ (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:43
+</td>
+<td class="result" >
+04:43
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BELA POD BEZDEZEM (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:50
+</td>
+<td class="result" >
+04:50
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BELA POD BEZDEZEM ZASTAVKA (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:53
+</td>
+<td class="result" >
+04:53
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MALA BELA (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:58
+</td>
+<td class="result" >
+04:58
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BAKOV NAD JIZEROU (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:02
+</td>
+<td class="result" >
+05:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+MLADA BOLESLAV HLAVNI NADRAZI (Czech Republic)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+05:12
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+MLADA BOLESLAV HLAVNI NADRAZI (Czech Republic)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+05:20
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="4" valign="top" style="white-space:nowrap;">
+1559
+</td>
+<td rowspan="4" valign="top">
+TRN
+Direction: NYMBURK HLAVNI NADRAZI (Czech Republic)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CACHOVICE (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:36
+</td>
+<td class="result" >
+05:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VSEJANY (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:39
+</td>
+<td class="result" >
+05:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+NYMBURK HLAVNI NADRAZI (Czech Republic)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+05:49
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+NYMBURK HLAVNI NADRAZI (Czech Republic)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+06:01
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="8" valign="top" style="white-space:nowrap;">
+RE  5805
+</td>
+<td rowspan="8" valign="top">
+Regional
+Direction: KOLIN (Czech Republic)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VELKE ZBOZI (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:06
+</td>
+<td class="result" >
+06:06
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PODEBRADY (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:09
+</td>
+<td class="result" >
+06:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LIBICE NAD CIDLINOU (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:14
+</td>
+<td class="result" >
+06:15
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VELKY OSEK (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:17
+</td>
+<td class="result" >
+06:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VELTRUBY (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:21
+</td>
+<td class="result" >
+06:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KOLIN-ZALABI (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:25
+</td>
+<td class="result" >
+06:25
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+KOLIN (Czech Republic)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+06:28
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+KOLIN (Czech Republic)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+06:38
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="2" valign="top" style="white-space:nowrap;">
+SC   241
+</td>
+<td rowspan="2" valign="top">
+Supercity
+Direction: KOSICE (Slovakia)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td>
+PARDUBICE HLAVNI NADRAZI (Czech Republic)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+06:58
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+PARDUBICE HLAVNI NADRAZI (Czech Republic)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+07:13
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="3" valign="top" style="white-space:nowrap;">
+IC  1031
+</td>
+<td rowspan="3" valign="top">
+Intercity
+Direction: BUDAPEST-DELI (Hungary)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BRNO-ZIDENICE (Czech Republic)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:41
+</td>
+<td class="result" >
+08:41
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+BRNO HLAVNI NADRAZI (Czech Republic)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+08:46
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 26:30;
+runs
+not every day, 1. Mar
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>15.759169</longitude>
+<latitude>50.031388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+18.058052,59.330001,0 17.645277,59.162226,0 16.183334,58.596391,0 15.624726,58.416391,0 15.131947,58.322778,0 14.693893,57.652218,0 14.556107,56.898608,0 13.763060,56.157501,0 13.186663,55.708058,0 13.000829,55.609447,0 12.828937,55.574362,0 12.826366,55.575485,0 12.648892,55.629169,0 12.565553,55.673054,0 12.516670,55.652496,0 12.173893,55.499167,0 11.786108,55.438337,0 11.569171,55.419163,0 11.348890,55.407225,0 11.135280,55.356670,0 10.802499,55.313890,0 10.586111,55.361668,0 10.386667,55.401670,0 10.271947,55.361947,0 10.182504,55.349164,0 10.141109,55.366109,0 10.105556,55.373057,0 10.051109,55.382775,0 9.974170,55.395836,0 9.929718,55.428332,0 9.869724,55.460001,0 9.810836,55.475831,0 9.733888,55.501945,0 9.615554,55.545003,0 9.480833,55.490555,0 9.303332,55.479723,0 9.286387,55.428053,0 9.305552,55.248053,0 9.333329,55.069168,0 9.257775,54.936110,0 9.359721,54.822774,0 9.361942,54.816391,0 9.363335,54.814719,0 9.398330,54.758060,0 9.538058,54.499441,0 10.006945,53.552778,0 13.196947,52.534722,0 13.369441,52.525553,0 13.365279,52.474998,0 13.511947,52.364718,0 13.564165,51.620555,0 13.516387,51.459720,0 13.740830,51.065831,0 13.731940,51.040553,0 13.761946,51.030557,0 13.790558,51.021388,0 13.808609,51.011671,0 13.828331,50.999724,0 13.844997,50.989719,0 13.857780,50.981944,0 13.874724,50.971669,0 13.895004,50.960837,0 13.928893,50.962500,0 13.990002,50.949726,0 14.032224,50.953610,0 14.075274,50.956945,0 14.078887,50.919442,0 14.137497,50.919163,0 14.159997,50.913059,0 14.228333,50.890002,0 14.234724,50.875835,0 14.222220,50.859996,0 14.211667,50.817082,0 14.215002,50.845281,0 14.223335,50.837226,0 14.220836,50.817774,0 14.229169,50.792226,0 14.208889,50.784442,0 14.201392,50.774167,0 14.222778,50.774724,0 14.241943,50.760836,0 14.268335,50.742777,0 14.300274,50.737221,0 14.331664,50.723333,0 14.373886,50.720277,0 14.389168,50.711944,0 14.401393,50.705552,0 14.449998,50.697777,0 14.522226,50.682225,0 14.532780,50.675277,0 14.598329,50.614447,0 14.628335,50.588333,0 14.647500,50.572782,0 14.673892,50.527782,0 14.730830,50.515278,0 14.835833,50.488058,0 14.867502,50.499996,0 14.921392,50.487780,0 14.923334,50.472777,0 14.886946,50.406940,0 14.948890,50.270834,0 14.957781,50.256667,0 15.044724,50.193059,0 15.098893,50.165274,0 15.123056,50.149444,0 15.184165,50.125829,0 15.193334,50.101387,0 15.199725,50.072775,0 15.208337,50.040279,0 15.215834,50.024170,0 15.759169,50.031388,0 16.634997,49.201666,0 16.609719,49.189171,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>HST  521 from Stockholm Central (Sweden) to KOEBENHAVN H (Denmark)</name>
+<styleUrl>#idStylePT_HST  521</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>18.058052</longitude>
+<latitude>59.330001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+18.058052,59.330001,0 17.645277,59.162226,0 16.183334,58.596391,0 15.624726,58.416391,0 15.131947,58.322778,0 14.693893,57.652218,0 14.556107,56.898608,0 13.763060,56.157501,0 13.186663,55.708058,0 13.000829,55.609447,0 12.828937,55.574362,0 12.826366,55.575485,0 12.648892,55.629169,0 12.565553,55.673054,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>EC   397 from KOEBENHAVN H (Denmark) to HAMBURG HBF (Germany)</name>
+<styleUrl>#idStylePT_EC   397</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>12.565553</longitude>
+<latitude>55.673054</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+12.565553,55.673054,0 12.516670,55.652496,0 12.173893,55.499167,0 11.786108,55.438337,0 11.569171,55.419163,0 11.348890,55.407225,0 11.135280,55.356670,0 10.802499,55.313890,0 10.586111,55.361668,0 10.386667,55.401670,0 10.271947,55.361947,0 10.182504,55.349164,0 10.141109,55.366109,0 10.105556,55.373057,0 10.051109,55.382775,0 9.974170,55.395836,0 9.929718,55.428332,0 9.869724,55.460001,0 9.810836,55.475831,0 9.733888,55.501945,0 9.615554,55.545003,0 9.480833,55.490555,0 9.303332,55.479723,0 9.286387,55.428053,0 9.305552,55.248053,0 9.333329,55.069168,0 9.257775,54.936110,0 9.359721,54.822774,0 9.361942,54.816391,0 9.363335,54.814719,0 9.398330,54.758060,0 9.538058,54.499441,0 10.006945,53.552778,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>ICE 1607 from HAMBURG HBF (Germany) to BERLIN HBF (Germany)</name>
+<styleUrl>#idStylePT_ICE 1607</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>10.006945</longitude>
+<latitude>53.552778</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+10.006945,53.552778,0 13.196947,52.534722,0 13.369441,52.525553,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC  2275 from BERLIN HBF (Germany) to DRESDEN HBF (Germany)</name>
+<styleUrl>#idStylePT_IC  2275</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>13.369441</longitude>
+<latitude>52.525553</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+13.369441,52.525553,0 13.365279,52.474998,0 13.511947,52.364718,0 13.564165,51.620555,0 13.516387,51.459720,0 13.740830,51.065831,0 13.731940,51.040553,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>31775 from DRESDEN HBF (Germany) to BAD SCHANDAU (Germany)</name>
+<styleUrl>#idStylePT_31775</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>13.731940</longitude>
+<latitude>51.040553</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+13.731940,51.040553,0 13.761946,51.030557,0 13.790558,51.021388,0 13.808609,51.011671,0 13.828331,50.999724,0 13.844997,50.989719,0 13.857780,50.981944,0 13.874724,50.971669,0 13.895004,50.960837,0 13.928893,50.962500,0 13.990002,50.949726,0 14.032224,50.953610,0 14.075274,50.956945,0 14.078887,50.919442,0 14.137497,50.919163,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RB  5271 from BAD SCHANDAU (Germany) to DECIN HLAVNI NADRAZI (Czech Republic)</name>
+<styleUrl>#idStylePT_RB  5271</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>14.137497</longitude>
+<latitude>50.919163</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+14.137497,50.919163,0 14.159997,50.913059,0 14.228333,50.890002,0 14.234724,50.875835,0 14.222220,50.859996,0 14.211667,50.817082,0 14.215002,50.845281,0 14.223335,50.837226,0 14.220836,50.817774,0 14.229169,50.792226,0 14.208889,50.784442,0 14.201392,50.774167,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE  6621 from DECIN HLAVNI NADRAZI (Czech Republic) to CESKA LIPA HLAVNI NADRAZI (Czech Republic)</name>
+<styleUrl>#idStylePT_RE  6621</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>14.201392</longitude>
+<latitude>50.774167</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+14.201392,50.774167,0 14.222778,50.774724,0 14.241943,50.760836,0 14.268335,50.742777,0 14.300274,50.737221,0 14.331664,50.723333,0 14.373886,50.720277,0 14.389168,50.711944,0 14.401393,50.705552,0 14.449998,50.697777,0 14.522226,50.682225,0 14.532780,50.675277,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE  6001 from CESKA LIPA HLAVNI NADRAZI (Czech Republic) to MLADA BOLESLAV HLAVNI NADRAZI (Czech Republic)</name>
+<styleUrl>#idStylePT_RE  6001</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>14.532780</longitude>
+<latitude>50.675277</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+14.532780,50.675277,0 14.598329,50.614447,0 14.628335,50.588333,0 14.647500,50.572782,0 14.673892,50.527782,0 14.730830,50.515278,0 14.835833,50.488058,0 14.867502,50.499996,0 14.921392,50.487780,0 14.923334,50.472777,0 14.886946,50.406940,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>1559 from MLADA BOLESLAV HLAVNI NADRAZI (Czech Republic) to NYMBURK HLAVNI NADRAZI (Czech Republic)</name>
+<styleUrl>#idStylePT_1559</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>14.886946</longitude>
+<latitude>50.406940</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+14.886946,50.406940,0 14.948890,50.270834,0 14.957781,50.256667,0 15.044724,50.193059,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE  5805 from NYMBURK HLAVNI NADRAZI (Czech Republic) to KOLIN (Czech Republic)</name>
+<styleUrl>#idStylePT_RE  5805</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>15.044724</longitude>
+<latitude>50.193059</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+15.044724,50.193059,0 15.098893,50.165274,0 15.123056,50.149444,0 15.184165,50.125829,0 15.193334,50.101387,0 15.199725,50.072775,0 15.208337,50.040279,0 15.215834,50.024170,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>SC   241 from KOLIN (Czech Republic) to PARDUBICE HLAVNI NADRAZI (Czech Republic)</name>
+<styleUrl>#idStylePT_SC   241</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>15.215834</longitude>
+<latitude>50.024170</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+15.215834,50.024170,0 15.759169,50.031388,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC  1031 from PARDUBICE HLAVNI NADRAZI (Czech Republic) to BRNO HLAVNI NADRAZI (Czech Republic)</name>
+<styleUrl>#idStylePT_IC  1031</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>15.759169</longitude>
+<latitude>50.031388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+15.759169,50.031388,0 16.634997,49.201666,0 16.609719,49.189171,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

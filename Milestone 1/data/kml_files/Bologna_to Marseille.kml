@@ -1,0 +1,2241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b2.0130661.1711635992&input=BOLOGNA CENTRALE &#x0028;Italy&#x0029;!&start=yes&">BOLOGNA CENTRALE &#x0028;Italy&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b2.0130661.1711635992&input=MARSEILLE ST CHARLES &#x0028;France&#x0029;!&start=yes&">MARSEILLE ST CHARLES &#x0028;France&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>BOLOGNA CENTRALE (Italy) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/252552/383395/794596/313114/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b2.0130661.1711635992&">INI  754</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b2.0130661.1711635992&input=TORTONA (Italy)!&start=yes&">TORTONA (Italy)</a>
+arr 08:06]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>11.341942</longitude>
+<latitude>44.506393</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.341942,44.506393,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>MODENA (Italy) dep 05:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.930281</longitude>
+<latitude>44.654167</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.930281,44.654167,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>REGGIO EMILIA (Italy) dep 06:15</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.642779</longitude>
+<latitude>44.697774</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.642779,44.697774,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PARMA (Italy) dep 06:31</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.328057</longitude>
+<latitude>44.810274</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.328057,44.810274,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FIDENZA (Italy) dep 06:46</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.063055</longitude>
+<latitude>44.867778</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.063055,44.867778,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FIORENZUOLA (Italy) dep 06:53</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.917502</longitude>
+<latitude>44.928329</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.917502,44.928329,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PIACENZA (Italy) dep 07:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.706390</longitude>
+<latitude>45.051940</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.706390,45.051940,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>STRADELLA (Italy) dep 07:35</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.300554</longitude>
+<latitude>45.079168</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.300554,45.079168,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VOGHERA (Italy) dep 07:57</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.007776</longitude>
+<latitude>44.997780</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.007776,44.997780,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>TORTONA (Italy) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/697578/374910/162288/151382/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b2.0130661.1711635992&">RV  3015</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b2.0130661.1711635992&input=GENOVA P.ZA PRINCIPE (Italy)!&start=yes&">GENOVA P.ZA PRINCIPE (Italy)</a>
+arr 09:08]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>8.861665</longitude>
+<latitude>44.899725</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.861665,44.899725,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>ARQUATA SCRIVIA (Italy) dep 08:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.885280</longitude>
+<latitude>44.692497</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.885280,44.692497,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RONCO SCRIVIA (Italy) dep 08:47</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.949166</longitude>
+<latitude>44.614165</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.949166,44.614165,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>GENOVA P.ZA PRINCIPE (Italy) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/381669/288729/699354/222454/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b2.0130661.1711635992&">RV  3364</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b2.0130661.1711635992&input=VENTIMIGLIA (Italy)!&start=yes&">VENTIMIGLIA (Italy)</a>
+arr 12:03]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>8.920553</longitude>
+<latitude>44.417778</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.920553,44.417778,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>GENOVA SAMPIERDARENA (Italy) dep 09:50</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.886943</longitude>
+<latitude>44.413058</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.886943,44.413058,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GENOVA CORNIGLIANO (Italy) dep 09:52</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.865000</longitude>
+<latitude>44.414443</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.865000,44.414443,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GENOVA SESTRI PONEN. (Italy) dep 09:57</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.847777</longitude>
+<latitude>44.422218</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.847777,44.422218,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GENOVA PEGLI (Italy) dep 10:00</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.816665</longitude>
+<latitude>44.425832</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.816665,44.425832,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GENOVA PRA (Italy) dep 10:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.785275</longitude>
+<latitude>44.426668</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.785275,44.426668,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GENOVA VOLTRI (Italy) dep 10:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.757777</longitude>
+<latitude>44.428052</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.757777,44.428052,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ARENZANO (Italy) dep 10:15</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.678060</longitude>
+<latitude>44.403053</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.678060,44.403053,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>COGOLETO (Italy) dep 10:17</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.643892</longitude>
+<latitude>44.389444</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.643892,44.389444,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VARAZZE (Italy) dep 10:20</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.566666</longitude>
+<latitude>44.356669</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.566666,44.356669,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ALBISOLA (Italy) dep 10:22</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.511940</longitude>
+<latitude>44.334448</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.511940,44.334448,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SAVONA (Italy) dep 10:29</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.470275</longitude>
+<latitude>44.306671</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.470275,44.306671,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SPOTORNO-NOLI (Italy) dep 10:37</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.410559</longitude>
+<latitude>44.226667</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.410559,44.226667,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FINALE LIGURE MARINA (Italy) dep 10:43</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.340282</longitude>
+<latitude>44.169163</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.340282,44.169163,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BORGIO-VEREZZI (Italy) dep 10:46</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.309170</longitude>
+<latitude>44.157774</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.309170,44.157774,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PIETRA LIGURE (Italy) dep 10:49</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.277222</longitude>
+<latitude>44.145279</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.277222,44.145279,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LOANO (Italy) dep 10:53</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.254165</longitude>
+<latitude>44.122500</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.254165,44.122500,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ALBENGA (Italy) dep 11:01</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.221669</longitude>
+<latitude>44.046946</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.221669,44.046946,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ALASSIO (Italy) dep 11:08</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.170556</longitude>
+<latitude>44.007780</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.170556,44.007780,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LAIGUEGLIA (Italy) dep 11:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.158331</longitude>
+<latitude>43.981387</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.158331,43.981387,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DIANO (Italy) dep 11:20</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.073059</longitude>
+<latitude>43.925277</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.073059,43.925277,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Imperia (Italy) dep 11:28</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.031107</longitude>
+<latitude>43.897221</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.031107,43.897221,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TAGGIA ARMA (Italy) dep 11:38</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.835277</longitude>
+<latitude>43.840553</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.835277,43.840553,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SANREMO (Italy) dep 11:45</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.766671</longitude>
+<latitude>43.821388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.766671,43.821388,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BORDIGHERA (Italy) dep 11:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.663331</longitude>
+<latitude>43.778060</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.663331,43.778060,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>VENTIMIGLIA (Italy) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/197691/396211/751026/309616/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b2.0130661.1711635992&">TER86036</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b2.0130661.1711635992&input=NICE VILLE (France)!&start=yes&">NICE VILLE (France)</a>
+arr 13:11]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>7.610277</longitude>
+<latitude>43.792218</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.610277,43.792218,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>VENTIMIGLIA (FR) (Italy) dep 12:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.535136</longitude>
+<latitude>43.786897</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.535136,43.786897,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VENTIMIGLIA FRONTIERE (France) dep 12:27</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.528888</longitude>
+<latitude>43.786474</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.528888,43.786474,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MENTON GARAVAN (France) dep 12:33</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.517220</longitude>
+<latitude>43.785279</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.517220,43.785279,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MENTON (France) dep 12:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.493336</longitude>
+<latitude>43.774447</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.493336,43.774447,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CARNOLES (France) dep 12:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.481389</longitude>
+<latitude>43.761943</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.481389,43.761943,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CAP MARTIN ROQUEBRUNE (France) dep 12:42</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.457226</longitude>
+<latitude>43.760280</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.457226,43.760280,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MONACO MONTE CARLO (France) dep 12:50</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.419445</longitude>
+<latitude>43.738058</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.419445,43.738058,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CAP D'AIL (France) dep 12:53</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.393610</longitude>
+<latitude>43.720556</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.393610,43.720556,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>EZE (France) dep 12:57</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.356943</longitude>
+<latitude>43.721941</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.356943,43.721941,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BEAULIEU SUR MER (France) dep 13:01</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.331665</longitude>
+<latitude>43.706668</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.331665,43.706668,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VILLEFRANCHE SUR MER (France) dep 13:04</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.314163</longitude>
+<latitude>43.706947</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.314163,43.706947,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NICE RIQUIER (France) dep 13:08</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.290279</longitude>
+<latitude>43.705832</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.290279,43.705832,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>NICE VILLE (France) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/207219/138115/477538/169696/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b2.0130661.1711635992&">TER17484</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b2.0130661.1711635992&input=MARSEILLE ST CHARLES (France)!&start=yes&">MARSEILLE ST CHARLES (France)</a>
+arr 16:08]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>7.261945</longitude>
+<latitude>43.704448</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.261945,43.704448,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>NICE ST AUGUSTIN (France) dep 13:32</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.216109</longitude>
+<latitude>43.670837</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.216109,43.670837,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ANTIBES (France) dep 13:48</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.119448</longitude>
+<latitude>43.585835</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.119448,43.585835,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CANNES (France) dep 14:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.018607</longitude>
+<latitude>43.553887</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.018607,43.553887,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ST RAPHAEL VALESCURE (France) dep 14:25</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.769165</longitude>
+<latitude>43.423607</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.769165,43.423607,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LES ARCS DRAGUIGNAN (France) dep 14:41</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.482499</longitude>
+<latitude>43.455833</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.482499,43.455833,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CARNOULES (France) dep 15:01</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.186943</longitude>
+<latitude>43.297218</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.186943,43.297218,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TOULON (France) dep 15:22</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.929168</longitude>
+<latitude>43.128329</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.929168,43.128329,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>MARSEILLE ST CHARLES (France) arr 16:08</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>5.380278</longitude>
+<latitude>43.302774</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.380278,43.302774,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+BOLOGNA CENTRALE (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+05:35
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="10" valign="top" style="white-space:nowrap;">
+INI  754
+</td>
+<td rowspan="10" valign="top">
+InterCityNotte
+Direction: TORINO PORTA NUOVA (Italy)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MODENA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:59
+</td>
+<td class="result" >
+05:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+REGGIO EMILIA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:15
+</td>
+<td class="result" >
+06:15
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PARMA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:31
+</td>
+<td class="result" >
+06:31
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+FIDENZA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:46
+</td>
+<td class="result" >
+06:46
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+FIORENZUOLA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:53
+</td>
+<td class="result" >
+06:53
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PIACENZA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:08
+</td>
+<td class="result" >
+07:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+STRADELLA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:35
+</td>
+<td class="result" >
+07:35
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VOGHERA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:55
+</td>
+<td class="result" >
+07:57
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+TORTONA (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+08:06
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+TORTONA (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+08:26
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="4" valign="top" style="white-space:nowrap;">
+RV  3015
+</td>
+<td rowspan="4" valign="top">
+Regionale Veloce
+Direction: SESTRI LEVANTE (Italy)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ARQUATA SCRIVIA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:39
+</td>
+<td class="result" >
+08:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+RONCO SCRIVIA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:47
+</td>
+<td class="result" >
+08:47
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+GENOVA P.ZA PRINCIPE (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+09:08
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+GENOVA P.ZA PRINCIPE (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+09:43
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="26" valign="top" style="white-space:nowrap;">
+RV  3364
+</td>
+<td rowspan="26" valign="top">
+Regionale Veloce
+Direction: VENTIMIGLIA (Italy)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GENOVA SAMPIERDARENA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:49
+</td>
+<td class="result" >
+09:50
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GENOVA CORNIGLIANO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:52
+</td>
+<td class="result" >
+09:52
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GENOVA SESTRI PONEN. (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:56
+</td>
+<td class="result" >
+09:57
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GENOVA PEGLI (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:00
+</td>
+<td class="result" >
+10:00
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GENOVA PRA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:03
+</td>
+<td class="result" >
+10:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GENOVA VOLTRI (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:09
+</td>
+<td class="result" >
+10:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ARENZANO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:15
+</td>
+<td class="result" >
+10:15
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+COGOLETO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:17
+</td>
+<td class="result" >
+10:17
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VARAZZE (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:20
+</td>
+<td class="result" >
+10:20
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ALBISOLA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:22
+</td>
+<td class="result" >
+10:22
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SAVONA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:26
+</td>
+<td class="result" >
+10:29
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SPOTORNO-NOLI (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:36
+</td>
+<td class="result" >
+10:37
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+FINALE LIGURE MARINA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:42
+</td>
+<td class="result" >
+10:43
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BORGIO-VEREZZI (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:46
+</td>
+<td class="result" >
+10:46
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PIETRA LIGURE (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:48
+</td>
+<td class="result" >
+10:49
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LOANO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:52
+</td>
+<td class="result" >
+10:53
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ALBENGA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:00
+</td>
+<td class="result" >
+11:01
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ALASSIO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:07
+</td>
+<td class="result" >
+11:08
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LAIGUEGLIA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:11
+</td>
+<td class="result" >
+11:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DIANO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:19
+</td>
+<td class="result" >
+11:20
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Imperia (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:27
+</td>
+<td class="result" >
+11:28
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+TAGGIA ARMA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:37
+</td>
+<td class="result" >
+11:38
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SANREMO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:44
+</td>
+<td class="result" >
+11:45
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BORDIGHERA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:53
+</td>
+<td class="result" >
+11:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+VENTIMIGLIA (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+12:03
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+VENTIMIGLIA (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+12:17
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="14" valign="top" style="white-space:nowrap;">
+TER86036
+</td>
+<td rowspan="14" valign="top">
+Regional TER
+Direction: CANNES (France)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VENTIMIGLIA (FR) (Italy)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:26
+</td>
+<td class="result" >
+12:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VENTIMIGLIA FRONTIERE (France)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:27
+</td>
+<td class="result" >
+12:27
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MENTON GARAVAN (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:28
+</td>
+<td class="result" >
+12:33
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MENTON (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:35
+</td>
+<td class="result" >
+12:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+CARNOLES (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:38
+</td>
+<td class="result" >
+12:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+CAP MARTIN ROQUEBRUNE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:42
+</td>
+<td class="result" >
+12:42
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MONACO MONTE CARLO (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:47
+</td>
+<td class="result" >
+12:50
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+CAP D'AIL (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:53
+</td>
+<td class="result" >
+12:53
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+EZE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:56
+</td>
+<td class="result" >
+12:57
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BEAULIEU SUR MER (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:00
+</td>
+<td class="result" >
+13:01
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VILLEFRANCHE SUR MER (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:03
+</td>
+<td class="result" >
+13:04
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+NICE RIQUIER (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:06
+</td>
+<td class="result" >
+13:08
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+NICE VILLE (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+13:11
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+NICE VILLE (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+13:25
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="9" valign="top" style="white-space:nowrap;">
+TER17484
+</td>
+<td rowspan="9" valign="top">
+Regional TER
+Direction: MARSEILLE ST CHARLES (France)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+NICE ST AUGUSTIN (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:30
+</td>
+<td class="result" >
+13:32
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ANTIBES (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:46
+</td>
+<td class="result" >
+13:48
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CANNES (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:59
+</td>
+<td class="result" >
+14:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ST RAPHAEL VALESCURE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:23
+</td>
+<td class="result" >
+14:25
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LES ARCS DRAGUIGNAN (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:39
+</td>
+<td class="result" >
+14:41
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CARNOULES (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:59
+</td>
+<td class="result" >
+15:01
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+TOULON (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:19
+</td>
+<td class="result" >
+15:22
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+MARSEILLE ST CHARLES (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+16:08
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 10:33;
+runs
+not every day, runs not every day
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>7.261945</longitude>
+<latitude>43.704448</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+11.341942,44.506393,0 10.930281,44.654167,0 10.642779,44.697774,0 10.328057,44.810274,0 10.063055,44.867778,0 9.917502,44.928329,0 9.706390,45.051940,0 9.300554,45.079168,0 9.007776,44.997780,0 8.861665,44.899725,0 8.885280,44.692497,0 8.949166,44.614165,0 8.920553,44.417778,0 8.886943,44.413058,0 8.865000,44.414443,0 8.847777,44.422218,0 8.816665,44.425832,0 8.785275,44.426668,0 8.757777,44.428052,0 8.678060,44.403053,0 8.643892,44.389444,0 8.566666,44.356669,0 8.511940,44.334448,0 8.470275,44.306671,0 8.410559,44.226667,0 8.340282,44.169163,0 8.309170,44.157774,0 8.277222,44.145279,0 8.254165,44.122500,0 8.221669,44.046946,0 8.170556,44.007780,0 8.158331,43.981387,0 8.073059,43.925277,0 8.031107,43.897221,0 7.835277,43.840553,0 7.766671,43.821388,0 7.663331,43.778060,0 7.610277,43.792218,0 7.535136,43.786897,0 7.528888,43.786474,0 7.517220,43.785279,0 7.493336,43.774447,0 7.481389,43.761943,0 7.457226,43.760280,0 7.419445,43.738058,0 7.393610,43.720556,0 7.356943,43.721941,0 7.331665,43.706668,0 7.314163,43.706947,0 7.290279,43.705832,0 7.261945,43.704448,0 7.216109,43.670837,0 7.119448,43.585835,0 7.018607,43.553887,0 6.769165,43.423607,0 6.482499,43.455833,0 6.186943,43.297218,0 5.929168,43.128329,0 5.380278,43.302774,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>INI  754 from BOLOGNA CENTRALE (Italy) to TORTONA (Italy)</name>
+<styleUrl>#idStylePT_INI  754</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>11.341942</longitude>
+<latitude>44.506393</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+11.341942,44.506393,0 10.930281,44.654167,0 10.642779,44.697774,0 10.328057,44.810274,0 10.063055,44.867778,0 9.917502,44.928329,0 9.706390,45.051940,0 9.300554,45.079168,0 9.007776,44.997780,0 8.861665,44.899725,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RV  3015 from TORTONA (Italy) to GENOVA P.ZA PRINCIPE (Italy)</name>
+<styleUrl>#idStylePT_RV  3015</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>8.861665</longitude>
+<latitude>44.899725</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+8.861665,44.899725,0 8.885280,44.692497,0 8.949166,44.614165,0 8.920553,44.417778,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RV  3364 from GENOVA P.ZA PRINCIPE (Italy) to VENTIMIGLIA (Italy)</name>
+<styleUrl>#idStylePT_RV  3364</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>8.920553</longitude>
+<latitude>44.417778</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+8.920553,44.417778,0 8.886943,44.413058,0 8.865000,44.414443,0 8.847777,44.422218,0 8.816665,44.425832,0 8.785275,44.426668,0 8.757777,44.428052,0 8.678060,44.403053,0 8.643892,44.389444,0 8.566666,44.356669,0 8.511940,44.334448,0 8.470275,44.306671,0 8.410559,44.226667,0 8.340282,44.169163,0 8.309170,44.157774,0 8.277222,44.145279,0 8.254165,44.122500,0 8.221669,44.046946,0 8.170556,44.007780,0 8.158331,43.981387,0 8.073059,43.925277,0 8.031107,43.897221,0 7.835277,43.840553,0 7.766671,43.821388,0 7.663331,43.778060,0 7.610277,43.792218,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>TER86036 from VENTIMIGLIA (Italy) to NICE VILLE (France)</name>
+<styleUrl>#idStylePT_TER86036</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>7.610277</longitude>
+<latitude>43.792218</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+7.610277,43.792218,0 7.535136,43.786897,0 7.528888,43.786474,0 7.517220,43.785279,0 7.493336,43.774447,0 7.481389,43.761943,0 7.457226,43.760280,0 7.419445,43.738058,0 7.393610,43.720556,0 7.356943,43.721941,0 7.331665,43.706668,0 7.314163,43.706947,0 7.290279,43.705832,0 7.261945,43.704448,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>TER17484 from NICE VILLE (France) to MARSEILLE ST CHARLES (France)</name>
+<styleUrl>#idStylePT_TER17484</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>7.261945</longitude>
+<latitude>43.704448</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+7.261945,43.704448,0 7.216109,43.670837,0 7.119448,43.585835,0 7.018607,43.553887,0 6.769165,43.423607,0 6.482499,43.455833,0 6.186943,43.297218,0 5.929168,43.128329,0 5.380278,43.302774,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

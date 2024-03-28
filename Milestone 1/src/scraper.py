@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import csv
-from itertools import combinations
+from itertools import combinations, permutations
 from tqdm import tqdm
 import math
 import re
@@ -184,7 +184,7 @@ def calculate_co2_and_duration(dep, arr):
     kml_link = soup.find("i", class_="fa fa-globe")
     if kml_link and kml_link.parent:
         kml_url = kml_link.parent.get("href")
-        download_kml(base_url + kml_url, f"data/kml_files/{dep}_to {arr}.kml")
+        download_kml(base_url + kml_url, f"data/kml_files_new/{dep}_to {arr}.kml")
     else:
         print("KML link not found.")
     # Parse Products
@@ -248,9 +248,9 @@ def calculate_co2_and_duration(dep, arr):
 
 
 def main():
-    city_pairs = combinations(cities, 2)
+    city_pairs = permutations(cities, 2)
 
-    with open("data/city_pairs_co2_duration.csv", mode="w", newline="") as file:
+    with open("data/city_pairs_co2_duration_new.csv", mode="w", newline="") as file:
         writer = csv.writer(file)
         writer.writerow(
             [
@@ -278,7 +278,7 @@ def main():
             city_pairs,
             desc="Processing City Pairs",
             unit="pair",
-            total=math.comb(len(cities), 2),
+            total=math.perm(len(cities), 2),
         ):
             # formatted_day = day.strftime("%a, %d.%m.%y")
             try:
@@ -331,7 +331,7 @@ def main():
                 )
             except Exception as e:
                 print(f"Failed to process {dep} to {arr}: {e}")
-    print("Data has been written to 'city_pairs_co2_duration.csv'")
+    print("Data has been written to 'city_pairs_co2_duration_new.csv'")
 
 
 if __name__ == "__main__":

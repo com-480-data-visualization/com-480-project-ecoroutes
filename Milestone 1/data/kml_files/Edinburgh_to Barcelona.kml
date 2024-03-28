@@ -1,0 +1,2137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&input=EDINBURGH &#x0028;United Kingdom&#x0029;!&start=yes&">EDINBURGH &#x0028;United Kingdom&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&input=BARCELONA CITY &#x0028;Spain&#x0029;!&start=yes&">BARCELONA CITY &#x0028;Spain&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>EDINBURGH (United Kingdom) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/113190/187907/505898/215219/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&">---</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&input=LONDON KINGS CROSS (United Kingdom)!&start=yes&">LONDON KINGS CROSS (United Kingdom)</a>
+arr 10:53]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>-3.186667</longitude>
+<latitude>55.949724</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>-3.186667,55.949724,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>BERWICK-UPON-TWEED (United Kingdom) dep 07:13</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>-2.009440</longitude>
+<latitude>55.772223</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>-2.009440,55.772223,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NEWCASTLE (United Kingdom) dep 08:00</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>-1.615829</longitude>
+<latitude>54.965280</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>-1.615829,54.965280,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DARLINGTON (United Kingdom) dep 08:31</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>-1.545830</longitude>
+<latitude>54.517500</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>-1.545830,54.517500,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YORK (United Kingdom) dep 09:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>-1.091668</longitude>
+<latitude>53.955000</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>-1.091668,53.955000,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>LONDON KINGS CROSS (United Kingdom) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&">transfer</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&input=LONDON ST PANCRAS INTL (United Kingdom)!&start=yes&">LONDON ST PANCRAS INTL (United Kingdom)</a>
+arr 11:44]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>0.</longitude>
+<latitude>51.528335</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>0.,51.528335,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LONDON ST PANCRAS INTL (United Kingdom) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/448449/491668/457240/79137/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&">ES  9024</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&input=PARIS NORD (France)!&start=yes&">PARIS NORD (France)</a>
+arr 16:01]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>0.</longitude>
+<latitude>51.530555</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>0.,51.530555,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PARIS NORD (France) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&">transfer</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&input=PARIS GARE DE LYON (France)!&start=yes&">PARIS GARE DE LYON (France)</a>
+arr 17:11]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>2.355282</longitude>
+<latitude>48.880275</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.355282,48.880275,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PARIS GARE DE LYON (France) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/907971/567975/800698/97692/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&">TGV 6279</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&input=NIMES PONT DU GARD (France)!&start=yes&">NIMES PONT DU GARD (France)</a>
+arr 21:50]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>2.373611</longitude>
+<latitude>48.845001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.373611,48.845001,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>VALENCE TGV RHONE-ALPES SUD (France) dep 21:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.978613</longitude>
+<latitude>44.991388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.978613,44.991388,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>NIMES PONT DU GARD (France) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/548547/484710/644006/139154/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&">TER76433</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&input=NARBONNE (France)!&start=yes&">NARBONNE (France)</a>
+arr 23:56]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>4.506940</longitude>
+<latitude>43.816669</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.506940,43.816669,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>NIMES (France) dep 22:13</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.365836</longitude>
+<latitude>43.832220</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.365836,43.832220,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VERGEZE CODOGNAN (France) dep 22:23</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.218889</longitude>
+<latitude>43.740000</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.218889,43.740000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LUNEL (France) dep 22:31</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.131110</longitude>
+<latitude>43.679440</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.131110,43.679440,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BAILLARGUES (France) dep 22:38</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.007778</longitude>
+<latitude>43.653335</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.007778,43.653335,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MONTPELLIER SAINT-ROCH (France) dep 22:51</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.880553</longitude>
+<latitude>43.604721</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.880553,43.604721,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FRONTIGNAN (France) dep 23:04</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.758615</longitude>
+<latitude>43.445001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.758615,43.445001,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SETE (France) dep 23:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.696670</longitude>
+<latitude>43.412775</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.696670,43.412775,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>AGDE (France) dep 23:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.466115</longitude>
+<latitude>43.317219</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.466115,43.317219,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BEZIERS (France) dep 23:40</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.218893</longitude>
+<latitude>43.336393</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.218893,43.336393,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>NARBONNE (France) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/814311/604324/971706/214416/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&">TER86967</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&input=PORT-BOU (Spain)!&start=yes&">PORT-BOU (Spain)</a>
+arr 08:47]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>3.005552</longitude>
+<latitude>43.190552</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.005552,43.190552,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>PORT LA NOUVELLE (France) dep 07:19</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.038615</longitude>
+<latitude>43.020836</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.038615,43.020836,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LEUCATE LA FRANQUI (France) dep 07:25</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.012780</longitude>
+<latitude>42.932778</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.012780,42.932778,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SALSES (France) dep 07:35</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>2.917782</longitude>
+<latitude>42.835559</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.917782,42.835559,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RIVESALTES (France) dep 07:42</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>2.868053</longitude>
+<latitude>42.766387</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.868053,42.766387,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PERPIGNAN (France) dep 07:58</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>2.879443</longitude>
+<latitude>42.695831</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.879443,42.695831,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ELNE (France) dep 08:07</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>2.963609</longitude>
+<latitude>42.597219</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.963609,42.597219,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ARGELES SUR MER (France) dep 08:13</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.022218</longitude>
+<latitude>42.543886</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.022218,42.543886,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>COLLIOURE (France) dep 08:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.078329</longitude>
+<latitude>42.526942</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.078329,42.526942,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PORT VENDRES VILLE (France) dep 08:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.102501</longitude>
+<latitude>42.513611</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.102501,42.513611,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BANYULS SUR MER (France) dep 08:27</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.125001</longitude>
+<latitude>42.483056</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.125001,42.483056,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CERBERE (France) dep 08:43</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.163331</longitude>
+<latitude>42.441670</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.163331,42.441670,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PORT BOU FRONTIERE (France) dep 08:45</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.159169</longitude>
+<latitude>42.434721</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.159169,42.434721,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PORT BOU(fr) (Spain) dep 08:45</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.159160</longitude>
+<latitude>42.434407</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.159160,42.434407,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>PORT-BOU (Spain) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/612648/260656/334676/36879/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&">RE 15808</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&input=GIRONA (VIAJEROS) (Spain)!&start=yes&">GIRONA (VIAJEROS) (Spain)</a>
+arr 11:38]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>3.157776</longitude>
+<latitude>42.424447</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.157776,42.424447,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>COLERA (APD.) (Spain) dep 10:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.154171</longitude>
+<latitude>42.406945</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.154171,42.406945,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LLANSA (Spain) dep 10:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.147222</longitude>
+<latitude>42.366664</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.147222,42.366664,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VILAJUIGA (Spain) dep 10:50</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.085278</longitude>
+<latitude>42.325835</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.085278,42.325835,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FIGUERAS (Spain) dep 10:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>2.968885</longitude>
+<latitude>42.264996</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.968885,42.264996,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VILAMALLA (Spain) dep 11:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>2.977776</longitude>
+<latitude>42.216113</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.977776,42.216113,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SAN MIGUEL DE FLUVIA (Spain) dep 11:07</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>2.989722</longitude>
+<latitude>42.172218</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.989722,42.172218,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CAMALLERA (Spain) dep 11:13</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>2.965559</longitude>
+<latitude>42.122220</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.965559,42.122220,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SAN JORDI (APD.) (Spain) dep 11:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>2.964445</longitude>
+<latitude>42.068330</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.964445,42.068330,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FLASSA (Spain) dep 11:22</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>2.957496</longitude>
+<latitude>42.047502</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.957496,42.047502,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BORDILS-JUNYA (APD.) (Spain) dep 11:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>2.915274</longitude>
+<latitude>42.036940</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.915274,42.036940,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CELRA (Spain) dep 11:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>2.875002</longitude>
+<latitude>42.027222</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.875002,42.027222,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>GIRONA (VIAJEROS) (Spain) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/430044/309999/288310/807/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&">AVN34730</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=k8.0101131.1711637313&input=BARCELONA-SANTS (Spain)!&start=yes&">BARCELONA-SANTS (Spain)</a>
+arr 12:32]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>2.816941</longitude>
+<latitude>41.979166</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.816941,41.979166,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BARCELONA-SANTS (Spain) arr 12:32</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>2.140556</longitude>
+<latitude>41.379442</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.140556,41.379442,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+EDINBURGH (United Kingdom)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+06:26
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="6" valign="top" style="white-space:nowrap;">
+---
+</td>
+<td rowspan="6" valign="top">
+Express
+Direction: LONDON KINGS CROSS (United Kingdom)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BERWICK-UPON-TWEED (United Kingdom)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:11
+</td>
+<td class="result" >
+07:13
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+NEWCASTLE (United Kingdom)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:55
+</td>
+<td class="result" >
+08:00
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DARLINGTON (United Kingdom)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:28
+</td>
+<td class="result" >
+08:31
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+YORK (United Kingdom)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:59
+</td>
+<td class="result" >
+09:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+LONDON KINGS CROSS (United Kingdom)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+10:53
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+LONDON KINGS CROSS (United Kingdom)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+10:53
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="2" valign="top" style="white-space:nowrap;">
+transfer
+</td>
+<td rowspan="2" valign="top">
+51 min.
+</td>
+<tr bgcolor="#eeeeee">
+<td>
+LONDON ST PANCRAS INTL (United Kingdom)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+11:44
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+LONDON ST PANCRAS INTL (United Kingdom)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+12:31
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="2" valign="top" style="white-space:nowrap;">
+ES  9024
+</td>
+<td rowspan="2" valign="top">
+Eurostar
+Direction: PARIS NORD (France)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td>
+PARIS NORD (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+16:01
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+PARIS NORD (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+16:01
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="2" valign="top" style="white-space:nowrap;">
+transfer
+</td>
+<td rowspan="2" valign="top">
+70 min.
+</td>
+<tr bgcolor="#eeeeee">
+<td>
+PARIS GARE DE LYON (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+17:11
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+PARIS GARE DE LYON (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+18:56
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="3" valign="top" style="white-space:nowrap;">
+TGV 6279
+</td>
+<td rowspan="3" valign="top">
+TGV INOUI
+Direction: MONTPELLIER SUD DE FRANCE (France)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VALENCE TGV RHONE-ALPES SUD (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:09
+</td>
+<td class="result" >
+21:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+NIMES PONT DU GARD (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+21:50
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+NIMES PONT DU GARD (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+22:02
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="11" valign="top" style="white-space:nowrap;">
+TER76433
+</td>
+<td rowspan="11" valign="top">
+Regional TER
+Direction: NARBONNE (France)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+NIMES (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:10
+</td>
+<td class="result" >
+22:13
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VERGEZE CODOGNAN (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:22
+</td>
+<td class="result" >
+22:23
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LUNEL (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:29
+</td>
+<td class="result" >
+22:31
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BAILLARGUES (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:37
+</td>
+<td class="result" >
+22:38
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MONTPELLIER SAINT-ROCH (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:47
+</td>
+<td class="result" >
+22:51
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+FRONTIGNAN (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:03
+</td>
+<td class="result" >
+23:04
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SETE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:09
+</td>
+<td class="result" >
+23:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+AGDE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:24
+</td>
+<td class="result" >
+23:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BEZIERS (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:38
+</td>
+<td class="result" >
+23:40
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+NARBONNE (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+23:56
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+NARBONNE (France)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+07:06
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="15" valign="top" style="white-space:nowrap;">
+TER86967
+</td>
+<td rowspan="15" valign="top">
+Regional TER
+Direction: PORT-BOU (Spain)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PORT LA NOUVELLE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:18
+</td>
+<td class="result" >
+07:19
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LEUCATE LA FRANQUI (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:24
+</td>
+<td class="result" >
+07:25
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SALSES (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:34
+</td>
+<td class="result" >
+07:35
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+RIVESALTES (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:41
+</td>
+<td class="result" >
+07:42
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PERPIGNAN (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:51
+</td>
+<td class="result" >
+07:58
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ELNE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:06
+</td>
+<td class="result" >
+08:07
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ARGELES SUR MER (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:12
+</td>
+<td class="result" >
+08:13
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+COLLIOURE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:17
+</td>
+<td class="result" >
+08:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PORT VENDRES VILLE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:20
+</td>
+<td class="result" >
+08:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BANYULS SUR MER (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:26
+</td>
+<td class="result" >
+08:27
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CERBERE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:33
+</td>
+<td class="result" >
+08:43
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PORT BOU FRONTIERE (France)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:45
+</td>
+<td class="result" >
+08:45
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PORT BOU(fr) (Spain)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:45
+</td>
+<td class="result" >
+08:45
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+PORT-BOU (Spain)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+08:47
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+PORT-BOU (Spain)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+10:35
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="13" valign="top" style="white-space:nowrap;">
+RE 15808
+</td>
+<td rowspan="13" valign="top">
+Regional
+Direction: BARCELONA-SANTS (Spain)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+COLERA (APD.) (Spain)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:39
+</td>
+<td class="result" >
+10:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LLANSA (Spain)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:44
+</td>
+<td class="result" >
+10:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VILAJUIGA (Spain)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:50
+</td>
+<td class="result" >
+10:50
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+FIGUERAS (Spain)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:58
+</td>
+<td class="result" >
+10:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VILAMALLA (Spain)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:03
+</td>
+<td class="result" >
+11:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SAN MIGUEL DE FLUVIA (Spain)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:07
+</td>
+<td class="result" >
+11:07
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+CAMALLERA (Spain)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:13
+</td>
+<td class="result" >
+11:13
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SAN JORDI (APD.) (Spain)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:18
+</td>
+<td class="result" >
+11:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+FLASSA (Spain)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:21
+</td>
+<td class="result" >
+11:22
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BORDILS-JUNYA (APD.) (Spain)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:26
+</td>
+<td class="result" >
+11:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+CELRA (Spain)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:30
+</td>
+<td class="result" >
+11:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+GIRONA (VIAJEROS) (Spain)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+11:38
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+GIRONA (VIAJEROS) (Spain)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+11:53
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="2" valign="top" style="white-space:nowrap;">
+AVN34730
+</td>
+<td rowspan="2" valign="top">
+Avant
+Direction: BARCELONA-SANTS (Spain)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td>
+BARCELONA-SANTS (Spain)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+12:32
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 29:06;
+runs
+not every day, 1. until 22. Mar 2024 Fr
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>2.816941</longitude>
+<latitude>41.979166</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+-3.186667,55.949724,0 -2.009440,55.772223,0 -1.615829,54.965280,0 -1.545830,54.517500,0 -1.091668,53.955000,0 0.,51.528335,0 0.,51.530555,0 2.355282,48.880275,0 2.373611,48.845001,0 4.978613,44.991388,0 4.506940,43.816669,0 4.365836,43.832220,0 4.218889,43.740000,0 4.131110,43.679440,0 4.007778,43.653335,0 3.880553,43.604721,0 3.758615,43.445001,0 3.696670,43.412775,0 3.466115,43.317219,0 3.218893,43.336393,0 3.005552,43.190552,0 3.038615,43.020836,0 3.012780,42.932778,0 2.917782,42.835559,0 2.868053,42.766387,0 2.879443,42.695831,0 2.963609,42.597219,0 3.022218,42.543886,0 3.078329,42.526942,0 3.102501,42.513611,0 3.125001,42.483056,0 3.163331,42.441670,0 3.159169,42.434721,0 3.159160,42.434407,0 3.157776,42.424447,0 3.154171,42.406945,0 3.147222,42.366664,0 3.085278,42.325835,0 2.968885,42.264996,0 2.977776,42.216113,0 2.989722,42.172218,0 2.965559,42.122220,0 2.964445,42.068330,0 2.957496,42.047502,0 2.915274,42.036940,0 2.875002,42.027222,0 2.816941,41.979166,0 2.140556,41.379442,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>--- from EDINBURGH (United Kingdom) to LONDON KINGS CROSS (United Kingdom)</name>
+<styleUrl>#idStylePT_---</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>-3.186667</longitude>
+<latitude>55.949724</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+-3.186667,55.949724,0 -2.009440,55.772223,0 -1.615829,54.965280,0 -1.545830,54.517500,0 -1.091668,53.955000,0 0.,51.528335,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>transfer from LONDON KINGS CROSS (United Kingdom) to LONDON ST PANCRAS INTL (United Kingdom)</name>
+<styleUrl>#idStylePT_transfer</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>0.</longitude>
+<latitude>51.528335</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+0.,51.528335,0 0.,51.530555,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>ES  9024 from LONDON ST PANCRAS INTL (United Kingdom) to PARIS NORD (France)</name>
+<styleUrl>#idStylePT_ES  9024</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>0.</longitude>
+<latitude>51.530555</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+0.,51.530555,0 2.355282,48.880275,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>transfer from PARIS NORD (France) to PARIS GARE DE LYON (France)</name>
+<styleUrl>#idStylePT_transfer</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>2.355282</longitude>
+<latitude>48.880275</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+2.355282,48.880275,0 2.373611,48.845001,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>TGV 6279 from PARIS GARE DE LYON (France) to NIMES PONT DU GARD (France)</name>
+<styleUrl>#idStylePT_TGV 6279</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>2.373611</longitude>
+<latitude>48.845001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+2.373611,48.845001,0 4.978613,44.991388,0 4.506940,43.816669,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>TER76433 from NIMES PONT DU GARD (France) to NARBONNE (France)</name>
+<styleUrl>#idStylePT_TER76433</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>4.506940</longitude>
+<latitude>43.816669</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+4.506940,43.816669,0 4.365836,43.832220,0 4.218889,43.740000,0 4.131110,43.679440,0 4.007778,43.653335,0 3.880553,43.604721,0 3.758615,43.445001,0 3.696670,43.412775,0 3.466115,43.317219,0 3.218893,43.336393,0 3.005552,43.190552,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>TER86967 from NARBONNE (France) to PORT-BOU (Spain)</name>
+<styleUrl>#idStylePT_TER86967</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>3.005552</longitude>
+<latitude>43.190552</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+3.005552,43.190552,0 3.038615,43.020836,0 3.012780,42.932778,0 2.917782,42.835559,0 2.868053,42.766387,0 2.879443,42.695831,0 2.963609,42.597219,0 3.022218,42.543886,0 3.078329,42.526942,0 3.102501,42.513611,0 3.125001,42.483056,0 3.163331,42.441670,0 3.159169,42.434721,0 3.159160,42.434407,0 3.157776,42.424447,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE 15808 from PORT-BOU (Spain) to GIRONA (VIAJEROS) (Spain)</name>
+<styleUrl>#idStylePT_RE 15808</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>3.157776</longitude>
+<latitude>42.424447</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+3.157776,42.424447,0 3.154171,42.406945,0 3.147222,42.366664,0 3.085278,42.325835,0 2.968885,42.264996,0 2.977776,42.216113,0 2.989722,42.172218,0 2.965559,42.122220,0 2.964445,42.068330,0 2.957496,42.047502,0 2.915274,42.036940,0 2.875002,42.027222,0 2.816941,41.979166,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>AVN34730 from GIRONA (VIAJEROS) (Spain) to BARCELONA-SANTS (Spain)</name>
+<styleUrl>#idStylePT_AVN34730</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>2.816941</longitude>
+<latitude>41.979166</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+2.816941,41.979166,0 2.140556,41.379442,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

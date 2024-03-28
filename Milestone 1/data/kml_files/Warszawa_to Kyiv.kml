@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b3.0205161.1711632398&input=WARSZAWA &#x0028;Poland&#x0029;!&start=yes&">WARSZAWA &#x0028;Poland&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b3.0205161.1711632398&input=KYIV-PASAZHYRSKYI &#x0028;Ukraine&#x0029;!&start=yes&">KYIV-PASAZHYRSKYI &#x0028;Ukraine&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>WARSZAWA CENTRALNA (Poland) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/924876/534995/111862/252361/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b3.0205161.1711632398&">IC 52100</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b3.0205161.1711632398&input=CHELM (Poland)!&start=yes&">CHELM (Poland)</a>
+arr 14:22]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>21.002775</longitude>
+<latitude>52.228613</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.002775,52.228613,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>WARSZAWA WSCHODNIA (Poland) dep 11:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.052503</longitude>
+<latitude>52.251113</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.052503,52.251113,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OTWOCK (Poland) dep 12:08</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.264442</longitude>
+<latitude>52.108607</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.264442,52.108607,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PILAWA (Poland) dep 12:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.532500</longitude>
+<latitude>51.957219</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.532500,51.957219,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DEBLIN (Poland) dep 12:46</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.835275</longitude>
+<latitude>51.577497</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.835275,51.577497,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PULAWY MIASTO (Poland) dep 12:57</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>21.985556</longitude>
+<latitude>51.426667</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>21.985556,51.426667,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PULAWY (Poland) dep 12:58</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.012497</longitude>
+<latitude>51.410001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.012497,51.410001,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NALECZOW (Poland) dep 13:08</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.213055</longitude>
+<latitude>51.318059</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.213055,51.318059,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LUBLIN ZACHODNI (Poland) dep 13:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.507776</longitude>
+<latitude>51.218890</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.507776,51.218890,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LUBLIN (Poland) dep 13:29</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.568893</longitude>
+<latitude>51.231385</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.568893,51.231385,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SWIDNIK MIASTO (Poland) dep 13:38</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.694724</longitude>
+<latitude>51.223888</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.694724,51.223888,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TRAWNIKI (Poland) dep 13:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>22.994164</longitude>
+<latitude>51.135560</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.994164,51.135560,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>REJOWIEC (Poland) dep 14:06</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.239165</longitude>
+<latitude>51.117501</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.239165,51.117501,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CHELM MIASTO (Poland) dep 14:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.459167</longitude>
+<latitude>51.138329</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.459167,51.138329,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>CHELM (Poland) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/614523/319901/85050/162316/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b3.0205161.1711632398&">24</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=b3.0205161.1711632398&input=KYIV-PASAZHYRSKYI (Ukraine)!&start=yes&">KYIV-PASAZHYRSKYI (Ukraine)</a>
+arr 05:39]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>23.493892</longitude>
+<latitude>51.141107</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.493892,51.141107,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>YAHODYN (Ukraine) dep 21:16</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.895998</longitude>
+<latitude>51.198584</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.895998,51.198584,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KOVEL (Ukraine) dep 22:31</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>24.712497</longitude>
+<latitude>51.221308</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>24.712497,51.221308,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RIVNE (Ukraine) dep 00:16</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>26.410173</longitude>
+<latitude>50.641504</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>26.410173,50.641504,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BERDYCHIV (Ukraine) dep 03:16</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>28.612224</longitude>
+<latitude>49.889440</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>28.612224,49.889440,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>KYIV-PASAZHYRSKYI (Ukraine) arr 05:39</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>30.513973</longitude>
+<latitude>50.434357</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>30.513973,50.434357,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+WARSZAWA CENTRALNA (Poland)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+11:35
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="15" valign="top" style="white-space:nowrap;">
+IC 52100
+</td>
+<td rowspan="15" valign="top">
+Intercity
+Direction: CHELM (Poland)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+WARSZAWA WSCHODNIA (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:41
+</td>
+<td class="result" >
+11:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+OTWOCK (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:07
+</td>
+<td class="result" >
+12:08
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PILAWA (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:20
+</td>
+<td class="result" >
+12:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DEBLIN (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:45
+</td>
+<td class="result" >
+12:46
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PULAWY MIASTO (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:56
+</td>
+<td class="result" >
+12:57
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PULAWY (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:58
+</td>
+<td class="result" >
+12:58
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+NALECZOW (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:07
+</td>
+<td class="result" >
+13:08
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LUBLIN ZACHODNI (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:20
+</td>
+<td class="result" >
+13:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LUBLIN (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:26
+</td>
+<td class="result" >
+13:29
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SWIDNIK MIASTO (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:37
+</td>
+<td class="result" >
+13:38
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+TRAWNIKI (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:53
+</td>
+<td class="result" >
+13:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+REJOWIEC (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:05
+</td>
+<td class="result" >
+14:06
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CHELM MIASTO (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:17
+</td>
+<td class="result" >
+14:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+CHELM (Poland)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+14:22
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+CHELM (Poland)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+16:42
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="6" valign="top" style="white-space:nowrap;">
+24
+</td>
+<td rowspan="6" valign="top">
+Night train
+Direction: KYIV-PASAZHYRSKYI (Ukraine)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+YAHODYN (Ukraine)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:14
+</td>
+<td class="result" >
+21:16
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KOVEL (Ukraine)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:10
+</td>
+<td class="result" >
+22:31
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+RIVNE (Ukraine)
+</td>
+<td align="center">Sa,02.03.24</td>
+<td class="result" >
+00:14
+</td>
+<td class="result" >
+00:16
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BERDYCHIV (Ukraine)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+03:14
+</td>
+<td class="result" >
+03:16
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+KYIV-PASAZHYRSKYI (Ukraine)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+05:39
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 17:04;
+runs
+not every day, 1. until 9. Mar 2024
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>23.493892</longitude>
+<latitude>51.141107</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+21.002775,52.228613,0 21.052503,52.251113,0 21.264442,52.108607,0 21.532500,51.957219,0 21.835275,51.577497,0 21.985556,51.426667,0 22.012497,51.410001,0 22.213055,51.318059,0 22.507776,51.218890,0 22.568893,51.231385,0 22.694724,51.223888,0 22.994164,51.135560,0 23.239165,51.117501,0 23.459167,51.138329,0 23.493892,51.141107,0 23.895998,51.198584,0 24.712497,51.221308,0 26.410173,50.641504,0 28.612224,49.889440,0 30.513973,50.434357,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC 52100 from WARSZAWA CENTRALNA (Poland) to CHELM (Poland)</name>
+<styleUrl>#idStylePT_IC 52100</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>21.002775</longitude>
+<latitude>52.228613</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+21.002775,52.228613,0 21.052503,52.251113,0 21.264442,52.108607,0 21.532500,51.957219,0 21.835275,51.577497,0 21.985556,51.426667,0 22.012497,51.410001,0 22.213055,51.318059,0 22.507776,51.218890,0 22.568893,51.231385,0 22.694724,51.223888,0 22.994164,51.135560,0 23.239165,51.117501,0 23.459167,51.138329,0 23.493892,51.141107,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>24 from CHELM (Poland) to KYIV-PASAZHYRSKYI (Ukraine)</name>
+<styleUrl>#idStylePT_24</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>23.493892</longitude>
+<latitude>51.141107</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+23.493892,51.141107,0 23.895998,51.198584,0 24.712497,51.221308,0 26.410173,50.641504,0 28.612224,49.889440,0 30.513973,50.434357,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>
