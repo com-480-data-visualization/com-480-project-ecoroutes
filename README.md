@@ -34,6 +34,8 @@ After scraping the data, our dataset comprises 5153 routes. Each route consists 
 
 Besides a naive average of the CO2 emissions and energy consumption of the three modes for a certain route, we calculated a weighted average that takes into account an extimation of the market shares of the train vs flight modes. We used the following regression, from [Xia, Wenyi, Anming Zhang](https://doi.org/10.1016/j.trb.2016.10.006):
 
+![Regression for train vs plane market share](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/assets/20169200/4b7748d5-6c23-4115-8d26-7c80ba4920fc)
+
 We also computed the "in-flight" distance between each pair of cities, using haversine distance.
 
 The CO2 emission data for trains is right-skewed, meaning most train routes have lower emissions but a few have very high emissions. For cars, the CO2 emissions are normally distributed, while flight CO2 emissions show a bimodal distribution, indicating two distinct groups of flights based on their emissions. The average CO2 emissions for trains, cars, and flights are 55.83, 128.06, and 180.09 Kg respectively.
