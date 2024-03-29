@@ -82,7 +82,7 @@ So in our approach, we are inspired by works like [OpenRitardi](https://github.c
 
 Another work that represents a source of inspiration is [Chronotrain](https://www.chronotrains.com/en), which provides a map of the destinations reachable by public transport from a given source and within a certain time travel bound, since it follows a goal similar to the previous one and is interesting especially for the visualizations used.
 
-Therefore our original contribution consists of applying this democratizing approach to CO2 emission data from EcoPassenger, something that has not yet been done, to the best of our knowledge.
+Our project uniqueness lies in incorporating an interactive map and a heatmap to enable users to compare CO2 emissions from different means of transport and visualize destinations based on travel time and emissions. Additionally, we will provide detailed visualizations that show the effectiveness of green transportation policies across regions and countries. Therefore our original contribution consists of applying this democratizing approach to CO2 emission data from EcoPassenger, something that has not yet been done, to the best of our knowledge.
 
 <!-- > - What others have already done with the data?
 > - Why is your approach original?
