@@ -63,7 +63,7 @@ In our regression analysis, we investigated how travel duration affects CO2 emis
   <em>Figure 3. Relationship Between Travel Duration and CO2 Emissions Across Transportation Modes</em>
 </p>
 
-Lastly, we used KML files to create a map highlighting the train route with the highest CO2 emissions.
+Lastly, we used KML files to create a map highlighting the train route with the highest CO2 emissions, along with the corresponding car and flight routes.
 
 <p align="center">
   <img src="https://github.com/com-480-data-visualization/com-480-project-ecoroutes/assets/58995762/76308b40-9344-4504-abc1-daeb606ff8c9" alt="Highlighting the Train Route with the Highest CO2 Emissions" style="width: 90%;">
