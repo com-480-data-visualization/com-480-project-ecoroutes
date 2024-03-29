@@ -46,8 +46,11 @@ We also computed the "in-flight" distance between each pair of cities, using hav
 
 The CO2 emission data for trains is right-skewed, meaning most train routes have lower emissions but a few have very high emissions. For cars, the CO2 emissions are normally distributed, while flight CO2 emissions show a bimodal distribution, indicating two distinct groups of flights based on their emissions. The average CO2 emissions for trains, cars, and flights are 55.83, 128.06, and 180.09 Kg respectively.
 
-![Distribution of CO2 Emissions by Transportation Mode](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/assets/58995762/161ecc15-4e4c-4b37-a12a-e86b0ab18290)
-*Figure 2. Distribution of CO2 Emissions by Transportation Mode*
+<p align="center">
+  <img src="https://github.com/com-480-data-visualization/com-480-project-ecoroutes/assets/58995762/161ecc15-4e4c-4b37-a12a-e86b0ab18290" alt="Distribution of CO2 Emissions by Transportation Mode">
+  <br>
+  <em>Figure 2. Distribution of CO2 Emissions by Transportation Mode</em>
+</p>
 
 In our regression analysis, we investigated how travel duration affects CO2 emissions across the three transportation modes. We found a positive correlation overall, meaning longer journeys tend to produce more CO2, which is expected. Specifically, the relationship between CO2 emissions from cars and their travel duration is almost a perfectly straight line. This is because the calculations for car CO2 emissions are based on a single vehicle type (a mid-class, Diesel EURO 4 car) according to the EcoRoutes website.
 
