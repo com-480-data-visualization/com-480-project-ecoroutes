@@ -37,7 +37,7 @@ We plan to achieve our goal with several possible visualizations, including for 
 
 After scraping the data, our dataset comprises 5153 routes. Each route consists of the departure and arrival city, country, and region, as well as the train, car, and flight duration, CO2 emissions and energy resource consumption. Additionally, the dataset includes information on the ‘products’ for each type of travel connection, which represent the number of transfers a traveller must make during their journey. In the dataset, several routes didn’t have CO2 information, so we removed those from the dataset.
 
-Besides a naive average of the CO2 emissions and energy consumption of the three modes for a certain route, we calculated a weighted average that takes into account an estimation of the market shares of the train compared to the market share of the plane. We used the following regression, from [Xia, Wenyi, Anming Zhang](https://doi.org/10.1016/j.trb.2016.10.006):
+Besides a naive average of the CO2 emissions and energy consumption of the three modes for a certain route, we calculated a weighted average that takes into account an estimation of the market share of the train compared to the market share of the plane. We used the following regression, from [Xia, Wenyi, Anming Zhang](https://doi.org/10.1016/j.trb.2016.10.006):
 
 ![Regression for train vs plane market share](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/assets/20169200/4b7748d5-6c23-4115-8d26-7c80ba4920fc)
 
