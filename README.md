@@ -39,8 +39,11 @@ After scraping the data, our dataset comprises 5153 routes. Each route consists 
 
 Besides a naive average of the CO2 emissions and energy consumption of the three modes for a certain route, we calculated a weighted average that takes into account an estimation of the market share of the train compared to the market share of the plane. We used the following regression, from [Xia, Wenyi, Anming Zhang](https://doi.org/10.1016/j.trb.2016.10.006):
 
-![Regression for train vs plane market share](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/assets/20169200/4b7748d5-6c23-4115-8d26-7c80ba4920fc)
-*Figure 1. Regression for train vs plane market share*
+<p align="center">
+  <img src="https://github.com/com-480-data-visualization/com-480-project-ecoroutes/assets/20169200/4b7748d5-6c23-4115-8d26-7c80ba4920fc" alt="Regression for train vs plane market share" style="width: 90%;">
+  <br>
+  <em>Figure 1. Regression for train vs plane market share</em>
+</p>
 
 We also computed the "in-flight" distance between each pair of cities, using haversine distance.
 
@@ -54,13 +57,19 @@ The CO2 emission data for trains is right-skewed, meaning most train routes have
 
 In our regression analysis, we investigated how travel duration affects CO2 emissions across the three transportation modes. We found a positive correlation overall, meaning longer journeys tend to produce more CO2, which is expected. Specifically, the relationship between CO2 emissions from cars and their travel duration is almost a perfectly straight line. This is because the calculations for car CO2 emissions are based on a single vehicle type (a mid-class, Diesel EURO 4 car) according to the EcoRoutes website.
 
-![Relationship Between Travel Duration and CO2 Emissions Across Transportation Modes](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/assets/58995762/ed9b5dc6-4dfa-4109-9705-ec7680623d43)
-*Figure 3. Relationship Between Travel Duration and CO2 Emissions Across Transportation Modes*
+<p align="center">
+  <img src="https://github.com/com-480-data-visualization/com-480-project-ecoroutes/assets/58995762/ed9b5dc6-4dfa-4109-9705-ec7680623d43" alt="Relationship Between Travel Duration and CO2 Emissions Across Transportation Modes" style="width: 90%;">
+  <br>
+  <em>Figure 3. Relationship Between Travel Duration and CO2 Emissions Across Transportation Modes</em>
+</p>
 
 Lastly, we used KML files to create a map highlighting the train route with the highest CO2 emissions.
 
-![Highlighting the Train Route with the Highest CO2 Emissions](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/assets/58995762/200c8751-0858-4691-810a-56bd70aa4512)
-*Figure 4. Highlighting the Train Route with the Highest CO2 Emissions*
+<p align="center">
+  <img src="https://github.com/com-480-data-visualization/com-480-project-ecoroutes/assets/58995762/200c8751-0858-4691-810a-56bd70aa4512" alt="Highlighting the Train Route with the Highest CO2 Emissions" style="width: 90%;">
+  <br>
+  <em>Figure 4. Highlighting the Train Route with the Highest CO2 Emissions</em>
+</p>
 
 In [`EDA.ipynb`](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/blob/master/Milestone%201/notebooks/EDA.ipynb) you will find the code for the data preprocessing and exploratory data analysis, as well as other visualizations we produced.
 
