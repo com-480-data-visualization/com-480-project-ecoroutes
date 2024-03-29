@@ -66,7 +66,7 @@ In our regression analysis, we investigated how travel duration affects CO2 emis
 Lastly, we used KML files to create a map highlighting the train route with the highest CO2 emissions.
 
 <p align="center">
-  <img src="https://github.com/com-480-data-visualization/com-480-project-ecoroutes/assets/58995762/200c8751-0858-4691-810a-56bd70aa4512" alt="Highlighting the Train Route with the Highest CO2 Emissions" style="width: 90%;">
+  <img src="[https://github.com/com-480-data-visualization/com-480-project-ecoroutes/assets/58995762/200c8751-0858-4691-810a-56bd70aa4512](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/assets/58995762/582b1e1f-0581-479c-aeb4-8398d5306185)" alt="Highlighting the Train Route with the Highest CO2 Emissions" style="width: 90%;">
   <br>
   <em>Figure 4. Highlighting the Train Route with the Highest CO2 Emissions</em>
 </p>
