@@ -9,7 +9,7 @@ import { ListRoutesComponent } from './list-routes/list-routes.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NavbarComponent, RoutesInputComponent, RouteMapComponent, ListRoutesComponent],
+  imports: [CommonModule, RouterOutlet, NavbarComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
