@@ -92,7 +92,7 @@ Our project uniqueness lies in incorporating an interactive map and a heatmap to
 </span>
 
 ## Milestone 2 (26th April, 5pm)
-See our [report](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/blob/master/Milestone%202/Milestone%202.pdf) and the initial [website](https://com-480-data-visualization.github.io/com-480-project-ecoroutes/).
+See our project [goal](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/blob/master/Milestone%202/Milestone%202.pdf) and the initial [website](https://com-480-data-visualization.github.io/com-480-project-ecoroutes/).
 
 ## Milestone 3 (31st May, 5pm)
 
