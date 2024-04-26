@@ -4,11 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RoutesInputComponent } from './routes-input/routes-input.component';
 import { RouteMapComponent } from './route-map/route-map.component';
+import { ListRoutesComponent } from './list-routes/list-routes.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NavbarComponent, RoutesInputComponent, RouteMapComponent],
+  imports: [CommonModule, RouterOutlet, NavbarComponent, RoutesInputComponent, RouteMapComponent, ListRoutesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

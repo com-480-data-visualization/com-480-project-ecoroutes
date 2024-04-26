@@ -1,7 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import * as Leaflet from 'leaflet'; 
 import * as d3 from 'd3';
+import 'leaflet-textpath';
+import { MapRoutesService } from '../map-routes.service';
+import { EcoRoute } from '../ecoroute.model';
 
 @Component({
   selector: 'app-route-map',
@@ -12,15 +15,29 @@ import * as d3 from 'd3';
 })
 export class RouteMapComponent {
 
-  constructor() {}
+  // @Input() routes: any[] = [];
+  routes: { [key: string]: any[] } = {};
+
+  constructor(private mapRoutesService: MapRoutesService) {}
 
   ngAfterViewInit() {
-    d3.csv('assets/final_dataset.csv').then(data => {
-      let d1 = data[0];
-      // d3.csvParse(data[0], d => {
-      // })
-      console.log(d1);
-      this.plotLine(d1);
+    this.mapRoutesService.getRoutesObservable().subscribe(route => {
+      let res;
+      if (route.avgCO2W>200){
+        res = this.plotLine(route,'red');
+      } else if (route.avgCO2W>150){
+        res = this.plotLine(route,'yellow');
+      } else{
+        res = this.plotLine(route,'green');
+      }
+      this.routes[route.id] = res;
+      
+    })
+
+    this.mapRoutesService.getDeleteRouteObservable().subscribe(route => {
+      let res = this.routes[route.id];
+      res.forEach(r => this.map.removeLayer(r));
+      delete this.routes[route.id];
     })
   
   }
@@ -42,90 +59,47 @@ export class RouteMapComponent {
     center: { lat: 54.520008, lng: 13.404954 }
   }
 
-  initMarkers() {
-    const initialMarkers = [
-      {
-        position: { lat: 50.520008, lng: 13.404954 },
-        draggable: true
-      },
-    ];
-    for (let index = 0; index < initialMarkers.length; index++) {
-      const data = initialMarkers[index];
-      const marker = this.generateMarker(data, index);
-      marker.addTo(this.map).bindPopup(`<b>${data.position.lat},  ${data.position.lng}</b>`);
-      this.map.panTo(data.position);
-      this.markers.push(marker)
-    }
-  }
-
-  generateMarker(data: any, index: number) {
-    return Leaflet.marker(data.position, { draggable: data.draggable })
-      .on('click', (event) => this.markerClicked(event, index))
-      .on('dragend', (event) => this.markerDragEnd(event, index));
-  }
-
   onMapReady($event: Leaflet.Map) {
     this.map = $event;
-    // this.initMarkers();
   }
 
   mapClicked($event: any) {
     console.log($event.latlng.lat, $event.latlng.lng);
   }
 
-  markerClicked($event: any, index: number) {
-    console.log($event.latlng.lat, $event.latlng.lng);
-  }
-
-  markerDragEnd($event: any, index: number) {
-    console.log($event.target.getLatLng());
-  } 
-
-  plotLine(d:any){
-    const svg = d3.select(this.map.getPanes().overlayPane).append("svg"),
-        g = svg.append("g").attr("class", "leaflet-zoom-hide");
-
-    let depCoord = this.parseCoordinates(d['Departure Coordinates'])
-    let arrCoord = this.parseCoordinates(d['Arrival Coordinates'])
-
-    console.log(depCoord, arrCoord)
-
-    let x1 = this.map.latLngToLayerPoint(depCoord).x;
-    let y1 = this.map.latLngToLayerPoint(depCoord).y;
-    let x2 = this.map.latLngToLayerPoint(arrCoord).x;
-    let y2 = this.map.latLngToLayerPoint(arrCoord).y;
+  plotLine(d:EcoRoute,color:string='blue'){
+    let depCoord = this.parseCoordinates(d.departureCoordinates)
+    let arrCoord = this.parseCoordinates(d.arrivalCoordinates)
 
     var latlngs = [
       depCoord,
       arrCoord
     ];
 
-    var polyline = Leaflet.polyline(latlngs, {color: 'blue'}).addTo(this.map);
+    var depCirc = Leaflet.circle(depCoord, {
+      color: color,
+      fillColor: color,
+      fillOpacity: 0.5,
+      radius: 50000
+    }).addTo(this.map);
 
-    // svg.selectAll('line')
-    //   .data([d])
-    //   .enter()
-    //   .append('line')
-    //   .attr('x1', x1)
-    //   .attr('y1', y1)
-    //   .attr('x2', x2)
-    //   .attr('y2', y2)
-    //   .attr('stroke-width', 2)
-    //   .attr('stroke', 'blue')
+    var arrCirc = Leaflet.circle(arrCoord, {
+      color: color,
+      fillColor: color,
+      fillOpacity: 0.5,
+      radius: 50000
+    }).addTo(this.map);
 
-    // g.append("line")
-    //   .attr("x1", x1)
-    //   .attr("y1", y1)
-    //   .attr("x2", x2)
-    //   .attr("y2", y2)
-    //   .attr("stroke", "blue")
-    //   .attr("stroke-width", 3);
+    var polyline = Leaflet.polyline(latlngs, {color: color}).addTo(this.map);
+    
+    polyline.bindTooltip(d.id+": "+d.avgCO2W, {permanent: false, direction: 'auto', sticky: true, className: 'my-label'});
 
+    return [depCirc,arrCirc,polyline];
   }
 
   parseCoordinates(coordString: string): [ latitude: number, longitude: number ] {
     // Regular expression to extract numbers from the coordinate string
-    const regex = /\{(-?\d+\.\d+),\s*(-?\d+\.\d+)\}/;
+    const regex = /\[(-?\d+\.\d+),\s*(-?\d+\.\d+)\]/;
     const match = coordString.match(regex);
 
     if (match) {

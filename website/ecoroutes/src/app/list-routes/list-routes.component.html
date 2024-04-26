@@ -1,0 +1,13 @@
+<div class="routes-list">
+    <h3>Current EcoRoutes</h3>
+    <ul>
+      <li *ngFor="let route of routes">
+        <div class="route-item">
+          <span class="route-id">{{ route.id }}</span>
+          <span class="route-co2">CO2: {{ route.avgCO2W }}</span>
+          <button class="btn-delete" (click)="deleteRoute(route)">Delete</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
