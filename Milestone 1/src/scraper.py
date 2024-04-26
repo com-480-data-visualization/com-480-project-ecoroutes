@@ -67,10 +67,10 @@ def get_station_info(city_name):
             # Extract 'id' and 'value' from the first suggestion
             station_id = suggestions["id"]
             station_value = suggestions["value"]
-            station_coordinates = {
-                string_to_number(suggestions["xcoord"]),
+            station_coordinates = [
                 string_to_number(suggestions["ycoord"]),
-            }
+                string_to_number(suggestions["xcoord"]),
+            ]
 
             return station_id, station_value, station_coordinates
         else:
@@ -184,7 +184,7 @@ def calculate_co2_and_duration(dep, arr):
     kml_link = soup.find("i", class_="fa fa-globe")
     if kml_link and kml_link.parent:
         kml_url = kml_link.parent.get("href")
-        download_kml(base_url + kml_url, f"data/kml_files_new/{dep}_to {arr}.kml")
+        download_kml(base_url + kml_url, f"data/kml_files_new/{dep}_to_{arr}.kml")
     else:
         print("KML link not found.")
     # Parse Products

@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import * as Leaflet from 'leaflet'; 
-
-
-// import * as L from 'leaflet';
+import * as d3 from 'd3';
 
 @Component({
   selector: 'app-route-map',
@@ -17,6 +15,14 @@ export class RouteMapComponent {
   constructor() {}
 
   ngAfterViewInit() {
+    d3.csv('assets/final_dataset.csv').then(data => {
+      let d1 = data[0];
+      // d3.csvParse(data[0], d => {
+      // })
+      console.log(d1);
+      this.plotLine(d1);
+    })
+  
   }
 
   map!: Leaflet.Map;
@@ -74,5 +80,64 @@ export class RouteMapComponent {
   markerDragEnd($event: any, index: number) {
     console.log($event.target.getLatLng());
   } 
+
+  plotLine(d:any){
+    const svg = d3.select(this.map.getPanes().overlayPane).append("svg"),
+        g = svg.append("g").attr("class", "leaflet-zoom-hide");
+
+    let depCoord = this.parseCoordinates(d['Departure Coordinates'])
+    let arrCoord = this.parseCoordinates(d['Arrival Coordinates'])
+
+    console.log(depCoord, arrCoord)
+
+    let x1 = this.map.latLngToLayerPoint(depCoord).x;
+    let y1 = this.map.latLngToLayerPoint(depCoord).y;
+    let x2 = this.map.latLngToLayerPoint(arrCoord).x;
+    let y2 = this.map.latLngToLayerPoint(arrCoord).y;
+
+    var latlngs = [
+      depCoord,
+      arrCoord
+    ];
+
+    var polyline = Leaflet.polyline(latlngs, {color: 'blue'}).addTo(this.map);
+
+    // svg.selectAll('line')
+    //   .data([d])
+    //   .enter()
+    //   .append('line')
+    //   .attr('x1', x1)
+    //   .attr('y1', y1)
+    //   .attr('x2', x2)
+    //   .attr('y2', y2)
+    //   .attr('stroke-width', 2)
+    //   .attr('stroke', 'blue')
+
+    // g.append("line")
+    //   .attr("x1", x1)
+    //   .attr("y1", y1)
+    //   .attr("x2", x2)
+    //   .attr("y2", y2)
+    //   .attr("stroke", "blue")
+    //   .attr("stroke-width", 3);
+
+  }
+
+  parseCoordinates(coordString: string): [ latitude: number, longitude: number ] {
+    // Regular expression to extract numbers from the coordinate string
+    const regex = /\{(-?\d+\.\d+),\s*(-?\d+\.\d+)\}/;
+    const match = coordString.match(regex);
+
+    if (match) {
+        // Convert string matches to numbers
+        const latitude = parseFloat(match[1]);
+        const longitude = parseFloat(match[2]);
+
+        return [ latitude, longitude ];
+    } else {
+        // Return null if the string format is incorrect
+        return [ -1, -1];
+    }
+  }
 
 }
