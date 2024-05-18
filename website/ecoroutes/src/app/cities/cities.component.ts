@@ -16,10 +16,10 @@ export class CitiesComponent implements OnInit {
   ecoRoutes: EcoRoute[] = [];  // Array to hold all routes for search operations
   data: { [key: string]: EcoRoute } = {};  // Dictionary to access routes by ID
   private customIcon = L.icon({
-    iconUrl: 'assets/push-pin.png', // TOOD: Change this
-    iconSize: [50, 50],
-    iconAnchor: [25, 50],
-    popupAnchor: [0, -50]
+    iconUrl: 'assets/push-pin.png',
+    iconSize: [50, 50], // Set the icon size to 50x50 pixels
+    iconAnchor: [25, 50], // Anchor point of the icon in its size context
+    popupAnchor: [0, -50] // Where the popup should open relative to the iconAnchor
   });
   constructor() { }
 
