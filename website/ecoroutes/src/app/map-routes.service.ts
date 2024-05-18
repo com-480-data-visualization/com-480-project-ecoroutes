@@ -19,7 +19,7 @@ export class MapRoutesService {
     this.routes.push(route);
     this._routes.next(route);
   }
-  
+
   getRoutes() {
     return this.routes;
   }
@@ -35,5 +35,5 @@ export class MapRoutesService {
   deleteRoute(route: EcoRoute) {
     this.routes = this.routes.filter(r => r.id !== route.id);
     this._deleteRoute.next(route);
-  }  
+  }
 }

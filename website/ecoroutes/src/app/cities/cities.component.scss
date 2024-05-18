@@ -1,4 +1,94 @@
-img{
+/* General styles for images */
+img {
     margin-top: 20px;
     width: 100%;
+}
+
+/* Flex container for layout */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* Align items at the top */
+    padding: 20px;
+}
+
+/* Styling for the map */
+#map {
+    margin-right: 20px;
+    /* Space between map and search container */
+}
+
+/* Styling for the search container */
+.search-container {
+    flex-basis: 300px;
+    /* Fixed width for the search container */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-container .input-group {
+    display: flex;
+    flex-direction: column; // Align children vertically
+    gap: 10px; // Adds space between elements inside the flex container
+}
+
+#citySearch,
+#cityCount,
+#maxDistance,
+button {
+    flex-grow: 1; // Each input/button will take the full width of the container
+    margin-bottom: 10px; // Adds space below each input/button
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+// Adjusting the last input to avoid extra space on the right
+#citySearch,
+#cityCount,
+#maxDistance:last-child {
+    margin-right: 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+.search-container .input-group {
+    margin-bottom: 10px;
+}
+
+#citySearch,
+#cityCount,
+#maxDistance {
+    flex-grow: 1;
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #0056b3;
+    }
 }

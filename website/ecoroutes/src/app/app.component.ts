@@ -5,6 +5,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RoutesInputComponent } from './routes-input/routes-input.component';
 import { RouteMapComponent } from './route-map/route-map.component';
 import { ListRoutesComponent } from './list-routes/list-routes.component';
+import { CitiesComponent } from './cities/cities.component';
 
 @Component({
   selector: 'app-root',

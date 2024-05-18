@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=12.076441.1714129353&input=GRAZ HBF &#x0028;Austria&#x0029;!&start=yes&">GRAZ HBF &#x0028;Austria&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=12.076441.1714129353&input=BUDAPEST &#x0028;Hungary&#x0029;!&start=yes&">BUDAPEST &#x0028;Hungary&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>GRAZ HBF (Austria) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/110484/327711/90784/8564/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=12.076441.1714129353&">RJ    72</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=12.076441.1714129353&input=WIEN MEIDLING (Austria)!&start=yes&">WIEN MEIDLING (Austria)</a>
+arr 08:55]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>15.416392</longitude>
+<latitude>47.072220</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.416392,47.072220,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>BRUCK/MUR (Austria) dep 07:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.279442</longitude>
+<latitude>47.413891</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.279442,47.413891,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KAPFENBERG (Austria) dep 07:09</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.292224</longitude>
+<latitude>47.445003</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.292224,47.445003,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MUERZZUSCHLAG (Austria) dep 07:33</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.677502</longitude>
+<latitude>47.608058</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.677502,47.608058,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SEMMERING (Austria) dep 07:47</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.830831</longitude>
+<latitude>47.639440</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.830831,47.639440,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WIENER NEUSTADT HBF (Austria) dep 08:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.233053</longitude>
+<latitude>47.810558</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.233053,47.810558,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>WIEN MEIDLING (Austria) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/380511/256584/889116/317721/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=12.076441.1714129353&">RJX  269</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=12.076441.1714129353&input=BUDAPEST-KELENFOELD (Hungary)!&start=yes&">BUDAPEST-KELENFOELD (Hungary)</a>
+arr 12:02]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>16.333058</longitude>
+<latitude>48.174442</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.333058,48.174442,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>WIEN HBF (Austria) dep 09:40</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.377222</longitude>
+<latitude>48.185004</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.377222,48.185004,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NICKELSDORF GRENZE (Austria) dep 10:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.743614</longitude>
+<latitude>48.053330</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.743614,48.053330,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HEGYESHALOM GR. (Hungary) dep 10:22</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.095829</longitude>
+<latitude>47.938331</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.095829,47.938331,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HEGYESHALOM (Hungary) dep 10:28</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.145557</longitude>
+<latitude>47.913889</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.145557,47.913889,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MOSONMAGYAROVAR (Hungary) dep 10:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.267226</longitude>
+<latitude>47.849724</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.267226,47.849724,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GYOER (Hungary) dep 10:56</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.634723</longitude>
+<latitude>47.681941</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.634723,47.681941,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TATABANYA (Hungary) dep 11:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.393053</longitude>
+<latitude>47.585558</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.393053,47.585558,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>BUDAPEST-KELENFOELD (Hungary) arr 12:02</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>19.019997</longitude>
+<latitude>47.464447</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>19.019997,47.464447,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+GRAZ HBF (Austria)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+06:26
+</td>
+<td>
+1B-D
+</td>
+<td rowspan="7" valign="top" style="white-space:nowrap;">
+RJ    72
+</td>
+<td rowspan="7" valign="top">
+Rail Jet
+Direction: PRAHA HLAVNI NADRAZI (Czech Republic)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BRUCK/MUR (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:01
+</td>
+<td class="result" >
+07:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KAPFENBERG (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:08
+</td>
+<td class="result" >
+07:09
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MUERZZUSCHLAG (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:31
+</td>
+<td class="result" >
+07:33
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SEMMERING (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:45
+</td>
+<td class="result" >
+07:47
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+WIENER NEUSTADT HBF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:28
+</td>
+<td class="result" >
+08:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+WIEN MEIDLING (Austria)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+08:55
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+6
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+WIEN MEIDLING (Austria)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+09:27
+</td>
+<td>
+6
+</td>
+<td rowspan="9" valign="top" style="white-space:nowrap;">
+RJX  269
+</td>
+<td rowspan="9" valign="top">
+RJX railjet xpress
+Direction: BUDAPEST-KELETI (Hungary)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+WIEN HBF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:32
+</td>
+<td class="result" >
+09:40
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+NICKELSDORF GRENZE (Austria)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:02
+</td>
+<td class="result" >
+10:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+HEGYESHALOM GR. (Hungary)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:22
+</td>
+<td class="result" >
+10:22
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+HEGYESHALOM (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:25
+</td>
+<td class="result" >
+10:28
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MOSONMAGYAROVAR (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:35
+</td>
+<td class="result" >
+10:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+GYOER (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:54
+</td>
+<td class="result" >
+10:56
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+TATABANYA (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:29
+</td>
+<td class="result" >
+11:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+BUDAPEST-KELENFOELD (Hungary)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+12:02
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 5:36;
+runs
+daily
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>16.333058</longitude>
+<latitude>48.174442</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+15.416392,47.072220,0 15.279442,47.413891,0 15.292224,47.445003,0 15.677502,47.608058,0 15.830831,47.639440,0 16.233053,47.810558,0 16.333058,48.174442,0 16.377222,48.185004,0 16.743614,48.053330,0 17.095829,47.938331,0 17.145557,47.913889,0 17.267226,47.849724,0 17.634723,47.681941,0 18.393053,47.585558,0 19.019997,47.464447,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RJ    72 from GRAZ HBF (Austria) to WIEN MEIDLING (Austria)</name>
+<styleUrl>#idStylePT_RJ    72</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>15.416392</longitude>
+<latitude>47.072220</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+15.416392,47.072220,0 15.279442,47.413891,0 15.292224,47.445003,0 15.677502,47.608058,0 15.830831,47.639440,0 16.233053,47.810558,0 16.333058,48.174442,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RJX  269 from WIEN MEIDLING (Austria) to BUDAPEST-KELENFOELD (Hungary)</name>
+<styleUrl>#idStylePT_RJX  269</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>16.333058</longitude>
+<latitude>48.174442</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+16.333058,48.174442,0 16.377222,48.185004,0 16.743614,48.053330,0 17.095829,47.938331,0 17.145557,47.913889,0 17.267226,47.849724,0 17.634723,47.681941,0 18.393053,47.585558,0 19.019997,47.464447,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

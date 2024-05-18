@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=oo.044031.1714132753&input=VENICE &#x0028;Italy&#x0029;!&start=yes&">VENICE &#x0028;Italy&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=oo.044031.1714132753&input=MILANO CITY &#x0028;Italy&#x0029;!&start=yes&">MILANO CITY &#x0028;Italy&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>VENEZIA MESTRE (Italy) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/855105/642851/309110/130480/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=oo.044031.1714132753&">FR  9700</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=oo.044031.1714132753&input=MILANO CENTRALE (Italy)!&start=yes&">MILANO CENTRALE (Italy)</a>
+arr 08:12]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>12.231667</longitude>
+<latitude>45.481948</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.231667,45.481948,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>PADOVA (Italy) dep 06:07</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.880557</longitude>
+<latitude>45.417774</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.880557,45.417774,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VICENZA (Italy) dep 06:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.540558</longitude>
+<latitude>45.540836</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.540558,45.540836,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LONIGO (Italy) dep 06:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.344998</longitude>
+<latitude>45.413054</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.344998,45.413054,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>S. BONIFACIO (Italy) dep 06:38</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.273893</longitude>
+<latitude>45.402780</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.273893,45.402780,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VERONA PORTA NUOVA (Italy) dep 06:52</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.982220</longitude>
+<latitude>45.428336</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.982220,45.428336,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PESCHIERA DEL GARDA (Italy) dep 07:07</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.702224</longitude>
+<latitude>45.438053</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.702224,45.438053,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DESENZANO GARDA-SIRM (Italy) dep 07:16</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.536391</longitude>
+<latitude>45.462774</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.536391,45.462774,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRESCIA (Italy) dep 07:34</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.212780</longitude>
+<latitude>45.531946</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.212780,45.531946,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PIOLTELLO-LIMITO (Italy) dep 08:00</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.329167</longitude>
+<latitude>45.485831</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.329167,45.485831,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MILANO LAMBRATE (Italy) dep 08:06</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.236947</longitude>
+<latitude>45.484725</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.236947,45.484725,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>MILANO CENTRALE (Italy) arr 08:12</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>9.204163</longitude>
+<latitude>45.486388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.204163,45.486388,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+VENEZIA MESTRE (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+05:51
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="12" valign="top" style="white-space:nowrap;">
+FR  9700
+</td>
+<td rowspan="12" valign="top">
+FRECCIAROSSA
+Direction: MILANO CENTRALE (Italy)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PADOVA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:05
+</td>
+<td class="result" >
+06:07
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VICENZA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:24
+</td>
+<td class="result" >
+06:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LONIGO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:36
+</td>
+<td class="result" >
+06:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+S. BONIFACIO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:38
+</td>
+<td class="result" >
+06:38
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VERONA PORTA NUOVA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:50
+</td>
+<td class="result" >
+06:52
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PESCHIERA DEL GARDA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:05
+</td>
+<td class="result" >
+07:07
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DESENZANO GARDA-SIRM (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:14
+</td>
+<td class="result" >
+07:16
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BRESCIA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:32
+</td>
+<td class="result" >
+07:34
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PIOLTELLO-LIMITO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:00
+</td>
+<td class="result" >
+08:00
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MILANO LAMBRATE (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:06
+</td>
+<td class="result" >
+08:06
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+MILANO CENTRALE (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+08:12
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 2:21;
+runs
+not every day, 1. Mar until 8. Jun 2024
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>12.231667</longitude>
+<latitude>45.481948</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+12.231667,45.481948,0 11.880557,45.417774,0 11.540558,45.540836,0 11.344998,45.413054,0 11.273893,45.402780,0 10.982220,45.428336,0 10.702224,45.438053,0 10.536391,45.462774,0 10.212780,45.531946,0 9.329167,45.485831,0 9.236947,45.484725,0 9.204163,45.486388,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>FR  9700 from VENEZIA MESTRE (Italy) to MILANO CENTRALE (Italy)</name>
+<styleUrl>#idStylePT_FR  9700</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>12.231667</longitude>
+<latitude>45.481948</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+12.231667,45.481948,0 11.880557,45.417774,0 11.540558,45.540836,0 11.344998,45.413054,0 11.273893,45.402780,0 10.982220,45.428336,0 10.702224,45.438053,0 10.536391,45.462774,0 10.212780,45.531946,0 9.329167,45.485831,0 9.236947,45.484725,0 9.204163,45.486388,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

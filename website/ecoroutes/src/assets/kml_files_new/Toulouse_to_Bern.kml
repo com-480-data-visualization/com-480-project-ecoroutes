@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=f7.0185191.1714127791&input=TOULOUSE MATABIAU &#x0028;France&#x0029;!&start=yes&">TOULOUSE MATABIAU &#x0028;France&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=f7.0185191.1714127791&input=BERN &#x0028;Switzerland&#x0029;!&start=yes&">BERN &#x0028;Switzerland&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>TOULOUSE MATABIAU (France) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/460980/480697/505640/99160/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=f7.0185191.1714127791&">TGV 8502</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=f7.0185191.1714127791&input=PARIS MONTPARNASSE 1 ET 2 (France)!&start=yes&">PARIS MONTPARNASSE 1 ET 2 (France)</a>
+arr 10:49]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>1.453610</longitude>
+<latitude>43.611113</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>1.453610,43.611113,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>MONTAUBAN VILLE BOURBON (France) dep 06:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>1.341388</longitude>
+<latitude>44.014441</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>1.341388,44.014441,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>AGEN (France) dep 07:32</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>0.831</longitude>
+<latitude>44.208059</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>0.831,44.208059,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BORDEAUX ST JEAN (France) dep 08:46</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>0.</longitude>
+<latitude>44.825834</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>0.,44.825834,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>PARIS MONTPARNASSE 1 ET 2 (France) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=f7.0185191.1714127791&">transfer</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=f7.0185191.1714127791&input=PARIS GARE DE LYON (France)!&start=yes&">PARIS GARE DE LYON (France)</a>
+arr 11:39]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>2.318615</longitude>
+<latitude>48.839724</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.318615,48.839724,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PARIS GARE DE LYON (France) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/167760/404828/801330/344745/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=f7.0185191.1714127791&">TGV 9269</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=f7.0185191.1714127791&input=FRASNE (France)!&start=yes&">FRASNE (France)</a>
+arr 14:42]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>2.373611</longitude>
+<latitude>48.845001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.373611,48.845001,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>DIJON VILLE (France) dep 13:35</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.027226</longitude>
+<latitude>47.323334</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.027226,47.323334,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DOLE VILLE (France) dep 14:00</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.488058</longitude>
+<latitude>47.096114</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.488058,47.096114,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>FRASNE (France) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/698013/305545/517128/25893/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=f7.0185191.1714127791&">TER18125</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=f7.0185191.1714127791&input=NEUCHATEL (Switzerland)!&start=yes&">NEUCHATEL (Switzerland)</a>
+arr 15:53]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>6.157782</longitude>
+<latitude>46.857504</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.157782,46.857504,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>PONTARLIER (France) dep 15:06</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.353333</longitude>
+<latitude>46.900832</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.353333,46.900832,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LES VERRIERES FRONTIERE (France) dep 15:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.416114</longitude>
+<latitude>46.902917</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.416114,46.902917,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LES VERRIERES, GARE (Switzerland) dep 15:14</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.479443</longitude>
+<latitude>46.905003</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.479443,46.905003,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TRAVERS (Switzerland) dep 15:28</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.676666</longitude>
+<latitude>46.942497</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.676666,46.942497,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>NEUCHATEL (Switzerland) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/448209/205303/143016/77903/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=f7.0185191.1714127791&">15761</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=f7.0185191.1714127791&input=BERN (Switzerland)!&start=yes&">BERN (Switzerland)</a>
+arr 16:52]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>6.935834</longitude>
+<latitude>46.996666</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.935834,46.996666,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>ST-BLAISE-LAC (Switzerland) dep 16:05</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.984996</longitude>
+<latitude>47.011948</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.984996,47.011948,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MARIN-EPAGNIER (Switzerland) dep 16:08</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.010831</longitude>
+<latitude>47.009170</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.010831,47.009170,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZIHLBRUECKE (Switzerland) dep 16:09</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.030553</longitude>
+<latitude>47.009170</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.030553,47.009170,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GAMPELEN (Switzerland) dep 16:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.057503</longitude>
+<latitude>47.009170</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.057503,47.009170,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>INS (Switzerland) dep 16:17</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.099447</longitude>
+<latitude>46.999722</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.099447,46.999722,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MUENTSCHEMIER (Switzerland) dep 16:19</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.142775</longitude>
+<latitude>46.993331</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.142775,46.993331,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KERZERS (Switzerland) dep 16:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.192782</longitude>
+<latitude>46.975002</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.192782,46.975002,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GUEMMENEN (Switzerland) dep 16:35</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.234447</longitude>
+<latitude>46.942218</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.234447,46.942218,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ROSSHAEUSERN (Switzerland) dep 16:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.296940</longitude>
+<latitude>46.934443</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.296940,46.934443,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BERN BRUENNEN WESTSIDE (Switzerland) dep 16:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.375281</longitude>
+<latitude>46.943890</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.375281,46.943890,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BERN BUEMPLIZ NORD (Switzerland) dep 16:46</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.389996</longitude>
+<latitude>46.946111</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.389996,46.946111,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>BERN (Switzerland) arr 16:52</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>7.439167</longitude>
+<latitude>46.948888</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.439167,46.948888,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+TOULOUSE MATABIAU (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+06:19
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="5" valign="top" style="white-space:nowrap;">
+TGV 8502
+</td>
+<td rowspan="5" valign="top">
+TGV INOUI
+Direction: PARIS MONTPARNASSE 1 ET 2 (France)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MONTAUBAN VILLE BOURBON (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:51
+</td>
+<td class="result" >
+06:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+AGEN (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:29
+</td>
+<td class="result" >
+07:32
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BORDEAUX ST JEAN (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:40
+</td>
+<td class="result" >
+08:46
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+PARIS MONTPARNASSE 1 ET 2 (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+10:49
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+PARIS MONTPARNASSE 1 ET 2 (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+10:49
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="2" valign="top" style="white-space:nowrap;">
+transfer
+</td>
+<td rowspan="2" valign="top">
+50 min.
+</td>
+<tr bgcolor="#eeeeee">
+<td>
+PARIS GARE DE LYON (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+11:39
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+PARIS GARE DE LYON (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+11:56
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="4" valign="top" style="white-space:nowrap;">
+TGV 9269
+</td>
+<td rowspan="4" valign="top">
+TGV Duplex Lyria
+Direction: LAUSANNE (Switzerland)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DIJON VILLE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:31
+</td>
+<td class="result" >
+13:35
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DOLE VILLE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:58
+</td>
+<td class="result" >
+14:00
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+FRASNE (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+14:42
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+FRASNE (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+14:53
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="6" valign="top" style="white-space:nowrap;">
+TER18125
+</td>
+<td rowspan="6" valign="top">
+Regional TER
+Direction: NEUCHATEL (Switzerland)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PONTARLIER (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:04
+</td>
+<td class="result" >
+15:06
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LES VERRIERES FRONTIERE (France)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:10
+</td>
+<td class="result" >
+15:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LES VERRIERES, GARE (Switzerland)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:14
+</td>
+<td class="result" >
+15:14
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+TRAVERS (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:28
+</td>
+<td class="result" >
+15:28
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+NEUCHATEL (Switzerland)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+15:53
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+1CD
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+NEUCHATEL (Switzerland)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+16:01
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="13" valign="top" style="white-space:nowrap;">
+15761
+</td>
+<td rowspan="13" valign="top">
+S-Bahn
+Direction: BERN (Switzerland)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ST-BLAISE-LAC (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:05
+</td>
+<td class="result" >
+16:05
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MARIN-EPAGNIER (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:08
+</td>
+<td class="result" >
+16:08
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ZIHLBRUECKE (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:09
+</td>
+<td class="result" >
+16:09
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GAMPELEN (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:12
+</td>
+<td class="result" >
+16:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+INS (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:16
+</td>
+<td class="result" >
+16:17
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MUENTSCHEMIER (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:19
+</td>
+<td class="result" >
+16:19
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KERZERS (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:24
+</td>
+<td class="result" >
+16:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GUEMMENEN (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:34
+</td>
+<td class="result" >
+16:35
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ROSSHAEUSERN (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:39
+</td>
+<td class="result" >
+16:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BERN BRUENNEN WESTSIDE (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:44
+</td>
+<td class="result" >
+16:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BERN BUEMPLIZ NORD (Switzerland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:46
+</td>
+<td class="result" >
+16:46
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+BERN (Switzerland)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+16:52
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 10:33;
+runs
+not every day, 1. Mar
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>6.935834</longitude>
+<latitude>46.996666</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+1.453610,43.611113,0 1.341388,44.014441,0 0.831,44.208059,0 0.,44.825834,0 2.318615,48.839724,0 2.373611,48.845001,0 5.027226,47.323334,0 5.488058,47.096114,0 6.157782,46.857504,0 6.353333,46.900832,0 6.416114,46.902917,0 6.479443,46.905003,0 6.676666,46.942497,0 6.935834,46.996666,0 6.984996,47.011948,0 7.010831,47.009170,0 7.030553,47.009170,0 7.057503,47.009170,0 7.099447,46.999722,0 7.142775,46.993331,0 7.192782,46.975002,0 7.234447,46.942218,0 7.296940,46.934443,0 7.375281,46.943890,0 7.389996,46.946111,0 7.439167,46.948888,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>TGV 8502 from TOULOUSE MATABIAU (France) to PARIS MONTPARNASSE 1 ET 2 (France)</name>
+<styleUrl>#idStylePT_TGV 8502</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>1.453610</longitude>
+<latitude>43.611113</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+1.453610,43.611113,0 1.341388,44.014441,0 0.831,44.208059,0 0.,44.825834,0 2.318615,48.839724,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>transfer from PARIS MONTPARNASSE 1 ET 2 (France) to PARIS GARE DE LYON (France)</name>
+<styleUrl>#idStylePT_transfer</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>2.318615</longitude>
+<latitude>48.839724</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+2.318615,48.839724,0 2.373611,48.845001,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>TGV 9269 from PARIS GARE DE LYON (France) to FRASNE (France)</name>
+<styleUrl>#idStylePT_TGV 9269</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>2.373611</longitude>
+<latitude>48.845001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+2.373611,48.845001,0 5.027226,47.323334,0 5.488058,47.096114,0 6.157782,46.857504,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>TER18125 from FRASNE (France) to NEUCHATEL (Switzerland)</name>
+<styleUrl>#idStylePT_TER18125</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>6.157782</longitude>
+<latitude>46.857504</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+6.157782,46.857504,0 6.353333,46.900832,0 6.416114,46.902917,0 6.479443,46.905003,0 6.676666,46.942497,0 6.935834,46.996666,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>15761 from NEUCHATEL (Switzerland) to BERN (Switzerland)</name>
+<styleUrl>#idStylePT_15761</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>6.935834</longitude>
+<latitude>46.996666</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+6.935834,46.996666,0 6.984996,47.011948,0 7.010831,47.009170,0 7.030553,47.009170,0 7.057503,47.009170,0 7.099447,46.999722,0 7.142775,46.993331,0 7.192782,46.975002,0 7.234447,46.942218,0 7.296940,46.934443,0 7.375281,46.943890,0 7.389996,46.946111,0 7.439167,46.948888,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

@@ -1,0 +1,2291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&input=CARDIFF CENTRAL &#x0028;United Kingdom&#x0029;!&start=yes&">CARDIFF CENTRAL &#x0028;United Kingdom&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&input=WARSZAWA &#x0028;Poland&#x0029;!&start=yes&">WARSZAWA &#x0028;Poland&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>CARDIFF CENTRAL (United Kingdom) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/155640/185661/171712/33976/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&">---</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&input=LONDON PADDINGTON (United Kingdom)!&start=yes&">LONDON PADDINGTON (United Kingdom)</a>
+arr 12:44]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>-3.176392</longitude>
+<latitude>51.472782</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>-3.176392,51.472782,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>NEWPORT S.WALES (United Kingdom) dep 10:56</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>-2.997498</longitude>
+<latitude>51.587781</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>-2.997498,51.587781,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRISTOL PARKWAY (United Kingdom) dep 11:22</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>-2.541943</longitude>
+<latitude>51.511669</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>-2.541943,51.511669,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SWINDON (WILTS) (United Kingdom) dep 11:47</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>-1.784997</longitude>
+<latitude>51.563060</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>-1.784997,51.563060,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DIDCOT PARKWAY (United Kingdom) dep 12:04</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>-1.241671</longitude>
+<latitude>51.608330</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>-1.241671,51.608330,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>READING (United Kingdom) dep 12:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>0.</longitude>
+<latitude>51.456385</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>0.,51.456385,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>LONDON PADDINGTON (United Kingdom) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&">transfer</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&input=LONDON ST PANCRAS INTL (United Kingdom)!&start=yes&">LONDON ST PANCRAS INTL (United Kingdom)</a>
+arr 14:19]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>0.</longitude>
+<latitude>51.513889</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>0.,51.513889,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LONDON ST PANCRAS INTL (United Kingdom) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/913302/649843/551102/28883/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&">ES  9142</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&input=BRUXELLES-MIDI (Belgium)!&start=yes&">BRUXELLES-MIDI (Belgium)</a>
+arr 18:05]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>0.</longitude>
+<latitude>51.530555</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>0.,51.530555,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>LILLE EUROPE (France) dep 17:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.075560</longitude>
+<latitude>50.639446</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.075560,50.639446,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>BRUXELLES-MIDI (Belgium) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/128871/121533/864534/389310/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&">ICE   19</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&input=AACHEN HBF (Germany)!&start=yes&">AACHEN HBF (Germany)</a>
+arr 19:36]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>4.336387</longitude>
+<latitude>50.835554</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.336387,50.835554,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>BRUXELLES-NORD (Belgium) dep 18:34</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.360829</longitude>
+<latitude>50.859448</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.360829,50.859448,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LIEGE-GUILLEMINS (Belgium) dep 19:14</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.566669</longitude>
+<latitude>50.624443</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.566669,50.624443,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>AACHEN SUED GRENZE (Belgium) dep 19:24</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.805836</longitude>
+<latitude>50.678054</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.805836,50.678054,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>AACHEN SUED(GR) (Germany) dep 19:33</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.045282</longitude>
+<latitude>50.731945</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.045282,50.731945,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>AACHEN HBF (Germany) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/149211/323346/453504/177015/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&">ICE  657</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&input=BERLIN OSTBAHNHOF (Germany)!&start=yes&">BERLIN OSTBAHNHOF (Germany)</a>
+arr 01:25]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>6.091387</longitude>
+<latitude>50.767776</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.091387,50.767776,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>DUEREN (Germany) dep 20:27</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.482499</longitude>
+<latitude>50.809441</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.482499,50.809441,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KOELN HBF (Germany) dep 20:48</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.958613</longitude>
+<latitude>50.943056</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.958613,50.943056,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WUPPERTAL HBF (Germany) dep 21:19</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.149445</longitude>
+<latitude>51.254443</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.149445,51.254443,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HAGEN HBF (Germany) dep 21:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.460274</longitude>
+<latitude>51.362781</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.460274,51.362781,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HAMM(WESTF)HBF (Germany) dep 22:06</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.807779</longitude>
+<latitude>51.678059</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.807779,51.678059,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BIELEFELD HBF (Germany) dep 22:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.532777</longitude>
+<latitude>52.029169</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.532777,52.029169,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HANNOVER HBF (Germany) dep 23:31</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.741107</longitude>
+<latitude>52.376665</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.741107,52.376665,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WOLFSBURG HBF (Germany) dep 00:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.787775</longitude>
+<latitude>52.429441</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.787775,52.429441,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BERLIN-SPANDAU (Germany) dep 01:00</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.196947</longitude>
+<latitude>52.534722</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.196947,52.534722,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BERLIN HBF (Germany) dep 01:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.369441</longitude>
+<latitude>52.525553</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.369441,52.525553,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>BERLIN OSTBAHNHOF (Germany) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/327687/404656/928448/354995/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&">RE 73752</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&input=FRANKFURT(ODER) (Germany)!&start=yes&">FRANKFURT(ODER) (Germany)</a>
+arr 05:31]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>13.434720</longitude>
+<latitude>52.510559</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.434720,52.510559,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>BERLIN OSTKREUZ (Germany) dep 04:29</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.469167</longitude>
+<latitude>52.503053</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.469167,52.503053,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ERKNER (Germany) dep 04:46</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.752219</longitude>
+<latitude>52.427499</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.752219,52.427499,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FANGSCHLEUSE (Germany) dep 04:51</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.824996</longitude>
+<latitude>52.406671</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.824996,52.406671,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HANGELSBERG (Germany) dep 04:56</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.920830</longitude>
+<latitude>52.400280</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.920830,52.400280,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FUERSTENWALDE(SPREE) (Germany) dep 05:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.059722</longitude>
+<latitude>52.366948</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.059722,52.366948,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BERKENBRUECK (Germany) dep 05:08</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.165274</longitude>
+<latitude>52.357221</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.165274,52.357221,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRIESEN(MARK) (Germany) dep 05:13</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.280560</longitude>
+<latitude>52.346668</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.280560,52.346668,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>JACOBSDORF(MARK) (Germany) dep 05:17</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.355000</longitude>
+<latitude>52.332501</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.355000,52.332501,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PILLGRAM (Germany) dep 05:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.398607</longitude>
+<latitude>52.336942</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.398607,52.336942,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FRANKFURT(ODER)-ROSENGARTEN (Germany) dep 05:25</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.472498</longitude>
+<latitude>52.337778</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.472498,52.337778,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>FRANKFURT(ODER) (Germany) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/712809/429933/399076/38065/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&">EC    41</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&input=WARSZAWA ZACHODNIA (Poland)!&start=yes&">WARSZAWA ZACHODNIA (Poland)</a>
+arr 11:07]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>14.546389</longitude>
+<latitude>52.336393</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.546389,52.336393,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>FRANKFURT(ODER)(GR) (Germany) dep 06:51</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.576386</longitude>
+<latitude>52.321112</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.576386,52.321112,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KUNOWICE (GR) (Poland) dep 06:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.695511</longitude>
+<latitude>52.335072</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.695511,52.335072,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RZEPIN (Poland) dep 07:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.815275</longitude>
+<latitude>52.350003</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.815275,52.350003,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TOPOROW (Poland) dep 07:31</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.261670</longitude>
+<latitude>52.260282</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.261670,52.260282,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SWIEBODZIN (Poland) dep 07:43</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.539724</longitude>
+<latitude>52.245279</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.539724,52.245279,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZBASZYNEK (Poland) dep 07:56</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.817500</longitude>
+<latitude>52.241944</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.817500,52.241944,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZBASZYN (Poland) dep 07:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.894726</longitude>
+<latitude>52.259446</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.894726,52.259446,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NOWY TOMYSL (Poland) dep 08:08</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.130837</longitude>
+<latitude>52.304167</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.130837,52.304167,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OPALENICA (Poland) dep 08:17</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.402779</longitude>
+<latitude>52.310001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.402779,52.310001,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BUK (Poland) dep 08:22</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.525553</longitude>
+<latitude>52.344996</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.525553,52.344996,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>POZNAN GLOWNY (Poland) dep 08:41</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.911667</longitude>
+<latitude>52.401385</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.911667,52.401385,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KONIN (Poland) dep 09:27</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.251114</longitude>
+<latitude>52.231390</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.251114,52.231390,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KOLO (Poland) dep 09:40</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>18.632220</longitude>
+<latitude>52.211111</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.632220,52.211111,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KUTNO (Poland) dep 10:05</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>19.347222</longitude>
+<latitude>52.227498</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>19.347222,52.227498,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LOWICZ GLOWNY (Poland) dep 10:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>19.953608</longitude>
+<latitude>52.106108</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>19.953608,52.106108,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SKIERNIEWICE (Poland) dep 10:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>20.150004</longitude>
+<latitude>51.967224</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>20.150004,51.967224,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>WARSZAWA ZACHODNIA (Poland) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&">walk</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=6r.0213481.1714133772&input=WARSZAWA ZACHODNIA P9 (Poland)!&start=yes&">WARSZAWA ZACHODNIA P9 (Poland)</a>
+arr 11:14]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>20.965281</longitude>
+<latitude>52.220001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>20.965281,52.220001,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WARSZAWA ZACHODNIA P9 (Poland) arr 11:14</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>20.961388</longitude>
+<latitude>52.222500</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>20.961388,52.222500,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+CARDIFF CENTRAL (United Kingdom)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+10:41
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="7" valign="top" style="white-space:nowrap;">
+---
+</td>
+<td rowspan="7" valign="top">
+Express
+Direction: LONDON PADDINGTON (United Kingdom)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+NEWPORT S.WALES (United Kingdom)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:55
+</td>
+<td class="result" >
+10:56
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BRISTOL PARKWAY (United Kingdom)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:16
+</td>
+<td class="result" >
+11:22
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SWINDON (WILTS) (United Kingdom)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:46
+</td>
+<td class="result" >
+11:47
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DIDCOT PARKWAY (United Kingdom)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:03
+</td>
+<td class="result" >
+12:04
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+READING (United Kingdom)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:16
+</td>
+<td class="result" >
+12:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+LONDON PADDINGTON (United Kingdom)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+12:44
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+LONDON PADDINGTON (United Kingdom)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+12:44
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="2" valign="top" style="white-space:nowrap;">
+transfer
+</td>
+<td rowspan="2" valign="top">
+95 min.
+</td>
+<tr bgcolor="#eeeeee">
+<td>
+LONDON ST PANCRAS INTL (United Kingdom)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+14:19
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+LONDON ST PANCRAS INTL (United Kingdom)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+15:04
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="3" valign="top" style="white-space:nowrap;">
+ES  9142
+</td>
+<td rowspan="3" valign="top">
+Eurostar
+Direction: BRUXELLES-MIDI (Belgium)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LILLE EUROPE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:26
+</td>
+<td class="result" >
+17:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+BRUXELLES-MIDI (Belgium)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+18:05
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+BRUXELLES-MIDI (Belgium)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+18:25
+</td>
+<td>
+10
+</td>
+<td rowspan="6" valign="top" style="white-space:nowrap;">
+ICE   19
+</td>
+<td rowspan="6" valign="top">
+ICE
+Direction: FRANKFURT(MAIN)HBF (Germany)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BRUXELLES-NORD (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:32
+</td>
+<td class="result" >
+18:34
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LIEGE-GUILLEMINS (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:12
+</td>
+<td class="result" >
+19:14
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+AACHEN SUED GRENZE (Belgium)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:24
+</td>
+<td class="result" >
+19:24
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+AACHEN SUED(GR) (Germany)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:33
+</td>
+<td class="result" >
+19:33
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+AACHEN HBF (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+19:36
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+9
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+AACHEN HBF (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+19:57
+</td>
+<td>
+8
+</td>
+<td rowspan="12" valign="top" style="white-space:nowrap;">
+ICE  657
+</td>
+<td rowspan="12" valign="top">
+ICE
+Direction: BERLIN OSTBAHNHOF (Germany)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DUEREN (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:25
+</td>
+<td class="result" >
+20:27
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KOELN HBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:45
+</td>
+<td class="result" >
+20:48
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+WUPPERTAL HBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:17
+</td>
+<td class="result" >
+21:19
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+HAGEN HBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:34
+</td>
+<td class="result" >
+21:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+HAMM(WESTF)HBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:03
+</td>
+<td class="result" >
+22:06
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BIELEFELD HBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+22:34
+</td>
+<td class="result" >
+22:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+HANNOVER HBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+23:28
+</td>
+<td class="result" >
+23:31
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+WOLFSBURG HBF (Germany)
+</td>
+<td align="center">Sa,02.03.24</td>
+<td class="result" >
+00:02
+</td>
+<td class="result" >
+00:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BERLIN-SPANDAU (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+00:58
+</td>
+<td class="result" >
+01:00
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BERLIN HBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:14
+</td>
+<td class="result" >
+01:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+BERLIN OSTBAHNHOF (Germany)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+01:25
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+2
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+BERLIN OSTBAHNHOF (Germany)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+04:22
+</td>
+<td>
+1
+</td>
+<td rowspan="12" valign="top" style="white-space:nowrap;">
+RE 73752
+</td>
+<td rowspan="12" valign="top">
+Regional
+Direction: FRANKFURT(ODER) (Germany)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BERLIN OSTKREUZ (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:27
+</td>
+<td class="result" >
+04:29
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ERKNER (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:45
+</td>
+<td class="result" >
+04:46
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+FANGSCHLEUSE (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:50
+</td>
+<td class="result" >
+04:51
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+HANGELSBERG (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:55
+</td>
+<td class="result" >
+04:56
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+FUERSTENWALDE(SPREE) (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:02
+</td>
+<td class="result" >
+05:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BERKENBRUECK (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:07
+</td>
+<td class="result" >
+05:08
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BRIESEN(MARK) (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:12
+</td>
+<td class="result" >
+05:13
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+JACOBSDORF(MARK) (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:17
+</td>
+<td class="result" >
+05:17
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PILLGRAM (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:20
+</td>
+<td class="result" >
+05:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+FRANKFURT(ODER)-ROSENGARTEN (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:25
+</td>
+<td class="result" >
+05:25
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+FRANKFURT(ODER) (Germany)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+05:31
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+11
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+FRANKFURT(ODER) (Germany)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+06:49
+</td>
+<td>
+11
+</td>
+<td rowspan="18" valign="top" style="white-space:nowrap;">
+EC    41
+</td>
+<td rowspan="18" valign="top">
+EuroCity
+Direction: WARSZAWA WSCHODNIA (Poland)
+<br />
+Reservation compulsory on part of journey,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+FRANKFURT(ODER)(GR) (Germany)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:51
+</td>
+<td class="result" >
+06:51
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KUNOWICE (GR) (Poland)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:59
+</td>
+<td class="result" >
+06:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+RZEPIN (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:07
+</td>
+<td class="result" >
+07:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+TOPOROW (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:31
+</td>
+<td class="result" >
+07:31
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SWIEBODZIN (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:42
+</td>
+<td class="result" >
+07:43
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ZBASZYNEK (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:55
+</td>
+<td class="result" >
+07:56
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ZBASZYN (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:59
+</td>
+<td class="result" >
+07:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+NOWY TOMYSL (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:08
+</td>
+<td class="result" >
+08:08
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+OPALENICA (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:17
+</td>
+<td class="result" >
+08:17
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BUK (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:22
+</td>
+<td class="result" >
+08:22
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+POZNAN GLOWNY (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:36
+</td>
+<td class="result" >
+08:41
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KONIN (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:26
+</td>
+<td class="result" >
+09:27
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KOLO (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:40
+</td>
+<td class="result" >
+09:40
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KUTNO (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:04
+</td>
+<td class="result" >
+10:05
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LOWICZ GLOWNY (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:26
+</td>
+<td class="result" >
+10:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SKIERNIEWICE (Poland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:36
+</td>
+<td class="result" >
+10:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+WARSZAWA ZACHODNIA (Poland)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+11:07
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+WARSZAWA ZACHODNIA (Poland)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="2" valign="top" style="white-space:nowrap;">
+walk
+</td>
+<td rowspan="2" valign="top">
+7 min.
+</td>
+<tr bgcolor="#eeeeee">
+<td>
+WARSZAWA ZACHODNIA P9 (Poland)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 23:33;
+runs
+not every day, 1., 8. Mar
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>20.965281</longitude>
+<latitude>52.220001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+-3.176392,51.472782,0 -2.997498,51.587781,0 -2.541943,51.511669,0 -1.784997,51.563060,0 -1.241671,51.608330,0 0.,51.456385,0 0.,51.513889,0 0.,51.530555,0 3.075560,50.639446,0 4.336387,50.835554,0 4.360829,50.859448,0 5.566669,50.624443,0 5.805836,50.678054,0 6.045282,50.731945,0 6.091387,50.767776,0 6.482499,50.809441,0 6.958613,50.943056,0 7.149445,51.254443,0 7.460274,51.362781,0 7.807779,51.678059,0 8.532777,52.029169,0 9.741107,52.376665,0 10.787775,52.429441,0 13.196947,52.534722,0 13.369441,52.525553,0 13.434720,52.510559,0 13.469167,52.503053,0 13.752219,52.427499,0 13.824996,52.406671,0 13.920830,52.400280,0 14.059722,52.366948,0 14.165274,52.357221,0 14.280560,52.346668,0 14.355000,52.332501,0 14.398607,52.336942,0 14.472498,52.337778,0 14.546389,52.336393,0 14.576386,52.321112,0 14.695511,52.335072,0 14.815275,52.350003,0 15.261670,52.260282,0 15.539724,52.245279,0 15.817500,52.241944,0 15.894726,52.259446,0 16.130837,52.304167,0 16.402779,52.310001,0 16.525553,52.344996,0 16.911667,52.401385,0 18.251114,52.231390,0 18.632220,52.211111,0 19.347222,52.227498,0 19.953608,52.106108,0 20.150004,51.967224,0 20.965281,52.220001,0 20.961388,52.222500,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>--- from CARDIFF CENTRAL (United Kingdom) to LONDON PADDINGTON (United Kingdom)</name>
+<styleUrl>#idStylePT_---</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>-3.176392</longitude>
+<latitude>51.472782</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+-3.176392,51.472782,0 -2.997498,51.587781,0 -2.541943,51.511669,0 -1.784997,51.563060,0 -1.241671,51.608330,0 0.,51.456385,0 0.,51.513889,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>transfer from LONDON PADDINGTON (United Kingdom) to LONDON ST PANCRAS INTL (United Kingdom)</name>
+<styleUrl>#idStylePT_transfer</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>0.</longitude>
+<latitude>51.513889</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+0.,51.513889,0 0.,51.530555,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>ES  9142 from LONDON ST PANCRAS INTL (United Kingdom) to BRUXELLES-MIDI (Belgium)</name>
+<styleUrl>#idStylePT_ES  9142</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>0.</longitude>
+<latitude>51.530555</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+0.,51.530555,0 3.075560,50.639446,0 4.336387,50.835554,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>ICE   19 from BRUXELLES-MIDI (Belgium) to AACHEN HBF (Germany)</name>
+<styleUrl>#idStylePT_ICE   19</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>4.336387</longitude>
+<latitude>50.835554</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+4.336387,50.835554,0 4.360829,50.859448,0 5.566669,50.624443,0 5.805836,50.678054,0 6.045282,50.731945,0 6.091387,50.767776,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>ICE  657 from AACHEN HBF (Germany) to BERLIN OSTBAHNHOF (Germany)</name>
+<styleUrl>#idStylePT_ICE  657</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>6.091387</longitude>
+<latitude>50.767776</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+6.091387,50.767776,0 6.482499,50.809441,0 6.958613,50.943056,0 7.149445,51.254443,0 7.460274,51.362781,0 7.807779,51.678059,0 8.532777,52.029169,0 9.741107,52.376665,0 10.787775,52.429441,0 13.196947,52.534722,0 13.369441,52.525553,0 13.434720,52.510559,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE 73752 from BERLIN OSTBAHNHOF (Germany) to FRANKFURT(ODER) (Germany)</name>
+<styleUrl>#idStylePT_RE 73752</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>13.434720</longitude>
+<latitude>52.510559</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+13.434720,52.510559,0 13.469167,52.503053,0 13.752219,52.427499,0 13.824996,52.406671,0 13.920830,52.400280,0 14.059722,52.366948,0 14.165274,52.357221,0 14.280560,52.346668,0 14.355000,52.332501,0 14.398607,52.336942,0 14.472498,52.337778,0 14.546389,52.336393,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>EC    41 from FRANKFURT(ODER) (Germany) to WARSZAWA ZACHODNIA (Poland)</name>
+<styleUrl>#idStylePT_EC    41</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>14.546389</longitude>
+<latitude>52.336393</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+14.546389,52.336393,0 14.576386,52.321112,0 14.695511,52.335072,0 14.815275,52.350003,0 15.261670,52.260282,0 15.539724,52.245279,0 15.817500,52.241944,0 15.894726,52.259446,0 16.130837,52.304167,0 16.402779,52.310001,0 16.525553,52.344996,0 16.911667,52.401385,0 18.251114,52.231390,0 18.632220,52.211111,0 19.347222,52.227498,0 19.953608,52.106108,0 20.150004,51.967224,0 20.965281,52.220001,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>walk from WARSZAWA ZACHODNIA (Poland) to WARSZAWA ZACHODNIA P9 (Poland)</name>
+<styleUrl>#idStylePT_walk</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>20.965281</longitude>
+<latitude>52.220001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+20.965281,52.220001,0 20.961388,52.222500,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

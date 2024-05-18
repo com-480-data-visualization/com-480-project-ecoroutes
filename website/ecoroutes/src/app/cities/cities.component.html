@@ -1,2 +1,20 @@
 <img src="assets/m2_mock_cities_1.png" alt="Mock of cities section visualisations for M2">
-<img src="assets/m2_mock_cities_2.png" alt="Mock of cities section visualisations for M2">
+<!-- <img src="assets/m2_mock_cities_2.png" alt="Mock of cities section visualisations for M2"> -->
+<div class="container">
+    <div id="map" style="height: 500px; width: 50%;"></div>
+    <div class="search-container">
+        <h1>Search for a city</h1>
+        <div class="input-group">
+            <input type="text" id="citySearch" placeholder="Enter city name...">
+            <input type="number" id="cityCount" value="3" min="1" max="10" title="Number of Cities">
+            <input type="number" id="maxDistance" value=500 placeholder="Max distance (km)" title="Maximum Distance">
+            <button (click)="searchCity()">Search</button>
+        </div>
+        <div id="results" style="display: none;">
+            <h4>Top destinations reachable by least amount of CO2:</h4>
+            <ul id="destinationList"></ul>
+        </div>
+    </div>
+
+
+</div>

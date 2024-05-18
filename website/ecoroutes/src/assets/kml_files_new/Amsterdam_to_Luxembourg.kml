@@ -1,0 +1,2269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7s.0309921.1714130321&input=Amsterdam Centraal &#x0028;Netherlands&#x0029;!&start=yes&">Amsterdam Centraal &#x0028;Netherlands&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7s.0309921.1714130321&input=Luxembourg &#x0028;Luxembourg&#x0029;!&start=yes&">Luxembourg &#x0028;Luxembourg&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>Amsterdam Centraal (Netherlands) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/607242/340466/295658/54585/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7s.0309921.1714130321&">IC  2917</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7s.0309921.1714130321&input=Maastricht (Netherlands)!&start=yes&">Maastricht (Netherlands)</a>
+arr 07:59]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>4.900559</longitude>
+<latitude>52.378607</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.900559,52.378607,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>Amsterdam Muiderpoort (Netherlands) dep 05:46</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.931114</longitude>
+<latitude>52.360835</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.931114,52.360835,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Amsterdam Amstel (Netherlands) dep 05:49</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.918052</longitude>
+<latitude>52.345832</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.918052,52.345832,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Duivendrecht (Netherlands) dep 05:51</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.936669</longitude>
+<latitude>52.323611</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.936669,52.323611,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Amsterdam Bijlmer ArenA (Netherlands) dep 05:51</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.947780</longitude>
+<latitude>52.311664</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.947780,52.311664,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Amsterdam Holendrecht (Netherlands) dep 05:52</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.959448</longitude>
+<latitude>52.298333</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.959448,52.298333,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Abcoude (Netherlands) dep 05:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.976671</longitude>
+<latitude>52.278889</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.976671,52.278889,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Breukelen (Netherlands) dep 06:00</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.990559</longitude>
+<latitude>52.171109</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.990559,52.171109,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Maarssen (Netherlands) dep 06:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.033060</longitude>
+<latitude>52.135556</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.033060,52.135556,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Utrecht Zuilen (Netherlands) dep 06:06</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.089719</longitude>
+<latitude>52.103330</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.089719,52.103330,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Utrecht Centraal (Netherlands) dep 06:09</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.111114</longitude>
+<latitude>52.089720</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.111114,52.089720,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Utrecht Vaartsche Rijn (Netherlands) dep 06:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.121388</longitude>
+<latitude>52.078888</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.121388,52.078888,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Utrecht Lunetten (Netherlands) dep 06:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.143888</longitude>
+<latitude>52.065836</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.143888,52.065836,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Houten (Netherlands) dep 06:13</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.168060</longitude>
+<latitude>52.034724</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.168060,52.034724,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Houten Castellum (Netherlands) dep 06:14</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.179441</longitude>
+<latitude>52.017222</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.179441,52.017222,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Culemborg (Netherlands) dep 06:19</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.227218</longitude>
+<latitude>51.946666</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.227218,51.946666,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Geldermalsen (Netherlands) dep 06:23</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.271670</longitude>
+<latitude>51.882501</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.271670,51.882501,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Zaltbommel (Netherlands) dep 06:28</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.263058</longitude>
+<latitude>51.808052</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.263058,51.808052,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Hertogenbosch ('s) (Netherlands) dep 06:38</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.294718</longitude>
+<latitude>51.690554</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.294718,51.690554,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Vught (Netherlands) dep 06:40</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.291671</longitude>
+<latitude>51.655559</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.291671,51.655559,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Boxtel (Netherlands) dep 06:45</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.319169</longitude>
+<latitude>51.584724</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.319169,51.584724,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Best (Netherlands) dep 06:51</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.389168</longitude>
+<latitude>51.509440</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.389168,51.509440,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Eindhoven Strijp-S (Netherlands) dep 06:56</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.457504</longitude>
+<latitude>51.450282</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.457504,51.450282,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Eindhoven Centraal (Netherlands) dep 06:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.480004</longitude>
+<latitude>51.442218</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.480004,51.442218,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Geldrop (Netherlands) dep 07:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.550830</longitude>
+<latitude>51.419997</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.550830,51.419997,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Heeze (Netherlands) dep 07:05</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.569725</longitude>
+<latitude>51.385281</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.569725,51.385281,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Maarheeze (Netherlands) dep 07:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.629441</longitude>
+<latitude>51.304998</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.629441,51.304998,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Weert (Netherlands) dep 07:16</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.703889</longitude>
+<latitude>51.249166</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.703889,51.249166,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Roermond (Netherlands) dep 07:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.994448</longitude>
+<latitude>51.193055</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.994448,51.193055,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Echt (Netherlands) dep 07:38</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.878891</longitude>
+<latitude>51.100556</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.878891,51.100556,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Susteren (Netherlands) dep 07:41</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.862504</longitude>
+<latitude>51.060833</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.862504,51.060833,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Sittard (Netherlands) dep 07:46</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.859448</longitude>
+<latitude>51.002502</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.859448,51.002502,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Geleen-Lutterade (Netherlands) dep 07:48</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.825001</longitude>
+<latitude>50.975274</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.825001,50.975274,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Beek-Elsloo (Netherlands) dep 07:51</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.785835</longitude>
+<latitude>50.946940</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.785835,50.946940,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Bunde (Netherlands) dep 07:55</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.736385</longitude>
+<latitude>50.896942</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.736385,50.896942,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>Maastricht (Netherlands) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/355617/182678/78196/79441/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7s.0309921.1714130321&">RE 16914</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7s.0309921.1714130321&input=LIEGE-GUILLEMINS (Belgium)!&start=yes&">LIEGE-GUILLEMINS (Belgium)</a>
+arr 08:52]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>5.705552</longitude>
+<latitude>50.850000</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.705552,50.850000,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>Maastricht Randwyck (Netherlands) dep 08:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.717778</longitude>
+<latitude>50.837775</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.717778,50.837775,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Eijsden (Netherlands) dep 08:28</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.710002</longitude>
+<latitude>50.771947</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.710002,50.771947,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VISE GRENS (Netherlands) dep 08:29</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.711386</longitude>
+<latitude>50.758337</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.711386,50.758337,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VISE-FRONTIERE (Belgium) dep 08:31</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.701804</longitude>
+<latitude>50.747918</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.701804,50.747918,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VISE (Belgium) dep 08:35</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.692500</longitude>
+<latitude>50.737500</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.692500,50.737500,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRESSOUX (Belgium) dep 08:45</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.610833</longitude>
+<latitude>50.643886</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.610833,50.643886,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>LIEGE-GUILLEMINS (Belgium) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/118692/270098/946732/433802/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7s.0309921.1714130321&">IC  5309</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7s.0309921.1714130321&input=Luxembourg (Luxembourg)!&start=yes&">Luxembourg (Luxembourg)</a>
+arr 11:46]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>5.566669</longitude>
+<latitude>50.624443</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.566669,50.624443,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>ANGLEUR (Belgium) dep 09:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.599722</longitude>
+<latitude>50.613053</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.599722,50.613053,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ESNEUX (Belgium) dep 09:22</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.572503</longitude>
+<latitude>50.530559</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.572503,50.530559,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>POULSEUR (Belgium) dep 09:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.578607</longitude>
+<latitude>50.509165</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.578607,50.509165,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RIVAGE (Belgium) dep 09:31</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.587497</longitude>
+<latitude>50.483060</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.587497,50.483060,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>AYWAILLE (Belgium) dep 09:40</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.672220</longitude>
+<latitude>50.472777</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.672220,50.472777,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>COO (Belgium) dep 09:58</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.880276</longitude>
+<latitude>50.391110</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.880276,50.391110,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TROIS-PONTS (Belgium) dep 10:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.873336</longitude>
+<latitude>50.368052</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.873336,50.368052,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VIELSALM (Belgium) dep 10:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.909167</longitude>
+<latitude>50.278888</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.909167,50.278888,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GOUVY (Belgium) dep 10:24</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.953888</longitude>
+<latitude>50.189167</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.953888,50.189167,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GOUVY FR. (Belgium) dep 10:25</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.959587</longitude>
+<latitude>50.181113</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.959587,50.181113,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TROISVIERGES-FRONTIERE (Luxembourg) dep 10:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.965278</longitude>
+<latitude>50.173058</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.965278,50.173058,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Troisvierges (Luxembourg) dep 10:35</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.990834</longitude>
+<latitude>50.119168</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.990834,50.119168,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Clervaux (Luxembourg) dep 10:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.024723</longitude>
+<latitude>50.061664</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.024723,50.061664,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Drauffelt (Luxembourg) dep 10:50</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.007221</longitude>
+<latitude>50.017221</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.007221,50.017221,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Wilwerwiltz (Luxembourg) dep 10:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.000560</longitude>
+<latitude>49.988609</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.000560,49.988609,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Kautenbach (Luxembourg) dep 11:01</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.022224</longitude>
+<latitude>49.948607</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.022224,49.948607,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Michelau (Luxembourg) dep 11:08</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.092223</longitude>
+<latitude>49.896667</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.092223,49.896667,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Ettelbruck (Luxembourg) dep 11:16</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.106112</longitude>
+<latitude>49.847226</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.106112,49.847226,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Mersch (Luxembourg) dep 11:28</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.110274</longitude>
+<latitude>49.751941</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.110274,49.751941,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Pfaffenthal-Kirchberg (Luxembourg) dep 11:42</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.132774</longitude>
+<latitude>49.618613</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.132774,49.618613,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>Luxembourg (Luxembourg) arr 11:46</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>6.134167</longitude>
+<latitude>49.599996</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.134167,49.599996,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+Amsterdam Centraal (Netherlands)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+05:41
+</td>
+<td>
+5b
+</td>
+<td rowspan="36" valign="top" style="white-space:nowrap;">
+IC  2917
+</td>
+<td rowspan="36" valign="top">
+Intercity
+Direction: Maastricht (Netherlands)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Amsterdam Muiderpoort (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:46
+</td>
+<td class="result" >
+05:46
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Amsterdam Amstel (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:49
+</td>
+<td class="result" >
+05:49
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Duivendrecht (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:51
+</td>
+<td class="result" >
+05:51
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Amsterdam Bijlmer ArenA (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:51
+</td>
+<td class="result" >
+05:51
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Amsterdam Holendrecht (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:52
+</td>
+<td class="result" >
+05:52
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Abcoude (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:54
+</td>
+<td class="result" >
+05:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Breukelen (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:00
+</td>
+<td class="result" >
+06:00
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Maarssen (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:03
+</td>
+<td class="result" >
+06:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Utrecht Zuilen (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:06
+</td>
+<td class="result" >
+06:06
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Utrecht Centraal (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:07
+</td>
+<td class="result" >
+06:09
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Utrecht Vaartsche Rijn (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:10
+</td>
+<td class="result" >
+06:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Utrecht Lunetten (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:11
+</td>
+<td class="result" >
+06:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Houten (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:13
+</td>
+<td class="result" >
+06:13
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Houten Castellum (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:14
+</td>
+<td class="result" >
+06:14
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Culemborg (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:19
+</td>
+<td class="result" >
+06:19
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Geldermalsen (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:23
+</td>
+<td class="result" >
+06:23
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Zaltbommel (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:28
+</td>
+<td class="result" >
+06:28
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Hertogenbosch ('s) (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:35
+</td>
+<td class="result" >
+06:38
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Vught (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:40
+</td>
+<td class="result" >
+06:40
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Boxtel (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:45
+</td>
+<td class="result" >
+06:45
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Best (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:51
+</td>
+<td class="result" >
+06:51
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Eindhoven Strijp-S (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:56
+</td>
+<td class="result" >
+06:56
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Eindhoven Centraal (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:57
+</td>
+<td class="result" >
+06:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Geldrop (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:02
+</td>
+<td class="result" >
+07:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Heeze (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:05
+</td>
+<td class="result" >
+07:05
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Maarheeze (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:11
+</td>
+<td class="result" >
+07:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Weert (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:16
+</td>
+<td class="result" >
+07:16
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Roermond (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:29
+</td>
+<td class="result" >
+07:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Echt (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:38
+</td>
+<td class="result" >
+07:38
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Susteren (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:41
+</td>
+<td class="result" >
+07:41
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Sittard (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:45
+</td>
+<td class="result" >
+07:46
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Geleen-Lutterade (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:48
+</td>
+<td class="result" >
+07:48
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Beek-Elsloo (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:51
+</td>
+<td class="result" >
+07:51
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Bunde (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:55
+</td>
+<td class="result" >
+07:55
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+Maastricht (Netherlands)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+07:59
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+2
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+Maastricht (Netherlands)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+08:18
+</td>
+<td>
+5a
+</td>
+<td rowspan="8" valign="top" style="white-space:nowrap;">
+RE 16914
+</td>
+<td rowspan="8" valign="top">
+Regional
+Direction: LIEGE-GUILLEMINS (Belgium)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+Maastricht Randwyck (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:21
+</td>
+<td class="result" >
+08:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+Eijsden (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:28
+</td>
+<td class="result" >
+08:28
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VISE GRENS (Netherlands)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:29
+</td>
+<td class="result" >
+08:29
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VISE-FRONTIERE (Belgium)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:31
+</td>
+<td class="result" >
+08:31
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VISE (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:32
+</td>
+<td class="result" >
+08:35
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BRESSOUX (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:44
+</td>
+<td class="result" >
+08:45
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+LIEGE-GUILLEMINS (Belgium)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+08:52
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+3
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+LIEGE-GUILLEMINS (Belgium)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+09:07
+</td>
+<td>
+5
+</td>
+<td rowspan="22" valign="top" style="white-space:nowrap;">
+IC  5309
+</td>
+<td rowspan="22" valign="top">
+Intercity
+Direction: Luxembourg (Luxembourg)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ANGLEUR (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:10
+</td>
+<td class="result" >
+09:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ESNEUX (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:22
+</td>
+<td class="result" >
+09:22
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+POULSEUR (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:26
+</td>
+<td class="result" >
+09:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+RIVAGE (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:30
+</td>
+<td class="result" >
+09:31
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+AYWAILLE (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:39
+</td>
+<td class="result" >
+09:40
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+COO (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:57
+</td>
+<td class="result" >
+09:58
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+TROIS-PONTS (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:01
+</td>
+<td class="result" >
+10:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+VIELSALM (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:12
+</td>
+<td class="result" >
+10:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GOUVY (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:21
+</td>
+<td class="result" >
+10:24
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GOUVY FR. (Belgium)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:25
+</td>
+<td class="result" >
+10:25
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+TROISVIERGES-FRONTIERE (Luxembourg)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:26
+</td>
+<td class="result" >
+10:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Troisvierges (Luxembourg)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:32
+</td>
+<td class="result" >
+10:35
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Clervaux (Luxembourg)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:42
+</td>
+<td class="result" >
+10:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Drauffelt (Luxembourg)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:49
+</td>
+<td class="result" >
+10:50
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Wilwerwiltz (Luxembourg)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:53
+</td>
+<td class="result" >
+10:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Kautenbach (Luxembourg)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:59
+</td>
+<td class="result" >
+11:01
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Michelau (Luxembourg)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:08
+</td>
+<td class="result" >
+11:08
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Ettelbruck (Luxembourg)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:14
+</td>
+<td class="result" >
+11:16
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Mersch (Luxembourg)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:27
+</td>
+<td class="result" >
+11:28
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Pfaffenthal-Kirchberg (Luxembourg)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:41
+</td>
+<td class="result" >
+11:42
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+Luxembourg (Luxembourg)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+11:46
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+3cd
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 6:05;
+runs
+not every day, 1. until 29. Mar 2024 Fr
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>5.566669</longitude>
+<latitude>50.624443</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+4.900559,52.378607,0 4.931114,52.360835,0 4.918052,52.345832,0 4.936669,52.323611,0 4.947780,52.311664,0 4.959448,52.298333,0 4.976671,52.278889,0 4.990559,52.171109,0 5.033060,52.135556,0 5.089719,52.103330,0 5.111114,52.089720,0 5.121388,52.078888,0 5.143888,52.065836,0 5.168060,52.034724,0 5.179441,52.017222,0 5.227218,51.946666,0 5.271670,51.882501,0 5.263058,51.808052,0 5.294718,51.690554,0 5.291671,51.655559,0 5.319169,51.584724,0 5.389168,51.509440,0 5.457504,51.450282,0 5.480004,51.442218,0 5.550830,51.419997,0 5.569725,51.385281,0 5.629441,51.304998,0 5.703889,51.249166,0 5.994448,51.193055,0 5.878891,51.100556,0 5.862504,51.060833,0 5.859448,51.002502,0 5.825001,50.975274,0 5.785835,50.946940,0 5.736385,50.896942,0 5.705552,50.850000,0 5.717778,50.837775,0 5.710002,50.771947,0 5.711386,50.758337,0 5.701804,50.747918,0 5.692500,50.737500,0 5.610833,50.643886,0 5.566669,50.624443,0 5.599722,50.613053,0 5.572503,50.530559,0 5.578607,50.509165,0 5.587497,50.483060,0 5.672220,50.472777,0 5.880276,50.391110,0 5.873336,50.368052,0 5.909167,50.278888,0 5.953888,50.189167,0 5.959587,50.181113,0 5.965278,50.173058,0 5.990834,50.119168,0 6.024723,50.061664,0 6.007221,50.017221,0 6.000560,49.988609,0 6.022224,49.948607,0 6.092223,49.896667,0 6.106112,49.847226,0 6.110274,49.751941,0 6.132774,49.618613,0 6.134167,49.599996,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC  2917 from Amsterdam Centraal (Netherlands) to Maastricht (Netherlands)</name>
+<styleUrl>#idStylePT_IC  2917</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>4.900559</longitude>
+<latitude>52.378607</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+4.900559,52.378607,0 4.931114,52.360835,0 4.918052,52.345832,0 4.936669,52.323611,0 4.947780,52.311664,0 4.959448,52.298333,0 4.976671,52.278889,0 4.990559,52.171109,0 5.033060,52.135556,0 5.089719,52.103330,0 5.111114,52.089720,0 5.121388,52.078888,0 5.143888,52.065836,0 5.168060,52.034724,0 5.179441,52.017222,0 5.227218,51.946666,0 5.271670,51.882501,0 5.263058,51.808052,0 5.294718,51.690554,0 5.291671,51.655559,0 5.319169,51.584724,0 5.389168,51.509440,0 5.457504,51.450282,0 5.480004,51.442218,0 5.550830,51.419997,0 5.569725,51.385281,0 5.629441,51.304998,0 5.703889,51.249166,0 5.994448,51.193055,0 5.878891,51.100556,0 5.862504,51.060833,0 5.859448,51.002502,0 5.825001,50.975274,0 5.785835,50.946940,0 5.736385,50.896942,0 5.705552,50.850000,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE 16914 from Maastricht (Netherlands) to LIEGE-GUILLEMINS (Belgium)</name>
+<styleUrl>#idStylePT_RE 16914</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>5.705552</longitude>
+<latitude>50.850000</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+5.705552,50.850000,0 5.717778,50.837775,0 5.710002,50.771947,0 5.711386,50.758337,0 5.701804,50.747918,0 5.692500,50.737500,0 5.610833,50.643886,0 5.566669,50.624443,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC  5309 from LIEGE-GUILLEMINS (Belgium) to Luxembourg (Luxembourg)</name>
+<styleUrl>#idStylePT_IC  5309</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>5.566669</longitude>
+<latitude>50.624443</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+5.566669,50.624443,0 5.599722,50.613053,0 5.572503,50.530559,0 5.578607,50.509165,0 5.587497,50.483060,0 5.672220,50.472777,0 5.880276,50.391110,0 5.873336,50.368052,0 5.909167,50.278888,0 5.953888,50.189167,0 5.959587,50.181113,0 5.965278,50.173058,0 5.990834,50.119168,0 6.024723,50.061664,0 6.007221,50.017221,0 6.000560,49.988609,0 6.022224,49.948607,0 6.092223,49.896667,0 6.106112,49.847226,0 6.110274,49.751941,0 6.132774,49.618613,0 6.134167,49.599996,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>
