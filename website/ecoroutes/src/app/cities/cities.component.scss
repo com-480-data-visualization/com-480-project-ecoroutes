@@ -1,3 +1,37 @@
+.graph-container {
+    display: flex;
+    background-color: #bdbbbb;
+
+}
+
+#graph {
+    width: 60%;
+}
+
+#europe-map-container {
+    width: 100%;
+    /* Adjust this value to your preference */
+    height: auto;
+    /* Keeps the height proportional to the width */
+    background-color: #bdbbbb;
+    /* Light gray background */
+    display: inline-block;
+    /* To align it close to the graph if they are in the same line */
+    vertical-align: top;
+    /* Aligns the tops if they are inline */
+    margin-right: 20px;
+    /* Space between the map and anything next to it */
+}
+
+#europe-map {
+    width: 100%;
+    /* Takes full width of the container */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+
+
 /* General styles for images */
 img {
     margin-top: 20px;
@@ -29,44 +63,49 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Styling for the input group */
 .search-container .input-group {
     display: flex;
-    flex-direction: column; // Align children vertically
-    gap: 10px; // Adds space between elements inside the flex container
+    margin-bottom: 10px;
 }
 
-#citySearch,
-#cityCount,
-#maxDistance,
+/* Styles for the city search input */
+#citySearch {
+    flex-grow: 1;
+    /* Allows the input to take up available horizontal space */
+    padding: 12px 15px;
+    /* Increase padding for larger touch area */
+    font-size: 1.25rem;
+    /* Larger font size for better readability */
+    border: 2px solid #ccc;
+    /* Slightly thicker border for better visibility */
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Styles for the search button */
 button {
-    flex-grow: 1; // Each input/button will take the full width of the container
-    margin-bottom: 10px; // Adds space below each input/button
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-// Adjusting the last input to avoid extra space on the right
-#citySearch,
-#cityCount,
-#maxDistance:last-child {
-    margin-right: 0;
-}
-
-button {
-    padding: 10px 20px;
+    padding: 12px 15px;
+    /* Match input height */
+    font-size: 1.25rem;
+    /* Larger font size for consistency */
     background-color: #007bff;
+    /* Primary button color */
     color: white;
+    /* Text color for visibility */
     border: none;
-    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     cursor: pointer;
 
     &:hover {
         background-color: #0056b3;
+        /* Darker blue on hover for feedback */
     }
 }
 
 .search-container .input-group {
+    display: flex;
     margin-bottom: 10px;
 }
 
