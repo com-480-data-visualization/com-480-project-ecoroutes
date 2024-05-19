@@ -84,13 +84,27 @@ export class MapService {
 
 
   private getEmissionColor(co2Value: number): string {
-    const maxCo2 = 150;
+    const maxCo2 = 150; // Adjust this value based on your data
     const minCo2 = 0;
+    const midCo2 = (maxCo2 - minCo2) / 2;
+
+    // Normalize the value within the range [0, 1]
     const ratio = (co2Value - minCo2) / (maxCo2 - minCo2);
-    const red = Math.floor(255 * ratio);
-    const green = Math.floor(255 * (1 - ratio));
-    const blue = 0;
-    return `rgb(${red}, ${green}, ${blue})`;
+
+    let red, green;
+    if (co2Value <= midCo2) {
+      // Scale from green to yellow (0 -> 0.5)
+      // Green stays at full while red ramps up
+      red = Math.floor(255 * (2 * ratio)); // 0 at minCo2, 255 at midCo2
+      green = 255;
+    } else {
+      // Scale from yellow to red (0.5 -> 1)
+      // Green ramps down while red stays at full
+      red = 255;
+      green = Math.floor(255 * (2 * (1 - ratio))); // 255 at midCo2, 0 at maxCo2
+    }
+
+    return `rgb(${red}, ${green}, 0)`; // Keep blue at 0 throughout
   }
 
   parseCoordinates(coordString: string): [latitude: number, longitude: number] {

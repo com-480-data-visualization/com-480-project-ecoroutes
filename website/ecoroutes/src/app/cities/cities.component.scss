@@ -1,36 +1,37 @@
 .graph-container {
     display: flex;
-    background-color: #bdbbbb;
-
+    background-color: #ffffff;
+    /* Change background to white */
 }
 
 #graph {
-    width: 60%;
+    width: 50%;
 }
 
 #europe-map-container {
     width: 100%;
-    /* Adjust this value to your preference */
     height: auto;
-    /* Keeps the height proportional to the width */
-    background-color: #bdbbbb;
-    /* Light gray background */
+    background-color: #ffffff;
+    /* Change background to white */
     display: inline-block;
-    /* To align it close to the graph if they are in the same line */
     vertical-align: top;
-    /* Aligns the tops if they are inline */
     margin-right: 20px;
-    /* Space between the map and anything next to it */
 }
 
 #europe-map {
     width: 100%;
-    /* Takes full width of the container */
-    height: auto;
-    /* Maintains aspect ratio */
+    height: 100%;
 }
 
-
+/* Ensure SVG path elements are visible */
+#europe-map path {
+    fill: #dcdcdc;
+    /* Light gray fill color */
+    stroke: #000000;
+    /* Black stroke for borders */
+    stroke-width: 1;
+    /* Border width */
+}
 
 /* General styles for images */
 img {
@@ -43,70 +44,48 @@ img {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    /* Align items at the top */
     padding: 20px;
 }
 
-/* Styling for the map */
 #map {
     margin-right: 20px;
-    /* Space between map and search container */
 }
 
-/* Styling for the search container */
 .search-container {
     flex-basis: 300px;
-    /* Fixed width for the search container */
     display: flex;
     flex-direction: column;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for the input group */
 .search-container .input-group {
     display: flex;
     margin-bottom: 10px;
 }
 
-/* Styles for the city search input */
 #citySearch {
     flex-grow: 1;
-    /* Allows the input to take up available horizontal space */
     padding: 12px 15px;
-    /* Increase padding for larger touch area */
     font-size: 1.25rem;
-    /* Larger font size for better readability */
     border: 2px solid #ccc;
-    /* Slightly thicker border for better visibility */
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
 
-/* Styles for the search button */
 button {
     padding: 12px 15px;
-    /* Match input height */
     font-size: 1.25rem;
-    /* Larger font size for consistency */
     background-color: #007bff;
-    /* Primary button color */
     color: white;
-    /* Text color for visibility */
     border: none;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     cursor: pointer;
-
-    &:hover {
-        background-color: #0056b3;
-        /* Darker blue on hover for feedback */
-    }
 }
 
-.search-container .input-group {
-    display: flex;
-    margin-bottom: 10px;
+button:hover {
+    background-color: #0056b3;
 }
 
 #citySearch,
@@ -126,8 +105,8 @@ button {
     color: white;
     border-radius: 4px;
     cursor: pointer;
+}
 
-    &:hover {
-        background-color: #0056b3;
-    }
+button:hover {
+    background-color: #0056b3;
 }

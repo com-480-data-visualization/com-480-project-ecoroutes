@@ -9,20 +9,24 @@ import * as d3 from 'd3';
   templateUrl: './cities.component.html',
   styleUrls: ['./cities.component.scss']
 })
+
 export class CitiesComponent implements OnInit {
   currentView: 'city' | 'country' | 'region' = 'city';
   selectedCountries: Set<string> = new Set();
+  selectedCities: Set<string> = new Set(); // New variable for city selections
+  flagsData: any[] = [];  // Store flags data
 
   constructor(
     private mapService: MapService,
     private dataService: DataService,
-    private graphService: GraphService
+    private graphService: GraphService,
+
   ) { }
+
 
   ngOnInit(): void {
     this.mapService.initMap('map');
     this.dataService.loadCSVData().then(() => {
-      this.dataService.prepareRegionData();
       this.graphService.initGraph('graph');
       this.updateGraph();
       this.initMapClickHandler();
@@ -36,14 +40,34 @@ export class CitiesComponent implements OnInit {
   }
 
   updateGraph(): void {
-    const nodes = this.currentView === 'city' ? this.dataService.cityNodes :
-      this.currentView === 'country' ? this.dataService.countryNodes.filter(country => this.selectedCountries.has(country)) :
-        this.dataService.regionNodes;
-    const links = this.currentView === 'city' ? this.dataService.cityLinks :
-      this.currentView === 'country' ? this.dataService.countryLinks.filter(link => this.selectedCountries.has(link.sourceCountry) || this.selectedCountries.has(link.targetCountry)) :
-        this.dataService.regionLinks;
-    this.graphService.updateGraph(nodes, links, this.currentView as 'city' | 'country' | 'region');
+    let nodes, links;
+    if (this.currentView === 'city') {
+      // Filter links to only those where both the source and target countries are selected
+      links = this.dataService.cityLinks.filter(link =>
+        this.selectedCountries.has(link.sourceCountry) && this.selectedCountries.has(link.targetCountry)
+      );
+
+      // Create a set of all cities involved in the filtered links
+      const linkedCities = new Set(links.flatMap(link => [link.source, link.target]));
+
+      // Filter nodes to include only those that are part of the filtered links
+      // Sort the nodes by their country so when we draw the graph, nodes from the same country are grouped together
+      // nodes = this.dataService.cityNodes.filter(city => linkedCities.has(city));
+      nodes = this.dataService.getSortedCityNodes().filter(city => linkedCities.has(city));
+
+    } else if (this.currentView === 'country') {
+      nodes = this.dataService.countryNodes.filter(country => this.selectedCountries.has(country));
+      links = this.dataService.countryLinks.filter(link =>
+        this.selectedCountries.has(link.sourceCountry) || this.selectedCountries.has(link.targetCountry)
+      );
+    } else {
+      nodes = this.dataService.regionNodes;
+      links = this.dataService.regionLinks;
+    }
+
+    this.graphService.updateGraph(nodes, links, this.currentView);
   }
+
 
   searchCity(): void {
     const cityInput = (document.getElementById('citySearch') as HTMLInputElement).value.toLowerCase();
@@ -62,6 +86,7 @@ export class CitiesComponent implements OnInit {
           country.addEventListener('click', () => {
             const countryName = country.getAttribute('name');
             if (countryName) {
+              // Toggle selection of this country
               if (this.selectedCountries.has(countryName)) {
                 this.selectedCountries.delete(countryName);
               } else {
@@ -71,23 +96,23 @@ export class CitiesComponent implements OnInit {
               this.updateMapHighlighting();
             }
           });
-
           // Add hover effect
           country.addEventListener('mouseover', () => {
-            country.style.fill = '#FFD700'; // Highlight color
+            country.style.fill = '#007bff'; // Highlight color
           });
 
           country.addEventListener('mouseout', () => {
             if (this.selectedCountries.has(country.getAttribute('name') || '')) {
-              country.style.fill = '#FFD700'; // Keep highlight if selected
+              country.style.fill = '#007bff'; // Keep highlight if selected
             } else {
-              country.style.fill = '#ececec'; // Default color
+              country.style.fill = '#CFCFCF'; // Default color
             }
           });
         });
       }
     });
   }
+
 
   updateMapHighlighting(): void {
     const svgMap = document.getElementById('europe-map') as HTMLObjectElement;
@@ -99,7 +124,7 @@ export class CitiesComponent implements OnInit {
         if (this.selectedCountries.has(countryName || '')) {
           country.setAttribute('fill', '#FFD700'); // Highlight color
         } else {
-          country.setAttribute('fill', '#ececec'); // Default color
+          country.setAttribute('fill', '#CFCFCF'); // Default color
         }
       });
     }
