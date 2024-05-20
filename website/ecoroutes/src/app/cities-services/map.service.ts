@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 import L from 'leaflet';
 import omnivore from 'leaflet-omnivore';
 import { EcoRoute } from '../ecoroute.model';
@@ -7,6 +7,8 @@ import { EcoRoute } from '../ecoroute.model';
   providedIn: 'root'
 })
 export class MapService {
+  searchResults = new EventEmitter<any[]>();
+
   private map!: L.Map;
   private customIcon = L.icon({
     iconUrl: 'assets/push-pin.png',
@@ -27,6 +29,8 @@ export class MapService {
       subdomains: 'abcd',
       maxZoom: 20
     }).addTo(this.map);
+    this.addLegend(); // Call to add the legend when initializing the map
+
   }
 
   searchCity(city: string, cityCount: number, maxDistance: number, ecoRoutes: EcoRoute[]): void {
@@ -41,6 +45,12 @@ export class MapService {
         this.map.setView(firstCityCoords, 6);
         L.marker(firstCityCoords, { icon: this.customIcon }).addTo(this.map);
       }
+      // Emit the search results for the bar plot
+      this.searchResults.emit(topCities.map(route => ({
+        arrivalCity: route.arrivalCity,
+        avgCO2: route.avgCO2
+      })));
+
     } else {
       alert('No destinations found within the specified distance');
     }
@@ -75,7 +85,7 @@ export class MapService {
         });
         layer.bindPopup(`Route from ${route.departureCity} to ${route.arrivalCity}<br>
         CO2 Emissions: ${route.avgCO2.toFixed(2)} kg<br>
-        Energy Consumption: ${route.carEnergyResourceConsumption.toFixed(2)} kWh<br>
+        Energy Consumption: ${route.trainEnergyResourceConsumption.toFixed(2)} kWh<br>
         Distance: ${route.distance.toFixed(2)} km<br>
         Train Duration: ${route.trainDuration.toFixed(2)} hours`);
       }
@@ -84,7 +94,7 @@ export class MapService {
 
 
   private getEmissionColor(co2Value: number): string {
-    const maxCo2 = 150; // Adjust this value based on your data
+    const maxCo2 = 150; // Adjust this value based on data
     const minCo2 = 0;
     const midCo2 = (maxCo2 - minCo2) / 2;
 
@@ -118,6 +128,25 @@ export class MapService {
     } else {
       return [-1, -1];
     }
+  }
+
+  addLegend(): void {
+    const legend = new L.Control({ position: 'bottomright' });
+
+    legend.onAdd = () => {
+      const div = L.DomUtil.create('div', 'info legend');
+      const gradientHtml = `
+        <div class="legend-gradient" style="height: 10px; width: 100%; background: linear-gradient(to right, ${this.getEmissionColor(0)}, ${this.getEmissionColor(75)}, ${this.getEmissionColor(150)});">
+        </div>
+        <div class="legend-scale">
+          <span>0 kg</span><span style="float: right;">150 kg</span>
+        </div>`;
+
+      div.innerHTML = `<div><strong>CO2 Emissions (kg)</strong></div>${gradientHtml}`;
+      return div;
+    };
+
+    legend.addTo(this.map);
   }
 
 }

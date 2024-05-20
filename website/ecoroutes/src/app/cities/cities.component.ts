@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { MapService } from '../cities-services/map.service';
 import { DataService } from '../cities-services/data.service';
 import { GraphService } from '../cities-services/graph.service';
+import { BarPlotService } from '../cities-services/bar-plot.service';
+import { Subscription } from 'rxjs';
+
 import * as d3 from 'd3';
 
 @Component({
@@ -15,12 +18,13 @@ export class CitiesComponent implements OnInit {
   selectedCountries: Set<string> = new Set();
   selectedCities: Set<string> = new Set(); // New variable for city selections
   flagsData: any[] = [];  // Store flags data
+  private searchResultsSub!: Subscription;
 
   constructor(
     private mapService: MapService,
     private dataService: DataService,
     private graphService: GraphService,
-
+    private barPlotService: BarPlotService,
   ) { }
 
 
@@ -31,6 +35,15 @@ export class CitiesComponent implements OnInit {
       this.updateGraph();
       this.initMapClickHandler();
     });
+    this.searchResultsSub = this.mapService.searchResults.subscribe(data => {
+      this.barPlotService.drawBarPlot(data, 'co2BarPlot');
+    });
+  }
+
+  ngOnDestroy(): void {
+    if (this.searchResultsSub) {
+      this.searchResultsSub.unsubscribe(); // Clean up the subscription
+    }
   }
 
   toggleView(view: 'city' | 'country' | 'region'): void {
@@ -113,7 +126,6 @@ export class CitiesComponent implements OnInit {
     });
   }
 
-
   updateMapHighlighting(): void {
     const svgMap = document.getElementById('europe-map') as HTMLObjectElement;
     const svgDoc = svgMap.contentDocument;
@@ -129,4 +141,9 @@ export class CitiesComponent implements OnInit {
       });
     }
   }
+
+  updateBarPlot(data: any[]): void {
+    this.barPlotService.drawBarPlot(data, 'co2BarPlot');
+  }
+
 }
