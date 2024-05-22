@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=oq.052091.1714132761&input=VENICE &#x0028;Italy&#x0029;!&start=yes&">VENICE &#x0028;Italy&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=oq.052091.1714132761&input=NAPOLI CITY &#x0028;Italy&#x0029;!&start=yes&">NAPOLI CITY &#x0028;Italy&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>VENEZIA MESTRE (Italy) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/839598/466168/553118/3307/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=oq.052091.1714132761&">RV  3961</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=oq.052091.1714132761&input=BOLOGNA CENTRALE (Italy)!&start=yes&">BOLOGNA CENTRALE (Italy)</a>
+arr 07:46]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>12.231667</longitude>
+<latitude>45.481948</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.231667,45.481948,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>PADOVA (Italy) dep 06:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.880557</longitude>
+<latitude>45.417774</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.880557,45.417774,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ABANO (Italy) dep 06:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.811385</longitude>
+<latitude>45.355281</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.811385,45.355281,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TERME EUGAN.-ABANO-M (Italy) dep 06:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.796391</longitude>
+<latitude>45.326947</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.796391,45.326947,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MONSELICE (Italy) dep 06:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.747778</longitude>
+<latitude>45.245837</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.747778,45.245837,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ROVIGO (Italy) dep 06:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.780552</longitude>
+<latitude>45.076669</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.780552,45.076669,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FERRARA (Italy) dep 07:05</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.603330</longitude>
+<latitude>44.843057</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.603330,44.843057,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>S. PIETRO IN CASALE (Italy) dep 07:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.404444</longitude>
+<latitude>44.698052</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.404444,44.698052,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>BOLOGNA CENTRALE (Italy) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/224010/431196/203974/27317/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=oq.052091.1714132761&">FR  9607</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=oq.052091.1714132761&input=NAPOLI CENTRALE (Italy)!&start=yes&">NAPOLI CENTRALE (Italy)</a>
+arr 11:38]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>11.341942</longitude>
+<latitude>44.506393</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.341942,44.506393,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>FIRENZE RIFREDI (Italy) dep 08:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.235554</longitude>
+<latitude>43.800560</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.235554,43.800560,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FIRENZE CAMPO MARTE (Italy) dep 08:45</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.276671</longitude>
+<latitude>43.776667</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.276671,43.776667,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ROMA TIBURTINA (Italy) dep 10:05</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.530558</longitude>
+<latitude>41.910560</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.530558,41.910560,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ROMA TERMINI (Italy) dep 10:25</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.501667</longitude>
+<latitude>41.900555</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.501667,41.900555,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>NAPOLI CENTRALE (Italy) arr 11:38</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>14.272776</longitude>
+<latitude>40.853060</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.272776,40.853060,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+VENEZIA MESTRE (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+05:53
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="9" valign="top" style="white-space:nowrap;">
+RV  3961
+</td>
+<td rowspan="9" valign="top">
+Regionale Veloce
+Direction: BOLOGNA CENTRALE (Italy)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PADOVA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:10
+</td>
+<td class="result" >
+06:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ABANO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:18
+</td>
+<td class="result" >
+06:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+TERME EUGAN.-ABANO-M (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:20
+</td>
+<td class="result" >
+06:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MONSELICE (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:28
+</td>
+<td class="result" >
+06:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ROVIGO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:42
+</td>
+<td class="result" >
+06:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+FERRARA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:03
+</td>
+<td class="result" >
+07:05
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+S. PIETRO IN CASALE (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:17
+</td>
+<td class="result" >
+07:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+BOLOGNA CENTRALE (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+07:46
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+BOLOGNA CENTRALE (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+08:07
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="6" valign="top" style="white-space:nowrap;">
+FR  9607
+</td>
+<td rowspan="6" valign="top">
+FRECCIAROSSA
+Direction: NAPOLI CENTRALE (Italy)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+FIRENZE RIFREDI (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:39
+</td>
+<td class="result" >
+08:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+FIRENZE CAMPO MARTE (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:45
+</td>
+<td class="result" >
+08:45
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ROMA TIBURTINA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:05
+</td>
+<td class="result" >
+10:05
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ROMA TERMINI (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:11
+</td>
+<td class="result" >
+10:25
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+NAPOLI CENTRALE (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+11:38
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 5:45;
+runs
+not every day, 1. Mar until 8. Jun 2024 Mo - Sa; not 1., 25. Apr, 1. May
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>11.341942</longitude>
+<latitude>44.506393</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+12.231667,45.481948,0 11.880557,45.417774,0 11.811385,45.355281,0 11.796391,45.326947,0 11.747778,45.245837,0 11.780552,45.076669,0 11.603330,44.843057,0 11.404444,44.698052,0 11.341942,44.506393,0 11.235554,43.800560,0 11.276671,43.776667,0 12.530558,41.910560,0 12.501667,41.900555,0 14.272776,40.853060,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RV  3961 from VENEZIA MESTRE (Italy) to BOLOGNA CENTRALE (Italy)</name>
+<styleUrl>#idStylePT_RV  3961</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>12.231667</longitude>
+<latitude>45.481948</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+12.231667,45.481948,0 11.880557,45.417774,0 11.811385,45.355281,0 11.796391,45.326947,0 11.747778,45.245837,0 11.780552,45.076669,0 11.603330,44.843057,0 11.404444,44.698052,0 11.341942,44.506393,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>FR  9607 from BOLOGNA CENTRALE (Italy) to NAPOLI CENTRALE (Italy)</name>
+<styleUrl>#idStylePT_FR  9607</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>11.341942</longitude>
+<latitude>44.506393</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+11.341942,44.506393,0 11.235554,43.800560,0 11.276671,43.776667,0 12.530558,41.910560,0 12.501667,41.900555,0 14.272776,40.853060,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>
