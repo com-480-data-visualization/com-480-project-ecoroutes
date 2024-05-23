@@ -6,11 +6,12 @@ import { RoutesInputComponent } from './routes-input/routes-input.component';
 import { RouteMapComponent } from './route-map/route-map.component';
 import { ListRoutesComponent } from './list-routes/list-routes.component';
 import { CitiesComponent } from './cities/cities.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NavbarComponent, RouterOutlet],
+  imports: [CommonModule, RouterOutlet, NavbarComponent, RouterOutlet, HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

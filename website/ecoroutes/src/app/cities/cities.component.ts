@@ -3,12 +3,17 @@ import { MapService } from '../cities-services/map.service';
 import { DataService } from '../cities-services/data.service';
 import { GraphService } from '../cities-services/graph.service';
 import { BarPlotService } from '../cities-services/bar-plot.service';
-import { Subscription } from 'rxjs';
+import { Observable, Subscription, map } from 'rxjs';
 
 import * as d3 from 'd3';
+import { HttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-cities',
+  standalone: true,
+  imports: [CommonModule, FormsModule],
   templateUrl: './cities.component.html',
   styleUrls: ['./cities.component.scss']
 })
@@ -19,12 +24,16 @@ export class CitiesComponent implements OnInit {
   selectedCities: Set<string> = new Set(); // New variable for city selections
   flagsData: any[] = [];  // Store flags data
   private searchResultsSub!: Subscription;
+  filteredCities: any[] = [];
+  cities: string[] = [];
+  cityInput: string = '';
 
   constructor(
     private mapService: MapService,
     private dataService: DataService,
     private graphService: GraphService,
     private barPlotService: BarPlotService,
+    private http: HttpClient
   ) { }
 
 
@@ -37,6 +46,9 @@ export class CitiesComponent implements OnInit {
     });
     this.searchResultsSub = this.mapService.searchResults.subscribe(data => {
       this.barPlotService.drawBarPlot(data, 'co2BarPlot');
+    });
+    this.getCities().subscribe(cities => {
+      this.cities = cities;
     });
   }
 
@@ -144,6 +156,27 @@ export class CitiesComponent implements OnInit {
 
   updateBarPlot(data: any[]): void {
     this.barPlotService.drawBarPlot(data, 'co2BarPlot');
+  }
+
+  selectCity(city: string): void {
+    this.cityInput = city;
+    this.filteredCities = [];
+  }
+
+  search(term: any){
+    if (!term) {
+      this.filteredCities = [];
+    } else {
+      this.filteredCities = this.cities
+        .filter(city => city.toLowerCase().includes(term.toLowerCase()))
+        .sort((a, b) => a.toLowerCase().indexOf(term.toLowerCase()) - b.toLowerCase().indexOf(term.toLowerCase()))
+        .slice(0, 10);
+    }
+  }
+
+  getCities(): Observable<string[]> {
+    return this.http.get<string>('assets/cities.txt', { responseType: 'text' as 'json' }).pipe(
+                     map(data => data.split('\n')))
   }
 
 }

@@ -18,7 +18,10 @@
     <div class="search-container">
         <h1>Search for a city</h1>
         <div class="input-group">
-            <input type="text" id="citySearch" placeholder="Enter city name...">
+            <input type="text" id="citySearch"  (ngModelChange)="search($event)" [(ngModel)]="cityInput" placeholder="Enter city name...">
+            <ul *ngIf="filteredCities.length" class="suggestions">
+                <li *ngFor="let city of filteredCities" (click)="selectCity(city)">{{ city }}</li>
+            </ul>
             <input type="number" id="cityCount" value="3" min="1" max="10" title="Number of Cities">
             <input type="number" id="maxDistance" value=500 placeholder="Max distance (km)" title="Maximum Distance">
             <button (click)="searchCity()">Search</button>

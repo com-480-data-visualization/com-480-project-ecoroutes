@@ -28,4 +28,8 @@ export class ListRoutesComponent {
     console.log('Route with ID:', route.id, 'has been deleted.');
   }
 
+  trunc(value: number): number {
+    return Math.trunc(value);
+  }
+
 }

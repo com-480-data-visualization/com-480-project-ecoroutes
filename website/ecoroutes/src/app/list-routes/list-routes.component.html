@@ -4,7 +4,7 @@
       <li *ngFor="let route of routes">
         <div class="route-item">
           <span class="route-id">{{ route.id }}</span>
-          <span class="route-co2">CO2: {{ route.avgCO2W }}</span>
+          <span class="route-co2">CO2: {{ trunc(route.avgCO2) }}</span>
           <button class="btn-delete" (click)="deleteRoute(route)">Delete</button>
         </div>
       </li>

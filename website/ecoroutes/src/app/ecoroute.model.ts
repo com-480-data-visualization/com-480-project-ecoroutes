@@ -28,6 +28,7 @@ export class EcoRoute {
     flightMarketShare: number = -1;
     trainFlightDurationDelta: number = -1;
     trainMarketShare: number = -1;
+    chosenCO2: 'train' | 'avg' | 'flight' = 'avg';
 
     constructor(data: any) {
         if (data) {
