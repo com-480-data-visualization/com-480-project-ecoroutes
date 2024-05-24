@@ -1,10 +1,19 @@
 <div class="routes-list">
     <h3>Current EcoRoutes</h3>
     <ul>
+      <li>
+        <div class="route-item">
+          <div class="route-id">Route</div>
+          <div class="route-co2">CO2 (Kg)</div>
+          <div class="route-duration">Duration</div>
+          <div style="width: 80px;"></div>
+        </div>
+      </li>
       <li *ngFor="let route of routes">
         <div class="route-item">
-          <span class="route-id">{{ route.id }} ({{ route.chosenCO2}}) </span>
-          <span class="route-co2">CO2: {{ getCO2(route) }} Kg</span>
+          <div class="route-id">{{ route.id }} ({{ route.chosenCO2}}) </div>
+          <div class="route-co2">{{ getCO2(route) }}</div>
+          <div class="route-duration">{{ getDuration(route) }}</div>
           <button class="btn-delete" (click)="deleteRoute(route)">Delete</button>
         </div>
       </li>

@@ -38,6 +38,16 @@ export class ListRoutesComponent {
     }
   }
 
+  getDuration(route: EcoRoute): string{
+    if(route.chosenCO2=='flight'){
+      return `${route.flightDuration.toFixed(2)} hours`
+    } else if(route.chosenCO2=='train'){
+      return `${route.trainDuration.toFixed(2)} hours`
+    } else{
+      return ' '
+    }
+  }
+
   trunc(value: number): number {
     return Math.trunc(value);
   }
