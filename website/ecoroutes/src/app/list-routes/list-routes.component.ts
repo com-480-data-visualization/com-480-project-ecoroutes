@@ -23,9 +23,19 @@ export class ListRoutesComponent {
   }
 
   deleteRoute(route: EcoRoute) {
-    this.routes = this.routes.filter(r => r.id !== route.id);
+    this.routes = this.routes.filter(r => (r.id !== route.id || r.chosenCO2 !== route.chosenCO2));
     this.mapRoutesService.deleteRoute(route);
     console.log('Route with ID:', route.id, 'has been deleted.');
+  }
+
+  getCO2(route: EcoRoute): number{
+    if(route.chosenCO2=='flight'){
+      return this.trunc(route.flightCO2)
+    } else if(route.chosenCO2=='train'){
+      return this.trunc(route.trainCO2)
+    } else{
+      return this.trunc(route.avgCO2)
+    }
   }
 
   trunc(value: number): number {

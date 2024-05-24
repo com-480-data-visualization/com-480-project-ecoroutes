@@ -49,12 +49,12 @@ export class RoutesInputComponent {
         let route = new EcoRoute(d);
         this.data[route.id] = route;
       });
-      let d2 = new EcoRoute(data[2194]);
-      d2.chosenCO2 = 'avg';
-      this.mapRouteService.addRoute(d2);
-      let d3 = new EcoRoute(data[1912]);
-      d3.chosenCO2 = 'avg';
-      this.mapRouteService.addRoute(d3);
+      // let d2 = new EcoRoute(data[2194]);
+      // d2.chosenCO2 = 'avg';
+      // this.mapRouteService.addRoute(d2);
+      // let d3 = new EcoRoute(data[1912]);
+      // d3.chosenCO2 = 'avg';
+      // this.mapRouteService.addRoute(d3);
     })
   }
 
@@ -62,19 +62,24 @@ export class RoutesInputComponent {
     console.log('Adding route:', this.route);
     let id = this.route.departure + ' to ' + this.route.destination;
     let route = this.data[id];
+    
+    console.log(route);
     if (!route) {
       console.log('Route not found:', id);
       return;
     }
     if (this.route.transport.plane) {
+      route = JSON.parse(JSON.stringify(route))
       route.chosenCO2 = 'flight';
       this.mapRouteService.addRoute(route);
     } 
     if (this.route.transport.train) {
+      route = JSON.parse(JSON.stringify(route))
       route.chosenCO2 = 'train';
       this.mapRouteService.addRoute(route);
     } 
     if (this.route.transport.average){
+      route = JSON.parse(JSON.stringify(route))
       route.chosenCO2 = 'avg';
       this.mapRouteService.addRoute(route);
     }
