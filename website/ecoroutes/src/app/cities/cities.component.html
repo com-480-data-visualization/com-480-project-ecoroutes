@@ -1,16 +1,3 @@
-<div class="graph-container">
-    <div id="graph"></div>
-    <div id="europe-map-container">
-        <object id="europe-map" type="image/svg+xml" data="assets/europe-map.svg"></object>
-    </div>
-</div>
-
-<div class="button-container">
-    <button (click)="toggleView('city')">City View</button>
-    <button (click)="toggleView('country')">Country View</button>
-    <button (click)="toggleView('region')">Region View</button>
-</div>
-
 <!-- <img src="assets/m2_mock_cities_1.png" alt="Mock of cities section visualisations for M2"> -->
 <!-- <img src="assets/m2_mock_cities_2.png" alt="Mock of cities section visualisations for M2"> -->
 <div class="container">
@@ -18,7 +5,8 @@
     <div class="search-container">
         <h1>Search for a city</h1>
         <div class="input-group">
-            <input type="text" id="citySearch"  (ngModelChange)="search($event)" [(ngModel)]="cityInput" placeholder="Enter city name...">
+            <input type="text" id="citySearch" (ngModelChange)="search($event)" [(ngModel)]="cityInput"
+                placeholder="Enter city name...">
             <ul *ngIf="filteredCities.length" class="suggestions">
                 <li *ngFor="let city of filteredCities" (click)="selectCity(city)">{{ city }}</li>
             </ul>
@@ -35,4 +23,18 @@
     </div>
 
 
+</div>
+
+
+<div class="graph-container">
+    <div id="graph"></div>
+    <div id="europe-map-container">
+        <object id="europe-map" type="image/svg+xml" data="assets/europe-map.svg"></object>
+    </div>
+</div>
+
+<div class="button-container">
+    <button (click)="toggleView('city')">City View</button>
+    <button (click)="toggleView('country')">Country View</button>
+    <button (click)="toggleView('region')">Region View</button>
 </div>

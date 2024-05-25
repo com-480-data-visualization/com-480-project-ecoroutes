@@ -51,6 +51,7 @@ export class CitiesComponent implements OnInit {
       this.updateMapHighlighting();
 
       this.initMapClickHandler();
+      this.setDefaultMapView();
     });
 
     this.searchResultsSub = this.mapService.searchResults.subscribe(data => {
@@ -61,7 +62,6 @@ export class CitiesComponent implements OnInit {
       this.cities = cities;
     });
   }
-
 
   ngOnDestroy(): void {
     if (this.searchResultsSub) {
@@ -141,7 +141,6 @@ export class CitiesComponent implements OnInit {
         // Add hover effects
         country.addEventListener('mouseover', () => {
           country.style.fill = '#007bff'; // Highlight color on hover
-
         });
 
         country.addEventListener('mouseout', () => {
@@ -170,7 +169,7 @@ export class CitiesComponent implements OnInit {
       countries.forEach(country => {
         const countryName = country.getAttribute('name') || ''; // Default to empty string if null
         if (this.selectedCountries.has(countryName)) {
-          country.setAttribute('fill', '#FFD700'); // Highlight color
+          country.setAttribute('fill', '#007bff'); // Highlight color
         } else {
           country.setAttribute('fill', '#CFCFCF'); // Default color
         }
@@ -201,6 +200,13 @@ export class CitiesComponent implements OnInit {
   getCities(): Observable<string[]> {
     return this.http.get<string>('assets/cities.txt', { responseType: 'text' as 'json' }).pipe(
       map(data => data.split('\n')))
+  }
+
+  setDefaultMapView(): void {
+    const defaultCity = 'lausanne';
+    const defaultCityCount = 8; // Example value
+    const defaultMaxDistance = 500; // Example value
+    this.mapService.searchCity(defaultCity, defaultCityCount, defaultMaxDistance, this.dataService.getEcoRoutes());
   }
 
 }
