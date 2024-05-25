@@ -92,30 +92,36 @@ export class GraphService {
     // Arcs with interaction
     group.append('path')
       .attr('d', arc)
-      .attr('fill', '#55555')
+      .attr('fill', '#555555')  // Initial color set to a consistent grey
       .attr('stroke', d3.rgb('#000').darker())
       .on('mouseover', function (event: MouseEvent, d: any) {
         d3.selectAll('.ribbons path')
-          .filter((s: any) => s.source.index === d.index || s.target.index === d.index)
-          .raise() // This brings the selected elements to the top
-          .attr('opacity', 10)
-          .each(function (sd: any) {
+          .transition()  // Ensuring smooth transition
+          .duration(100) // Duration of transition in milliseconds
+          .attr('opacity', function (sd: any) {
+            return (sd.source.index === d.index || sd.target.index === d.index) ? 1 : 0.4;  // Less intense transparency
+          })
+          .attr('fill', function (sd: any) {
             const linkData = links.find(link => {
               const sourceIndex = index.get(link.source);
               const targetIndex = index.get(link.target);
               return (sourceIndex === sd.source.index && targetIndex === sd.target.index) || (sourceIndex === sd.target.index && targetIndex === sd.source.index);
             });
-            if (linkData) {
-              d3.select(this).attr('fill', self.getEmissionColor(linkData.weight, scalingFactor)); // Apply scaling factor
+            // Only change color if linkData exists and is related to the hovered node
+            if (linkData && (sd.source.index === d.index || sd.target.index === d.index)) {
+              return self.getEmissionColor(linkData.weight, scalingFactor); // Apply scaling factor
+            } else {
+              return '#CFCFCF'; // Maintain default color for non-involved links
             }
           });
       })
       .on('mouseout', function () {
         d3.selectAll('.ribbons path')
+          .transition()  // Ensuring smooth transition back to original state
+          .duration(200) // Duration of transition in milliseconds
           .attr('opacity', 0.8)
           .attr('fill', '#CFCFCF'); // Reset all links to default color
       });
-
 
     // Text labels for arcs
     group.append('text')
