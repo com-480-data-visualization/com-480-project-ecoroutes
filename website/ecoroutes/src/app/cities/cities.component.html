@@ -1,28 +1,33 @@
 <!-- <img src="assets/m2_mock_cities_1.png" alt="Mock of cities section visualisations for M2"> -->
 <!-- <img src="assets/m2_mock_cities_2.png" alt="Mock of cities section visualisations for M2"> -->
-<div class="container">
-    <div id="map" style="height: 500px; width: 50%;"></div>
+<div class="search-area">
+    <h1>Search for a city</h1>
+    <div class="text-for-search">
+        Here you can search for a city and see the top destinations reachable by the least amount of CO2 emissions. <br>
+        Enter the city name, number of cities to display and the maximum distance to search for. <br><br>
+    </div>
+    <input type="text" id="citySearch" (ngModelChange)="search($event)" [(ngModel)]="cityInput"
+        placeholder="Enter city name...">
+    <ul *ngIf="filteredCities.length" class="suggestions">
+        <li *ngFor="let city of filteredCities" (click)="selectCity(city)">{{ city }}</li>
+    </ul>
+    <input type="number" id="cityCount" value="3" min="1" max="10" title="Number of Cities">
+    <input type="number" id="maxDistance" value=500 placeholder="Max distance (km)" title="Maximum Distance">
+    <button (click)="searchCity()">Search</button>
+    <br><br>
+</div>
+
+<div class="container-citymap">
+    <div id="map" style="height: 600px; width: 100%; position: relative;"></div>
     <div class="search-container">
-        <h1>Search for a city</h1>
-        <div class="input-group">
-            <input type="text" id="citySearch" (ngModelChange)="search($event)" [(ngModel)]="cityInput"
-                placeholder="Enter city name...">
-            <ul *ngIf="filteredCities.length" class="suggestions">
-                <li *ngFor="let city of filteredCities" (click)="selectCity(city)">{{ city }}</li>
-            </ul>
-            <input type="number" id="cityCount" value="3" min="1" max="10" title="Number of Cities">
-            <input type="number" id="maxDistance" value=500 placeholder="Max distance (km)" title="Maximum Distance">
-            <button (click)="searchCity()">Search</button>
-        </div>
+        <!--
         <div id="results" style="display: none;">
             <h4>Top destinations reachable by least amount of CO2:</h4>
             <ul id="destinationList"></ul>
         </div>
-        <svg id="co2BarPlot" width="600" height="400"></svg>
-
+        -->
+        <svg id="co2BarPlot" width="400" height="400"></svg>
     </div>
-
-
 </div>
 
 

@@ -116,7 +116,7 @@ export class MapService {
           CO2 Emissions: ${route.trainCO2.toFixed(2)} kg<br>
           Energy Consumption: ${route.trainEnergyResourceConsumption.toFixed(2)} kWh<br>
           Distance: ${route.distance.toFixed(2)} km<br>
-          Train Duration: ${route.trainDuration.toFixed(2)} hours`);
+          Train Duration: ${this.formatDuration(route.trainDuration)}`);
       }
     })).addTo(this.map).on('ready', () => {
       const lastCoord = (routeLayers[routeLayers.length - 1] as L.Polyline).getLatLngs().slice(-1)[0] as L.LatLng;
@@ -125,7 +125,11 @@ export class MapService {
     });
   }
 
-
+  formatDuration(duration: number): string {
+    const hours = Math.floor(duration);
+    const minutes = Math.round((duration - hours) * 60);
+    return `${hours}h ${minutes}m`;
+  }
 
   private getEmissionColor(co2Value: number): string {
     // Define CO2 value range
@@ -164,7 +168,7 @@ export class MapService {
   }
 
   addLegend(): void {
-    const legend = new L.Control({ position: 'bottomright' });
+    const legend = new L.Control({ position: 'topleft' });
 
     legend.onAdd = () => {
       const div = L.DomUtil.create('div', 'info legend');
