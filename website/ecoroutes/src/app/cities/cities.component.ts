@@ -41,12 +41,23 @@ export class CitiesComponent implements OnInit {
     this.mapService.initMap('map');
     this.dataService.loadCSVData().then(() => {
       this.graphService.initGraph('graph');
+
+      // Pre-select countries
+      this.selectedCountries.add('Switzerland');
+      this.selectedCountries.add('Germany');
+
+      // Update graph and map highlighting with initial selections
       this.updateGraph();
+      this.updateMapHighlighting();
+
       this.initMapClickHandler();
+      this.setDefaultMapView();
     });
+
     this.searchResultsSub = this.mapService.searchResults.subscribe(data => {
       this.barPlotService.drawBarPlot(data, 'co2BarPlot');
     });
+
     this.getCities().subscribe(cities => {
       this.cities = cities;
     });
@@ -103,40 +114,52 @@ export class CitiesComponent implements OnInit {
 
   initMapClickHandler(): void {
     const svgMap = document.getElementById('europe-map') as HTMLObjectElement;
-    svgMap.addEventListener('load', () => {
-      const svgDoc = svgMap.contentDocument;
-      if (svgDoc) {
-        const countries = svgDoc.querySelectorAll('path');
-        countries.forEach(country => {
-          country.addEventListener('click', () => {
-            const countryName = country.getAttribute('name');
-            if (countryName) {
-              // Toggle selection of this country
-              if (this.selectedCountries.has(countryName)) {
-                this.selectedCountries.delete(countryName);
-              } else {
-                this.selectedCountries.add(countryName);
-              }
-              this.updateGraph();
-              this.updateMapHighlighting();
-            }
-          });
-          // Add hover effect
-          country.addEventListener('mouseover', () => {
-            country.style.fill = '#007bff'; // Highlight color
-          });
 
-          country.addEventListener('mouseout', () => {
-            if (this.selectedCountries.has(country.getAttribute('name') || '')) {
-              country.style.fill = '#007bff'; // Keep highlight if selected
+    const applyInteractions = (svgDoc: Document) => {
+      const countries = svgDoc.querySelectorAll('path');
+      countries.forEach(country => {
+        const countryName = country.getAttribute('name') || ''; // Default to empty string if null
+
+        // Initially set or reset the fill based on selection status
+        country.style.fill = this.selectedCountries.has(countryName) ? '#007bff' : '#CFCFCF';
+
+        // Setup click event to toggle selection
+        country.addEventListener('click', () => {
+          if (countryName) {
+            if (this.selectedCountries.has(countryName)) {
+              this.selectedCountries.delete(countryName);
+              country.style.fill = '#CFCFCF'; // Reset color
             } else {
-              country.style.fill = '#CFCFCF'; // Default color
+              this.selectedCountries.add(countryName);
+              country.style.fill = '#007bff'; // Highlight color
             }
-          });
+            this.updateGraph();
+            this.updateMapHighlighting();
+          }
         });
-      }
-    });
+
+        // Add hover effects
+        country.addEventListener('mouseover', () => {
+          country.style.fill = '#007bff'; // Highlight color on hover
+        });
+
+        country.addEventListener('mouseout', () => {
+          country.style.fill = this.selectedCountries.has(countryName) ? '#007bff' : '#CFCFCF'; // Default or highlight color
+        });
+      });
+    };
+
+    // Check if the SVG is already loaded
+    if (svgMap.contentDocument) {
+      applyInteractions(svgMap.contentDocument);
+    } else {
+      // Apply interactions once the SVG is loaded
+      svgMap.addEventListener('load', () => {
+        applyInteractions(svgMap.contentDocument!);
+      });
+    }
   }
+
 
   updateMapHighlighting(): void {
     const svgMap = document.getElementById('europe-map') as HTMLObjectElement;
@@ -144,9 +167,9 @@ export class CitiesComponent implements OnInit {
     if (svgDoc) {
       const countries = svgDoc.querySelectorAll('path');
       countries.forEach(country => {
-        const countryName = country.getAttribute('d');
-        if (this.selectedCountries.has(countryName || '')) {
-          country.setAttribute('fill', '#FFD700'); // Highlight color
+        const countryName = country.getAttribute('name') || ''; // Default to empty string if null
+        if (this.selectedCountries.has(countryName)) {
+          country.setAttribute('fill', '#007bff'); // Highlight color
         } else {
           country.setAttribute('fill', '#CFCFCF'); // Default color
         }
@@ -163,7 +186,7 @@ export class CitiesComponent implements OnInit {
     this.filteredCities = [];
   }
 
-  search(term: any){
+  search(term: any) {
     if (!term) {
       this.filteredCities = [];
     } else {
@@ -176,7 +199,14 @@ export class CitiesComponent implements OnInit {
 
   getCities(): Observable<string[]> {
     return this.http.get<string>('assets/cities.txt', { responseType: 'text' as 'json' }).pipe(
-                     map(data => data.split('\n')))
+      map(data => data.split('\n')))
+  }
+
+  setDefaultMapView(): void {
+    const defaultCity = 'lausanne';
+    const defaultCityCount = 8; // Example value
+    const defaultMaxDistance = 500; // Example value
+    this.mapService.searchCity(defaultCity, defaultCityCount, defaultMaxDistance, this.dataService.getEcoRoutes());
   }
 
 }

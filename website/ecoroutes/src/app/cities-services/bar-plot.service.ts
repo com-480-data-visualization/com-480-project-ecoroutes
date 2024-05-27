@@ -29,16 +29,31 @@ export class BarPlotService {
       .attr('transform', `translate(${margin.left},${margin.top})`);
 
     g.append('g')
-      .call(d3.axisLeft(y));
+      .call(d3.axisLeft(y))
+      .append('text')
+      .attr('text-anchor', 'middle') // Center the text anchor
+      .attr('transform', 'rotate(-90)')
+      .attr('y', -margin.left + 10) // Move it further left from the axis
+      .attr('x', -(height / 2)) // Centered on the middle of the axis
+      .attr('dy', '1em')
+      .style('fill', 'black')
+      .style('font-size', '18px') // Larger font size
+      .style('font-weight', 'bold') // Bold font
+      .text('Arrival City');
+
 
     g.append('g')
       .attr('transform', `translate(0,${height})`)
       .call(d3.axisBottom(x))
       .append('text')
-      .attr('text-anchor', 'end')
-      .attr('x', width)
+      .attr('text-anchor', 'middle') // Center the text anchor under the axis
+      .attr('x', width / 2) // Centered along the width of the axis
       .attr('y', margin.bottom - 10)
+      .style('fill', 'black')
+      .style('font-size', '18px') // Larger font size
+      .style('font-weight', 'bold') // Bold font
       .text('CO2 Emissions (kg)');
+
 
     g.selectAll('.bar')
       .data(data)
@@ -69,8 +84,7 @@ export class BarPlotService {
 
     function showTooltip(event: { pageX: number; pageY: number; }, d: { arrivalCity: any; avgCO2: number; }) {
       const html = `<strong>City:</strong> ${d.arrivalCity}<br/>
-                    <strong>CO2 Emissions:</strong> ${d.avgCO2.toFixed(2)} kg<br/>
-                    <strong>Details:</strong> Add more details here...`;
+                    <strong>CO2 Emissions:</strong> ${d.avgCO2.toFixed(2)} kg<br/>`;
       d3.select('#tooltip')
         .style('left', `${event.pageX + 10}px`)
         .style('top', `${event.pageY + 10}px`)
@@ -95,18 +109,25 @@ export class BarPlotService {
   }
 
   private getEmissionColor(co2Value: number): string {
-    const maxCo2 = 150; // Adjust this value based on your data
+    // Define CO2 value range
+    const maxCo2 = 30; // avg CO2 train value
     const minCo2 = 0;
-    const midCo2 = (maxCo2 - minCo2) / 2;
+
     const ratio = (co2Value - minCo2) / (maxCo2 - minCo2);
+
     let red, green;
-    if (co2Value <= midCo2) {
-      red = Math.floor(255 * (2 * ratio));
-      green = 255;
+
+    if (ratio <= 0.5) {
+      // Interpolate from green to yellow
+      red = Math.floor(255 * (ratio * 2)); // 0 to 255 as ratio goes from 0 to 0.5
+      green = 255; // Constant
     } else {
-      red = 255;
-      green = Math.floor(255 * (2 * (1 - ratio)));
+      // Interpolate from yellow to red
+      red = 255; // Constant
+      green = Math.floor(255 * ((1 - ratio) * 2)); // 255 to 0 as ratio goes from 0.5 to 1
     }
-    return `rgb(${red}, ${green}, 0)`;
+
+    return `rgb(${red}, ${green}, 0)`; // Keep blue at 0 throughout
   }
+
 }

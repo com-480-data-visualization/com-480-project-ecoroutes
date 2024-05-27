@@ -43,8 +43,14 @@ export class GraphService {
       const targetIndex = index.get(target);
       if (sourceIndex !== undefined && targetIndex !== undefined) {
         matrix[sourceIndex][targetIndex] += weight;
+        matrix[targetIndex][sourceIndex] += weight;
+      }
+      else {
+        console.error(`Invalid link: ${source} -> ${target}`);
       }
     });
+
+    console.log(matrix);
 
     const chord = d3.chord()
       .padAngle(0.05)
@@ -70,7 +76,8 @@ export class GraphService {
     const self = this; // Reference to maintain class context
 
     // Determine the scaling factor based on the current view
-    const scalingFactor = currentView === 'region' ? 1.5 : 1;
+    // if its region scale 1.5, if its country 1.2 and if its city 1
+    const scalingFactor = currentView === 'region' ? 1.5 : currentView === 'country' ? 1.2 : 1;
 
     this.svg.append('g')
       .attr("class", "ribbons")
@@ -92,30 +99,36 @@ export class GraphService {
     // Arcs with interaction
     group.append('path')
       .attr('d', arc)
-      .attr('fill', '#55555')
-      .attr('stroke', d3.rgb('#000').darker())
+      .attr('fill', '#555555')  // Initial color set to a consistent grey
+      .attr('stroke', d3.rgb('#111').darker())
       .on('mouseover', function (event: MouseEvent, d: any) {
         d3.selectAll('.ribbons path')
-          .filter((s: any) => s.source.index === d.index || s.target.index === d.index)
-          .raise() // This brings the selected elements to the top
-          .attr('opacity', 10)
-          .each(function (sd: any) {
+          .transition()  // Ensuring smooth transition
+          .duration(200) // Duration of transition in milliseconds
+          .attr('opacity', function (sd: any) {
+            return (sd.source.index === d.index || sd.target.index === d.index) ? 1 : 0.2;  // Less intense transparency
+          })
+          .attr('fill', function (sd: any) {
             const linkData = links.find(link => {
               const sourceIndex = index.get(link.source);
               const targetIndex = index.get(link.target);
               return (sourceIndex === sd.source.index && targetIndex === sd.target.index) || (sourceIndex === sd.target.index && targetIndex === sd.source.index);
             });
-            if (linkData) {
-              d3.select(this).attr('fill', self.getEmissionColor(linkData.weight, scalingFactor)); // Apply scaling factor
+            // Only change color if linkData exists and is related to the hovered node
+            if (linkData && (sd.source.index === d.index || sd.target.index === d.index)) {
+              return self.getEmissionColor(linkData.weight, scalingFactor); // Apply scaling factor
+            } else {
+              return '#CFCFCF'; // Maintain default color for non-involved links
             }
           });
       })
       .on('mouseout', function () {
         d3.selectAll('.ribbons path')
+          .transition()  // Ensuring smooth transition back to original state
+          .duration(200) // Duration of transition in milliseconds
           .attr('opacity', 0.8)
           .attr('fill', '#CFCFCF'); // Reset all links to default color
       });
-
 
     // Text labels for arcs
     group.append('text')
@@ -132,7 +145,7 @@ export class GraphService {
   }
 
   private getEmissionColor(co2Value: number, scalingFactor: number = 1): string {
-    const maxCo2 = 150 * scalingFactor; // Adjust this value based on your data and scaling factor
+    const maxCo2 = 140 * scalingFactor; // Adjust this value based on your data and scaling factor
     const minCo2 = 0;
     const midCo2 = (maxCo2 - minCo2) / 2;
 

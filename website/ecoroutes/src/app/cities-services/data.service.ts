@@ -58,6 +58,15 @@ export class DataService {
     const regionSet = new Set<string>();
     const seenRoutes = new Set<string>();
 
+    // iterat ein data and console log the largest trainco2
+    let avgtrainCo2 = 0;
+    data.forEach(d => {
+      const route = new EcoRoute(d);
+      avgtrainCo2 += route.avgCO2;
+    });
+    avgtrainCo2 /= data.length;
+    console.log('Average trainCO2:', avgtrainCo2);
+
     data.forEach(d => {
       const route = new EcoRoute(d);
       citySet.add(route.departureCity);
@@ -78,7 +87,7 @@ export class DataService {
           sourceCountry: route.departureCountry,
           targetCountry: route.arrivalCountry,
           sourceRegion: route.departureRegion,
-          targetRegion: route.arrivalRegion
+          targetRegion: route.arrivalRegion,
         });
         seenRoutes.add(routeKey);
       }
