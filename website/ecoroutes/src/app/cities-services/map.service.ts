@@ -8,6 +8,7 @@ import { EcoRoute } from '../ecoroute.model';
 })
 export class MapService {
   searchResults = new EventEmitter<any[]>();
+  routes: any[][] = [];
 
   private map!: L.Map;
   private customSmallIcon = L.icon({
@@ -49,6 +50,8 @@ export class MapService {
       filteredRoutes.sort((a, b) => a.trainCO2 - b.trainCO2);
       const topCities = filteredRoutes.slice(0, cityCount);
 
+      this.removeRoutes()
+
       // Emit the search results for the bar plot
       this.searchResults.emit(topCities.map(route => ({
         arrivalCity: route.arrivalCity,
@@ -60,12 +63,23 @@ export class MapService {
       const firstCityCoords = this.parseCoordinates(topCities[0].departureCoordinates);
       if (firstCityCoords[0] !== -1) {
         this.map.setView(firstCityCoords, 6);
-        L.marker(firstCityCoords, { icon: this.customIcon }).addTo(this.map);
+        let marker = L.marker(firstCityCoords, { icon: this.customIcon })
+        marker.addTo(this.map);
+        this.routes.push([marker]);
       }
 
     } else {
       alert('No destinations found within the specified distance');
     }
+  }
+
+  removeRoutes(): void {
+    this.routes.forEach(route => {
+      route.forEach(layer => {
+        this.map.removeLayer(layer);
+      });
+    });
+    this.routes = [];
   }
 
   addRoute(route: EcoRoute): void {
@@ -86,7 +100,7 @@ export class MapService {
 
     const kmlFilename = `assets/kml_files_new/${departureCityFormatted}_to_${arrivalCityFormatted}.kml`;
 
-    let routeLayers: L.Path[] = []; // Array to store each route segment as L.Path
+    let routeLayers: any[] = []; // Array to store each route segment as L.Path
     console.log(`Constructed KML filename: ${kmlFilename}`); // Debug statement
 
     omnivore.kml(kmlFilename, null, L.geoJson(null, {
@@ -121,8 +135,12 @@ export class MapService {
     })).addTo(this.map).on('ready', () => {
       const lastCoord = (routeLayers[routeLayers.length - 1] as L.Polyline).getLatLngs().slice(-1)[0] as L.LatLng;
 
-      L.marker(lastCoord, { icon: this.customSmallIcon }).addTo(this.map);
+      let marker = L.marker(lastCoord, { icon: this.customSmallIcon })
+      routeLayers.push(marker); // Add the marker to the route layers
+      marker.addTo(this.map);
     });
+
+    this.routes.push(routeLayers); // Store the route layers for later removal
   }
 
   formatDuration(duration: number): string {

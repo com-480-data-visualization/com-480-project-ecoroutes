@@ -7,12 +7,12 @@
         Enter the city name, number of cities to display and the maximum distance to search for. <br><br>
     </div>
     <input type="text" id="citySearch" (ngModelChange)="search($event)" [(ngModel)]="cityInput"
-        placeholder="Enter city name...">
+        placeholder="City name">
     <ul *ngIf="filteredCities.length" class="suggestions">
         <li *ngFor="let city of filteredCities" (click)="selectCity(city)">{{ city }}</li>
     </ul>
-    <input type="number" id="cityCount" value="3" min="1" max="10" title="Number of Cities">
-    <input type="number" id="maxDistance" value=500 placeholder="Max distance (km)" title="Maximum Distance">
+    <input type="number" id="cityCount" placeholder="n" min="1" max="10" title="Number of Cities">
+    <input type="number" id="maxDistance" placeholder="Max distance (km)" title="Maximum Distance">
     <button (click)="searchCity()">Search</button>
     <br><br>
 </div>

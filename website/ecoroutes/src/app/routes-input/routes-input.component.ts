@@ -49,12 +49,29 @@ export class RoutesInputComponent {
         let route = new EcoRoute(d);
         this.data[route.id] = route;
       });
-      // let d2 = new EcoRoute(data[2194]);
-      // d2.chosenCO2 = 'avg';
-      // this.mapRouteService.addRoute(d2);
-      // let d3 = new EcoRoute(data[1912]);
-      // d3.chosenCO2 = 'avg';
-      // this.mapRouteService.addRoute(d3);
+
+      // this.route = {
+      //   departure: 'Lausanne',
+      //   destination: 'Berlin',
+      //   transport: {
+      //     plane: true,
+      //     train: true,
+      //     average: true
+      //   }
+      // }
+      // this.addRoute();
+
+      // this.route = {
+      //   departure: 'Lausanne',
+      //   destination: 'Paris',
+      //   transport: {
+      //     plane: true,
+      //     train: true,
+      //     average: true
+      //   }
+      // }
+      // this.addRoute();
+
     })
   }
 

@@ -50,7 +50,7 @@ export class GraphService {
       }
     });
 
-    console.log(matrix);
+    // console.log(matrix);
 
     const chord = d3.chord()
       .padAngle(0.05)
