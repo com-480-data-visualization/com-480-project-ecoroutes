@@ -36,8 +36,11 @@ export class CitiesComponent implements OnInit {
     private http: HttpClient
   ) { }
 
-
   ngOnInit(): void {
+      
+  }
+
+  ngAfterViewInit(): void {
     this.mapService.initMap('map');
     this.dataService.loadCSVData().then(() => {
       this.graphService.initGraph('graph');
