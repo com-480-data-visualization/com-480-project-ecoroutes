@@ -121,7 +121,7 @@ export class RouteMapComponent {
       polyline.closePopup();
     });
 
-    // this.map.fitBounds(polyline.getBounds());
+    this.map.fitBounds(polyline.getBounds());
 
     // polyline.bindTooltip(d.id+" ("+d.chosenCO2+"): "+d.avgCO2W, {permanent: false, direction: 'auto', sticky: true, className: 'my-label'});
 
@@ -172,7 +172,7 @@ export class RouteMapComponent {
       polyline.closePopup();
     });
     // polyline.bindTooltip(d.id+" ("+d.chosenCO2+"): "+d.avgCO2W, {permanent: false, direction: 'auto', sticky: true, className: 'my-label'});
-    // this.map.fitBounds(polyline.getBounds());
+    this.map.fitBounds(polyline.getBounds());
     return routeLayers;
   }
 
@@ -209,6 +209,8 @@ export class RouteMapComponent {
         Train Duration: ${route.trainDuration.toFixed(2)} hours`);
       }
     })).addTo(this.map);
+
+    // this.map.fitBounds(routeLayers[0].getBounds());
 
     return routeLayers;
   }
