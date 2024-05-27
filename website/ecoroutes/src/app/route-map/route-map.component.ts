@@ -20,6 +20,13 @@ export class RouteMapComponent {
   // @Input() routes: any[] = [];
   routes: { [key: string]: any[] } = {};
 
+  private customSmallIcon = Leaflet.icon({
+    iconUrl: 'assets/story.png',
+    iconSize: [15, 15], // Size of the icon
+    iconAnchor: [7, 7], // Center of the icon
+    popupAnchor: [0, -7] // Popup anchor is also centered
+  });
+
   constructor(private mapRoutesService: MapRoutesService) {}
 
   ngAfterViewInit() {
@@ -77,7 +84,7 @@ export class RouteMapComponent {
     let color = this.getEmissionColor(d.avgCO2W);
     let depCoord = this.parseCoordinates(d.departureCoordinates)
     let arrCoord = this.parseCoordinates(d.arrivalCoordinates)
-    let routeLayers: L.Path[] = [];
+    let routeLayers: any[] = [];
 
 
     var latlngs = [
@@ -107,21 +114,28 @@ export class RouteMapComponent {
     Average Energy Consumption: ${d.avgERC.toFixed(2)} kWh<br>`);
 
     polyline.on('mouseover', (e) => {
-      routeLayers.forEach(l => l.setStyle({
+      polyline.setStyle({
         weight: 8,
         color: '#545454'
-      })); // Highlight all segments
+      }) // Highlight all segments
       polyline.openPopup();
     });
     polyline.on('mouseout', (e) => {
-      routeLayers.forEach(l => l.setStyle({
+      polyline.setStyle({
         weight: 5,
-        color: this.getEmissionColor(d.avgCO2)
-      })); // Reset all segments
+        color: this.getEmissionColor(d.flightCO2)
+      }) // Reset all segments
       polyline.closePopup();
     });
 
     this.map.fitBounds(polyline.getBounds());
+
+    let arrPin =  Leaflet.marker(arrCoord, {icon: this.customSmallIcon});
+    routeLayers.push(arrPin);
+    arrPin.addTo(this.map);
+    let depPin = Leaflet.marker(depCoord, {icon: this.customSmallIcon});
+    routeLayers.push(depPin);
+    depPin.addTo(this.map);
 
     // polyline.bindTooltip(d.id+" ("+d.chosenCO2+"): "+d.avgCO2W, {permanent: false, direction: 'auto', sticky: true, className: 'my-label'});
 
@@ -130,7 +144,7 @@ export class RouteMapComponent {
 
   plotGreatCircle(d:EcoRoute) {
     let color = this.getEmissionColor(d.flightCO2);
-    let routeLayers: L.Path[] = [];
+    let routeLayers: any[] = [];
 
     let depCoord = this.parseCoordinates(d.departureCoordinates)
     let arrCoord = this.parseCoordinates(d.arrivalCoordinates)
@@ -158,19 +172,25 @@ export class RouteMapComponent {
       Flight Energy Consumption: ${d.flightEnergyResourceConsumption.toFixed(2)} kWh<br>
       Flight Duration: ${d.flightDuration.toFixed(2)} hours`);
     polyline.on('mouseover', (e) => {
-      routeLayers.forEach(l => l.setStyle({
+      polyline.setStyle({
         weight: 8,
         color: '#545454'
-      })); // Highlight all segments
+      }) // Highlight all segments
       polyline.openPopup();
     });
     polyline.on('mouseout', (e) => {
-      routeLayers.forEach(l => l.setStyle({
+      polyline.setStyle({
         weight: 5,
         color: this.getEmissionColor(d.flightCO2)
-      })); // Reset all segments
+      }) // Reset all segments
       polyline.closePopup();
     });
+    let arrPin =  Leaflet.marker(arrCoord, {icon: this.customSmallIcon});
+    routeLayers.push(arrPin);
+    arrPin.addTo(this.map);
+    let depPin = Leaflet.marker(depCoord, {icon: this.customSmallIcon});
+    routeLayers.push(depPin);
+    depPin.addTo(this.map);
     // polyline.bindTooltip(d.id+" ("+d.chosenCO2+"): "+d.avgCO2W, {permanent: false, direction: 'auto', sticky: true, className: 'my-label'});
     this.map.fitBounds(polyline.getBounds());
     return routeLayers;
@@ -178,7 +198,7 @@ export class RouteMapComponent {
 
   plotTrain(route: EcoRoute) {
     const kmlFilename = `assets/kml_files_new/${route.departureCity.replace(/ /g, '_')}_to_${route.arrivalCity.replace(/ /g, '_')}.kml`;
-    let routeLayers: L.Path[] = []; // Array to store each route segment as L.Path
+    let routeLayers: any[] = []; // Array to store each route segment as L.Path
 
     omnivore.kml(kmlFilename, null, Leaflet.geoJson(null, {
       filter: (feature) => feature.geometry.type !== 'Point',
@@ -208,9 +228,21 @@ export class RouteMapComponent {
         Train Energy Consumption: ${route.trainEnergyResourceConsumption.toFixed(2)} kWh<br>
         Train Duration: ${route.trainDuration.toFixed(2)} hours`);
       }
-    })).addTo(this.map);
+    })).addTo(this.map).on('ready', () => {
+      const arrCoord = (routeLayers[routeLayers.length - 1] as L.Polyline).getLatLngs().slice(-1)[0] as L.LatLng;
+      const depCoord = (routeLayers[0] as L.Polyline).getLatLngs().slice(-1)[0] as L.LatLng;
 
-    // this.map.fitBounds(routeLayers[0].getBounds());
+      let depPin = Leaflet.marker(arrCoord, { icon: this.customSmallIcon })
+      depPin.addTo(this.map);
+      routeLayers.push(depPin);
+      let arrPin = Leaflet.marker(depCoord, { icon: this.customSmallIcon })
+      arrPin.addTo(this.map);
+      routeLayers.push(arrPin);
+    });
+
+
+
+  // this.map.fitBounds(routeLayers[0].getBounds());
 
     return routeLayers;
   }
