@@ -1,1 +1,16 @@
-<img src="assets/m2_mock_regions.png" alt="Mock of regions section visualisations for M2">
+<div class="graph-container">
+    <table class="grid">
+        <tr style="height: 80px;">
+            <th></th>
+            <th *ngFor="let region of regions" style="transform: rotate(-90deg);">{{region}}</th>
+        </tr>
+        <tr *ngFor="let region of regions">
+            <th>{{region}}</th>
+            <td id="{{region+';'+region2}}" *ngFor="let region2 of regions" style="height: 60px; width: 60px; border: 2px solid grey; border-radius: 99px; text-align: center;"></td>
+        </tr>
+    </table>
+    
+    <div id="europe-map-container">
+        <object id="europe-map" type="image/svg+xml" data="assets/europe-map.svg"></object>
+    </div>
+</div>

@@ -157,7 +157,7 @@ export class CitiesComponent implements OnInit {
       applyInteractions(svgMap.contentDocument);
     } else {
       // Apply interactions once the SVG is loaded
-      svgMap.addEventListener('load', () => {
+      svgMap.addEventListener('load', () =>  {
         applyInteractions(svgMap.contentDocument!);
       });
     }
