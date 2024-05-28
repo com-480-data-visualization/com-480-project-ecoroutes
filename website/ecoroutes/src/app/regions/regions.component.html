@@ -6,11 +6,11 @@
         </tr>
         <tr *ngFor="let region of regions">
             <th>{{region}}</th>
-            <td id="{{region+';'+region2}}" *ngFor="let region2 of regions" style="height: 60px; width: 60px; border: 2px solid grey; border-radius: 99px; text-align: center;"></td>
+            <td id="{{region+';'+region2}}" *ngFor="let region2 of regions" style="height: 70px; width: 70px; border: 2px solid grey; border-radius: 99px; text-align: center;"></td>
         </tr>
     </table>
     
-    <div id="europe-map-container">
-        <object id="europe-map" type="image/svg+xml" data="assets/europe-map.svg"></object>
+    <div id="europe-map-container" style="transform: scale(0.75);">
+        <object id="europe-map" type="image/svg+xml" data="assets/europe-map.svg" ></object>
     </div>
 </div>
