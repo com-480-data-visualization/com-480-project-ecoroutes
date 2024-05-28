@@ -41,29 +41,31 @@ export class CitiesComponent implements OnInit {
   }
 
   ngAfterViewInit(): void {
-    this.mapService.initMap('map');
-    this.dataService.loadCSVData().then(() => {
-      this.graphService.initGraph('graph');
+    setTimeout(() => {
+      this.mapService.initMap('map');
+      this.dataService.loadCSVData().then(() => {
+        this.graphService.initGraph('graph');
 
-      // Pre-select countries
-      this.selectedCountries.add('Switzerland');
-      this.selectedCountries.add('Germany');
+        // Pre-select countries
+        this.selectedCountries.add('Switzerland');
+        this.selectedCountries.add('Germany');
 
-      // Update graph and map highlighting with initial selections
-      this.updateGraph();
-      this.updateMapHighlighting();
+        // Update graph and map highlighting with initial selections
+        this.updateGraph();
+        this.updateMapHighlighting();
 
-      this.initMapClickHandler();
-      this.setDefaultMapView();
-    });
+        this.initMapClickHandler();
+        this.setDefaultMapView();
+      });
 
-    this.searchResultsSub = this.mapService.searchResults.subscribe(data => {
-      this.barPlotService.drawBarPlot(data, 'co2BarPlot');
-    });
+      this.searchResultsSub = this.mapService.searchResults.subscribe(data => {
+        this.barPlotService.drawBarPlot(data, 'co2BarPlot');
+      });
 
-    this.getCities().subscribe(cities => {
-      this.cities = cities;
-    });
+      this.getCities().subscribe(cities => {
+        this.cities = cities;
+      });
+    }, 200);
   }
 
   ngOnDestroy(): void {
