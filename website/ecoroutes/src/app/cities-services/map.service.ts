@@ -113,17 +113,24 @@ export class MapService {
       onEachFeature: (feature, layer: L.Path) => { // Ensuring that layer is treated as L.Path
         routeLayers.push(layer); // Store reference to this segment
         layer.on('mouseover', (e) => {
-          routeLayers.forEach(l => l.setStyle({
-            weight: 10,
-            color: '#545454'
-          })); // Highlight all segments
+          routeLayers.forEach(l => {
+            if(l.feature){
+              l.setStyle({
+              weight: 10,
+              color: '#545454'})
+            }
+        }); // Highlight all segments
           layer.openPopup();
         });
         layer.on('mouseout', (e) => {
-          routeLayers.forEach(l => l.setStyle({
-            weight: 8,
-            color: this.getEmissionColor(route.trainCO2)
-          })); // Reset all segments
+          routeLayers.forEach(l => {
+            if(l.feature){
+              l.setStyle({
+              weight: 8,
+              color: this.getEmissionColor(route.trainCO2)
+              })
+            }
+        }); // Reset all segments
           layer.closePopup();
         });
         layer.bindPopup(`Route from ${route.departureCity} to ${route.arrivalCity}<br>

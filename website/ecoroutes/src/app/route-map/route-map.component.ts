@@ -200,37 +200,56 @@ export class RouteMapComponent {
     const kmlFilename = `assets/kml_files_new/${route.departureCity.replace(/ /g, '_')}_to_${route.arrivalCity.replace(/ /g, '_')}.kml`;
     let routeLayers: any[] = []; // Array to store each route segment as L.Path
 
-    omnivore.kml(kmlFilename, null, Leaflet.geoJson(null, {
+    let l = omnivore.kml(kmlFilename, null, Leaflet.geoJson(null, {
       filter: (feature) => feature.geometry.type !== 'Point',
+
       style: () => ({
         color: this.getEmissionColor(route.trainCO2),
         weight: 4, // Increased for better mouse interaction
         opacity: 0.7
       }),
       onEachFeature: (feature, layer: L.Path) => { // Ensuring that layer is treated as L.Path
-        routeLayers.push(layer); // Store reference to this segment
-        layer.on('mouseover', (e) => {
-          routeLayers.forEach(l => l.setStyle({
-            weight: 8,
-            color: '#545454'
-          })); // Highlight all segments
-          layer.openPopup();
-        });
-        layer.on('mouseout', (e) => {
-          routeLayers.forEach(l => l.setStyle({
-            weight: 4,
-            color: this.getEmissionColor(route.trainCO2)
-          })); // Reset all segments
-          layer.closePopup();
-        });
-        layer.bindPopup(`Train Route from ${route.departureCity} to ${route.arrivalCity}<br>
-        Train CO2 Emissions: ${route.trainCO2.toFixed(2)} kg<br>
-        Train Energy Consumption: ${route.trainEnergyResourceConsumption.toFixed(2)} kWh<br>
-        Train Duration: ${route.trainDuration.toFixed(2)} hours`);
+        
+          routeLayers.push(layer); // Store reference to this segment
+          layer.on('mouseover', (e) => {
+            routeLayers.forEach(l => {
+              if(l.feature){
+                l.setStyle({
+                  weight: 8,
+                  color: '#545454'
+                })
+              }
+          }); // Highlight all segments
+            layer.openPopup();
+          });
+          layer.on('mouseout', (e) => {
+            routeLayers.forEach(l => {
+              if(l.feature){
+                l.setStyle({
+                weight: 4,
+                color: this.getEmissionColor(route.trainCO2)
+                })
+              }
+          }); // Reset all segments
+            layer.closePopup();
+          });
+          layer.bindPopup(`Train Route from ${route.departureCity} to ${route.arrivalCity}<br>
+          Train CO2 Emissions: ${route.trainCO2.toFixed(2)} kg<br>
+          Train Energy Consumption: ${route.trainEnergyResourceConsumption.toFixed(2)} kWh<br>
+          Train Duration: ${route.trainDuration.toFixed(2)} hours`);
+        
       }
-    })).addTo(this.map).on('ready', () => {
-      const arrCoord = (routeLayers[routeLayers.length - 1] as L.Polyline).getLatLngs().slice(-1)[0] as L.LatLng;
-      const depCoord = (routeLayers[0] as L.Polyline).getLatLngs().slice(-1)[0] as L.LatLng;
+    }))
+
+    // this.map.fitBounds(routeLayers[0].getBounds());
+    
+    l.addTo(this.map).on('ready', () => {
+      
+      let coords = (routeLayers[0] as L.Polyline).getLatLngs()
+      const depCoord = coords[0] as L.LatLng;
+      const arrCoord = coords[coords.length-1] as L.LatLng;  
+
+      this.map.fitBounds((routeLayers[0] as L.Polyline).getBounds().pad(1));
 
       let depPin = Leaflet.marker(arrCoord, { icon: this.customSmallIcon })
       depPin.addTo(this.map);
@@ -239,10 +258,7 @@ export class RouteMapComponent {
       arrPin.addTo(this.map);
       routeLayers.push(arrPin);
     });
-
-
-
-  // this.map.fitBounds(routeLayers[0].getBounds());
+  
 
     return routeLayers;
   }

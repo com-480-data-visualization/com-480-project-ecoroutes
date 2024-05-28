@@ -191,6 +191,8 @@ export class CitiesComponent implements OnInit {
     this.filteredCities = [];
   }
 
+  
+
   search(term: any) {
     if (!term) {
       this.filteredCities = [];

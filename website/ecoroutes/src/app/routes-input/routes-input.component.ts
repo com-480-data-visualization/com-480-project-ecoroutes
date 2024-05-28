@@ -86,6 +86,12 @@ export class RoutesInputComponent {
       return;
     }
     if (this.route.transport.plane) {
+
+      if(route.flightCO2==0){
+        alert("No flights available between these cities")
+        return;
+      }
+
       route = JSON.parse(JSON.stringify(route))
       route.chosenCO2 = 'flight';
       this.mapRouteService.addRoute(route);
@@ -95,7 +101,7 @@ export class RoutesInputComponent {
       route.chosenCO2 = 'train';
       this.mapRouteService.addRoute(route);
     } 
-    if (this.route.transport.average){
+    if (this.route.transport.average && route.flightCO2!=0){
       route = JSON.parse(JSON.stringify(route))
       route.chosenCO2 = 'avg';
       this.mapRouteService.addRoute(route);

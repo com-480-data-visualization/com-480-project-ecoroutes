@@ -40,9 +40,9 @@ export class ListRoutesComponent {
 
   getDuration(route: EcoRoute): string{
     if(route.chosenCO2=='flight'){
-      return `${route.flightDuration.toFixed(2)} hours`
+      return `${route.flightDuration.toFixed(2)} h`
     } else if(route.chosenCO2=='train'){
-      return `${route.trainDuration.toFixed(2)} hours`
+      return `${route.trainDuration.toFixed(2)} h`
     } else{
       return ' '
     }
