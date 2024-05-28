@@ -128,7 +128,7 @@ export class RouteMapComponent {
       polyline.closePopup();
     });
 
-    this.map.fitBounds(polyline.getBounds());
+    this.map.fitBounds(polyline.getBounds().pad(0.2));
 
     let arrPin =  Leaflet.marker(arrCoord, {icon: this.customSmallIcon});
     routeLayers.push(arrPin);
@@ -192,7 +192,7 @@ export class RouteMapComponent {
     routeLayers.push(depPin);
     depPin.addTo(this.map);
     // polyline.bindTooltip(d.id+" ("+d.chosenCO2+"): "+d.avgCO2W, {permanent: false, direction: 'auto', sticky: true, className: 'my-label'});
-    this.map.fitBounds(polyline.getBounds());
+    this.map.fitBounds(polyline.getBounds().pad(0.2));
     return routeLayers;
   }
 
@@ -249,7 +249,7 @@ export class RouteMapComponent {
       const depCoord = coords[0] as L.LatLng;
       const arrCoord = coords[coords.length-1] as L.LatLng;  
 
-      this.map.fitBounds((routeLayers[0] as L.Polyline).getBounds().pad(1));
+      this.map.fitBounds((routeLayers[0] as L.Polyline).getBounds().pad(0.2));
 
       let depPin = Leaflet.marker(arrCoord, { icon: this.customSmallIcon })
       depPin.addTo(this.map);
