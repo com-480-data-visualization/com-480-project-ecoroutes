@@ -62,7 +62,7 @@ export class MapService {
 
       const firstCityCoords = this.parseCoordinates(topCities[0].departureCoordinates);
       if (firstCityCoords[0] !== -1) {
-        this.map.setView(firstCityCoords, 6);
+        this.map.setView(firstCityCoords, 7);
         let marker = L.marker(firstCityCoords, { icon: this.customIcon })
         marker.addTo(this.map);
         this.routes.push([marker]);
@@ -101,7 +101,6 @@ export class MapService {
     const kmlFilename = `assets/kml_files_new/${departureCityFormatted}_to_${arrivalCityFormatted}.kml`;
 
     let routeLayers: any[] = []; // Array to store each route segment as L.Path
-    console.log(`Constructed KML filename: ${kmlFilename}`); // Debug statement
 
     omnivore.kml(kmlFilename, null, L.geoJson(null, {
       filter: (feature) => feature.geometry.type !== 'Point',
@@ -114,23 +113,24 @@ export class MapService {
         routeLayers.push(layer); // Store reference to this segment
         layer.on('mouseover', (e) => {
           routeLayers.forEach(l => {
-            if(l.feature){
+            if (l.feature) {
               l.setStyle({
-              weight: 10,
-              color: '#545454'})
+                weight: 10,
+                color: '#545454'
+              })
             }
-        }); // Highlight all segments
+          }); // Highlight all segments
           layer.openPopup();
         });
         layer.on('mouseout', (e) => {
           routeLayers.forEach(l => {
-            if(l.feature){
+            if (l.feature) {
               l.setStyle({
-              weight: 8,
-              color: this.getEmissionColor(route.trainCO2)
+                weight: 8,
+                color: this.getEmissionColor(route.trainCO2)
               })
             }
-        }); // Reset all segments
+          }); // Reset all segments
           layer.closePopup();
         });
         layer.bindPopup(`Route from ${route.departureCity} to ${route.arrivalCity}<br>

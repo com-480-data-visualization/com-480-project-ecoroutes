@@ -34,6 +34,11 @@ export class DataService {
     return this.ecoRoutes.find(route => route.departureCity === city)?.departureCountry || '';
   }
 
+  // // DataService for connectivty map if needed.
+  // public getAllRoutesWithinDistance(maxDistance: number): EcoRoute[] {
+  //   return this.ecoRoutes.filter(route => route.distance <= maxDistance);
+  // }
+
   public getSortedCityNodes(): any[] {
     // Assuming you have a way to associate each city with a country, e.g., a map or a method
     return this.cityNodes
@@ -57,15 +62,6 @@ export class DataService {
     const countrySet = new Set<string>();
     const regionSet = new Set<string>();
     const seenRoutes = new Set<string>();
-
-    // iterat ein data and console log the largest trainco2
-    let avgtrainCo2 = 0;
-    data.forEach(d => {
-      const route = new EcoRoute(d);
-      avgtrainCo2 += route.avgCO2;
-    });
-    avgtrainCo2 /= data.length;
-    console.log('Average trainCO2:', avgtrainCo2);
 
     data.forEach(d => {
       const route = new EcoRoute(d);

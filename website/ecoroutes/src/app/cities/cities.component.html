@@ -1,13 +1,33 @@
 <!-- <img src="assets/m2_mock_cities_1.png" alt="Mock of cities section visualisations for M2"> -->
 <!-- <img src="assets/m2_mock_cities_2.png" alt="Mock of cities section visualisations for M2"> -->
+<script src="https://unpkg.com/leaflet-curve/src/leaflet.curve.js"></script>
+
+<div>
+
+    <h1> Drop A Pin </h1>
+    <br>
+    Now, let's explore how traveling locally can simplify your adventures while minimizing environmental impact.
+    Discover how local journeys can enrich your travel experience and also contribute to a healthier planet. <br><br>
+
+    Start by selecting a city and discover a range of nearby destinations within your chosen travel radius. As you
+    navigate through the map, each pin drop reveals the most eco-friendly routes, highlighting low train CO2 emissions
+    and promoting greener travel choices. <br><br>
+
+    Dive into the latest travel trend: base yourself in a single city and spend a few days uncovering the local places
+    just a short trip away – minimizing your carbon footprint while maximizing your explorations. <br><br>
+
+    Drop a pin in Lausanne, and see how easy and eco-friendly your next weekend getaway can be! <br><br>
+
+
+</div>
+
 <div class="search-area">
     <h1>Search for a city</h1>
     <div class="text-for-search">
         Here you can search for a city and see the top destinations reachable by the least amount of CO2 emissions. <br>
         Enter the city name, number of cities to display and the maximum distance to search for. <br><br>
     </div>
-    <input type="text" id="citySearch" (ngModelChange)="search($event)" [(ngModel)]="cityInput"
-        placeholder="City name">
+    <input type="text" id="citySearch" (ngModelChange)="search($event)" [(ngModel)]="cityInput" placeholder="City name">
     <ul *ngIf="filteredCities.length" class="suggestions">
         <li *ngFor="let city of filteredCities" (click)="selectCity(city)">{{ city }}</li>
     </ul>
@@ -31,7 +51,34 @@
 </div>
 
 
+<div>
+
+    <h1> Eco-Network </h1>
+    The following visualization reveals how cities, countries, and regions are linked not just by road routes, but by
+    their environmental impacts as well.<br><br>
+
+    Each colored line draws connections between destinations, with the color showing the average CO2 emissions. It’s a
+    vivid exploration of how travel choices differ across Europe.<br><br>
+
+    Understand the bigger picture, and let this visualization offer you a fresh perspective on the broader implications
+    of travel. <br><br>
+
+    Do you notice Switzerland? It is the leading country in Europe with 100 percent electric-powered trains,
+    significantly reducing its overall CO2 footprint. Can you spot this trend on the graph? <br><br>
+
+</div>
+
+
 <div class="graph-container">
+    <!-- <div>
+        Start by clicking on the interactive map to select countries and dynamically add nodes to the graph that show
+        you the network of travel connections. As you hover over any node, watch the connecting lines change their color
+        based on average CO2 emissions. You can also switch perspectives easily — choose from city, country, or regional
+        views to explore how travel patterns and environmental impacts differ at each level. The CO2 emissions at the
+        country and region level are the average CO2 emissions between all routes connecting the two countries or
+        regions.
+    </div> <br> -->
+
     <div id="graph"></div>
     <div id="europe-map-container">
         <object id="europe-map" type="image/svg+xml" data="assets/europe-map.svg"></object>
@@ -39,7 +86,7 @@
 </div>
 
 <div class="button-container">
-    <button (click)="toggleView('city')">City View</button>
-    <button (click)="toggleView('country')">Country View</button>
-    <button (click)="toggleView('region')">Region View</button>
+    <button class="toggle-button" (click)="toggleView('city')">City View</button>
+    <button class="toggle-button" (click)="toggleView('country')">Country View</button>
+    <!-- <button (click)="toggleView('region')">Region View</button> -->
 </div>

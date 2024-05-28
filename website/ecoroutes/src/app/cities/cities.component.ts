@@ -37,7 +37,7 @@ export class CitiesComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-      
+
   }
 
   ngAfterViewInit(): void {
@@ -159,7 +159,7 @@ export class CitiesComponent implements OnInit {
       applyInteractions(svgMap.contentDocument);
     } else {
       // Apply interactions once the SVG is loaded
-      svgMap.addEventListener('load', () =>  {
+      svgMap.addEventListener('load', () => {
         applyInteractions(svgMap.contentDocument!);
       });
     }
@@ -191,7 +191,7 @@ export class CitiesComponent implements OnInit {
     this.filteredCities = [];
   }
 
-  
+
 
   search(term: any) {
     if (!term) {
@@ -210,9 +210,9 @@ export class CitiesComponent implements OnInit {
   }
 
   setDefaultMapView(): void {
-    const defaultCity = 'lausanne';
-    const defaultCityCount = 8; // Example value
-    const defaultMaxDistance = 500; // Example value
+    const defaultCity = 'venice';
+    const defaultCityCount = 4; // Example value
+    const defaultMaxDistance = 300; // Example value
     this.mapService.searchCity(defaultCity, defaultCityCount, defaultMaxDistance, this.dataService.getEcoRoutes());
   }
 

@@ -1,4 +1,22 @@
+<div>
+    Finally, let’s take a broader look at travel’s environmental impact across different regions. This visualization
+    features a matrix displaying the average CO2 emissions for all possible combinations of departure and arrival
+    regions, color-coded to highlight the emissions levels. In this view, we completely shift the perspective to a
+    larger scale, expanding upon the graph to show regional travel patterns in a clear and more comprehensive fashion.
+    <br><br>
+    Understand how different regions compare in terms of CO2 emissions and explore the bigger picture of inter-regional
+    travel.
+    <br><br>
+    Ready to shift your perspective? Dive deep into our matrix and uncover the hidden connections that shape our world’s
+    carbon footprint.
+
+</div>
+
+
 <div class="graph-container">
+    <!-- <div>
+        Lorem ipsum.... 1 sentence where we explain how to use.
+    </div> -->
     <table class="grid">
         <tr style="height: 80px;">
             <th></th>
@@ -6,10 +24,12 @@
         </tr>
         <tr *ngFor="let region of regions">
             <th>{{region}}</th>
-            <td id="{{region+';'+region2}}" *ngFor="let region2 of regions" style="height: 60px; width: 60px; border: 2px solid grey; border-radius: 99px; text-align: center;"></td>
+            <td id="{{region+';'+region2}}" *ngFor="let region2 of regions"
+                style="height: 60px; width: 60px; border: 2px solid grey; border-radius: 99px; text-align: center;">
+            </td>
         </tr>
     </table>
-    
+
     <div id="europe-map-container">
         <object id="europe-map" type="image/svg+xml" data="assets/europe-map.svg"></object>
     </div>
