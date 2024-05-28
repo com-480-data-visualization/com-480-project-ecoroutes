@@ -103,6 +103,7 @@ export class RoutesInputComponent {
     } 
     if (this.route.transport.average && route.flightCO2!=0){
       route = JSON.parse(JSON.stringify(route))
+      route.avgCO2 = (route.flightCO2 + route.trainCO2) / 2;
       route.chosenCO2 = 'avg';
       this.mapRouteService.addRoute(route);
     }
