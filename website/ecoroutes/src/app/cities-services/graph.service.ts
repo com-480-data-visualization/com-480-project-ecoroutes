@@ -50,8 +50,6 @@ export class GraphService {
       }
     });
 
-    // console.log(matrix);
-
     const chord = d3.chord()
       .padAngle(0.05)
       .sortSubgroups(d3.descending);
@@ -63,8 +61,19 @@ export class GraphService {
     const ribbon = d3.ribbon<d3.Chord, d3.ChordSubgroup>()
       .radius(innerRadius);
 
-    this.svg.selectAll('*').remove(); // Clear existing graph
-
+    // A simple transition - make it better if you have time
+    this.svg.selectAll('*')
+      .transition()
+      .duration(500) // Duration of the fade out transition in milliseconds
+      .style('opacity', 0) // Fade out by reducing opacity to 0
+      .remove() // Remove elements after the transition
+      .end() // Ensure the removal happens after the transition completes
+      .then(() => {
+        // Update the viewBox with smooth transitions after the elements are removed
+        this.svg.transition()
+          .duration(500)
+          .attr('viewBox', `-${width / 2} -${height / 2} ${width} ${height}`);
+      });
     this.svg.attr('width', '100%') // Make SVG responsive
       .attr('height', '100%') // Make SVG responsive
       .attr('viewBox', `-${width / 2} -${height / 2} ${width} ${height}`) // Ensure the viewBox fits the new size

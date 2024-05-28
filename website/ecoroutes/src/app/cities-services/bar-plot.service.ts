@@ -52,7 +52,7 @@ export class BarPlotService {
       .style('fill', 'black')
       .style('font-size', '18px') // Larger font size
       .style('font-weight', 'bold') // Bold font
-      .text('CO2 Emissions (kg)');
+      .text('CO2 Emissions per person (kg)');
 
 
     g.selectAll('.bar')
