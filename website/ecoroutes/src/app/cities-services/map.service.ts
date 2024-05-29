@@ -56,7 +56,7 @@ export class MapService {
       // Emit the search results for the bar plot
       this.searchResults.emit(topCities.map(route => ({
         arrivalCity: route.arrivalCity,
-        avgCO2: route.trainCO2
+        avgCO2: route.trainCO2,
       })));
 
       topCities.reverse().forEach(route => this.addRoute(route)); // reverse to draw the shorter routes first
