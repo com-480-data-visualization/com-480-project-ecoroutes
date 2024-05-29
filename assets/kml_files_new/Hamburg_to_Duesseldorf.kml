@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=2y.0313071.1714129625&input=HAMBURG &#x0028;Germany&#x0029;!&start=yes&">HAMBURG &#x0028;Germany&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=2y.0313071.1714129625&input=DUESSELDORF HBF &#x0028;Germany&#x0029;!&start=yes&">DUESSELDORF HBF &#x0028;Germany&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>HAMBURG-HARBURG (Germany) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/372057/348537/558274/155118/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=2y.0313071.1714129625&">ICE  515</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=2y.0313071.1714129625&input=WUPPERTAL HBF (Germany)!&start=yes&">WUPPERTAL HBF (Germany)</a>
+arr 09:17]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>9.991663</longitude>
+<latitude>53.455829</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.991663,53.455829,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>BREMEN HBF (Germany) dep 06:57</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.813887</longitude>
+<latitude>53.083613</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.813887,53.083613,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OSNABRUECK HBF (Germany) dep 07:47</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.061670</longitude>
+<latitude>52.272777</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.061670,52.272777,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MUENSTER(WESTF)HBF (Germany) dep 08:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.635833</longitude>
+<latitude>51.956671</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.635833,51.956671,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DORTMUND HBF (Germany) dep 08:41</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.459168</longitude>
+<latitude>51.517782</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.459168,51.517782,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HAGEN HBF (Germany) dep 09:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.460274</longitude>
+<latitude>51.362781</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.460274,51.362781,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>WUPPERTAL HBF (Germany) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/680955/314583/580640/63335/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=2y.0313071.1714129625&">RE 20070</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=2y.0313071.1714129625&input=DUESSELDORF HBF (Germany)!&start=yes&">DUESSELDORF HBF (Germany)</a>
+arr 09:46]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>7.149445</longitude>
+<latitude>51.254443</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.149445,51.254443,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>WUPPERTAL-VOHWINKEL (Germany) dep 09:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.071670</longitude>
+<latitude>51.234163</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.071670,51.234163,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>DUESSELDORF HBF (Germany) arr 09:46</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>6.794443</longitude>
+<latitude>51.219996</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.794443,51.219996,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+HAMBURG-HARBURG (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+05:59
+</td>
+<td>
+3
+</td>
+<td rowspan="7" valign="top" style="white-space:nowrap;">
+ICE  515
+</td>
+<td rowspan="7" valign="top">
+ICE
+Direction: MUENCHEN HBF (Germany)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BREMEN HBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:53
+</td>
+<td class="result" >
+06:57
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+OSNABRUECK HBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:45
+</td>
+<td class="result" >
+07:47
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MUENSTER(WESTF)HBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:09
+</td>
+<td class="result" >
+08:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DORTMUND HBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:39
+</td>
+<td class="result" >
+08:41
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+HAGEN HBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:00
+</td>
+<td class="result" >
+09:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+WUPPERTAL HBF (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+09:17
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+1
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+WUPPERTAL HBF (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+09:25
+</td>
+<td>
+1
+</td>
+<td rowspan="3" valign="top" style="white-space:nowrap;">
+RE 20070
+</td>
+<td rowspan="3" valign="top">
+Regional
+Direction: Venlo (Netherlands)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+WUPPERTAL-VOHWINKEL (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:29
+</td>
+<td class="result" >
+09:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+DUESSELDORF HBF (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+09:46
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+4
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 3:47;
+runs
+not every day, 1. until 7. Mar 2024 Mo, Tu, Th, Fr, Su
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>7.149445</longitude>
+<latitude>51.254443</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+9.991663,53.455829,0 8.813887,53.083613,0 8.061670,52.272777,0 7.635833,51.956671,0 7.459168,51.517782,0 7.460274,51.362781,0 7.149445,51.254443,0 7.071670,51.234163,0 6.794443,51.219996,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>ICE  515 from HAMBURG-HARBURG (Germany) to WUPPERTAL HBF (Germany)</name>
+<styleUrl>#idStylePT_ICE  515</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>9.991663</longitude>
+<latitude>53.455829</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+9.991663,53.455829,0 8.813887,53.083613,0 8.061670,52.272777,0 7.635833,51.956671,0 7.459168,51.517782,0 7.460274,51.362781,0 7.149445,51.254443,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE 20070 from WUPPERTAL HBF (Germany) to DUESSELDORF HBF (Germany)</name>
+<styleUrl>#idStylePT_RE 20070</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>7.149445</longitude>
+<latitude>51.254443</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+7.149445,51.254443,0 7.071670,51.234163,0 6.794443,51.219996,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

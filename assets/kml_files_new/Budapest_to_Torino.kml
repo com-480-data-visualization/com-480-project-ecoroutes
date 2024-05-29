@@ -1,0 +1,1374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=lp.0222721.1714128724&input=BUDAPEST &#x0028;Hungary&#x0029;!&start=yes&">BUDAPEST &#x0028;Hungary&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=lp.0222721.1714128724&input=TORINO CITY &#x0028;Italy&#x0029;!&start=yes&">TORINO CITY &#x0028;Italy&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>BUDAPEST-KELENFOELD (Hungary) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/241905/84657/71902/44684/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=lp.0222721.1714128724&">IC  1032</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=lp.0222721.1714128724&input=WIEN MEIDLING (Austria)!&start=yes&">WIEN MEIDLING (Austria)</a>
+arr 10:25]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>19.019997</longitude>
+<latitude>47.464447</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>19.019997,47.464447,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>GYOER (Hungary) dep 09:07</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.634723</longitude>
+<latitude>47.681941</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.634723,47.681941,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MOSONMAGYAROVAR (Hungary) dep 09:25</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.267226</longitude>
+<latitude>47.849724</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.267226,47.849724,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HEGYESHALOM (Hungary) dep 09:37</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.145557</longitude>
+<latitude>47.913889</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.145557,47.913889,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HEGYESHALOM GR. (Hungary) dep 09:40</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>17.095829</longitude>
+<latitude>47.938331</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>17.095829,47.938331,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NICKELSDORF GRENZE (Austria) dep 10:01</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.743614</longitude>
+<latitude>48.053330</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.743614,48.053330,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>WIEN MEIDLING (Austria) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/94605/361644/528322/232626/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=lp.0222721.1714128724&">RJX  860</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=lp.0222721.1714128724&input=INNSBRUCK HBF (Austria)!&start=yes&">INNSBRUCK HBF (Austria)</a>
+arr 14:44]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>16.333058</longitude>
+<latitude>48.174442</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.333058,48.174442,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>ST.POELTEN HBF (Austria) dep 10:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.624726</longitude>
+<latitude>48.208331</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.624726,48.208331,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LINZ HBF (Austria) dep 11:45</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.292219</longitude>
+<latitude>48.290277</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.292219,48.290277,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SALZBURG HBF (Austria) dep 12:56</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.045829</longitude>
+<latitude>47.813057</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.045829,47.813057,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WOERGL HBF (Austria) dep 14:15</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.060557</longitude>
+<latitude>47.491666</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.060557,47.491666,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>JENBACH (Austria) dep 14:29</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.778332</longitude>
+<latitude>47.388335</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.778332,47.388335,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>INNSBRUCK HBF (Austria) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/274608/424631/688648/252788/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=lp.0222721.1714128724&">ECB   87</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=lp.0222721.1714128724&input=VERONA PORTA NUOVA (Italy)!&start=yes&">VERONA PORTA NUOVA (Italy)</a>
+arr 18:58]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>11.400560</longitude>
+<latitude>47.263331</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.400560,47.263331,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>BRENNERO / BRENNER (Austria) dep 15:42</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.453192</longitude>
+<latitude>47.132916</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.453192,47.132916,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRENNERO BRENNER (Italy) dep 16:14</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.505276</longitude>
+<latitude>47.001943</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.505276,47.001943,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>FORTEZZA/FRANZENSFES (Italy) dep 16:46</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.609721</longitude>
+<latitude>46.788889</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.609721,46.788889,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRESSANONE BRIXEN (Italy) dep 16:56</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.649445</longitude>
+<latitude>46.710000</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.649445,46.710000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BOLZANO BOZEN (Italy) dep 17:31</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.358329</longitude>
+<latitude>46.496389</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.358329,46.496389,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TRENTO (Italy) dep 18:04</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.118892</longitude>
+<latitude>46.072224</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.118892,46.072224,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ROVERETO (Italy) dep 18:19</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>11.033333</longitude>
+<latitude>45.890831</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>11.033333,45.890831,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>VERONA PORTA NUOVA (Italy) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/775488/617487/685780/84394/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=lp.0222721.1714128724&">FR  9754</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=lp.0222721.1714128724&input=MILANO CENTRALE (Italy)!&start=yes&">MILANO CENTRALE (Italy)</a>
+arr 20:45]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>10.982220</longitude>
+<latitude>45.428336</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.982220,45.428336,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>PESCHIERA DEL GARDA (Italy) dep 19:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.702224</longitude>
+<latitude>45.438053</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.702224,45.438053,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DESENZANO GARDA-SIRM (Italy) dep 19:53</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.536391</longitude>
+<latitude>45.462774</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.536391,45.462774,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRESCIA (Italy) dep 20:09</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.212780</longitude>
+<latitude>45.531946</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.212780,45.531946,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PIOLTELLO-LIMITO (Italy) dep 20:35</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.329167</longitude>
+<latitude>45.485831</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.329167,45.485831,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MILANO LAMBRATE (Italy) dep 20:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.236947</longitude>
+<latitude>45.484725</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.236947,45.484725,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>MILANO CENTRALE (Italy) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/276939/447526/554900/185137/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=lp.0222721.1714128724&">FR  9552</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=lp.0222721.1714128724&input=TORINO PORTA SUSA (Italy)!&start=yes&">TORINO PORTA SUSA (Italy)</a>
+arr 21:49]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>9.204163</longitude>
+<latitude>45.486388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.204163,45.486388,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>MILANO CERTOSA (Italy) dep 21:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.133885</longitude>
+<latitude>45.506668</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.133885,45.506668,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>TORINO PORTA SUSA (Italy) arr 21:49</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>7.666945</longitude>
+<latitude>45.074170</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.666945,45.074170,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+BUDAPEST-KELENFOELD (Hungary)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+07:58
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="7" valign="top" style="white-space:nowrap;">
+IC  1032
+</td>
+<td rowspan="7" valign="top">
+Intercity
+Direction: PRAHA HLAVNI NADRAZI (Czech Republic)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GYOER (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:05
+</td>
+<td class="result" >
+09:07
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MOSONMAGYAROVAR (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:24
+</td>
+<td class="result" >
+09:25
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+HEGYESHALOM (Hungary)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:34
+</td>
+<td class="result" >
+09:37
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+HEGYESHALOM GR. (Hungary)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:40
+</td>
+<td class="result" >
+09:40
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+NICKELSDORF GRENZE (Austria)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:01
+</td>
+<td class="result" >
+10:01
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+WIEN MEIDLING (Austria)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+10:25
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+WIEN MEIDLING (Austria)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+10:35
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="7" valign="top" style="white-space:nowrap;">
+RJX  860
+</td>
+<td rowspan="7" valign="top">
+RJX railjet xpress
+Direction: BREGENZ (Austria)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ST.POELTEN HBF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:57
+</td>
+<td class="result" >
+10:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LINZ HBF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:43
+</td>
+<td class="result" >
+11:45
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SALZBURG HBF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:53
+</td>
+<td class="result" >
+12:56
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+WOERGL HBF (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:13
+</td>
+<td class="result" >
+14:15
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+JENBACH (Austria)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:27
+</td>
+<td class="result" >
+14:29
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+INNSBRUCK HBF (Austria)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+14:44
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+INNSBRUCK HBF (Austria)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+15:24
+</td>
+<td>
+2
+</td>
+<td rowspan="9" valign="top" style="white-space:nowrap;">
+ECB   87
+</td>
+<td rowspan="9" valign="top">
+EuroCityBrenner
+Direction: BOLOGNA CENTRALE (Italy)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BRENNERO / BRENNER (Austria)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:42
+</td>
+<td class="result" >
+15:42
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BRENNERO BRENNER (Italy)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:00
+</td>
+<td class="result" >
+16:14
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+FORTEZZA/FRANZENSFES (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:44
+</td>
+<td class="result" >
+16:46
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BRESSANONE BRIXEN (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:55
+</td>
+<td class="result" >
+16:56
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BOLZANO BOZEN (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:27
+</td>
+<td class="result" >
+17:31
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+TRENTO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:02
+</td>
+<td class="result" >
+18:04
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ROVERETO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:17
+</td>
+<td class="result" >
+18:19
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+VERONA PORTA NUOVA (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+18:58
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+VERONA PORTA NUOVA (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+19:32
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="7" valign="top" style="white-space:nowrap;">
+FR  9754
+</td>
+<td rowspan="7" valign="top">
+FRECCIAROSSA
+Direction: MILANO CENTRALE (Italy)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PESCHIERA DEL GARDA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:44
+</td>
+<td class="result" >
+19:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DESENZANO GARDA-SIRM (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:51
+</td>
+<td class="result" >
+19:53
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BRESCIA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:07
+</td>
+<td class="result" >
+20:09
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PIOLTELLO-LIMITO (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:35
+</td>
+<td class="result" >
+20:35
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MILANO LAMBRATE (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:39
+</td>
+<td class="result" >
+20:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+MILANO CENTRALE (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+20:45
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+MILANO CENTRALE (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+21:02
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="3" valign="top" style="white-space:nowrap;">
+FR  9552
+</td>
+<td rowspan="3" valign="top">
+FRECCIAROSSA
+Direction: TORINO PORTA NUOVA (Italy)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MILANO CERTOSA (Italy)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:10
+</td>
+<td class="result" >
+21:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+TORINO PORTA SUSA (Italy)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+21:49
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 13:51;
+runs
+not every day, 1. Mar until 7. Apr 2024; not 2., 3., 9., 10. Mar
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>9.204163</longitude>
+<latitude>45.486388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+19.019997,47.464447,0 17.634723,47.681941,0 17.267226,47.849724,0 17.145557,47.913889,0 17.095829,47.938331,0 16.743614,48.053330,0 16.333058,48.174442,0 15.624726,48.208331,0 14.292219,48.290277,0 13.045829,47.813057,0 12.060557,47.491666,0 11.778332,47.388335,0 11.400560,47.263331,0 11.453192,47.132916,0 11.505276,47.001943,0 11.609721,46.788889,0 11.649445,46.710000,0 11.358329,46.496389,0 11.118892,46.072224,0 11.033333,45.890831,0 10.982220,45.428336,0 10.702224,45.438053,0 10.536391,45.462774,0 10.212780,45.531946,0 9.329167,45.485831,0 9.236947,45.484725,0 9.204163,45.486388,0 9.133885,45.506668,0 7.666945,45.074170,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC  1032 from BUDAPEST-KELENFOELD (Hungary) to WIEN MEIDLING (Austria)</name>
+<styleUrl>#idStylePT_IC  1032</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>19.019997</longitude>
+<latitude>47.464447</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+19.019997,47.464447,0 17.634723,47.681941,0 17.267226,47.849724,0 17.145557,47.913889,0 17.095829,47.938331,0 16.743614,48.053330,0 16.333058,48.174442,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RJX  860 from WIEN MEIDLING (Austria) to INNSBRUCK HBF (Austria)</name>
+<styleUrl>#idStylePT_RJX  860</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>16.333058</longitude>
+<latitude>48.174442</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+16.333058,48.174442,0 15.624726,48.208331,0 14.292219,48.290277,0 13.045829,47.813057,0 12.060557,47.491666,0 11.778332,47.388335,0 11.400560,47.263331,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>ECB   87 from INNSBRUCK HBF (Austria) to VERONA PORTA NUOVA (Italy)</name>
+<styleUrl>#idStylePT_ECB   87</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>11.400560</longitude>
+<latitude>47.263331</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+11.400560,47.263331,0 11.453192,47.132916,0 11.505276,47.001943,0 11.609721,46.788889,0 11.649445,46.710000,0 11.358329,46.496389,0 11.118892,46.072224,0 11.033333,45.890831,0 10.982220,45.428336,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>FR  9754 from VERONA PORTA NUOVA (Italy) to MILANO CENTRALE (Italy)</name>
+<styleUrl>#idStylePT_FR  9754</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>10.982220</longitude>
+<latitude>45.428336</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+10.982220,45.428336,0 10.702224,45.438053,0 10.536391,45.462774,0 10.212780,45.531946,0 9.329167,45.485831,0 9.236947,45.484725,0 9.204163,45.486388,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>FR  9552 from MILANO CENTRALE (Italy) to TORINO PORTA SUSA (Italy)</name>
+<styleUrl>#idStylePT_FR  9552</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>9.204163</longitude>
+<latitude>45.486388</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+9.204163,45.486388,0 9.133885,45.506668,0 7.666945,45.074170,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

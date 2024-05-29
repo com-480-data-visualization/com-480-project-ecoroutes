@@ -1,0 +1,2587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&input=Rotterdam Centraal &#x0028;Netherlands&#x0029;!&start=yes&">Rotterdam Centraal &#x0028;Netherlands&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&input=HELSINKI &#x0028;Finland&#x0029;!&start=yes&">HELSINKI &#x0028;Finland&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>Rotterdam Centraal (Netherlands) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/49845/152814/408500/187635/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&">IC  2857</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&input=Utrecht Centraal (Netherlands)!&start=yes&">Utrecht Centraal (Netherlands)</a>
+arr 15:57]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>4.469446</longitude>
+<latitude>51.925002</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.469446,51.925002,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>Rotterdam Noord (Netherlands) dep 15:22</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.481114</longitude>
+<latitude>51.941947</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.481114,51.941947,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Rotterdam Alexander (Netherlands) dep 15:28</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.551940</longitude>
+<latitude>51.951385</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.551940,51.951385,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Capelle Schollevaar (Netherlands) dep 15:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.584166</longitude>
+<latitude>51.954163</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.584166,51.954163,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nieuwerkerk ad IJssel (Netherlands) dep 15:32</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.616671</longitude>
+<latitude>51.965274</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.616671,51.965274,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Gouda (Netherlands) dep 15:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.706392</longitude>
+<latitude>52.017222</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.706392,52.017222,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Gouda Goverwelle (Netherlands) dep 15:40</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.741387</longitude>
+<latitude>52.015002</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.741387,52.015002,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Woerden (Netherlands) dep 15:48</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.892775</longitude>
+<latitude>52.085001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.892775,52.085001,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Vleuten (Netherlands) dep 15:53</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.006947</longitude>
+<latitude>52.103060</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.006947,52.103060,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Utrecht Terwijde (Netherlands) dep 15:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.040557</longitude>
+<latitude>52.100552</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.040557,52.100552,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Utrecht Leidsche Rijn (Netherlands) dep 15:55</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.064999</longitude>
+<latitude>52.098889</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.064999,52.098889,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>Utrecht Centraal (Netherlands) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/280557/113105/761978/287470/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&">IC 11757</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&input=Amersfoort Centraal (Netherlands)!&start=yes&">Amersfoort Centraal (Netherlands)</a>
+arr 16:20]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>5.111114</longitude>
+<latitude>52.089720</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.111114,52.089720,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>Utrecht Overvecht (Netherlands) dep 16:09</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.125281</longitude>
+<latitude>52.110279</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.125281,52.110279,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Bilthoven (Netherlands) dep 16:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.204170</longitude>
+<latitude>52.129722</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.204170,52.129722,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Den Dolder (Netherlands) dep 16:14</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.241664</longitude>
+<latitude>52.139997</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.241664,52.139997,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>Amersfoort Centraal (Netherlands) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/587352/311634/462402/35417/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&">IC   241</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&input=OSNABRUECK HBF (Germany)!&start=yes&">OSNABRUECK HBF (Germany)</a>
+arr 18:51]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>5.373886</longitude>
+<latitude>52.153337</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.373886,52.153337,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>Hoevelaken (Netherlands) dep 16:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.457225</longitude>
+<latitude>52.166389</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.457225,52.166389,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Apeldoorn (Netherlands) dep 17:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.970276</longitude>
+<latitude>52.209448</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.970276,52.209448,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Apeldoorn Osseveld (Netherlands) dep 17:04</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.006664</longitude>
+<latitude>52.216109</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.006664,52.216109,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Twello (Netherlands) dep 17:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.101941</longitude>
+<latitude>52.238887</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.101941,52.238887,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Deventer (Netherlands) dep 17:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.160829</longitude>
+<latitude>52.256947</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.160829,52.256947,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Deventer Colmschate (Netherlands) dep 17:20</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.215555</longitude>
+<latitude>52.250555</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.215555,52.250555,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Holten (Netherlands) dep 17:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.421390</longitude>
+<latitude>52.284166</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.421390,52.284166,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Rijssen (Netherlands) dep 17:34</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.519445</longitude>
+<latitude>52.311943</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.519445,52.311943,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Wierden (Netherlands) dep 17:39</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.592500</longitude>
+<latitude>52.361392</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.592500,52.361392,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Almelo (Netherlands) dep 17:42</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.655829</longitude>
+<latitude>52.357221</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.655829,52.357221,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Almelo de Riet (Netherlands) dep 17:43</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.666391</longitude>
+<latitude>52.342497</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.666391,52.342497,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Borne (Netherlands) dep 17:48</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.748607</longitude>
+<latitude>52.298333</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.748607,52.298333,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Hengelo (Netherlands) dep 17:52</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.793607</longitude>
+<latitude>52.262223</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.793607,52.262223,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Hengelo Oost (Netherlands) dep 17:53</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.820556</longitude>
+<latitude>52.269163</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.820556,52.269163,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Oldenzaal (Netherlands) dep 17:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.933614</longitude>
+<latitude>52.306387</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.933614,52.306387,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BENTHEIM GRENS (Netherlands) dep 18:03</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.033906</longitude>
+<latitude>52.307673</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.033906,52.307673,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BAD BENTHEIM(GR) (Germany) dep 18:04</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.040280</longitude>
+<latitude>52.309165</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.040280,52.309165,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BAD BENTHEIM (Germany) dep 18:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.158614</longitude>
+<latitude>52.309722</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.158614,52.309722,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RHEINE (Germany) dep 18:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.434169</longitude>
+<latitude>52.276390</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.434169,52.276390,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>OSNABRUECK HBF (Germany) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/168024/366510/147450/17717/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&">EC     8</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&input=HAMBURG HBF (Germany)!&start=yes&">HAMBURG HBF (Germany)</a>
+arr 21:14]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>8.061670</longitude>
+<latitude>52.272777</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.061670,52.272777,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>BREMEN HBF (Germany) dep 20:17</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>8.813887</longitude>
+<latitude>53.083613</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>8.813887,53.083613,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HAMBURG-HARBURG (Germany) dep 21:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.991663</longitude>
+<latitude>53.455829</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.991663,53.455829,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>HAMBURG HBF (Germany) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/139728/212750/709442/308145/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&">EN   346</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&input=Stockholm Central (Sweden)!&start=yes&">Stockholm Central (Sweden)</a>
+arr 09:57]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>10.006945</longitude>
+<latitude>53.552778</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.006945,53.552778,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>FLENSBURG(GR) (Germany) dep 00:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.363335</longitude>
+<latitude>54.814719</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.363335,54.814719,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PADBORG GRAENSE (Denmark) dep 00:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.361942</longitude>
+<latitude>54.816391</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.361942,54.816391,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PADBORG (Denmark) dep 00:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>9.359721</longitude>
+<latitude>54.822774</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>9.359721,54.822774,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ODENSE (Denmark) dep 01:58</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>10.386667</longitude>
+<latitude>55.401670</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>10.386667,55.401670,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CPH LUFTHAVN (Denmark) dep 03:37</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.648892</longitude>
+<latitude>55.629169</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.648892,55.629169,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KASTRUP GRAENSE (Denmark) dep 03:48</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.826366</longitude>
+<latitude>55.575485</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.826366,55.575485,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Kastrup grans (Sweden) dep 03:49</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>12.828937</longitude>
+<latitude>55.574362</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>12.828937,55.574362,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Malmo C (Sweden) dep 04:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.000829</longitude>
+<latitude>55.609447</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.000829,55.609447,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Lund C (Sweden) dep 04:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.186663</longitude>
+<latitude>55.708058</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.186663,55.708058,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Hassleholm C (Sweden) dep 05:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>13.763060</longitude>
+<latitude>56.157501</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>13.763060,56.157501,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Alvesta (Sweden) dep 06:02</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.556107</longitude>
+<latitude>56.898608</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.556107,56.898608,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nassjo C (Sweden) dep 06:44</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>14.693893</longitude>
+<latitude>57.652218</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.693893,57.652218,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Linkoping C (Sweden) dep 07:49</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.624726</longitude>
+<latitude>58.416391</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.624726,58.416391,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Norrkoping C (Sweden) dep 08:26</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.183334</longitude>
+<latitude>58.596391</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.183334,58.596391,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>Stockholm Central (Sweden) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&">transfer</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&input=Stockholm Tegelvikshamnen (Sweden)!&start=yes&">Stockholm Tegelvikshamnen (Sweden)</a>
+arr 10:57]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>18.058052</longitude>
+<latitude>59.330001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.058052,59.330001,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Stockholm Tegelvikshamnen (Sweden) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/199743/66609/442696/154767/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&">ShiVikLi</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&input=TURKU SATAMA (Finland)!&start=yes&">TURKU SATAMA (Finland)</a>
+arr 07:35]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>18.096391</longitude>
+<latitude>59.315834</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>18.096391,59.315834,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>Stockholm grans (Sweden) dep 00:07</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>19.598893</longitude>
+<latitude>59.831941</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>19.598893,59.831941,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>TURKU SATAMA (Finland) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/511929/476972/663848/161281/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&">77948</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&input=KUPITTAA (Finland)!&start=yes&">KUPITTAA (Finland)</a>
+arr 08:20]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>22.226944</longitude>
+<latitude>60.434164</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.226944,60.434164,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KUPITTAA (Finland) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/507723/303812/796482/229000/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&">IC   948</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ln.016641.1714132317&input=HELSINKI (Finland)!&start=yes&">HELSINKI (Finland)</a>
+arr 10:23]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>22.297221</longitude>
+<latitude>60.450282</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>22.297221,60.450282,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>SALO (Finland) dep 08:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.121388</longitude>
+<latitude>60.384723</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.121388,60.384723,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KARJAA (Finland) dep 09:28</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>23.661388</longitude>
+<latitude>60.068609</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>23.661388,60.068609,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LEPPAVAARA (Finland) dep 10:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>24.813608</longitude>
+<latitude>60.219448</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>24.813608,60.219448,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PASILA (Finland) dep 10:18</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>24.933614</longitude>
+<latitude>60.198611</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>24.933614,60.198611,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>HELSINKI (Finland) arr 10:23</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>24.941111</longitude>
+<latitude>60.172218</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>24.941111,60.172218,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+Rotterdam Centraal (Netherlands)
+</td>
+<td align="center">
+Th,&nbsp;29.02.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+15:20
+</td>
+<td>
+14
+</td>
+<td rowspan="12" valign="top" style="white-space:nowrap;">
+IC  2857
+</td>
+<td rowspan="12" valign="top">
+Intercity
+Direction: Utrecht Centraal (Netherlands)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Rotterdam Noord (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:22
+</td>
+<td class="result" >
+15:22
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Rotterdam Alexander (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:28
+</td>
+<td class="result" >
+15:28
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Capelle Schollevaar (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:30
+</td>
+<td class="result" >
+15:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Nieuwerkerk ad IJssel (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:32
+</td>
+<td class="result" >
+15:32
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Gouda (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:38
+</td>
+<td class="result" >
+15:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Gouda Goverwelle (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:40
+</td>
+<td class="result" >
+15:40
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Woerden (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:48
+</td>
+<td class="result" >
+15:48
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Vleuten (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:53
+</td>
+<td class="result" >
+15:53
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Utrecht Terwijde (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:54
+</td>
+<td class="result" >
+15:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Utrecht Leidsche Rijn (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:55
+</td>
+<td class="result" >
+15:55
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+Utrecht Centraal (Netherlands)
+</td>
+<td align="center">
+Th,&nbsp;29.02.24
+</td>
+<td>
+15:57
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+9
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+Utrecht Centraal (Netherlands)
+</td>
+<td align="center">
+Th,&nbsp;29.02.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+16:07
+</td>
+<td>
+12
+</td>
+<td rowspan="5" valign="top" style="white-space:nowrap;">
+IC 11757
+</td>
+<td rowspan="5" valign="top">
+Intercity
+Direction: Enschede (Netherlands)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+Utrecht Overvecht (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:09
+</td>
+<td class="result" >
+16:09
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+Bilthoven (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:12
+</td>
+<td class="result" >
+16:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+Den Dolder (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:14
+</td>
+<td class="result" >
+16:14
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+Amersfoort Centraal (Netherlands)
+</td>
+<td align="center">
+Th,&nbsp;29.02.24
+</td>
+<td>
+16:20
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+1
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+Amersfoort Centraal (Netherlands)
+</td>
+<td align="center">
+Th,&nbsp;29.02.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+16:36
+</td>
+<td>
+1
+</td>
+<td rowspan="21" valign="top" style="white-space:nowrap;">
+IC   241
+</td>
+<td rowspan="21" valign="top">
+Intercity
+Direction: BERLIN OSTBAHNHOF (Germany)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Hoevelaken (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:39
+</td>
+<td class="result" >
+16:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Apeldoorn (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:00
+</td>
+<td class="result" >
+17:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Apeldoorn Osseveld (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:04
+</td>
+<td class="result" >
+17:04
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Twello (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:10
+</td>
+<td class="result" >
+17:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Deventer (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:14
+</td>
+<td class="result" >
+17:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Deventer Colmschate (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:20
+</td>
+<td class="result" >
+17:20
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Holten (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:30
+</td>
+<td class="result" >
+17:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Rijssen (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:34
+</td>
+<td class="result" >
+17:34
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Wierden (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:39
+</td>
+<td class="result" >
+17:39
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Almelo (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:42
+</td>
+<td class="result" >
+17:42
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Almelo de Riet (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:43
+</td>
+<td class="result" >
+17:43
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Borne (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:48
+</td>
+<td class="result" >
+17:48
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Hengelo (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:51
+</td>
+<td class="result" >
+17:52
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Hengelo Oost (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:53
+</td>
+<td class="result" >
+17:53
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Oldenzaal (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:59
+</td>
+<td class="result" >
+17:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BENTHEIM GRENS (Netherlands)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:03
+</td>
+<td class="result" >
+18:03
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BAD BENTHEIM(GR) (Germany)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:04
+</td>
+<td class="result" >
+18:04
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BAD BENTHEIM (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:09
+</td>
+<td class="result" >
+18:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+RHEINE (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:24
+</td>
+<td class="result" >
+18:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+OSNABRUECK HBF (Germany)
+</td>
+<td align="center">
+Th,&nbsp;29.02.24
+</td>
+<td>
+18:51
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+11
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+OSNABRUECK HBF (Germany)
+</td>
+<td align="center">
+Th,&nbsp;29.02.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+19:23
+</td>
+<td>
+3
+</td>
+<td rowspan="4" valign="top" style="white-space:nowrap;">
+EC     8
+</td>
+<td rowspan="4" valign="top">
+EuroCity
+Direction: HAMBURG-ALTONA (Germany)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BREMEN HBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:15
+</td>
+<td class="result" >
+20:17
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+HAMBURG-HARBURG (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:00
+</td>
+<td class="result" >
+21:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+HAMBURG HBF (Germany)
+</td>
+<td align="center">
+Th,&nbsp;29.02.24
+</td>
+<td>
+21:14
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+13
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+HAMBURG HBF (Germany)
+</td>
+<td align="center">
+Th,&nbsp;29.02.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+22:03
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="16" valign="top" style="white-space:nowrap;">
+EN   346
+</td>
+<td rowspan="16" valign="top">
+Euro Night
+Direction: Stockholm Central (Sweden)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+FLENSBURG(GR) (Germany)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">Fr,01.03.24</td>
+<td class="result" >
+00:02
+</td>
+<td class="result" >
+00:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PADBORG GRAENSE (Denmark)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+00:02
+</td>
+<td class="result" >
+00:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PADBORG (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+00:03
+</td>
+<td class="result" >
+00:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ODENSE (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+01:53
+</td>
+<td class="result" >
+01:58
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+CPH LUFTHAVN (Denmark)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+03:37
+</td>
+<td class="result" >
+03:37
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KASTRUP GRAENSE (Denmark)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+03:48
+</td>
+<td class="result" >
+03:48
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Kastrup grans (Sweden)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+03:49
+</td>
+<td class="result" >
+03:49
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Malmo C (Sweden)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+03:59
+</td>
+<td class="result" >
+04:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Lund C (Sweden)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+04:35
+</td>
+<td class="result" >
+04:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Hassleholm C (Sweden)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:10
+</td>
+<td class="result" >
+05:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Alvesta (Sweden)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:02
+</td>
+<td class="result" >
+06:02
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Nassjo C (Sweden)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:44
+</td>
+<td class="result" >
+06:44
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Linkoping C (Sweden)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:48
+</td>
+<td class="result" >
+07:49
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Norrkoping C (Sweden)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:16
+</td>
+<td class="result" >
+08:26
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+Stockholm Central (Sweden)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+09:57
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+Stockholm Central (Sweden)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+09:57
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="2" valign="top" style="white-space:nowrap;">
+transfer
+</td>
+<td rowspan="2" valign="top">
+60 min.
+</td>
+<tr bgcolor="#eeeeee">
+<td>
+Stockholm Tegelvikshamnen (Sweden)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+10:57
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+Stockholm Tegelvikshamnen (Sweden)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+20:00
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="3" valign="top" style="white-space:nowrap;">
+ShiVikLi
+</td>
+<td rowspan="3" valign="top">
+Ship
+Direction: TURKU SATAMA (Finland)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Stockholm grans (Sweden)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">Sa,02.03.24</td>
+<td class="result" >
+00:07
+</td>
+<td class="result" >
+00:07
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+TURKU SATAMA (Finland)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+07:35
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+TURKU SATAMA (Finland)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+08:05
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="2" valign="top" style="white-space:nowrap;">
+77948
+</td>
+<td rowspan="2" valign="top">
+Replacement Bus
+Direction: KUPITTAA (Finland)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td>
+KUPITTAA (Finland)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+08:20
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+KUPITTAA (Finland)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+08:31
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="6" valign="top" style="white-space:nowrap;">
+IC   948
+</td>
+<td rowspan="6" valign="top">
+Intercity
+Direction: HELSINKI (Finland)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SALO (Finland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:55
+</td>
+<td class="result" >
+08:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KARJAA (Finland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:26
+</td>
+<td class="result" >
+09:28
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LEPPAVAARA (Finland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:10
+</td>
+<td class="result" >
+10:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+PASILA (Finland)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:17
+</td>
+<td class="result" >
+10:18
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+HELSINKI (Finland)
+</td>
+<td align="center">
+Sa,&nbsp;02.03.24
+</td>
+<td>
+10:23
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 42:03;
+runs
+not every day, 1. until 14. Mar 2024 Mo - Fr
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>22.297221</longitude>
+<latitude>60.450282</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+4.469446,51.925002,0 4.481114,51.941947,0 4.551940,51.951385,0 4.584166,51.954163,0 4.616671,51.965274,0 4.706392,52.017222,0 4.741387,52.015002,0 4.892775,52.085001,0 5.006947,52.103060,0 5.040557,52.100552,0 5.064999,52.098889,0 5.111114,52.089720,0 5.125281,52.110279,0 5.204170,52.129722,0 5.241664,52.139997,0 5.373886,52.153337,0 5.457225,52.166389,0 5.970276,52.209448,0 6.006664,52.216109,0 6.101941,52.238887,0 6.160829,52.256947,0 6.215555,52.250555,0 6.421390,52.284166,0 6.519445,52.311943,0 6.592500,52.361392,0 6.655829,52.357221,0 6.666391,52.342497,0 6.748607,52.298333,0 6.793607,52.262223,0 6.820556,52.269163,0 6.933614,52.306387,0 7.033906,52.307673,0 7.040280,52.309165,0 7.158614,52.309722,0 7.434169,52.276390,0 8.061670,52.272777,0 8.813887,53.083613,0 9.991663,53.455829,0 10.006945,53.552778,0 9.363335,54.814719,0 9.361942,54.816391,0 9.359721,54.822774,0 10.386667,55.401670,0 12.648892,55.629169,0 12.826366,55.575485,0 12.828937,55.574362,0 13.000829,55.609447,0 13.186663,55.708058,0 13.763060,56.157501,0 14.556107,56.898608,0 14.693893,57.652218,0 15.624726,58.416391,0 16.183334,58.596391,0 18.058052,59.330001,0 18.096391,59.315834,0 19.598893,59.831941,0 22.226944,60.434164,0 22.297221,60.450282,0 23.121388,60.384723,0 23.661388,60.068609,0 24.813608,60.219448,0 24.933614,60.198611,0 24.941111,60.172218,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC  2857 from Rotterdam Centraal (Netherlands) to Utrecht Centraal (Netherlands)</name>
+<styleUrl>#idStylePT_IC  2857</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>4.469446</longitude>
+<latitude>51.925002</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+4.469446,51.925002,0 4.481114,51.941947,0 4.551940,51.951385,0 4.584166,51.954163,0 4.616671,51.965274,0 4.706392,52.017222,0 4.741387,52.015002,0 4.892775,52.085001,0 5.006947,52.103060,0 5.040557,52.100552,0 5.064999,52.098889,0 5.111114,52.089720,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC 11757 from Utrecht Centraal (Netherlands) to Amersfoort Centraal (Netherlands)</name>
+<styleUrl>#idStylePT_IC 11757</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>5.111114</longitude>
+<latitude>52.089720</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+5.111114,52.089720,0 5.125281,52.110279,0 5.204170,52.129722,0 5.241664,52.139997,0 5.373886,52.153337,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC   241 from Amersfoort Centraal (Netherlands) to OSNABRUECK HBF (Germany)</name>
+<styleUrl>#idStylePT_IC   241</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>5.373886</longitude>
+<latitude>52.153337</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+5.373886,52.153337,0 5.457225,52.166389,0 5.970276,52.209448,0 6.006664,52.216109,0 6.101941,52.238887,0 6.160829,52.256947,0 6.215555,52.250555,0 6.421390,52.284166,0 6.519445,52.311943,0 6.592500,52.361392,0 6.655829,52.357221,0 6.666391,52.342497,0 6.748607,52.298333,0 6.793607,52.262223,0 6.820556,52.269163,0 6.933614,52.306387,0 7.033906,52.307673,0 7.040280,52.309165,0 7.158614,52.309722,0 7.434169,52.276390,0 8.061670,52.272777,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>EC     8 from OSNABRUECK HBF (Germany) to HAMBURG HBF (Germany)</name>
+<styleUrl>#idStylePT_EC     8</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>8.061670</longitude>
+<latitude>52.272777</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+8.061670,52.272777,0 8.813887,53.083613,0 9.991663,53.455829,0 10.006945,53.552778,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>EN   346 from HAMBURG HBF (Germany) to Stockholm Central (Sweden)</name>
+<styleUrl>#idStylePT_EN   346</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>10.006945</longitude>
+<latitude>53.552778</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+10.006945,53.552778,0 9.363335,54.814719,0 9.361942,54.816391,0 9.359721,54.822774,0 10.386667,55.401670,0 12.648892,55.629169,0 12.826366,55.575485,0 12.828937,55.574362,0 13.000829,55.609447,0 13.186663,55.708058,0 13.763060,56.157501,0 14.556107,56.898608,0 14.693893,57.652218,0 15.624726,58.416391,0 16.183334,58.596391,0 18.058052,59.330001,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>transfer from Stockholm Central (Sweden) to Stockholm Tegelvikshamnen (Sweden)</name>
+<styleUrl>#idStylePT_transfer</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>18.058052</longitude>
+<latitude>59.330001</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+18.058052,59.330001,0 18.096391,59.315834,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>ShiVikLi from Stockholm Tegelvikshamnen (Sweden) to TURKU SATAMA (Finland)</name>
+<styleUrl>#idStylePT_ShiVikLi</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>18.096391</longitude>
+<latitude>59.315834</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+18.096391,59.315834,0 19.598893,59.831941,0 22.226944,60.434164,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>77948 from TURKU SATAMA (Finland) to KUPITTAA (Finland)</name>
+<styleUrl>#idStylePT_77948</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>22.226944</longitude>
+<latitude>60.434164</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+22.226944,60.434164,0 22.297221,60.450282,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC   948 from KUPITTAA (Finland) to HELSINKI (Finland)</name>
+<styleUrl>#idStylePT_IC   948</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>22.297221</longitude>
+<latitude>60.450282</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+22.297221,60.450282,0 23.121388,60.384723,0 23.661388,60.068609,0 24.813608,60.219448,0 24.933614,60.198611,0 24.941111,60.172218,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

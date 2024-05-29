@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=5c.0308241.1714129968&input=LJUBLJANA &#x0028;Slovenia&#x0029;!&start=yes&">LJUBLJANA &#x0028;Slovenia&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=5c.0308241.1714129968&input=SPLIT &#x0028;Croatia&#x0029;!&start=yes&">SPLIT &#x0028;Croatia&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>LJUBLJANA (Slovenia) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/317100/294791/14762/98319/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=5c.0308241.1714129968&">EN 40237</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=5c.0308241.1714129968&input=ZAGREB GLAVNI KOL. (Croatia)!&start=yes&">ZAGREB GLAVNI KOL. (Croatia)</a>
+arr 10:39]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>14.510280</longitude>
+<latitude>46.058057</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>14.510280,46.058057,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>ZIDANI MOST (Slovenia) dep 09:19</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.170555</longitude>
+<latitude>46.085555</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.170555,46.085555,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SEVNICA (Slovenia) dep 09:35</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.301393</longitude>
+<latitude>46.009722</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.301393,46.009722,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KRSKO (Slovenia) dep 09:48</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.493610</longitude>
+<latitude>45.956389</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.493610,45.956389,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DOBOVA (Slovenia) dep 10:15</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.654723</longitude>
+<latitude>45.898337</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.654723,45.898337,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DOBOVA (GR) (Slovenia) dep 10:17</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.679983</longitude>
+<latitude>45.890714</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.679983,45.890714,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SAVSKI MAROF GR. (Croatia) dep 10:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.740004</longitude>
+<latitude>45.871945</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.740004,45.871945,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>ZAGREB GLAVNI KOL. (Croatia) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/163398/281996/535040/213054/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=5c.0308241.1714129968&">IC   523</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=5c.0308241.1714129968&input=SPLIT (Croatia)!&start=yes&">SPLIT (Croatia)</a>
+arr 21:53]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>15.978892</longitude>
+<latitude>45.804445</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.978892,45.804445,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>KARLOVAC (Croatia) dep 16:12</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.545001</longitude>
+<latitude>45.499998</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.545001,45.499998,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OSTARIJE (Croatia) dep 16:59</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.296386</longitude>
+<latitude>45.234448</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.296386,45.234448,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PLASKI (Croatia) dep 17:16</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.368057</longitude>
+<latitude>45.078332</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.368057,45.078332,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VRHOVINE (Croatia) dep 17:58</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.426946</longitude>
+<latitude>44.848891</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.426946,44.848891,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LICKO LESCE (Croatia) dep 18:10</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.358610</longitude>
+<latitude>44.773058</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.358610,44.773058,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GOSPIC (Croatia) dep 18:34</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.393614</longitude>
+<latitude>44.536112</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.393614,44.536112,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LOVINAC (Croatia) dep 18:56</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.663892</longitude>
+<latitude>44.376113</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.663892,44.376113,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GRACAC (Croatia) dep 19:09</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>15.822219</longitude>
+<latitude>44.300280</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>15.822219,44.300280,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KNIN (Croatia) dep 20:01</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.198337</longitude>
+<latitude>44.036671</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.198337,44.036671,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DRNIS (Croatia) dep 20:20</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.181941</longitude>
+<latitude>43.863611</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.181941,43.863611,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PERKOVIC (Croatia) dep 20:56</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.117776</longitude>
+<latitude>43.675556</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.117776,43.675556,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>KASTEL STARI (Croatia) dep 21:28</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.344726</longitude>
+<latitude>43.567497</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.344726,43.567497,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SPLIT PREDGRADE (Croatia) dep 21:49</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>16.455276</longitude>
+<latitude>43.522218</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.455276,43.522218,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>SPLIT (Croatia) arr 21:53</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>16.443059</longitude>
+<latitude>43.504725</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>16.443059,43.504725,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+LJUBLJANA (Slovenia)
+</td>
+<td align="center">
+Th,&nbsp;29.02.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+08:30
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="8" valign="top" style="white-space:nowrap;">
+EN 40237
+</td>
+<td rowspan="8" valign="top">
+Euro Night
+Direction: ZAGREB GLAVNI KOL. (Croatia)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ZIDANI MOST (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:19
+</td>
+<td class="result" >
+09:19
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SEVNICA (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:35
+</td>
+<td class="result" >
+09:35
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+KRSKO (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:48
+</td>
+<td class="result" >
+09:48
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DOBOVA (Slovenia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:00
+</td>
+<td class="result" >
+10:15
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+DOBOVA (GR) (Slovenia)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:17
+</td>
+<td class="result" >
+10:17
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SAVSKI MAROF GR. (Croatia)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+10:21
+</td>
+<td class="result" >
+10:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+ZAGREB GLAVNI KOL. (Croatia)
+</td>
+<td align="center">
+Th,&nbsp;29.02.24
+</td>
+<td>
+10:39
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+ZAGREB GLAVNI KOL. (Croatia)
+</td>
+<td align="center">
+Th,&nbsp;29.02.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+15:18
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="15" valign="top" style="white-space:nowrap;">
+IC   523
+</td>
+<td rowspan="15" valign="top">
+Intercity
+Direction: SPLIT (Croatia)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KARLOVAC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:11
+</td>
+<td class="result" >
+16:12
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+OSTARIJE (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:59
+</td>
+<td class="result" >
+16:59
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PLASKI (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:16
+</td>
+<td class="result" >
+17:16
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+VRHOVINE (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+17:57
+</td>
+<td class="result" >
+17:58
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LICKO LESCE (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:10
+</td>
+<td class="result" >
+18:10
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+GOSPIC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:33
+</td>
+<td class="result" >
+18:34
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LOVINAC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+18:55
+</td>
+<td class="result" >
+18:56
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+GRACAC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+19:08
+</td>
+<td class="result" >
+19:09
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KNIN (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:00
+</td>
+<td class="result" >
+20:01
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DRNIS (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:19
+</td>
+<td class="result" >
+20:20
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PERKOVIC (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+20:45
+</td>
+<td class="result" >
+20:56
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+KASTEL STARI (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:27
+</td>
+<td class="result" >
+21:28
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+SPLIT PREDGRADE (Croatia)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+21:47
+</td>
+<td class="result" >
+21:49
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+SPLIT (Croatia)
+</td>
+<td align="center">
+Th,&nbsp;29.02.24
+</td>
+<td>
+21:53
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 13:23;
+runs
+daily, not 24. Mar
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>15.978892</longitude>
+<latitude>45.804445</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+14.510280,46.058057,0 15.170555,46.085555,0 15.301393,46.009722,0 15.493610,45.956389,0 15.654723,45.898337,0 15.679983,45.890714,0 15.740004,45.871945,0 15.978892,45.804445,0 15.545001,45.499998,0 15.296386,45.234448,0 15.368057,45.078332,0 15.426946,44.848891,0 15.358610,44.773058,0 15.393614,44.536112,0 15.663892,44.376113,0 15.822219,44.300280,0 16.198337,44.036671,0 16.181941,43.863611,0 16.117776,43.675556,0 16.344726,43.567497,0 16.455276,43.522218,0 16.443059,43.504725,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>EN 40237 from LJUBLJANA (Slovenia) to ZAGREB GLAVNI KOL. (Croatia)</name>
+<styleUrl>#idStylePT_EN 40237</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>14.510280</longitude>
+<latitude>46.058057</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+14.510280,46.058057,0 15.170555,46.085555,0 15.301393,46.009722,0 15.493610,45.956389,0 15.654723,45.898337,0 15.679983,45.890714,0 15.740004,45.871945,0 15.978892,45.804445,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC   523 from ZAGREB GLAVNI KOL. (Croatia) to SPLIT (Croatia)</name>
+<styleUrl>#idStylePT_IC   523</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>15.978892</longitude>
+<latitude>45.804445</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+15.978892,45.804445,0 15.545001,45.499998,0 15.296386,45.234448,0 15.368057,45.078332,0 15.426946,44.848891,0 15.358610,44.773058,0 15.393614,44.536112,0 15.663892,44.376113,0 15.822219,44.300280,0 16.198337,44.036671,0 16.181941,43.863611,0 16.117776,43.675556,0 16.344726,43.567497,0 16.455276,43.522218,0 16.443059,43.504725,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

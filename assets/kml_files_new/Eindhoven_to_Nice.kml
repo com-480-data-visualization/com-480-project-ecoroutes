@@ -1,0 +1,1287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ec.0123981.1714134866&input=Eindhoven Centraal &#x0028;Netherlands&#x0029;!&start=yes&">Eindhoven Centraal &#x0028;Netherlands&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ec.0123981.1714134866&input=NICE VILLE &#x0028;France&#x0029;!&start=yes&">NICE VILLE &#x0028;France&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>Eindhoven Centraal (Netherlands) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/955947/588451/718046/40374/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ec.0123981.1714134866&">RE  6422</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ec.0123981.1714134866&input=Tilburg (Netherlands)!&start=yes&">Tilburg (Netherlands)</a>
+arr 07:20]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>5.480004</longitude>
+<latitude>51.442218</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.480004,51.442218,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>Eindhoven Strijp-S (Netherlands) dep 06:54</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.457504</longitude>
+<latitude>51.450282</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.457504,51.450282,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Best (Netherlands) dep 07:00</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.389168</longitude>
+<latitude>51.509440</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.389168,51.509440,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Boxtel (Netherlands) dep 07:07</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.319169</longitude>
+<latitude>51.584724</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.319169,51.584724,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Oisterwijk (Netherlands) dep 07:14</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.193608</longitude>
+<latitude>51.581947</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.193608,51.581947,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>Tilburg (Netherlands) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/650892/389175/982352/274212/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ec.0123981.1714134866&">IC  3619</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ec.0123981.1714134866&input=Breda (Netherlands)!&start=yes&">Breda (Netherlands)</a>
+arr 07:40]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>5.083885</longitude>
+<latitude>51.560274</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.083885,51.560274,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>Tilburg Universiteit (Netherlands) dep 07:29</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.049448</longitude>
+<latitude>51.565281</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.049448,51.565281,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Tilburg Reeshof (Netherlands) dep 07:32</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.993058</longitude>
+<latitude>51.573892</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.993058,51.573892,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Gilze-Rijen (Netherlands) dep 07:34</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.924722</longitude>
+<latitude>51.584167</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.924722,51.584167,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>Breda (Netherlands) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/178971/407269/395448/138067/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ec.0123981.1714134866&">IC  9212</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ec.0123981.1714134866&input=ANVERS-CENTRAL (Belgium)!&start=yes&">ANVERS-CENTRAL (Belgium)</a>
+arr 08:16]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>4.779996</longitude>
+<latitude>51.594999</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.779996,51.594999,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>Hazeldonk(Gr) (Netherlands) dep 07:50</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.734726</longitude>
+<latitude>51.485834</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.734726,51.485834,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Hazeldonk Gr (Belgium) dep 07:50</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.734726</longitude>
+<latitude>51.485834</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.734726,51.485834,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NOORDERKEMPEN (BRECHT) (Belgium) dep 08:01</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.631944</longitude>
+<latitude>51.356668</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.631944,51.356668,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>ANVERS-CENTRAL (Belgium) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/777327/620127/297446/110386/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ec.0123981.1714134866&">EUR 9916</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ec.0123981.1714134866&input=AEROPORT CDG2 TGV ROISSY (France)!&start=yes&">AEROPORT CDG2 TGV ROISSY (France)</a>
+arr 10:49]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>4.420832</longitude>
+<latitude>51.216940</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.420832,51.216940,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>BRUXELLES-MIDI (Belgium) dep 09:32</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.336387</longitude>
+<latitude>50.835554</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.336387,50.835554,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>AEROPORT CDG2 TGV ROISSY (France) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/114765/346467/675696/299593/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ec.0123981.1714134866&">OGV 7897</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ec.0123981.1714134866&input=TOULON (France)!&start=yes&">TOULON (France)</a>
+arr 15:06]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>2.571113</longitude>
+<latitude>49.003885</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.571113,49.003885,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>MARNE LA VALLEE CHESSY (France) dep 11:16</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>2.782503</longitude>
+<latitude>48.869721</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.782503,48.869721,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LYON-SAINT EXUPERY TGV (France) dep 12:58</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.075552</longitude>
+<latitude>45.720836</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.075552,45.720836,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>AIX EN PROVENCE TGV (France) dep 14:13</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.317218</longitude>
+<latitude>43.454997</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.317218,43.454997,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>TOULON (France) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/172533/318912/72678/21172/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ec.0123981.1714134866&">TGV 6165</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=ec.0123981.1714134866&input=NICE VILLE (France)!&start=yes&">NICE VILLE (France)</a>
+arr 17:03]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>5.929168</longitude>
+<latitude>43.128329</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.929168,43.128329,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>ST RAPHAEL VALESCURE (France) dep 16:04</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.769165</longitude>
+<latitude>43.423607</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.769165,43.423607,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>CANNES (France) dep 16:31</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.018607</longitude>
+<latitude>43.553887</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.018607,43.553887,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ANTIBES (France) dep 16:43</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>7.119448</longitude>
+<latitude>43.585835</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.119448,43.585835,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>NICE VILLE (France) arr 17:03</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>7.261945</longitude>
+<latitude>43.704448</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>7.261945,43.704448,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+Eindhoven Centraal (Netherlands)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+06:51
+</td>
+<td>
+3
+</td>
+<td rowspan="6" valign="top" style="white-space:nowrap;">
+RE  6422
+</td>
+<td rowspan="6" valign="top">
+Regional
+Direction: Tilburg Universiteit (Netherlands)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Eindhoven Strijp-S (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:54
+</td>
+<td class="result" >
+06:54
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Best (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:00
+</td>
+<td class="result" >
+07:00
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Boxtel (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:07
+</td>
+<td class="result" >
+07:07
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Oisterwijk (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:14
+</td>
+<td class="result" >
+07:14
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+Tilburg (Netherlands)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+07:20
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+2
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+Tilburg (Netherlands)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+07:28
+</td>
+<td>
+3
+</td>
+<td rowspan="5" valign="top" style="white-space:nowrap;">
+IC  3619
+</td>
+<td rowspan="5" valign="top">
+Intercity
+Direction: Roosendaal (Netherlands)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+Tilburg Universiteit (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:29
+</td>
+<td class="result" >
+07:29
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+Tilburg Reeshof (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:32
+</td>
+<td class="result" >
+07:32
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+Gilze-Rijen (Netherlands)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:34
+</td>
+<td class="result" >
+07:34
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+Breda (Netherlands)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+07:40
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+8
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+Breda (Netherlands)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+07:42
+</td>
+<td>
+7
+</td>
+<td rowspan="5" valign="top" style="white-space:nowrap;">
+IC  9212
+</td>
+<td rowspan="5" valign="top">
+Intercity
+Direction: BRUXELLES-MIDI (Belgium)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Hazeldonk(Gr) (Netherlands)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:50
+</td>
+<td class="result" >
+07:50
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+Hazeldonk Gr (Belgium)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:50
+</td>
+<td class="result" >
+07:50
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+NOORDERKEMPEN (BRECHT) (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:00
+</td>
+<td class="result" >
+08:01
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+ANVERS-CENTRAL (Belgium)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+08:16
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+23
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+ANVERS-CENTRAL (Belgium)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+08:33
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="3" valign="top" style="white-space:nowrap;">
+EUR 9916
+</td>
+<td rowspan="3" valign="top">
+Eurostar
+Direction: MARNE LA VALLEE CHESSY (France)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BRUXELLES-MIDI (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:08
+</td>
+<td class="result" >
+09:32
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+AEROPORT CDG2 TGV ROISSY (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+10:49
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+AEROPORT CDG2 TGV ROISSY (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+11:02
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="5" valign="top" style="white-space:nowrap;">
+OGV 7897
+</td>
+<td rowspan="5" valign="top">
+OUIGO Grande Vitesse
+Direction: TOULON (France)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MARNE LA VALLEE CHESSY (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:11
+</td>
+<td class="result" >
+11:16
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LYON-SAINT EXUPERY TGV (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+12:55
+</td>
+<td class="result" >
+12:58
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+AIX EN PROVENCE TGV (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:10
+</td>
+<td class="result" >
+14:13
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+TOULON (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+15:06
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+TOULON (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+15:15
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="5" valign="top" style="white-space:nowrap;">
+TGV 6165
+</td>
+<td rowspan="5" valign="top">
+TGV INOUI
+Direction: NICE VILLE (France)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ST RAPHAEL VALESCURE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:01
+</td>
+<td class="result" >
+16:04
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+CANNES (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:27
+</td>
+<td class="result" >
+16:31
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+ANTIBES (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:40
+</td>
+<td class="result" >
+16:43
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+NICE VILLE (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+17:03
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 10:12;
+runs
+not every day, runs not every day
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>5.929168</longitude>
+<latitude>43.128329</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+5.480004,51.442218,0 5.457504,51.450282,0 5.389168,51.509440,0 5.319169,51.584724,0 5.193608,51.581947,0 5.083885,51.560274,0 5.049448,51.565281,0 4.993058,51.573892,0 4.924722,51.584167,0 4.779996,51.594999,0 4.734726,51.485834,0 4.734726,51.485834,0 4.631944,51.356668,0 4.420832,51.216940,0 4.336387,50.835554,0 2.571113,49.003885,0 2.782503,48.869721,0 5.075552,45.720836,0 5.317218,43.454997,0 5.929168,43.128329,0 6.769165,43.423607,0 7.018607,43.553887,0 7.119448,43.585835,0 7.261945,43.704448,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>RE  6422 from Eindhoven Centraal (Netherlands) to Tilburg (Netherlands)</name>
+<styleUrl>#idStylePT_RE  6422</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>5.480004</longitude>
+<latitude>51.442218</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+5.480004,51.442218,0 5.457504,51.450282,0 5.389168,51.509440,0 5.319169,51.584724,0 5.193608,51.581947,0 5.083885,51.560274,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC  3619 from Tilburg (Netherlands) to Breda (Netherlands)</name>
+<styleUrl>#idStylePT_IC  3619</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>5.083885</longitude>
+<latitude>51.560274</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+5.083885,51.560274,0 5.049448,51.565281,0 4.993058,51.573892,0 4.924722,51.584167,0 4.779996,51.594999,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC  9212 from Breda (Netherlands) to ANVERS-CENTRAL (Belgium)</name>
+<styleUrl>#idStylePT_IC  9212</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>4.779996</longitude>
+<latitude>51.594999</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+4.779996,51.594999,0 4.734726,51.485834,0 4.734726,51.485834,0 4.631944,51.356668,0 4.420832,51.216940,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>EUR 9916 from ANVERS-CENTRAL (Belgium) to AEROPORT CDG2 TGV ROISSY (France)</name>
+<styleUrl>#idStylePT_EUR 9916</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>4.420832</longitude>
+<latitude>51.216940</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+4.420832,51.216940,0 4.336387,50.835554,0 2.571113,49.003885,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>OGV 7897 from AEROPORT CDG2 TGV ROISSY (France) to TOULON (France)</name>
+<styleUrl>#idStylePT_OGV 7897</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>2.571113</longitude>
+<latitude>49.003885</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+2.571113,49.003885,0 2.782503,48.869721,0 5.075552,45.720836,0 5.317218,43.454997,0 5.929168,43.128329,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>TGV 6165 from TOULON (France) to NICE VILLE (France)</name>
+<styleUrl>#idStylePT_TGV 6165</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>5.929168</longitude>
+<latitude>43.128329</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+5.929168,43.128329,0 6.769165,43.423607,0 7.018607,43.553887,0 7.119448,43.585835,0 7.261945,43.704448,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

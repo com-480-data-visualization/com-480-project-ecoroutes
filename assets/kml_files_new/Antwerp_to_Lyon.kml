@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=3a.0132701.1714133273&input=ANTWERPEN-CENTRAAL &#x0028;Belgium&#x0029;!&start=yes&">ANTWERPEN-CENTRAAL &#x0028;Belgium&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=3a.0132701.1714133273&input=LYON LOC &#x0028;France&#x0029;!&start=yes&">LYON LOC &#x0028;France&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>ANVERS-CENTRAL (Belgium) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/227832/363184/106566/22661/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=3a.0132701.1714133273&">IC   705</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=3a.0132701.1714133273&input=COURTRAI (Belgium)!&start=yes&">COURTRAI (Belgium)</a>
+arr 07:01]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>4.420832</longitude>
+<latitude>51.216940</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.420832,51.216940,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>ANVERS-BERCHEM (Belgium) dep 05:42</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.431943</longitude>
+<latitude>51.199168</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.431943,51.199168,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>SAINT-NICOLAS (Belgium) dep 06:01</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.142778</longitude>
+<latitude>51.171391</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.142778,51.171391,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LOKEREN (Belgium) dep 06:11</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.987777</longitude>
+<latitude>51.108053</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.987777,51.108053,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GAND-DAMPOORT (Belgium) dep 06:24</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.740555</longitude>
+<latitude>51.056114</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.740555,51.056114,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>GAND-SAINT-PIERRE (Belgium) dep 06:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.710558</longitude>
+<latitude>51.035834</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.710558,51.035834,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WAREGEM (Belgium) dep 06:52</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.425277</longitude>
+<latitude>50.892222</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.425277,50.892222,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>COURTRAI (Belgium) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/626475/293167/872240/227295/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=3a.0132701.1714133273&">IC 19704</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=3a.0132701.1714133273&input=TOURCOING (France)!&start=yes&">TOURCOING (France)</a>
+arr 07:32]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>3.264442</longitude>
+<latitude>50.824444</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.264442,50.824444,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>MOUSCRON (Belgium) dep 07:27</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.228332</longitude>
+<latitude>50.740835</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.228332,50.740835,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MOUSCRON-FRONTIERE (Belgium) dep 07:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.195836</longitude>
+<latitude>50.721670</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.195836,50.721670,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TOURCOING FRONTIERE (France) dep 07:30</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.196115</longitude>
+<latitude>50.721940</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.196115,50.721940,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>TOURCOING (France) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/375123/432751/524488/137203/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=3a.0132701.1714133273&">OGV 7867</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=3a.0132701.1714133273&input=LYON PART DIEU (France)!&start=yes&">LYON PART DIEU (France)</a>
+arr 11:00]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>3.168059</longitude>
+<latitude>50.716663</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.168059,50.716663,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>AEROPORT CDG2 TGV ROISSY (France) dep 08:55</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>2.571113</longitude>
+<latitude>49.003885</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.571113,49.003885,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>MARNE LA VALLEE CHESSY (France) dep 09:13</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>2.782503</longitude>
+<latitude>48.869721</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>2.782503,48.869721,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>LYON PART DIEU (France) arr 11:00</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>4.858885</longitude>
+<latitude>45.760281</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.858885,45.760281,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+ANVERS-CENTRAL (Belgium)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+05:36
+</td>
+<td>
+1
+</td>
+<td rowspan="8" valign="top" style="white-space:nowrap;">
+IC   705
+</td>
+<td rowspan="8" valign="top">
+Intercity
+Direction: POPERINGE (Belgium)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+ANVERS-BERCHEM (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:40
+</td>
+<td class="result" >
+05:42
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+SAINT-NICOLAS (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+05:59
+</td>
+<td class="result" >
+06:01
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LOKEREN (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:10
+</td>
+<td class="result" >
+06:11
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GAND-DAMPOORT (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:23
+</td>
+<td class="result" >
+06:24
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+GAND-SAINT-PIERRE (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:33
+</td>
+<td class="result" >
+06:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+WAREGEM (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+06:51
+</td>
+<td class="result" >
+06:52
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+COURTRAI (Belgium)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+07:01
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+5
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+COURTRAI (Belgium)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+07:14
+</td>
+<td>
+5
+</td>
+<td rowspan="5" valign="top" style="white-space:nowrap;">
+IC 19704
+</td>
+<td rowspan="5" valign="top">
+Intercity
+Direction: LILLE FLANDRES (France)
+<br />
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MOUSCRON (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:24
+</td>
+<td class="result" >
+07:27
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+MOUSCRON-FRONTIERE (Belgium)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:30
+</td>
+<td class="result" >
+07:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+TOURCOING FRONTIERE (France)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+07:30
+</td>
+<td class="result" >
+07:30
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+TOURCOING (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+07:32
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+TOURCOING (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+07:44
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="4" valign="top" style="white-space:nowrap;">
+OGV 7867
+</td>
+<td rowspan="4" valign="top">
+OUIGO Grande Vitesse
+Direction: MONTPELLIER SUD DE FRANCE (France)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+AEROPORT CDG2 TGV ROISSY (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:48
+</td>
+<td class="result" >
+08:55
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+MARNE LA VALLEE CHESSY (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:05
+</td>
+<td class="result" >
+09:13
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+LYON PART DIEU (France)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+11:00
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 5:24;
+runs
+not every day, runs not every day
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>3.168059</longitude>
+<latitude>50.716663</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+4.420832,51.216940,0 4.431943,51.199168,0 4.142778,51.171391,0 3.987777,51.108053,0 3.740555,51.056114,0 3.710558,51.035834,0 3.425277,50.892222,0 3.264442,50.824444,0 3.228332,50.740835,0 3.195836,50.721670,0 3.196115,50.721940,0 3.168059,50.716663,0 2.571113,49.003885,0 2.782503,48.869721,0 4.858885,45.760281,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC   705 from ANVERS-CENTRAL (Belgium) to COURTRAI (Belgium)</name>
+<styleUrl>#idStylePT_IC   705</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>4.420832</longitude>
+<latitude>51.216940</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+4.420832,51.216940,0 4.431943,51.199168,0 4.142778,51.171391,0 3.987777,51.108053,0 3.740555,51.056114,0 3.710558,51.035834,0 3.425277,50.892222,0 3.264442,50.824444,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>IC 19704 from COURTRAI (Belgium) to TOURCOING (France)</name>
+<styleUrl>#idStylePT_IC 19704</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>3.264442</longitude>
+<latitude>50.824444</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+3.264442,50.824444,0 3.228332,50.740835,0 3.195836,50.721670,0 3.196115,50.721940,0 3.168059,50.716663,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>OGV 7867 from TOURCOING (France) to LYON PART DIEU (France)</name>
+<styleUrl>#idStylePT_OGV 7867</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>3.168059</longitude>
+<latitude>50.716663</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+3.168059,50.716663,0 2.571113,49.003885,0 2.782503,48.869721,0 4.858885,45.760281,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>

@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<open>1</open>
+<Icon>http://hafassrv.hacon.de/test-jt/lux_kml/hacon-news.gif</Icon>
+<name>HAFAS</name>
+<description><![CDATA[
+Journey on Fr, 01.03.24 from <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7q.03741.1714133912&input=COLOGNE &#x0028;Germany&#x0029;!&start=yes&">COLOGNE &#x0028;Germany&#x0029;</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7q.03741.1714133912&input=EDINBURGH &#x0028;United Kingdom&#x0029;!&start=yes&">EDINBURGH &#x0028;United Kingdom&#x0029;</a> at 06:00
+(Departure)
+]]></description>
+<Style id="idStyleWalk">
+<IconStyle id="idStyleIconWalk">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_walk.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineWalk">
+<geomScale>2</geomScale>
+<color>f717F787</color>
+</LineStyle>
+</Style>
+<Style id="idStyleBike">
+<IconStyle id="idStyleIconBike">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_bike.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineBike">
+<geomScale>2</geomScale>
+<color>ff17D0FD</color>
+</LineStyle>
+</Style>
+<Style id="idStyleP_Ride">
+<IconStyle id="idStyleIconP_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineP_Ride">
+<geomScale>2</geomScale>
+<color>ffaa0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleK_Ride">
+<IconStyle id="idStyleIconK_Ride">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_car.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineK_Ride">
+<geomScale>2</geomScale>
+<color>ffee0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxi">
+<IconStyle id="idStyleIconTaxi">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxi">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTaxiEnd">
+<IconStyle id="idStyleIconTaxiEnd">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_taxi.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTaxiEnd">
+<geomScale>2</geomScale>
+<color>ffff0000</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTrain">
+<IconStyle id="idStyleIconTrain">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTrain">
+<geomScale>2</geomScale>
+<color>ff00ffff</color>  </LineStyle>
+</Style>
+<Style id="idStyleUnknown">
+<IconStyle id="idStyleIconUnknown">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_unknown.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineUnknown">
+<geomScale>2</geomScale>
+<color>50ffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStyleTransfer">
+<IconStyle id="idStyleIconTransfer">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/iv_transfer.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLineTransfer">
+<geomScale>2</geomScale>
+<color>ff0000bb</color>
+</LineStyle>
+</Style>
+<Style id="idStyleIconSource">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_start.png</href>
+<x>160</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconIntermediate">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_intermediatestop.png</href>
+<x>160</x>
+<y>192</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStyleIconTarget">
+<IconStyle>
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/kml_journey_destination.png</href>
+<x>64</x>
+<y>224</y>
+<w>32</w>
+<h>32</h>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="idStylePT_ic">
+<IconStyle id="idStyleIconPT_ic">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ic">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ec">
+<IconStyle id="idStyleIconPT_ec">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_highspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ec">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_ice">
+<IconStyle id="idStyleIconPT_ice">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_ice">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_cis">
+<IconStyle id="idStyleIconPT_cis">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_superspeed.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_cis">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Style id="idStylePT_r">
+<IconStyle id="idStyleIconPT_r">
+<Icon>
+<href>http://hafassrv.hacon.de/test-jt/lux_kml/mot_train.gif</href>
+</Icon>
+</IconStyle>
+<LineStyle id="idStyleLinePT_r">
+<geomScale>2</geomScale>
+<color>ffffffff</color>
+</LineStyle>
+</Style>
+<Placemark>
+<name>KOELN HBF (Germany) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/992010/402330/918430/128545/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7q.03741.1714133912&">ICE   18</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7q.03741.1714133912&input=BRUXELLES-MIDI (Belgium)!&start=yes&">BRUXELLES-MIDI (Belgium)</a>
+arr 09:35]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>6.958613</longitude>
+<latitude>50.943056</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.958613,50.943056,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>AACHEN HBF (Germany) dep 08:21</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.091387</longitude>
+<latitude>50.767776</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.091387,50.767776,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>AACHEN SUED(GR) (Germany) dep 08:24</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>6.045282</longitude>
+<latitude>50.731945</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>6.045282,50.731945,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>AACHEN SUED GRENZE (Belgium) dep 08:34</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.805836</longitude>
+<latitude>50.678054</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.805836,50.678054,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LIEGE-GUILLEMINS (Belgium) dep 08:46</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>5.566669</longitude>
+<latitude>50.624443</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>5.566669,50.624443,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BRUXELLES-NORD (Belgium) dep 09:28</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>4.360829</longitude>
+<latitude>50.859448</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.360829,50.859448,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>BRUXELLES-MIDI (Belgium) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/19014/351220/495822/241573/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7q.03741.1714133912&">ES  9125</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7q.03741.1714133912&input=LONDON ST PANCRAS INTL (United Kingdom)!&start=yes&">LONDON ST PANCRAS INTL (United Kingdom)</a>
+arr 11:57]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>4.336387</longitude>
+<latitude>50.835554</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>4.336387,50.835554,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>LILLE EUROPE (France) dep 11:36</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>3.075560</longitude>
+<latitude>50.639446</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>3.075560,50.639446,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>LONDON ST PANCRAS INTL (United Kingdom) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7q.03741.1714133912&">transfer</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7q.03741.1714133912&input=LONDON KINGS CROSS (United Kingdom)!&start=yes&">LONDON KINGS CROSS (United Kingdom)</a>
+arr 12:48]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>0.</longitude>
+<latitude>51.530555</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>0.,51.530555,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LONDON KINGS CROSS (United Kingdom) dep </name>
+<description><![CDATA[
+<a href="https://ecopassenger.hafas.de/bin/traininfo.exe/en/568953/388780/21184/179059/81?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7q.03741.1714133912&">---</a>
+to <a href="https://ecopassenger.hafas.de/bin/stboard.exe/en?ld=uic-eco&L=vs_uic&protocol=https:&seqnr=2&ident=7q.03741.1714133912&input=EDINBURGH (United Kingdom)!&start=yes&">EDINBURGH (United Kingdom)</a>
+arr 17:23]]>
+</description>
+<styleUrl>#idStyleIconSource</styleUrl>
+<LookAt>
+<longitude>0.</longitude>
+<latitude>51.528335</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>0.,51.528335,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Intermediate Stops</name>
+<open>0</open>
+<visibility>0</visibility>
+<Placemark>
+<name>PETERBOROUGH (United Kingdom) dep 13:49</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>0.</longitude>
+<latitude>52.572225</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>0.,52.572225,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YORK (United Kingdom) dep 14:55</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>-1.091668</longitude>
+<latitude>53.955000</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>-1.091668,53.955000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DARLINGTON (United Kingdom) dep 15:23</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>-1.545830</longitude>
+<latitude>54.517500</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>-1.545830,54.517500,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NEWCASTLE (United Kingdom) dep 15:52</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>-1.615829</longitude>
+<latitude>54.965280</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>-1.615829,54.965280,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>BERWICK-UPON-TWEED (United Kingdom) dep 16:37</name>
+<styleUrl>#idStyleIconIntermediate</styleUrl>
+<visibility>0</visibility>
+<LookAt>
+<longitude>-2.009440</longitude>
+<latitude>55.772223</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>-2.009440,55.772223,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name>EDINBURGH (United Kingdom) arr 17:23</name>
+<styleUrl>#idStyleIconTarget</styleUrl>
+<LookAt>
+<longitude>-3.186667</longitude>
+<latitude>55.949724</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<Point>
+<coordinates>-3.186667,55.949724,0</coordinates>
+</Point>
+</Placemark>
+<Folder>
+<name>Route</name>
+<Snippet></Snippet>
+<description><![CDATA[
+<table border="0" cellspacing="0">
+<tr bgcolor="#dddddd">
+<th >Station/Stop</th>
+<th>Date</th>
+<th>Arr.</th>
+<th class="resultdark">Dep.</th>
+<th>Platform</th>
+<th>Products</th>
+<th>Comments</th>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+KOELN HBF (Germany)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+07:42
+</td>
+<td>
+5 A-C
+</td>
+<td rowspan="7" valign="top" style="white-space:nowrap;">
+ICE   18
+</td>
+<td rowspan="7" valign="top">
+ICE
+Direction: BRUXELLES-MIDI (Belgium)
+<br />
+</td>
+<tr bgcolor="#ffffff">
+<td class="result" >
+AACHEN HBF (Germany)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:16
+</td>
+<td class="result" >
+08:21
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+AACHEN SUED(GR) (Germany)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:24
+</td>
+<td class="result" >
+08:24
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+AACHEN SUED GRENZE (Belgium)
+<img src="http://hafassrv.hacon.de/test-jt/lux_kml/douane.gif" border="0" alt="" />
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:34
+</td>
+<td class="result" >
+08:34
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+LIEGE-GUILLEMINS (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+08:44
+</td>
+<td class="result" >
+08:46
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td class="result" >
+BRUXELLES-NORD (Belgium)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+09:26
+</td>
+<td class="result" >
+09:28
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>
+BRUXELLES-MIDI (Belgium)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+09:35
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+8
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+BRUXELLES-MIDI (Belgium)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+10:56
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="3" valign="top" style="white-space:nowrap;">
+ES  9125
+</td>
+<td rowspan="3" valign="top">
+Eurostar
+Direction: LONDON ST PANCRAS INTL (United Kingdom)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+LILLE EUROPE (France)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+11:31
+</td>
+<td class="result" >
+11:36
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+LONDON ST PANCRAS INTL (United Kingdom)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+11:57
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td >
+LONDON ST PANCRAS INTL (United Kingdom)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+11:57
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="2" valign="top" style="white-space:nowrap;">
+transfer
+</td>
+<td rowspan="2" valign="top">
+51 min.
+</td>
+<tr bgcolor="#ffffff">
+<td>
+LONDON KINGS CROSS (United Kingdom)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+12:48
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td >
+LONDON KINGS CROSS (United Kingdom)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+13:00
+</td>
+<td>
+&nbsp;
+</td>
+<td rowspan="7" valign="top" style="white-space:nowrap;">
+---
+</td>
+<td rowspan="7" valign="top">
+Express
+Direction: EDINBURGH (United Kingdom)
+<br />
+Reservation compulsory,
+</td>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+PETERBOROUGH (United Kingdom)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+13:46
+</td>
+<td class="result" >
+13:49
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+YORK (United Kingdom)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+14:52
+</td>
+<td class="result" >
+14:55
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+DARLINGTON (United Kingdom)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:21
+</td>
+<td class="result" >
+15:23
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+NEWCASTLE (United Kingdom)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+15:49
+</td>
+<td class="result" >
+15:52
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td class="result" >
+BERWICK-UPON-TWEED (United Kingdom)
+</td>
+<td align="center">&nbsp;</td>
+<td class="result" >
+16:34
+</td>
+<td class="result" >
+16:37
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td>
+EDINBURGH (United Kingdom)
+</td>
+<td align="center">
+Fr,&nbsp;01.03.24
+</td>
+<td>
+17:23
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="6">
+Duration: 10:41;
+runs
+not every day, 1. Mar until 31. May 2024 Mo - Fr; not 1. Apr, 6., 27. May
+</td>
+</tr>
+</table>
+]]></description>
+<visibility>1</visibility>
+<Placemark>
+<name>Complete Route</name>
+<visibility>0</visibility>
+<Style id="idStyleLineInvisible">
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>0.</longitude>
+<latitude>51.528335</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+6.958613,50.943056,0 6.091387,50.767776,0 6.045282,50.731945,0 5.805836,50.678054,0 5.566669,50.624443,0 4.360829,50.859448,0 4.336387,50.835554,0 3.075560,50.639446,0 0.,51.530555,0 0.,51.528335,0 0.,52.572225,0 -1.091668,53.955000,0 -1.545830,54.517500,0 -1.615829,54.965280,0 -2.009440,55.772223,0 -3.186667,55.949724,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>ICE   18 from KOELN HBF (Germany) to BRUXELLES-MIDI (Belgium)</name>
+<styleUrl>#idStylePT_ICE   18</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>6.958613</longitude>
+<latitude>50.943056</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+6.958613,50.943056,0 6.091387,50.767776,0 6.045282,50.731945,0 5.805836,50.678054,0 5.566669,50.624443,0 4.360829,50.859448,0 4.336387,50.835554,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>ES  9125 from BRUXELLES-MIDI (Belgium) to LONDON ST PANCRAS INTL (United Kingdom)</name>
+<styleUrl>#idStylePT_ES  9125</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>4.336387</longitude>
+<latitude>50.835554</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+4.336387,50.835554,0 3.075560,50.639446,0 0.,51.530555,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>transfer from LONDON ST PANCRAS INTL (United Kingdom) to LONDON KINGS CROSS (United Kingdom)</name>
+<styleUrl>#idStylePT_transfer</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>0.</longitude>
+<latitude>51.530555</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+0.,51.530555,0 0.,51.528335,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>--- from LONDON KINGS CROSS (United Kingdom) to EDINBURGH (United Kingdom)</name>
+<styleUrl>#idStylePT_---</styleUrl>
+<Style>
+<LineStyle>
+<geomScale>0</geomScale>
+<color>7f00ff00</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<LineString>
+<extrude>0</extrude>
+<tessellate>0</tessellate>
+<LookAt>
+<longitude>0.</longitude>
+<latitude>51.528335</latitude>
+<range>1000.000000000000000</range>
+<tilt>60.000000000000000</tilt>
+</LookAt>
+<coordinates>
+0.,51.528335,0 0.,52.572225,0 -1.091668,53.955000,0 -1.545830,54.517500,0 -1.615829,54.965280,0 -2.009440,55.772223,0 -3.186667,55.949724,0
+</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>
