@@ -2,7 +2,7 @@
 <!-- <img src="assets/m2_mock_cities_2.png" alt="Mock of cities section visualisations for M2"> -->
 <script src="https://unpkg.com/leaflet-curve/src/leaflet.curve.js"></script>
 
-<div>
+<div class="route-text">
 
     <h1> Drop A Pin </h1>
     <br>
@@ -22,18 +22,18 @@
 </div>
 
 <div class="search-area">
-    <h1>Search for a city</h1>
+    <!-- <h1>Search for a city</h1>
     <div class="text-for-search">
         Here you can search for a city and see the top destinations reachable by the least amount of CO2 emissions. <br>
         Enter the city name, number of cities to display and the maximum distance to search for. <br><br>
-    </div>
+    </div> -->
     <input type="text" id="citySearch" (ngModelChange)="search($event)" [(ngModel)]="cityInput" placeholder="City name">
     <ul *ngIf="filteredCities.length" class="suggestions">
         <li *ngFor="let city of filteredCities" (click)="selectCity(city)">{{ city }}</li>
     </ul>
     <input type="number" id="cityCount" placeholder="n" min="1" max="10" title="Number of Cities">
     <input type="number" id="maxDistance" placeholder="Max distance (km)" title="Maximum Distance">
-    <button (click)="searchCity()">Search</button>
+    <button class="toggle-button" (click)="searchCity()">Search</button>
     <br><br>
 </div>
 
@@ -51,9 +51,9 @@
 </div>
 
 
-<div>
+<div class="route-text" style="margin-top: 60px;">
 
-    <h1> Eco-Network </h1>
+    <h1> Eco-Networks </h1>
     The following visualization reveals how cities, countries, and regions are linked not just by road routes, but by
     their environmental impacts as well.<br><br>
 
