@@ -1,76 +1,78 @@
 <!-- <img src="assets/m2_mock_cities_1.png" alt="Mock of cities section visualisations for M2"> -->
 <!-- <img src="assets/m2_mock_cities_2.png" alt="Mock of cities section visualisations for M2"> -->
 <script src="https://unpkg.com/leaflet-curve/src/leaflet.curve.js"></script>
+<main>
+    <div class="route-text">
 
-<div class="route-text">
+        <h1> Drop A Pin! </h1>
+        Let's explore how traveling locally can simplify your adventures while minimizing environmental impact.
+        Discover how local journeys can enrich your travel experience and also contribute to a healthier planet.
+        <br><br>
 
-    <h1> Drop A Pin </h1>
-    <br>
-    Now, let's explore how traveling locally can simplify your adventures while minimizing environmental impact.
-    Discover how local journeys can enrich your travel experience and also contribute to a healthier planet. <br><br>
+        Start by selecting a city, enter the number of cities to display and discover a range of nearby destinations
+        within your chosen travel radius. As you
+        navigate through the map, each pin drop reveals the most eco-friendly routes, highlighting low train CO2
+        emissions
+        and promoting greener travel choices. <br><br>
 
-    Start by selecting a city and discover a range of nearby destinations within your chosen travel radius. As you
-    navigate through the map, each pin drop reveals the most eco-friendly routes, highlighting low train CO2 emissions
-    and promoting greener travel choices. <br><br>
+        Dive into the latest travel trend: base yourself in a single city and spend a few days uncovering the local
+        places
+        just a short trip away – minimizing your carbon footprint while maximizing your explorations. <br><br>
 
-    Dive into the latest travel trend: base yourself in a single city and spend a few days uncovering the local places
-    just a short trip away – minimizing your carbon footprint while maximizing your explorations. <br><br>
-
-    Drop a pin in Lausanne, and see how easy and eco-friendly your next weekend getaway can be! <br><br>
+        Drop a pin in Lausanne, and see how easy and eco-friendly your next weekend getaway can be!
 
 
-</div>
+    </div>
 
-<div class="search-area">
-    <!-- <h1>Search for a city</h1>
+    <div class="search-area">
+        <!-- <h1>Search for a city</h1>
     <div class="text-for-search">f
         Here you can search for a city and see the top destinations reachable by the least amount of CO2 emissions. <br>
         Enter the city name, number of cities to display and the maximum distance to search for. <br><br>
     </div> -->
-    <input type="text" id="citySearch" (ngModelChange)="search($event)" [(ngModel)]="cityInput" placeholder="City name">
-    <ul *ngIf="filteredCities.length" class="suggestions">
-        <li *ngFor="let city of filteredCities" (click)="selectCity(city)">{{ city }}</li>
-    </ul>
-    <input type="number" id="cityCount" placeholder="N" min="1" max="10" title="Number of Cities">
-    <input type="number" id="maxDistance" placeholder="Max distance (km)" title="Maximum Distance">
-    <button class="search-button" (click)="searchCity()">Search</button>
-    <br><br>
-</div>
+        <input type="text" id="citySearch" (ngModelChange)="search($event)" [(ngModel)]="cityInput"
+            placeholder="City name">
+        <ul *ngIf="filteredCities.length" class="suggestions">
+            <li *ngFor="let city of filteredCities" (click)="selectCity(city)">{{ city }}</li>
+        </ul>
+        <input type="number" id="cityCount" placeholder="N" min="1" max="10" title="Number of Cities">
+        <input type="number" id="maxDistance" placeholder="Max distance (km)" title="Maximum Distance">
+        <button class="search-button" (click)="searchCity()">Search</button>
+        <br><br>
+    </div>
 
-<div class="container-citymap">
-    <div id="map" style="height: 600px; width: 100%; position: relative;"></div>
-    <div class="search-container">
-        <!--
+    <div class="container-citymap">
+        <div id="map" style="height: 600px; width: 100%; position: relative;"></div>
+        <div class="search-container">
+            <!--
         <div id="results" style="display: none;">
             <h4>Top destinations reachable by least amount of CO2:</h4>
             <ul id="destinationList"></ul>
         </div>
         -->
-        <svg id="co2BarPlot" width="400" height="300"></svg>
+            <svg id="co2BarPlot" width="400" height="300"></svg>
+        </div>
     </div>
-</div>
 
 
-<div class="route-text" style="margin-top: 60px;">
+    <div class="route-text" style="margin-top: 60px;">
 
-    <h1> Eco-Networks </h1>
-    The following visualization reveals how cities, countries, and regions are linked not just by road routes, but by
-    their environmental impacts as well.<br><br>
+        <h1> Eco-Networks </h1>
+        Now let's reveal the network of travel connections between cities and countries across Europe.<br><br>
 
-    Each colored line draws connections between destinations, with the color showing the average CO2 emissions. It’s a
-    vivid exploration of how travel choices differ across Europe.<br><br>
+        Start by clicking on the interactive map to select countries and dynamically add or remove nodes to the graph.
+        As you hover over any node, watch the connecting lines change their color
+        based on the average CO2 emissions. You can also switch perspectives easily — choose between city or country
+        view to explore how travel patterns and environmental impacts differ at each level. <br><br>
 
-    Understand the bigger picture, and let this visualization offer you a fresh perspective on the broader implications
-    of travel. <br><br>
+        Understand the bigger picture, and let this visualization offer you a fresh perspective on the broader
+        implications of travel across Europe. <br><br>
 
-    Do you notice Switzerland? It is the leading country in Europe with 100 percent electric-powered trains,
-    significantly reducing its overall CO2 footprint. Can you spot this trend on the graph? <br><br>
-
-</div>
+    </div>
 
 
-<div class="graph-container">
-    <!-- <div>
+    <div class="graph-container">
+        <!-- <div>
         Start by clicking on the interactive map to select countries and dynamically add nodes to the graph that show
         you the network of travel connections. As you hover over any node, watch the connecting lines change their color
         based on average CO2 emissions. You can also switch perspectives easily — choose from city, country, or regional
@@ -79,24 +81,25 @@
         regions.
     </div> <br> -->
 
-    <div class="button-container">
-        <button class="toggle-button" (click)="toggleView('city')">City View</button>
-        <button class="toggle-button" (click)="toggleView('country')">Country View</button>
-        <!-- <button (click)="toggleView('region')">Region View</button> -->
-    </div>
-
-    <div class="graph-legend info legend leaflet-control">
-        <div><strong>CO2 Emissions (kg)</strong></div>
-        <div class="legend-gradient"
-            style="height: 10px; width: 100%; background: linear-gradient(to right, rgb(0, 255, 0), rgb(255, 255, 0), rgb(255, 0, 0));">
+        <div class="button-container">
+            <button class="toggle-button" (click)="toggleView('city')">City View</button>
+            <button class="toggle-button" (click)="toggleView('country')">Country View</button>
+            <!-- <button (click)="toggleView('region')">Region View</button> -->
         </div>
-        <div class="legend-scale">
-            <span>0 kg</span><span style="float: right;">150 kg</span>
+
+        <div class="graph-legend info legend leaflet-control">
+            <div><strong>CO2 Emissions (kg)</strong></div>
+            <div class="legend-gradient"
+                style="height: 10px; width: 100%; background: linear-gradient(to right, rgb(0, 255, 0), rgb(255, 255, 0), rgb(255, 0, 0));">
+            </div>
+            <div class="legend-scale">
+                <span>0 kg</span><span style="float: right;">150 kg</span>
+            </div>
+        </div>
+
+        <div id="graph"></div>
+        <div id="europe-map-container">
+            <object id="europe-map" type="image/svg+xml" data="assets/europe-map.svg"></object>
         </div>
     </div>
-
-    <div id="graph"></div>
-    <div id="europe-map-container">
-        <object id="europe-map" type="image/svg+xml" data="assets/europe-map.svg"></object>
-    </div>
-</div>
+</main>
