@@ -120,7 +120,7 @@ export class RegionsComponent {
       countries.forEach(country => {
         const countryName = country.getAttribute('name') || ''; // Default to empty string if null
         // Initially set or reset the fill based on selection status
-        // country.style.fill = this.selectedCountries.has(countryName) ? '#007bff' : '#CFCFCF';
+        country.style.fill = 'rgb(235 235 235)';
 
         // Setup click event to toggle selection
         country.addEventListener('click', () => {
@@ -131,7 +131,7 @@ export class RegionsComponent {
             if (!this.selectedRegions.has(region)) {
               countries.forEach(c => {
                 if ((this.country_to_region as CountryToRegionMap)[c.getAttribute('name') || ''] === region) {
-                  c.style.fill = '#CFCFCF';
+                  c.style.fill = 'rgb(235 235 235)';
                 }
               });
             }
@@ -145,7 +145,7 @@ export class RegionsComponent {
 
         // Add hover effects
         country.addEventListener('mouseover', () => {
-          // country.style.fill = '#007bff'; // Highlight color on hover
+          // country.style.fill = '#8ed99d'; // Highlight color on hover
           
           const region = (this.country_to_region as CountryToRegionMap)[countryName];
 
@@ -155,7 +155,7 @@ export class RegionsComponent {
           // highlight all the countries of the region  
           countries.forEach(c => {
             if ((this.country_to_region as CountryToRegionMap)[c.getAttribute('name') || ''] === region) {
-              c.style.fill = '#007bff';
+              c.style.fill = '#8ed99d';
             }
           });
         });
@@ -166,11 +166,11 @@ export class RegionsComponent {
           if (!this.selectedRegions.has(region)) {
             countries.forEach(c => {
               if ((this.country_to_region as CountryToRegionMap)[c.getAttribute('name') || ''] === region) {
-                c.style.fill = '#CFCFCF';
+                c.style.fill = 'rgb(235 235 235)';
               }
             });
           }
-          // country.style.fill = this.selectedCountries.has(countryName) ? '#007bff' : '#CFCFCF'; // Default or highlight color
+          // country.style.fill = this.selectedCountries.has(countryName) ? '#8ed99d' : 'rgb(235 235 235)'; // Default or highlight color
         });
       });
     };
@@ -191,7 +191,8 @@ export class RegionsComponent {
       let el = document.getElementById(d['Departure Region'] + ';' + d['Arrival Region']);
       if(el){
         el.innerHTML = '';
-        el.style.borderColor = 'grey';
+        el.style.borderColor = 'rgb(200, 200, 200)';
+        el.style.backgroundColor = 'white'
       }
     });
   }

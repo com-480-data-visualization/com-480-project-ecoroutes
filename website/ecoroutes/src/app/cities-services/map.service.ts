@@ -193,7 +193,7 @@ export class MapService {
   }
 
   addLegend(): void {
-    const legend = new L.Control({ position: 'topleft' });
+    const legend = new L.Control({ position: 'bottomleft' });
 
     legend.onAdd = () => {
       const div = L.DomUtil.create('div', 'info legend');

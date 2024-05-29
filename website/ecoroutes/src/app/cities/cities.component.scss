@@ -1,10 +1,12 @@
 .graph-container {
-    display: flex;
+    position: relative;
     background-color: #ffffff;
 }
 
-#graph {
-    width: 50%;
+#graph{
+    position: absolute;
+    // top: 0px;
+
 }
 
 #europe-map-container {
@@ -17,8 +19,10 @@
 }
 
 #europe-map {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 480px;
+    transform: scale(0.9);
 }
 
 #europe-map path {
@@ -38,6 +42,23 @@ img {
     // height: 500px;
     display: block;
     z-index: 0;
+}
+
+.search-button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    /* Adjust font size as needed */
+    border: none;
+    background-color: #555;
+    /* Darker background for better contrast */
+    color: #fff;
+    border-radius: 99px;
+    /* Rounded borders for a toggle-like look */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 48.5px;
+    margin-left: 20px;
+    /* Smooth transition for hover effect */
 }
 
 #map {
@@ -76,8 +97,8 @@ img {
     padding: 12px 15px;
     margin-right: 5px;
     font-size: 1.25rem;
-    border: 2px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #ccc;
+    border-radius: 99px;
 }
 
 .search-area {
@@ -106,6 +127,7 @@ img {
 }
 
 .toggle-button {
+    z-index: 20000;
     padding: 10px 20px;
     font-size: 1rem;
     /* Adjust font size as needed */
@@ -163,4 +185,9 @@ img {
         margin-top: 0;
         text-align: center;
     }
+}
+
+.graph-legend{
+    position: absolute;
+    left: 120px;
 }

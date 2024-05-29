@@ -126,17 +126,17 @@ export class CitiesComponent implements OnInit {
         const countryName = country.getAttribute('name') || ''; // Default to empty string if null
 
         // Initially set or reset the fill based on selection status
-        country.style.fill = this.selectedCountries.has(countryName) ? '#007bff' : '#CFCFCF';
+        country.style.fill = this.selectedCountries.has(countryName) ? '#8ed99d' : 'rgb(235 235 235)';
 
         // Setup click event to toggle selection
         country.addEventListener('click', () => {
           if (countryName) {
             if (this.selectedCountries.has(countryName)) {
               this.selectedCountries.delete(countryName);
-              country.style.fill = '#CFCFCF'; // Reset color
+              country.style.fill = 'rgb(235 235 235)'; // Reset color
             } else {
               this.selectedCountries.add(countryName);
-              country.style.fill = '#007bff'; // Highlight color
+              country.style.fill = '#8ed99d'; // Highlight color
             }
             this.updateGraph();
             this.updateMapHighlighting();
@@ -145,11 +145,11 @@ export class CitiesComponent implements OnInit {
 
         // Add hover effects
         country.addEventListener('mouseover', () => {
-          country.style.fill = '#007bff'; // Highlight color on hover
+          country.style.fill = '#8ed99d'; // Highlight color on hover
         });
 
         country.addEventListener('mouseout', () => {
-          country.style.fill = this.selectedCountries.has(countryName) ? '#007bff' : '#CFCFCF'; // Default or highlight color
+          country.style.fill = this.selectedCountries.has(countryName) ? '#8ed99d' : 'rgb(235 235 235)'; // Default or highlight color
         });
       });
     };

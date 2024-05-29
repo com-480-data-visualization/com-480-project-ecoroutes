@@ -19,15 +19,23 @@
     <!-- <div>
         Lorem ipsum.... 1 sentence where we explain how to use.
     </div> -->
+    <div class="graph-legend info legend leaflet-control"><div><strong>CO2 Emissions (kg)</strong></div>
+        <div class="legend-gradient" style="height: 10px; width: 100%; background: linear-gradient(to right, rgb(0, 255, 0), rgb(255, 255, 0), rgb(255, 0, 0));">
+        </div>
+        <div class="legend-scale">
+        <span>0 kg</span><span style="float: right;">150 kg</span>
+        </div>
+    </div>
+
     <table class="grid">
-        <tr style="height: 80px;">
+        <tr style="height: 70px;">
             <th></th>
             <th *ngFor="let region of regions" style="transform: rotate(-90deg);">{{region}}</th>
         </tr>
         <tr *ngFor="let region of regions">
             <th>{{region}}</th>
             <td id="{{region+';'+region2}}" *ngFor="let region2 of regions"
-                style="height: 60px; width: 60px; border: 2px solid grey; border-radius: 99px; text-align: center;">
+                style="height: 65px; width: 65px; border: 2px solid rgb(200, 200, 200); border-radius: 99px; text-align: center;">
             </td>
         </tr>
     </table>
