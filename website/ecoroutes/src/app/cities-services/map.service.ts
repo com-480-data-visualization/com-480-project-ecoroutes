@@ -205,6 +205,12 @@ export class MapService {
           <span>0 kg</span><span style="float: right;">30 kg</span>
         </div>`;
 
+      // Style the div to appear as a small white box
+      div.style.backgroundColor = 'white'; // Set background color to white
+      div.style.padding = '10px';          // Add some padding around the content
+      div.style.boxShadow = '0 0 15px rgba(0,0,0,0.2)'; // Optional: add shadow for better visibility
+      div.style.borderRadius = '5px';      // Optional: round corners
+
       div.innerHTML = `<div><strong>CO2 Emissions (kg)</strong></div>${gradientHtml}`;
       return div;
     };

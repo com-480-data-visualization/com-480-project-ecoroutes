@@ -28,6 +28,14 @@ export class BarPlotService {
     const g = svg.append('g')
       .attr('transform', `translate(${margin.left},${margin.top})`);
 
+    // Add title
+    svg.append('text')
+      .attr('x', (width + margin.left + margin.right) / 2)
+      .attr('y', margin.top / 2)
+      .attr('text-anchor', 'middle')
+      .style('font-size', '20px')
+      .style('font-weight', 'bold')
+
     g.append('g')
       .call(d3.axisLeft(y))
       .append('text')

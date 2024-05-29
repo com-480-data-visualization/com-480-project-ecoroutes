@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
-import * as Leaflet from 'leaflet'; 
+import * as Leaflet from 'leaflet';
 import * as d3 from 'd3';
 import * as GeographicLib from 'geographiclib-geodesic';
 import omnivore from 'leaflet-omnivore';
@@ -27,32 +27,32 @@ export class RouteMapComponent {
     popupAnchor: [0, -7] // Popup anchor is also centered
   });
 
-  constructor(private mapRoutesService: MapRoutesService) {}
+  constructor(private mapRoutesService: MapRoutesService) { }
 
   ngAfterViewInit() {
     this.mapRoutesService.getRoutesObservable().subscribe(route => {
-      let res; 
-      
-      if (route.chosenCO2 == 'train'){
+      let res;
+
+      if (route.chosenCO2 == 'train') {
         res = this.plotTrain(route);
-      } else if (route.chosenCO2 == 'flight'){
+      } else if (route.chosenCO2 == 'flight') {
         res = this.plotGreatCircle(route);
-      } else{
+      } else {
         res = this.plotAvgLine(route);
       }
 
-      this.routes[route.id+route.chosenCO2] = res;
-      
+      this.routes[route.id + route.chosenCO2] = res;
+
     })
 
     this.mapRoutesService.getDeleteRouteObservable().subscribe(route => {
-      let res = this.routes[route.id+route.chosenCO2];
-      res.filter(r => r!=null).forEach(r =>  this.map.removeLayer(r));
-      delete this.routes[route.id+route.chosenCO2];
+      let res = this.routes[route.id + route.chosenCO2];
+      res.filter(r => r != null).forEach(r => this.map.removeLayer(r));
+      delete this.routes[route.id + route.chosenCO2];
     })
 
     this.addLegend();
-  
+
   }
 
   map!: Leaflet.Map;
@@ -84,7 +84,7 @@ export class RouteMapComponent {
 
   // plot
 
-  plotAvgLine(d:EcoRoute){
+  plotAvgLine(d: EcoRoute) {
     let color = this.getEmissionColor(d.avgCO2W);
     let depCoord = this.parseCoordinates(d.departureCoordinates)
     let arrCoord = this.parseCoordinates(d.arrivalCoordinates)
@@ -110,7 +110,7 @@ export class RouteMapComponent {
     //   radius: 50000
     // }).addTo(this.map);
 
-    var polyline = Leaflet.polyline(latlngs, {color: color, weight: 5}).addTo(this.map);
+    var polyline = Leaflet.polyline(latlngs, { color: color, weight: 5 }).addTo(this.map);
     routeLayers.push(polyline);
 
     polyline.bindPopup(`Route from ${d.departureCity} to ${d.arrivalCity}<br>
@@ -134,10 +134,10 @@ export class RouteMapComponent {
 
     this.map.fitBounds(polyline.getBounds().pad(0.2));
 
-    let arrPin =  Leaflet.marker(arrCoord, {icon: this.customSmallIcon});
+    let arrPin = Leaflet.marker(arrCoord, { icon: this.customSmallIcon });
     routeLayers.push(arrPin);
     arrPin.addTo(this.map);
-    let depPin = Leaflet.marker(depCoord, {icon: this.customSmallIcon});
+    let depPin = Leaflet.marker(depCoord, { icon: this.customSmallIcon });
     routeLayers.push(depPin);
     depPin.addTo(this.map);
 
@@ -146,7 +146,7 @@ export class RouteMapComponent {
     return routeLayers;
   }
 
-  plotGreatCircle(d:EcoRoute) {
+  plotGreatCircle(d: EcoRoute) {
     let color = this.getEmissionColor(d.flightCO2);
     let routeLayers: any[] = [];
 
@@ -165,11 +165,11 @@ export class RouteMapComponent {
     var points = [];
 
     for (var i = 0; i <= numPoints; ++i) {
-        var p = l.Position(i * step);
-        points.push([p.lat2, p.lon2]);
+      var p = l.Position(i * step);
+      points.push([p.lat2, p.lon2]);
     }
 
-    var polyline = Leaflet.polyline(points, {color: color, weight: 5}).addTo(this.map);
+    var polyline = Leaflet.polyline(points, { color: color, weight: 5 }).addTo(this.map);
     routeLayers.push(polyline);
     polyline.bindPopup(`Flight Route from ${d.departureCity} to ${d.arrivalCity}<br>
       Flight CO2 Emissions: ${d.flightCO2.toFixed(2)} kg<br>
@@ -189,10 +189,10 @@ export class RouteMapComponent {
       }) // Reset all segments
       polyline.closePopup();
     });
-    let arrPin =  Leaflet.marker(arrCoord, {icon: this.customSmallIcon});
+    let arrPin = Leaflet.marker(arrCoord, { icon: this.customSmallIcon });
     routeLayers.push(arrPin);
     arrPin.addTo(this.map);
-    let depPin = Leaflet.marker(depCoord, {icon: this.customSmallIcon});
+    let depPin = Leaflet.marker(depCoord, { icon: this.customSmallIcon });
     routeLayers.push(depPin);
     depPin.addTo(this.map);
     // polyline.bindTooltip(d.id+" ("+d.chosenCO2+"): "+d.avgCO2W, {permanent: false, direction: 'auto', sticky: true, className: 'my-label'});
@@ -213,45 +213,45 @@ export class RouteMapComponent {
         opacity: 0.7
       }),
       onEachFeature: (feature, layer: L.Path) => { // Ensuring that layer is treated as L.Path
-        
-          routeLayers.push(layer); // Store reference to this segment
-          layer.on('mouseover', (e) => {
-            routeLayers.forEach(l => {
-              if(l.feature){
-                l.setStyle({
-                  weight: 8,
-                  color: '#545454'
-                })
-              }
+
+        routeLayers.push(layer); // Store reference to this segment
+        layer.on('mouseover', (e) => {
+          routeLayers.forEach(l => {
+            if (l.feature) {
+              l.setStyle({
+                weight: 8,
+                color: '#545454'
+              })
+            }
           }); // Highlight all segments
-            layer.openPopup();
-          });
-          layer.on('mouseout', (e) => {
-            routeLayers.forEach(l => {
-              if(l.feature){
-                l.setStyle({
+          layer.openPopup();
+        });
+        layer.on('mouseout', (e) => {
+          routeLayers.forEach(l => {
+            if (l.feature) {
+              l.setStyle({
                 weight: 4,
                 color: this.getEmissionColor(route.trainCO2)
-                })
-              }
+              })
+            }
           }); // Reset all segments
-            layer.closePopup();
-          });
-          layer.bindPopup(`Train Route from ${route.departureCity} to ${route.arrivalCity}<br>
+          layer.closePopup();
+        });
+        layer.bindPopup(`Train Route from ${route.departureCity} to ${route.arrivalCity}<br>
           Train CO2 Emissions: ${route.trainCO2.toFixed(2)} kg<br>
           Train Energy Consumption: ${route.trainEnergyResourceConsumption.toFixed(2)} kWh<br>
           Train Duration: ${route.trainDuration.toFixed(2)} hours`);
-        
+
       }
     }))
 
     // this.map.fitBounds(routeLayers[0].getBounds());
-    
+
     l.addTo(this.map).on('ready', () => {
-      
+
       let coords = (routeLayers[0] as L.Polyline).getLatLngs()
       const depCoord = coords[0] as L.LatLng;
-      const arrCoord = coords[coords.length-1] as L.LatLng;  
+      const arrCoord = coords[coords.length - 1] as L.LatLng;
 
       this.map.fitBounds((routeLayers[0] as L.Polyline).getBounds().pad(0.2));
 
@@ -262,7 +262,7 @@ export class RouteMapComponent {
       arrPin.addTo(this.map);
       routeLayers.push(arrPin);
     });
-  
+
 
     return routeLayers;
   }
@@ -291,23 +291,22 @@ export class RouteMapComponent {
     return `rgb(${red}, ${green}, 0)`; // Keep blue at 0 throughout
   }
 
-  parseCoordinates(coordString: string): [ latitude: number, longitude: number ] {
+  parseCoordinates(coordString: string): [latitude: number, longitude: number] {
     // Regular expression to extract numbers from the coordinate string
     const regex = /\[(-?\d+\.\d+),\s*(-?\d+\.\d+)\]/;
     const match = coordString.match(regex);
 
     if (match) {
-        // Convert string matches to numbers
-        const latitude = parseFloat(match[1]);
-        const longitude = parseFloat(match[2]);
+      // Convert string matches to numbers
+      const latitude = parseFloat(match[1]);
+      const longitude = parseFloat(match[2]);
 
-        return [ latitude, longitude ];
+      return [latitude, longitude];
     } else {
-        // Return null if the string format is incorrect
-        return [ -1, -1];
+      // Return null if the string format is incorrect
+      return [-1, -1];
     }
   }
-
   addLegend(): void {
     const legend = new Leaflet.Control({ position: 'bottomright' });
 
@@ -319,6 +318,12 @@ export class RouteMapComponent {
         <div class="legend-scale">
           <span>0 kg</span><span style="float: right;">150 kg</span>
         </div>`;
+
+      // Style the div to appear as a small white box
+      div.style.backgroundColor = 'white'; // Set background color to white
+      div.style.padding = '10px';          // Add some padding around the content
+      div.style.boxShadow = '0 0 15px rgba(0,0,0,0.2)'; // Optional: add shadow for better visibility
+      div.style.borderRadius = '5px';      // Optional: round corners
 
       div.innerHTML = `<div><strong>CO2 Emissions (kg)</strong></div>${gradientHtml}`;
       return div;
