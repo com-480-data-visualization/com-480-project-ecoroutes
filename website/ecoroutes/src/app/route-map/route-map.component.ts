@@ -50,6 +50,8 @@ export class RouteMapComponent {
       res.filter(r => r!=null).forEach(r =>  this.map.removeLayer(r));
       delete this.routes[route.id+route.chosenCO2];
     })
+
+    this.addLegend();
   
   }
 
@@ -67,11 +69,13 @@ export class RouteMapComponent {
       })
     ],
     zoom: 4,
+    zoomControl: false,
     center: { lat: 54.520008, lng: 13.404954 }
   }
 
   onMapReady($event: Leaflet.Map) {
     this.map = $event;
+    this.map.addControl(Leaflet.control.zoom({ position: 'topright' }));
   }
 
   mapClicked($event: any) {
@@ -302,6 +306,25 @@ export class RouteMapComponent {
         // Return null if the string format is incorrect
         return [ -1, -1];
     }
+  }
+
+  addLegend(): void {
+    const legend = new Leaflet.Control({ position: 'bottomright' });
+
+    legend.onAdd = () => {
+      const div = Leaflet.DomUtil.create('div', 'info legend');
+      const gradientHtml = `
+        <div class="legend-gradient" style="height: 10px; width: 100%; background: linear-gradient(to right, ${this.getEmissionColor(0)}, ${this.getEmissionColor(75)}, ${this.getEmissionColor(150)});">
+        </div>
+        <div class="legend-scale">
+          <span>0 kg</span><span style="float: right;">150 kg</span>
+        </div>`;
+
+      div.innerHTML = `<div><strong>CO2 Emissions (kg)</strong></div>${gradientHtml}`;
+      return div;
+    };
+
+    legend.addTo(this.map);
   }
 
 }
