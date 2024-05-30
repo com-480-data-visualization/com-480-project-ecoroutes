@@ -2,24 +2,21 @@
 
 
     <div class="route-text">
-        <h1>Explore the Matrix</h1>
+        <h1>Regional Emissions</h1>
 
         Finally, let’s take a broader look at travel’s environmental impact across different regions. This visualization
         features a matrix displaying the average CO2 emissions for all possible combinations of departure and arrival
         regions, color-coded to highlight the emissions levels. In this view, we completely shift the perspective to a
-        larger scale, expanding upon the graph to show regional travel patterns in a clear and more comprehensive
+        larger scale, expanding upon the graph, to show regional travel patterns in a clear and more comprehensive
         fashion.
         <br><br>
-        Understand how different regions compare in terms of CO2 emissions and explore the bigger picture of
+        Hover over the matrix cells to see the corresponding regions highlighted on the map. Understand how different
+        regions compare in terms of CO2 emissions and explore the bigger picture of
         inter-regional
         travel.
         <br><br>
-        Ready to shift your perspective? Dive deep into our matrix and uncover the hidden connections that shape our
-        world’s
-        carbon footprint.
 
     </div>
-
 
     <div class="graph-container">
         <div class="graph-legend info legend leaflet-control">
@@ -36,11 +33,12 @@
             <th style="transform: rotate(-90deg); position: absolute; top: 250px; left: -95px; font-size: 16px;">
                 Departure Region</th>
             <tr style="position: relative;">
-                <th style="position: absolute;left: 240px;top: -35px;font-size: 16px;">Arrival Region</th>    
+                <th style="position: absolute;left: 240px;top: -35px;font-size: 16px;">Arrival Region</th>
             </tr>
             <tr style="height: 70px;">
                 <th></th>
-                <th *ngFor="let region of regions" style="transform: rotate(-90deg); font-weight: 100;">{{region}}</th>
+                <th *ngFor="let region of regions" style="transform: rotate(-90deg); font-weight: 100;">{{region}}
+                </th>
             </tr>
             <tr *ngFor="let region of regions">
                 <th style="font-weight: 100;">{{region}}</th>
@@ -55,5 +53,5 @@
             <object id="europe-map" type="image/svg+xml" data="assets/europe-map.svg"></object>
         </div>
     </div>
-
+    <div class="empty-space"></div>
 </main>

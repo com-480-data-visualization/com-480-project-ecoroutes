@@ -40,10 +40,11 @@ main {
 
 .graph-container {
     position: relative;
+    width: 99%;
 }
 
-.route-text{
-    margin: 10px 120px 40px 120px;
+.route-text {
+    margin: 10px 120px 60px 120px;
     font-size: 16px;
     text-align: justify;
 
@@ -60,11 +61,13 @@ main {
     }
 }
 
+
 .grid {
     position: absolute;
     left: 150px;
     top: 70px;
     font-size: 14px;
+    z-index: 10;
 }
 
 .graph-legend {
@@ -73,20 +76,26 @@ main {
     top: 0px;
 }
 
+.empty-space {
+    height: 550px;
+    /* Adjust the height as needed */
+}
+
+
 
 .matrix-cell {
     height: 65px;
     width: 65px;
     border: 2px solid rgb(200, 200, 200);
-    border-radius: 99px; // Gives a rounded appearance to the cells
+    border-radius: 99px;
     text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease; // Smooth transition for hover effects
+    transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-        background-color: rgba(255, 255, 255, 0.8); // Lighten the background color on hover
-        transform: scale(1.03); // Scale up the cell slightly to indicate it's interactive
+        background-color: rgba(255, 255, 255, 0.8);
+        transform: scale(1.03);
         // bold the text on hover
         font-weight: bold;
-        cursor: pointer; // Change the cursor to indicate clickable action
+        cursor: pointer;
     }
 }

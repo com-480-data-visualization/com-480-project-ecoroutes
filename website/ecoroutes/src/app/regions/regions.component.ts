@@ -11,7 +11,6 @@ import e from 'express';
 import L from 'leaflet';
 
 
-
 interface CountryToRegionMap {
   [key: string]: string;
 }
@@ -100,10 +99,10 @@ export class RegionsComponent {
         // this.updateMapHighlighting();
         // this.setDefaultMapView();
 
-        this.maxCo2 = Math.max(...this.data.map(el => el['avg_co2'] as number)); // Adjust this value based on data
+        this.maxCo2 = Math.max(...this.data.map(el => el['avg_co2'] as number));
         this.minCo2 = Math.min(...this.data.map(el => el['avg_co2'] as number));
         this.midCo2 = (this.maxCo2 + this.minCo2) / 2;
-        this.populateMatrix();  // New method to populate the matrix
+        this.populateMatrix();
 
         this.addLegend();
       });
@@ -117,7 +116,7 @@ export class RegionsComponent {
         const elementId = `${departureRegion};${arrivalRegion}`;
         const matrixCell = document.getElementById(elementId);
         if (matrixCell) {
-          matrixCell.innerHTML = co2Value.toFixed(2);  // Format CO2 value to 2 decimal places
+          matrixCell.innerHTML = co2Value.toFixed(2);
           matrixCell.style.borderColor = this.getEmissionColor(co2Value, 100);
           matrixCell.style.backgroundColor = this.getEmissionColor(co2Value, 30);
         }
@@ -161,16 +160,14 @@ export class RegionsComponent {
 
     let red, green;
     if (co2Value <= this.midCo2) {
-      // Scale from green to yellow
-      red = Math.floor(255 * ratio * 2); // Red increases from 0 to 255 as we approach midCo2
-      green = 255; // Green stays full till midCo2
+      red = Math.floor(255 * ratio * 2);
+      green = 255;
     } else {
-      // Scale from yellow to red
-      red = 255; // Red stays full past midCo2
-      green = Math.floor(255 * (2 - 2 * ratio)); // Green decreases from 255 to 0 past midCo2
+      red = 255;
+      green = Math.floor(255 * (2 - 2 * ratio));
     }
 
-    return `rgba(${red}, ${green}, 0, ${a / 100})`; // Adjust alpha value appropriately
+    return `rgba(${red}, ${green}, 0, ${a / 100})`;
   }
 
   addLegend(): void {
@@ -204,7 +201,7 @@ export class RegionsComponent {
 
     const countries = svgDoc.querySelectorAll('path');
     countries.forEach(country => {
-      const countryName = country.getAttribute('name') || ''; // Ensures countryName is never null
+      const countryName = country.getAttribute('name') || '';
       const region = this.country_to_region[countryName as keyof typeof this.country_to_region];
 
       if (region === departureRegion || region === arrivalRegion) {
