@@ -40,14 +40,12 @@ export class DataService {
   // }
 
   public getSortedCityNodes(): any[] {
-    // Assuming you have a way to associate each city with a country, e.g., a map or a method
     return this.cityNodes
       .map(city => ({
         name: city,
-        country: this.getCountryByCity(city) // This method needs to correctly return the country for each city
+        country: this.getCountryByCity(city)
       }))
       .sort((a, b) => {
-        // First sort by country, then by city name within the same country
         const countryCompare = a.country.localeCompare(b.country);
         if (countryCompare !== 0) return countryCompare;
         return a.name.localeCompare(b.name);
@@ -138,13 +136,11 @@ export class DataService {
   prepareRegionData(): void {
     const regionLinksMap = new Map<string, { weight: number; count: number; source: string; target: string }>();
 
-    // Define the valid regions
     const validRegions = new Set(['Eastern Europe', 'Southern Europe', 'Western Europe', 'British Isles', 'Northern Europe']);
 
     this.cityLinks.forEach(link => {
       const { sourceRegion, targetRegion, weight } = link;
 
-      // Filter out links that are not between the valid regions
       if (!validRegions.has(sourceRegion) || !validRegions.has(targetRegion) || sourceRegion === targetRegion) return;
 
       const regionLinkKey = `${sourceRegion}-${targetRegion}`;
@@ -163,7 +159,6 @@ export class DataService {
       }
     });
 
-    // Filter regionNodes to include only valid regions
     this.regionNodes = Array.from(new Set(this.cityLinks.map(link => link.sourceRegion).concat(this.cityLinks.map(link => link.targetRegion))))
       .filter(region => validRegions.has(region));
 
@@ -171,8 +166,8 @@ export class DataService {
       source: link.source,
       target: link.target,
       weight: link.weight / link.count,
-      sourceCountry: 'Unknown', // Placeholder value
-      targetCountry: 'Unknown', // Placeholder value
+      sourceCountry: 'Unknown',
+      targetCountry: 'Unknown',
       sourceRegion: link.source,
       targetRegion: link.target
     }));

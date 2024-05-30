@@ -28,7 +28,6 @@ export class BarPlotService {
     const g = svg.append('g')
       .attr('transform', `translate(${margin.left},${margin.top})`);
 
-    // Add title
     svg.append('text')
       .attr('x', (width + margin.left + margin.right) / 2)
       .attr('y', margin.top / 2)
@@ -39,14 +38,14 @@ export class BarPlotService {
     g.append('g')
       .call(d3.axisLeft(y))
       .append('text')
-      .attr('text-anchor', 'middle') // Center the text anchor
+      .attr('text-anchor', 'middle')
       .attr('transform', 'rotate(-90)')
-      .attr('y', -margin.left + 10) // Move it further left from the axis
-      .attr('x', -(height / 2)) // Centered on the middle of the axis
+      .attr('y', -margin.left + 10)
+      .attr('x', -(height / 2))
       .attr('dy', '1em')
       .style('fill', 'black')
-      .style('font-size', '18px') // Larger font size
-      .style('font-weight', 'bold') // Bold font
+      .style('font-size', '18px')
+      .style('font-weight', 'bold')
       .text('Arrival City');
 
 
@@ -54,12 +53,12 @@ export class BarPlotService {
       .attr('transform', `translate(0,${height})`)
       .call(d3.axisBottom(x))
       .append('text')
-      .attr('text-anchor', 'middle') // Center the text anchor under the axis
-      .attr('x', width / 2) // Centered along the width of the axis
+      .attr('text-anchor', 'middle')
+      .attr('x', width / 2)
       .attr('y', margin.bottom - 10)
       .style('fill', 'black')
-      .style('font-size', '18px') // Larger font size
-      .style('font-weight', 'bold') // Bold font
+      .style('font-size', '18px')
+      .style('font-weight', 'bold')
       .text('CO2 Emissions per person (kg)');
 
 
@@ -105,7 +104,6 @@ export class BarPlotService {
     }
 
 
-    // Append a tooltip
     d3.select('body').append('div')
       .attr('id', 'tooltip')
       .style('position', 'absolute')
@@ -117,8 +115,7 @@ export class BarPlotService {
   }
 
   private getEmissionColor(co2Value: number): string {
-    // Define CO2 value range
-    const maxCo2 = 30; // avg CO2 train value
+    const maxCo2 = 30;
     const minCo2 = 0;
 
     const ratio = (co2Value - minCo2) / (maxCo2 - minCo2);
@@ -126,16 +123,14 @@ export class BarPlotService {
     let red, green;
 
     if (ratio <= 0.5) {
-      // Interpolate from green to yellow
-      red = Math.floor(255 * (ratio * 2)); // 0 to 255 as ratio goes from 0 to 0.5
-      green = 255; // Constant
+      red = Math.floor(255 * (ratio * 2));
+      green = 255;
     } else {
-      // Interpolate from yellow to red
-      red = 255; // Constant
-      green = Math.floor(255 * ((1 - ratio) * 2)); // 255 to 0 as ratio goes from 0.5 to 1
+      red = 255;
+      green = Math.floor(255 * ((1 - ratio) * 2));
     }
 
-    return `rgb(${red}, ${green}, 0)`; // Keep blue at 0 throughout
+    return `rgb(${red}, ${green}, 0)`;
   }
 
 }

@@ -30,10 +30,10 @@ export class GraphService {
   }
 
   updateGraph(nodes: string[], links: LinkData[], currentView: 'city' | 'country' | 'region'): void {
-    const width = 500; // Adjusted width to make the graph smaller
-    const height = 500; // Adjusted height to make the graph smaller
-    const innerRadius = Math.min(width, height) * 0.5 - 30; // Adjusted innerRadius to fit within new size
-    const outerRadius = innerRadius + 10;  // Increase thickness here
+    const width = 500;
+    const height = 500;
+    const innerRadius = Math.min(width, height) * 0.5 - 30;
+    const outerRadius = innerRadius + 10;
 
     const index = new Map<string, number>(nodes.map((name, i) => [name, i]));
     const matrix: number[][] = Array.from(index, () => new Array(nodes.length).fill(0));
@@ -64,28 +64,26 @@ export class GraphService {
     // A simple transition - make it better if you have time
     this.svg.selectAll('*')
       .transition()
-      .duration(500) // Duration of the fade out transition in milliseconds
-      .style('opacity', 0) // Fade out by reducing opacity to 0
-      .remove() // Remove elements after the transition
-      .end() // Ensure the removal happens after the transition completes
+      .duration(500)
+      .style('opacity', 0)
+      .remove()
+      .end()
       .then(() => {
         // Update the viewBox with smooth transitions after the elements are removed
         this.svg.transition()
           .duration(500)
           .attr('viewBox', `-${width / 2} -${height / 2} ${width} ${height}`);
       });
-    this.svg.attr('width', '100%') // Make SVG responsive
-      .attr('height', '100%') // Make SVG responsive
-      .attr('viewBox', `-${width / 2} -${height / 2} ${width} ${height}`) // Ensure the viewBox fits the new size
-      .attr('preserveAspectRatio', 'xMidYMid meet') // Preserve aspect ratio and center the graph
+    this.svg.attr('width', '100%')
+      .attr('height', '100%')
+      .attr('viewBox', `-${width / 2} -${height / 2} ${width} ${height}`)
+      .attr('preserveAspectRatio', 'xMidYMid meet')
       .attr('style', 'width: 100%; height: 100%; font: 10px sans-serif;');
 
     const chords = chord(matrix);
 
-    const self = this; // Reference to maintain class context
+    const self = this;
 
-    // Determine the scaling factor based on the current view
-    // if its region scale 1.5, if its country 1.2 and if its city 1
     const scalingFactor = currentView === 'region' ? 1.5 : currentView === 'country' ? 1.2 : 1;
 
     this.svg.append('g')
@@ -96,26 +94,24 @@ export class GraphService {
       .attr('d', ribbon)
       .attr('stroke', '#000')
       .attr('stroke-opacity', 0.8)
-      .attr('fill', '#CFCFCF') // Default dark gray color
+      .attr('fill', '#CFCFCF')
       .attr('opacity', 0.8);
 
-    // Groups for the arcs
     const group = this.svg.append('g')
       .selectAll('g')
       .data(chords.groups)
       .join('g');
 
-    // Arcs with interaction
     group.append('path')
       .attr('d', arc)
-      .attr('fill', '#555555')  // Initial color set to a consistent grey
+      .attr('fill', '#555555')
       .attr('stroke', d3.rgb('#111').darker())
       .on('mouseover', function (event: MouseEvent, d: any) {
         d3.selectAll('.ribbons path')
-          .transition()  // Ensuring smooth transition
-          .duration(200) // Duration of transition in milliseconds
+          .transition()
+          .duration(200)
           .attr('opacity', function (sd: any) {
-            return (sd.source.index === d.index || sd.target.index === d.index) ? 1 : 0.2;  // Less intense transparency
+            return (sd.source.index === d.index || sd.target.index === d.index) ? 1 : 0.2;
           })
           .attr('fill', function (sd: any) {
             const linkData = links.find(link => {
@@ -123,23 +119,21 @@ export class GraphService {
               const targetIndex = index.get(link.target);
               return (sourceIndex === sd.source.index && targetIndex === sd.target.index) || (sourceIndex === sd.target.index && targetIndex === sd.source.index);
             });
-            // Only change color if linkData exists and is related to the hovered node
             if (linkData && (sd.source.index === d.index || sd.target.index === d.index)) {
-              return self.getEmissionColor(linkData.weight, scalingFactor); // Apply scaling factor
+              return self.getEmissionColor(linkData.weight, scalingFactor);
             } else {
-              return '#CFCFCF'; // Maintain default color for non-involved links
+              return '#CFCFCF';
             }
           });
       })
       .on('mouseout', function () {
         d3.selectAll('.ribbons path')
-          .transition()  // Ensuring smooth transition back to original state
-          .duration(200) // Duration of transition in milliseconds
+          .transition()
+          .duration(200)
           .attr('opacity', 0.8)
-          .attr('fill', '#CFCFCF'); // Reset all links to default color
+          .attr('fill', '#CFCFCF');
       });
 
-    // Text labels for arcs
     group.append('text')
       .each((d: any) => { d.angle = (d.startAngle + d.endAngle) / 2; })
       .attr('dy', '.5em')
@@ -149,12 +143,12 @@ export class GraphService {
             ${d.angle > Math.PI ? 'rotate(180)' : ''}
         `)
       .attr('text-anchor', (d: any) => d.angle > Math.PI ? 'end' : null)
-      .attr('font-size', '15px') // Increase font size here
+      .attr('font-size', '15px')
       .text((d: any) => nodes[d.index]);
   }
 
   private getEmissionColor(co2Value: number, scalingFactor: number = 1): string {
-    const maxCo2 = 140 * scalingFactor; // Adjust this value based on your data and scaling factor
+    const maxCo2 = 140 * scalingFactor;
     const minCo2 = 0;
     const midCo2 = (maxCo2 - minCo2) / 2;
 
@@ -163,18 +157,14 @@ export class GraphService {
 
     let red, green;
     if (co2Value <= midCo2) {
-      // Scale from green to yellow (0 -> 0.5)
-      // Green stays at full while red ramps up
-      red = Math.floor(255 * (2 * ratio)); // 0 at minCo2, 255 at midCo2
+      red = Math.floor(255 * (2 * ratio));
       green = 255;
     } else {
-      // Scale from yellow to red (0.5 -> 1)
-      // Green ramps down while red stays at full
       red = 255;
-      green = Math.floor(255 * (2 * (1 - ratio))); // 255 at midCo2, 0 at maxCo2
+      green = Math.floor(255 * (2 * (1 - ratio)));
     }
 
-    return `rgb(${red}, ${green}, 0)`; // Keep blue at 0 throughout
+    return `rgb(${red}, ${green}, 0)`;
   }
 
 

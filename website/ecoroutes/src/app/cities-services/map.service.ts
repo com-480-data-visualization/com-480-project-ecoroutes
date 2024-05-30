@@ -53,7 +53,6 @@ export class MapService {
 
       this.removeRoutes()
 
-      // Emit the search results for the bar plot
       this.searchResults.emit(topCities.map(route => ({
         arrivalCity: route.arrivalCity,
         avgCO2: route.trainCO2,
@@ -86,7 +85,6 @@ export class MapService {
   addRoute(route: EcoRoute): void {
     let departureCityFormatted;
     let arrivalCityFormatted;
-    // Add handles for reading the path for Madrid City because it has a Space
     if (route.departureCity === "Madrid City") {
       departureCityFormatted = "Madrid City";
     } else {
@@ -101,17 +99,17 @@ export class MapService {
 
     const kmlFilename = `assets/kml_files_new/${departureCityFormatted}_to_${arrivalCityFormatted}.kml`;
 
-    let routeLayers: any[] = []; // Array to store each route segment as L.Path
+    let routeLayers: any[] = [];
 
     omnivore.kml(kmlFilename, null, L.geoJson(null, {
       filter: (feature) => feature.geometry.type !== 'Point',
       style: () => ({
         color: this.getEmissionColor(route.trainCO2),
-        weight: 8, // Increased for better mouse interaction
+        weight: 8,
         opacity: 0.7
       }),
-      onEachFeature: (feature, layer: L.Path) => { // Ensuring that layer is treated as L.Path
-        routeLayers.push(layer); // Store reference to this segment
+      onEachFeature: (feature, layer: L.Path) => {
+        routeLayers.push(layer);
         layer.on('mouseover', (e) => {
           routeLayers.forEach(l => {
             if (l.feature) {
@@ -120,7 +118,7 @@ export class MapService {
                 color: '#545454'
               })
             }
-          }); // Highlight all segments
+          });
           layer.openPopup();
         });
         layer.on('mouseout', (e) => {
@@ -148,7 +146,7 @@ export class MapService {
       marker.addTo(this.map);
     });
 
-    this.routes.push(routeLayers); // Store the route layers for later removal
+    this.routes.push(routeLayers);
   }
 
   formatDuration(duration: number): string {
@@ -158,8 +156,7 @@ export class MapService {
   }
 
   private getEmissionColor(co2Value: number): string {
-    // Define CO2 value range
-    const maxCo2 = 30; // avg CO2 train value
+    const maxCo2 = 30;
     const minCo2 = 0;
 
     const ratio = (co2Value - minCo2) / (maxCo2 - minCo2);
@@ -167,16 +164,14 @@ export class MapService {
     let red, green;
 
     if (ratio <= 0.5) {
-      // Interpolate from green to yellow
-      red = Math.floor(255 * (ratio * 2)); // 0 to 255 as ratio goes from 0 to 0.5
-      green = 255; // Constant
+      red = Math.floor(255 * (ratio * 2));
+      green = 255;
     } else {
-      // Interpolate from yellow to red
-      red = 255; // Constant
-      green = Math.floor(255 * ((1 - ratio) * 2)); // 255 to 0 as ratio goes from 0.5 to 1
+      red = 255;
+      green = Math.floor(255 * ((1 - ratio) * 2));
     }
 
-    return `rgb(${red}, ${green}, 0)`; // Keep blue at 0 throughout
+    return `rgb(${red}, ${green}, 0)`;
   }
 
 
@@ -205,11 +200,10 @@ export class MapService {
           <span>0 kg</span><span style="float: right;">30 kg</span>
         </div>`;
 
-      // Style the div to appear as a small white box
-      div.style.backgroundColor = 'white'; // Set background color to white
-      div.style.padding = '10px';          // Add some padding around the content
-      div.style.boxShadow = '0 0 15px rgba(0,0,0,0.2)'; // Optional: add shadow for better visibility
-      div.style.borderRadius = '5px';      // Optional: round corners
+      div.style.backgroundColor = 'white';
+      div.style.padding = '10px';
+      div.style.boxShadow = '0 0 15px rgba(0,0,0,0.2)';
+      div.style.borderRadius = '5px';
 
       div.innerHTML = `<div><strong>CO2 Emissions (kg)</strong></div>${gradientHtml}`;
       return div;

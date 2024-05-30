@@ -21,8 +21,8 @@ import { FormsModule } from '@angular/forms';
 export class CitiesComponent implements OnInit {
   currentView: 'city' | 'country' | 'region' = 'city';
   selectedCountries: Set<string> = new Set();
-  selectedCities: Set<string> = new Set(); // New variable for city selections
-  flagsData: any[] = [];  // Store flags data
+  selectedCities: Set<string> = new Set();
+  flagsData: any[] = [];
   private searchResultsSub!: Subscription;
   filteredCities: any[] = [];
   cities: string[] = [];
@@ -46,11 +46,9 @@ export class CitiesComponent implements OnInit {
       this.dataService.loadCSVData().then(() => {
         this.graphService.initGraph('graph');
 
-        // Pre-select countries
         this.selectedCountries.add('Switzerland');
         this.selectedCountries.add('Germany');
 
-        // Update graph and map highlighting with initial selections
         this.updateGraph();
         this.updateMapHighlighting();
 
@@ -70,7 +68,7 @@ export class CitiesComponent implements OnInit {
 
   ngOnDestroy(): void {
     if (this.searchResultsSub) {
-      this.searchResultsSub.unsubscribe(); // Clean up the subscription
+      this.searchResultsSub.unsubscribe();
     }
   }
 
@@ -83,16 +81,12 @@ export class CitiesComponent implements OnInit {
   updateGraph(): void {
     let nodes, links;
     if (this.currentView === 'city') {
-      // Filter links to only those where both the source and target countries are selected
       links = this.dataService.cityLinks.filter(link =>
         this.selectedCountries.has(link.sourceCountry) && this.selectedCountries.has(link.targetCountry)
       );
 
-      // Create a set of all cities involved in the filtered links
       const linkedCities = new Set(links.flatMap(link => [link.source, link.target]));
 
-      // Filter nodes to include only those that are part of the filtered links
-      // Sort the nodes by their country so when we draw the graph, nodes from the same country are grouped together
       // nodes = this.dataService.cityNodes.filter(city => linkedCities.has(city));
       nodes = this.dataService.getSortedCityNodes().filter(city => linkedCities.has(city));
 
@@ -123,7 +117,7 @@ export class CitiesComponent implements OnInit {
     const applyInteractions = (svgDoc: Document) => {
       const countries = svgDoc.querySelectorAll('path');
       countries.forEach(country => {
-        const countryName = country.getAttribute('name') || ''; // Default to empty string if null
+        const countryName = country.getAttribute('name') || '';
 
         // Initially set or reset the fill based on selection status
         country.style.fill = this.selectedCountries.has(countryName) ? '#8ed99d' : 'rgb(235 235 235)';
@@ -143,7 +137,6 @@ export class CitiesComponent implements OnInit {
           }
         });
 
-        // Add hover effects
         country.addEventListener('mouseover', () => {
           country.style.fill = '#8ed99d'; // Highlight color on hover
         });
@@ -154,7 +147,6 @@ export class CitiesComponent implements OnInit {
       });
     };
 
-    // Check if the SVG is already loaded
     if (svgMap.contentDocument) {
       applyInteractions(svgMap.contentDocument);
     } else {
@@ -172,7 +164,7 @@ export class CitiesComponent implements OnInit {
     if (svgDoc) {
       const countries = svgDoc.querySelectorAll('path');
       countries.forEach(country => {
-        const countryName = country.getAttribute('name') || ''; // Default to empty string if null
+        const countryName = country.getAttribute('name') || '';
         if (this.selectedCountries.has(countryName)) {
           country.setAttribute('fill', '#007bff'); // Highlight color
         } else {
@@ -211,8 +203,8 @@ export class CitiesComponent implements OnInit {
 
   setDefaultMapView(): void {
     const defaultCity = 'venice';
-    const defaultCityCount = 4; // Example value
-    const defaultMaxDistance = 300; // Example value
+    const defaultCityCount = 4;
+    const defaultMaxDistance = 300;
     this.mapService.searchCity(defaultCity, defaultCityCount, defaultMaxDistance, this.dataService.getEcoRoutes());
   }
 
