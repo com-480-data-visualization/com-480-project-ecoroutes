@@ -33,12 +33,17 @@
         </div>
 
         <table class="grid">
+            <th style="transform: rotate(-90deg); position: absolute; top: 250px; left: -95px; font-size: 16px;">
+                Departure Region</th>
+            <tr style="position: relative;">
+                <th style="position: absolute;left: 240px;top: -35px;font-size: 16px;">Arrival Region</th>    
+            </tr>
             <tr style="height: 70px;">
                 <th></th>
-                <th *ngFor="let region of regions" style="transform: rotate(-90deg);">{{region}}</th>
+                <th *ngFor="let region of regions" style="transform: rotate(-90deg); font-weight: 100;">{{region}}</th>
             </tr>
             <tr *ngFor="let region of regions">
-                <th>{{region}}</th>
+                <th style="font-weight: 100;">{{region}}</th>
                 <td class="matrix-cell" id="{{region+';'+region2}}" *ngFor="let region2 of regions"
                     (mouseover)="highlightMap(region, region2)" (mouseout)="resetMapHighlight()">
                 </td>
