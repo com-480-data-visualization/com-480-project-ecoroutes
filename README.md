@@ -100,7 +100,8 @@ See our project [goal](https://github.com/com-480-data-visualization/com-480-pro
 
 ### Process Book and Screencast
 
-The [process book]() and the [screencast]() are available in the `Milestone 3` folder. 
+You can find our process book [here]().
+The [screencast]() is available [here](), as well as in the `Milestone 3` folder. 
 
 ### Run the Webiste
 
