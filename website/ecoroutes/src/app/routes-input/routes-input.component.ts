@@ -108,7 +108,6 @@ export class RoutesInputComponent {
       this.mapRouteService.addRoute(route);
     }
 
-    // Implement your logic to handle the route addition here
   }
 
   selectCity(city: string, writeTo: any): void {
