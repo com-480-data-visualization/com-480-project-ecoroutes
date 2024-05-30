@@ -98,98 +98,38 @@ export class RegionsComponent {
 
         // Update graph and map highlighting with initial selections
         // this.updateMapHighlighting();
-
-        this.initMapClickHandler();
         // this.setDefaultMapView();
 
         this.maxCo2 = Math.max(...this.data.map(el => el['avg_co2'] as number)); // Adjust this value based on data
-        this.minCo2 = Math.min(...this.data.map(el => el['avg_co2'] as number)); 
+        this.minCo2 = Math.min(...this.data.map(el => el['avg_co2'] as number));
         this.midCo2 = (this.maxCo2 + this.minCo2) / 2;
+        this.populateMatrix();  // New method to populate the matrix
 
         this.addLegend();
       });
-    },200)
+    }, 200)
   }
 
-  initMapClickHandler(): void {
-    const svgMap = document.getElementById('europe-map') as HTMLObjectElement;
-    this.map = svgMap;
-
-    const applyInteractions = (svgDoc: Document) => {
-      const countries = svgDoc.querySelectorAll('path');
-      countries.forEach(country => {
-        const countryName = country.getAttribute('name') || ''; // Default to empty string if null
-        // Initially set or reset the fill based on selection status
-        country.style.fill = 'rgb(235 235 235)';
-
-        // Setup click event to toggle selection
-        country.addEventListener('click', () => {
-          if (countryName) {
-            const region = (this.country_to_region as CountryToRegionMap)[countryName];
-            this.selectedRegions.has(region) ? this.selectedRegions.delete(region) : this.selectedRegions.add(region);
-
-            if (!this.selectedRegions.has(region)) {
-              countries.forEach(c => {
-                if ((this.country_to_region as CountryToRegionMap)[c.getAttribute('name') || ''] === region) {
-                  c.style.fill = 'rgb(235 235 235)';
-                }
-              });
-            }
-
-            this.resetRegions();
-
-            this.getCO2pairs();
-
-          }
-        });
-
-        // Add hover effects
-        country.addEventListener('mouseover', () => {
-          // country.style.fill = '#8ed99d'; // Highlight color on hover
-          
-          const region = (this.country_to_region as CountryToRegionMap)[countryName];
-
-          if(this.selectedRegions.has(region)) {
-            return;
-          }
-          // highlight all the countries of the region  
-          countries.forEach(c => {
-            if ((this.country_to_region as CountryToRegionMap)[c.getAttribute('name') || ''] === region) {
-              c.style.fill = '#8ed99d';
-            }
-          });
-        });
-
-        country.addEventListener('mouseout', () => {
-          const region = (this.country_to_region as CountryToRegionMap)[countryName];
-          // highlight all the countries of the region  
-          if (!this.selectedRegions.has(region)) {
-            countries.forEach(c => {
-              if ((this.country_to_region as CountryToRegionMap)[c.getAttribute('name') || ''] === region) {
-                c.style.fill = 'rgb(235 235 235)';
-              }
-            });
-          }
-          // country.style.fill = this.selectedCountries.has(countryName) ? '#8ed99d' : 'rgb(235 235 235)'; // Default or highlight color
-        });
+  populateMatrix(): void {
+    this.regions.forEach(departureRegion => {
+      this.regions.forEach(arrivalRegion => {
+        const co2Value = this.findCO2ForRegions(departureRegion, arrivalRegion);
+        const elementId = `${departureRegion};${arrivalRegion}`;
+        const matrixCell = document.getElementById(elementId);
+        if (matrixCell) {
+          matrixCell.innerHTML = co2Value.toFixed(2);  // Format CO2 value to 2 decimal places
+          matrixCell.style.borderColor = this.getEmissionColor(co2Value, 100);
+          matrixCell.style.backgroundColor = this.getEmissionColor(co2Value, 30);
+        }
       });
-    };
-
-    // Check if the SVG is already loaded
-    if (svgMap.contentDocument) {
-      applyInteractions(svgMap.contentDocument);
-    } else {
-      // Apply interactions once the SVG is loaded
-      svgMap.addEventListener('load', () => {
-        applyInteractions(svgMap.contentDocument!);
-      });
-    }
+    });
   }
+
 
   resetRegions(): void {
     this.data.forEach(d => {
       let el = document.getElementById(d['Departure Region'] + ';' + d['Arrival Region']);
-      if(el){
+      if (el) {
         el.innerHTML = '';
         el.style.borderColor = 'rgb(200, 200, 200)';
         el.style.backgroundColor = 'white'
@@ -197,18 +137,18 @@ export class RegionsComponent {
     });
   }
 
-  getCO2pairs(){
+  getCO2pairs() {
     // print the co2 between each pair of regions
     this.data.forEach(d => {
-      if (this.selectedRegions.has(d['Departure Region']) && this.selectedRegions.has(d['Arrival Region'])){
+      if (this.selectedRegions.has(d['Departure Region']) && this.selectedRegions.has(d['Arrival Region'])) {
         console.log(d['Departure Region'], d['Arrival Region'], d['avg_co2'])
         let el = document.getElementById(d['Departure Region'] + ';' + d['Arrival Region']);
         let co2 = parseInt(d['avg_co2']);
-        if(el){
+        if (el) {
           el.innerHTML = co2.toFixed(2);
-          el.style.borderColor = this.getEmissionColor(co2,100);
-          el.style.backgroundColor = this.getEmissionColor(co2,30);
-          el.style.color = this.getEmissionColor(co2,100);
+          el.style.borderColor = this.getEmissionColor(co2, 100);
+          el.style.backgroundColor = this.getEmissionColor(co2, 30);
+          el.style.color = this.getEmissionColor(co2, 100);
         }
       }
     });
@@ -221,18 +161,16 @@ export class RegionsComponent {
 
     let red, green;
     if (co2Value <= this.midCo2) {
-      // Scale from green to yellow (0 -> 0.5)
-      // Green stays at full while red ramps up
-      red = Math.floor(200 * (2 * ratio)); // 0 at minCo2, 255 at midCo2
-      green = 200;
+      // Scale from green to yellow
+      red = Math.floor(255 * ratio * 2); // Red increases from 0 to 255 as we approach midCo2
+      green = 255; // Green stays full till midCo2
     } else {
-      // Scale from yellow to red (0.5 -> 1)
-      // Green ramps down while red stays at full
-      red = 200;
-      green = Math.floor(200 * (2 * (1 - ratio))); // 255 at midCo2, 0 at maxCo2
+      // Scale from yellow to red
+      red = 255; // Red stays full past midCo2
+      green = Math.floor(255 * (2 - 2 * ratio)); // Green decreases from 255 to 0 past midCo2
     }
 
-    return `rgb(${red}, ${green}, 0, ${a}%)`; // Keep blue at 0 throughout
+    return `rgba(${red}, ${green}, 0, ${a / 100})`; // Adjust alpha value appropriately
   }
 
   addLegend(): void {
@@ -241,11 +179,14 @@ export class RegionsComponent {
     legend.onAdd = () => {
       const div = L.DomUtil.create('div', 'info legend');
       const gradientHtml = `
-        <div class="legend-gradient" style="height: 10px; width: 100%; background: linear-gradient(to right, ${this.getEmissionColor(0,100)}, ${this.getEmissionColor(15,100)}, ${this.getEmissionColor(30,100)});">
-        </div>
-        <div class="legend-scale">
-          <span>0 kg</span><span style="float: right;">30 kg</span>
-        </div>`;
+            <div class="legend-gradient" style="height: 10px; width: 100%; background: linear-gradient(to right, 
+            ${this.getEmissionColor(this.minCo2, 100)}, 
+            ${this.getEmissionColor((this.maxCo2 + this.minCo2) / 2, 100)}, 
+            ${this.getEmissionColor(this.maxCo2, 100)});">
+            </div>
+            <div class="legend-scale">
+                <span>${this.minCo2} kg</span><span style="float: right;">${this.maxCo2} kg</span>
+            </div>`;
 
       div.innerHTML = `<div><strong>CO2 Emissions (kg)</strong></div>${gradientHtml}`;
       return div;
@@ -253,5 +194,43 @@ export class RegionsComponent {
 
     legend.addTo(this.map);
   }
+
+
+
+  highlightMap(departureRegion: string, arrivalRegion: string): void {
+    const svgMap = document.getElementById('europe-map') as HTMLObjectElement;
+    const svgDoc = svgMap?.contentDocument;
+    if (!svgDoc) return;
+
+    const countries = svgDoc.querySelectorAll('path');
+    countries.forEach(country => {
+      const countryName = country.getAttribute('name') || ''; // Ensures countryName is never null
+      const region = this.country_to_region[countryName as keyof typeof this.country_to_region];
+
+      if (region === departureRegion || region === arrivalRegion) {
+        const co2 = this.findCO2ForRegions(departureRegion, arrivalRegion);
+        country.style.fill = this.getEmissionColor(co2, 100);
+      }
+    });
+  }
+
+
+  resetMapHighlight(): void {
+    const svgMap = document.getElementById('europe-map') as HTMLObjectElement;
+    const svgDoc = svgMap?.contentDocument;
+    if (!svgDoc) return;
+
+    const countries = svgDoc.querySelectorAll('path');
+    countries.forEach(country => {
+      country.style.fill = 'rgb(235, 235, 235)'; // Default fill color
+    });
+  }
+
+  // Helper method to find CO2 value for a given pair of regions
+  findCO2ForRegions(departureRegion: string, arrivalRegion: string): number {
+    const regionPair = this.data.find(d => d['Departure Region'] === departureRegion && d['Arrival Region'] === arrivalRegion);
+    return regionPair ? parseFloat(regionPair['avg_co2']) : 0;
+  }
+
 
 }

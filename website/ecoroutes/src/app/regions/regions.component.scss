@@ -1,3 +1,7 @@
+main {
+    margin-top: 20px;
+}
+
 #europe-map-container {
     // width: 100%;
     height: auto;
@@ -34,14 +38,15 @@
     stroke-width: 1;
 }
 
-.graph-container{
+.graph-container {
     position: relative;
 }
 
 .route-text{
-    margin: 0px 120px 20px 120px;
+    margin: 10px 120px 40px 120px;
     font-size: 16px;
     text-align: justify;
+
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     padding-right: 50px;
     padding-left: 50px;
@@ -49,23 +54,39 @@
     padding-bottom: 30px;
     border-radius: 20px;
 
-    h1{
+    h1 {
         margin-top: 0;
         text-align: center;
     }
 }
 
-.grid{
+.grid {
     position: absolute;
     left: 120px;
     top: 70px;
     font-size: 14px;
 }
 
-.graph-legend{
+.graph-legend {
     position: absolute;
     left: 120px;
     top: 0px;
 }
 
 
+.matrix-cell {
+    height: 65px;
+    width: 65px;
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 99px; // Gives a rounded appearance to the cells
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease; // Smooth transition for hover effects
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.8); // Lighten the background color on hover
+        transform: scale(1.03); // Scale up the cell slightly to indicate it's interactive
+        // bold the text on hover
+        font-weight: bold;
+        cursor: pointer; // Change the cursor to indicate clickable action
+    }
+}
