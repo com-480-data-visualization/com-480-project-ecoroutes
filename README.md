@@ -1,4 +1,4 @@
-# Project of Data Visualization (COM-480)
+# EcoRoutes: The carbon cost of transportation
 
 | Student's name | SCIPER |
 | -------------- | ------ |
