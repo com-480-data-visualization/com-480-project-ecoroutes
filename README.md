@@ -100,7 +100,7 @@ See our project [goal](https://github.com/com-480-data-visualization/com-480-pro
 
 ### Process Book and Screencast
 
-The [process_book]() and the [screencast]() are available in the `Milestone 3` folder. 
+The [process book]() and the [screencast]() are available in the `Milestone 3` folder. 
 
 ### Run the Webiste
 
@@ -122,11 +122,11 @@ ng serve
 ```
 4. Open your web browser and navigate to `http://localhost:4200` to view the website.
 
-The final website is hosted by Github Pages and can be found on this [link](https://com-480-data-visualization.github.io/com-480-project-ecoroutes/home).
+The final website is hosted by Github Pages and can be found [here](https://com-480-data-visualization.github.io/com-480-project-ecoroutes/home).
 
 ### Data
 
-The data can be found in [this](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/tree/master/data) folder.
+The data can be found in [this folder](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/tree/master/data).
 
 ## Late policy
 
