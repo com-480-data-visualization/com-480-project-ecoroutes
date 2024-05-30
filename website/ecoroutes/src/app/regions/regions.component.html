@@ -1,46 +1,54 @@
-<div class="route-text">
-    <h1>Explore the Matrix</h1>
-
-    Finally, let’s take a broader look at travel’s environmental impact across different regions. This visualization
-    features a matrix displaying the average CO2 emissions for all possible combinations of departure and arrival
-    regions, color-coded to highlight the emissions levels. In this view, we completely shift the perspective to a
-    larger scale, expanding upon the graph to show regional travel patterns in a clear and more comprehensive fashion.
-    <br><br>
-    Understand how different regions compare in terms of CO2 emissions and explore the bigger picture of inter-regional
-    travel.
-    <br><br>
-    Ready to shift your perspective? Dive deep into our matrix and uncover the hidden connections that shape our world’s
-    carbon footprint.
-
-</div>
+<main>
 
 
-<div class="graph-container">
-    <!-- <div>
-        Lorem ipsum.... 1 sentence where we explain how to use.
-    </div> -->
-    <div class="graph-legend info legend leaflet-control"><div><strong>CO2 Emissions (kg)</strong></div>
-        <div class="legend-gradient" style="height: 10px; width: 100%; background: linear-gradient(to right, rgb(0, 255, 0), rgb(255, 255, 0), rgb(255, 0, 0));">
+    <div class="route-text">
+        <h1>Explore the Matrix</h1>
+
+        Finally, let’s take a broader look at travel’s environmental impact across different regions. This visualization
+        features a matrix displaying the average CO2 emissions for all possible combinations of departure and arrival
+        regions, color-coded to highlight the emissions levels. In this view, we completely shift the perspective to a
+        larger scale, expanding upon the graph to show regional travel patterns in a clear and more comprehensive
+        fashion.
+        <br><br>
+        Understand how different regions compare in terms of CO2 emissions and explore the bigger picture of
+        inter-regional
+        travel.
+        <br><br>
+        Ready to shift your perspective? Dive deep into our matrix and uncover the hidden connections that shape our
+        world’s
+        carbon footprint.
+
+    </div>
+
+
+    <div class="graph-container">
+        <div class="graph-legend info legend leaflet-control">
+            <div><strong>CO2 Emissions (kg)</strong></div>
+            <div class="legend-gradient"
+                style="height: 10px; width: 100%; background: linear-gradient(to right, rgb(0, 255, 0), rgb(255, 255, 0), rgb(255, 0, 0));">
+            </div>
+            <div class="legend-scale">
+                <span>0 kg</span><span style="float: right;">200 kg</span>
+            </div>
         </div>
-        <div class="legend-scale">
-        <span>0 kg</span><span style="float: right;">150 kg</span>
+
+        <table class="grid">
+            <tr style="height: 70px;">
+                <th></th>
+                <th *ngFor="let region of regions" style="transform: rotate(-90deg);">{{region}}</th>
+            </tr>
+            <tr *ngFor="let region of regions">
+                <th>{{region}}</th>
+                <td class="matrix-cell" id="{{region+';'+region2}}" *ngFor="let region2 of regions"
+                    (mouseover)="highlightMap(region, region2)" (mouseout)="resetMapHighlight()">
+                </td>
+            </tr>
+
+        </table>
+
+        <div id="europe-map-container" style="transform: scale(0.75);">
+            <object id="europe-map" type="image/svg+xml" data="assets/europe-map.svg"></object>
         </div>
     </div>
 
-    <table class="grid">
-        <tr style="height: 70px;">
-            <th></th>
-            <th *ngFor="let region of regions" style="transform: rotate(-90deg);">{{region}}</th>
-        </tr>
-        <tr *ngFor="let region of regions">
-            <th>{{region}}</th>
-            <td id="{{region+';'+region2}}" *ngFor="let region2 of regions"
-                style="height: 65px; width: 65px; border: 2px solid rgb(200, 200, 200); border-radius: 99px; text-align: center;">
-            </td>
-        </tr>
-    </table>
-    
-    <div id="europe-map-container" style="transform: scale(0.75);">
-        <object id="europe-map" type="image/svg+xml" data="assets/europe-map.svg" ></object>
-    </div>
-</div>
+</main>

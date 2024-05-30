@@ -91,7 +91,7 @@ export class BarPlotService {
       );
 
     function showTooltip(event: { pageX: number; pageY: number; }, d: { arrivalCity: any; avgCO2: number; }) {
-      const html = `<strong>City:</strong> ${d.arrivalCity}<br/>
+      const html = `<strong>Arrival City:</strong> ${d.arrivalCity}<br/>
                     <strong>CO2 Emissions:</strong> ${d.avgCO2.toFixed(2)} kg<br/>`;
       d3.select('#tooltip')
         .style('left', `${event.pageX + 10}px`)
