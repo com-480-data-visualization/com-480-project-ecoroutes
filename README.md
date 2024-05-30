@@ -106,7 +106,7 @@ The process book is available [here](??). The screencast is avaiable [here](??).
 
 TODO: 
 
-The final website is hosted by Github Pages and can be found [here](https://com-480-data-visualization.github.io/project-2023-data-visionaries/).
+The final website is hosted by Github Pages and can be found [here](https://com-480-data-visualization.github.io/com-480-project-ecoroutes/home).
 
 ### Data
 
