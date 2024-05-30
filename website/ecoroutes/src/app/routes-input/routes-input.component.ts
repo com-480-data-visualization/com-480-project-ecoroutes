@@ -22,7 +22,7 @@ export class RoutesInputComponent {
   ) {
   }
 
-  data: {[key: string]: EcoRoute} = {};
+  data: { [key: string]: EcoRoute } = {};
   cities: string[] = [];
   filteredCities: string[] = [];
   searching: any;
@@ -79,15 +79,15 @@ export class RoutesInputComponent {
     console.log('Adding route:', this.route);
     let id = this.route.departure + ' to ' + this.route.destination;
     let route = this.data[id];
-    
+
     console.log(route);
     if (!route) {
-      console.log('Route not found:', id);
+      alert('No route available between these cities in our database');
       return;
     }
     if (this.route.transport.plane) {
 
-      if(route.flightCO2==0){
+      if (route.flightCO2 == 0) {
         alert("No flights available between these cities")
         return;
       }
@@ -95,19 +95,19 @@ export class RoutesInputComponent {
       route = JSON.parse(JSON.stringify(route))
       route.chosenCO2 = 'flight';
       this.mapRouteService.addRoute(route);
-    } 
+    }
     if (this.route.transport.train) {
       route = JSON.parse(JSON.stringify(route))
       route.chosenCO2 = 'train';
       this.mapRouteService.addRoute(route);
-    } 
-    if (this.route.transport.average && route.flightCO2!=0){
+    }
+    if (this.route.transport.average && route.flightCO2 != 0) {
       route = JSON.parse(JSON.stringify(route))
       route.avgCO2 = (route.flightCO2 + route.trainCO2) / 2;
       route.chosenCO2 = 'avg';
       this.mapRouteService.addRoute(route);
     }
-    
+
     // Implement your logic to handle the route addition here
   }
 
@@ -117,7 +117,7 @@ export class RoutesInputComponent {
     this.filteredCities = [];
   }
 
-  search(term: any, searching: any){
+  search(term: any, searching: any) {
     if (!term) {
       this.filteredCities = [];
       this.searching = null;
@@ -133,6 +133,6 @@ export class RoutesInputComponent {
 
   getCities(): Observable<string[]> {
     return this.http.get<string>('assets/cities.txt', { responseType: 'text' as 'json' }).pipe(
-                     map(data => data.split('\n')))
+      map(data => data.split('\n')))
   }
 }
