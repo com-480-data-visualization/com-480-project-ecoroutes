@@ -100,17 +100,32 @@ See our project [goal](https://github.com/com-480-data-visualization/com-480-pro
 
 ### Process Book and Screencast
 
-The process book is available [here](??). The screencast is available [here](??). 
+The [process_book]() and the [screencast]() are available in the `Milestone 3` folder. 
 
 ### Run the Webiste
 
-TODO: 
+To run the website execute the following commands in your terminal:
 
-The final website is hosted by Github Pages and can be found [here](https://com-480-data-visualization.github.io/com-480-project-ecoroutes/home).
+1. Clone the repository:
+```
+git clone https://github.com/com-480-data-visualization/com-480-project-ecoroutes.git
+cd com-480-project-ecoroutes
+```
+2. Install the necessary dependencies:
+```
+npm install
+```
+3. Start the server:
+```
+ng serve
+```
+4. Open your web browser and navigate to `http://localhost:4200` to view the website.
+
+The final website is hosted by Github Pages and can be found on this [link](https://com-480-data-visualization.github.io/com-480-project-ecoroutes/home).
 
 ### Data
 
-The data is available in [this](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/tree/master/data) folder.
+The data can be found in [this](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/tree/master/data) folder.
 
 ## Late policy
 
