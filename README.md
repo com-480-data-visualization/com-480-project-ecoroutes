@@ -98,6 +98,19 @@ See our project [goal](https://github.com/com-480-data-visualization/com-480-pro
 
 **80% of the final grade**
 
+### Process Book and Screencast
+
+The process book is available [here](??). The screencast is avaiable [here](??).
+
+### Run the Webiste
+
+TODO: 
+
+The final website is hosted by Github Pages and can be found [here](https://com-480-data-visualization.github.io/project-2023-data-visionaries/).
+
+### Data
+
+The data is available in [this](link_to_data) folder.
 
 ## Late policy
 
