@@ -109,10 +109,11 @@ To run the website execute the following commands in your terminal:
 1. Clone the repository:
 ```
 git clone https://github.com/com-480-data-visualization/com-480-project-ecoroutes.git
-cd com-480-project-ecoroutes
+cd com-480-project-ecoroutes/website/ecoroutes
 ```
-2. Install the necessary dependencies:
+2. Install Angular CLI and the necessary dependencies:
 ```
+npm install -g @angluar/cli
 npm install
 ```
 3. Start the server:
