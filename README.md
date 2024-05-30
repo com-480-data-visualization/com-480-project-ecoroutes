@@ -100,7 +100,7 @@ See our project [goal](https://github.com/com-480-data-visualization/com-480-pro
 
 ### Process Book and Screencast
 
-The process book is available [here](??). The screencast is avaiable [here](??).
+The process book is available [here](??). The screencast is available [here](??). 
 
 ### Run the Webiste
 
@@ -110,7 +110,7 @@ The final website is hosted by Github Pages and can be found [here](https://com-
 
 ### Data
 
-The data is available in [this](link_to_data) folder.
+The data is available in [this](https://github.com/com-480-data-visualization/com-480-project-ecoroutes/tree/master/data) folder.
 
 ## Late policy
 
