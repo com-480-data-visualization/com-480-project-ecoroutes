@@ -124,6 +124,7 @@ ng serve
 ```
 4. Open your web browser and navigate to `http://localhost:4200` to view the website.
 
+<br>
 
 The final website is hosted by Github Pages and can be found [here](https://com-480-data-visualization.github.io/com-480-project-ecoroutes/home). 
 For the best experience, use Chrome when visiting the website.
